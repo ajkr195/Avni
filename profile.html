@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<title>Avni - The Planet Earth</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+	crossorigin="anonymous">
+<link href="dashboard.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100">
+	<nav
+		class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Avni - The Planet Earth</a>
+		<button class="navbar-toggler position-absolute d-md-none collapsed"
+			type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+			aria-controls="sidebarMenu" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<input class="form-control form-control-dark w-100" type="text"
+			placeholder="Search" aria-label="Search">
+
+
+		<div class="btn-group dropstart">
+			<img src="img/avatar2.jpg"
+				class="avatar-img rounded-circle dropdown-toggle"
+				data-bs-toggle="dropdown" aria-expanded="false">
+			<ul class="dropdown-menu dropdown-menu-right">
+				<li><a class="dropdown-item dropdown-menu-right" href="profile.html"><i
+						class="data-feather" data-feather="user"></i> Profile</a></li>
+				<li><a class="dropdown-item dropdown-menu-right" href="settings.html"><i
+						class="data-feather" data-feather="settings"></i> Settings</a></li>
+				<li><a class="dropdown-item dropdown-menu-right" href="#"><i
+						class="data-feather" data-feather="file"></i> My Files</a></li>
+				<li><hr class="dropdown-divider"></li>
+				<li><a class="dropdown-item dropdown-menu-right" href="#"><i
+						class="data-feather" data-feather="log-out"></i> SignOut</a></li>
+			</ul>
+		</div>
+
+
+
+	</nav>
+	<!-- Begin page content -->
+	<main class="flex-shrink-0">
+		<div class="container-fluid">
+			<div class="row">
+				<nav id="sidebarMenu"
+					class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+					<div class="position-sticky pt-3">
+						<ul class="nav flex-column">
+							<li class="nav-item"><a class="nav-link" aria-current="page"
+								href="index.html"> <i class="data-feather"
+									data-feather="home"></i> Home
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="form.html">
+									<i class="data-feather" data-feather="file-text"></i> Form
+							</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="components.html"> <i class="data-feather"
+									data-feather="file-text"></i> Components
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="extra.html">
+									<i class="data-feather" data-feather="file-text"></i> Extras
+							</a></li>
+							<li class="nav-item"><a class="nav-link active"
+								href="profile.html"> <i class="data-feather"
+									data-feather="file-text"></i> Profile
+							</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="settings.html"> <i class="data-feather"
+									data-feather="settings"></i> Settings
+							</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="javascript.html"> <i class="data-feather"
+									data-feather="file-text"></i> JavaScript
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="empty.html">
+									<i class="data-feather" data-feather="file-text"></i> Empty
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="#"> <i
+									class="data-feather" data-feather="shopping-cart"></i> Products
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="#"> <i
+									class="data-feather" data-feather="users"></i> Customers
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="#"> <i
+									class="data-feather" data-feather="layers"></i> Reports
+							</a></li>
+						</ul>
+
+						<h6
+							class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+							<span>Saved reports</span> <a class="link-secondary" href="#"
+								aria-label="Add a new report"> <span
+								data-feather="plus-circle"></span>
+							</a>
+						</h6>
+						<ul class="nav flex-column mb-2">
+							<li class="nav-item"><a class="nav-link" href="#"> <i
+									class="data-feather" data-feather="calendar"></i> Current month
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="#"> <i
+									class="data-feather" data-feather="calendar"></i> Last quarter
+							</a></li>
+						</ul>
+					</div>
+				</nav>
+
+				<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+					<div
+						class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+						<h1 class="h2">Profile</h1>
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Profile</li>
+							</ol>
+						</nav>
+					</div>
+
+					<!--h2>Section title</h2-->
+					<div class="row g-3">
+						<main class="content">
+							<div class="row">
+								<div class="col-md-4 col-xl-3">
+									<div class="card mb-3">
+										<div class="card-body text-center">
+											<img src="img/avatar2.jpg" alt="Avni - The Earth"
+												class="img-fluid rounded-circle mb-2" width="150"
+												height="150" />
+											<h5 class="card-title mb-0">Avni - The Planet Earth</h5>
+											<div class="text-muted mb-2">Planet of Life</div>
+
+											<div>
+												<a class="btn btn-sm btn-primary btn-sm" href="#"><span
+													data-feather="facebook" class="data-feather"></span></a> <a
+													class="btn btn-sm btn-primary btn-sm" href="#"><span
+													data-feather="message-circle" class="data-feather"></span></a>
+											</div>
+										</div>
+										<hr class="my-0" />
+										<div class="card-body">
+											<h5 class="h6 card-title">Skills</h5>
+											<a href="#" class="badge bg-primary mr-1 my-1">Life</a> <a
+												href="#" class="badge bg-primary mr-1 my-1">Trees</a> <a
+												href="#" class="badge bg-primary mr-1 my-1">Oceans</a> <a
+												href="#" class="badge bg-primary mr-1 my-1">Air</a> <a
+												href="#" class="badge bg-primary mr-1 my-1">Rivers</a> <a
+												href="#" class="badge bg-primary mr-1 my-1">WildLife</a> <a
+												href="#" class="badge bg-primary mr-1 my-1">Flowers</a> <a
+												href="#" class="badge bg-primary mr-1 my-1">Water</a> <a
+												href="#" class="badge bg-primary mr-1 my-1">Sky</a>
+										</div>
+										<hr class="my-0" />
+										<div class="card-body">
+											<h5 class="h6 card-title">About</h5>
+											<ul class="list-unstyled mb-0">
+												<li class="mb-1"><i data-feather="home"
+													class="data-feather mr-1"></i> Lives in <a href="#">Space,
+														SP</a></li>
+
+												<li class="mb-1"><i data-feather="briefcase"
+													class="data-feather mr-1"></i> Works at <a href="#">All
+														the time</a></li>
+												<li class="mb-1"><i data-feather="map-pin"
+													class="data-feather"></i> From <a href="#">One
+														Almighty</a></li>
+											</ul>
+										</div>
+										<hr class="my-0" />
+										<div class="card-body">
+											<h5 class="h6 card-title">Elsewhere</h5>
+											<ul class="list-unstyled mb-0">
+												<li class="mb-1"><span class="fas fa-globe fa-fw mr-1"></span>
+													<a href="#">space.earth.io</a></li>
+												<li class="mb-1"><span
+													class="fab fa-twitter fa-fw mr-1"></span> <a href="#">Mars</a></li>
+												<li class="mb-1"><span
+													class="fab fa-facebook fa-fw mr-1"></span> <a href="#">Mercury</a></li>
+												<li class="mb-1"><span
+													class="fab fa-instagram fa-fw mr-1"></span> <a href="#">Jupiter</a></li>
+												<li class="mb-1"><span
+													class="fab fa-linkedin fa-fw mr-1"></span> <a href="#">Saturn</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-8 col-xl-9">
+									<div class="card">
+										<div class="card-header">
+
+											<h5 class="card-title mb-0">Activities</h5>
+										</div>
+										<div class="card-body h-100">
+
+											<div class="d-flex align-items-start">
+												<img src="img/avatar2.jpg" width="36" height="36"
+													class="rounded-circle mr-2" alt="Everyone">
+												<div class="flex-grow-1">
+													<small class="float-right text-navy">5m ago</small> <strong>Everyone</strong>
+													started following <strong>Avni - The Earth</strong><br />
+													<small class="text-muted">Today 7:51 pm</small><br />
+
+												</div>
+											</div>
+
+											<hr />
+											<div class="d-flex align-items-start">
+												<img src="img/avatar2.jpg" width="36" height="36"
+													class="rounded-circle mr-2">
+												<div class="flex-grow-1">
+													<small class="float-right text-navy">30m ago</small> <strong>Someone
+													</strong> posted something on <strong>Avni - The Earth</strong>'s
+													timeline<br /> <small class="text-muted">Today
+														7:21 pm</small>
+
+													<div class="border text-sm text-muted p-2 mt-1">
+														Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+														rhoncus, sem quam semper libero, sit amet adipiscing sem
+														neque sed ipsum. Nam quam nunc, blandit vel, luctus
+														pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+														tincidunt tempus. Donec vitae sapien ut libero venenatis
+														faucibus. Nullam quis ante.</div>
+
+													<a href="#" class="btn btn-sm btn-danger mt-1"><i
+														class="feather-sm" data-feather="heart"></i> Like</a>
+												</div>
+											</div>
+
+											<hr />
+											<div class="d-flex align-items-start">
+												<img src="img/avatar2.jpg" width="36" height="36"
+													class="rounded-circle mr-2" alt="Avni - The Earth">
+												<div class="flex-grow-1">
+													<small class="float-right text-navy">1h ago</small> <strong>Avni
+														- The Earth </strong> posted a new blog<br /> <small
+														class="text-muted">Today 6:35 pm</small>
+												</div>
+											</div>
+
+											<hr />
+											<div class="d-flex align-items-start">
+												<img src="img/avatar2.jpg" width="36" height="36"
+													class="rounded-circle mr-2" alt="Someone ">
+												<div class="flex-grow-1">
+													<small class="float-right text-navy">3h ago</small> <strong>Someone
+													</strong> posted photos on <strong>Avni - The Earth</strong>'s
+													timeline<br /> <small class="text-muted">Today
+														5:12 pm</small>
+
+													<div class="row g-0 mt-1">
+														<div class="col-6 col-md-4 col-lg-4 col-xl-3">
+															<img src="img/avatar5.jpg"
+																class="profile-page-pic img-fluid pr-2" alt="Unsplash">
+														</div>
+														<div class="col-6 col-md-4 col-lg-4 col-xl-3">
+															<img src="img/avatar6.jpg"
+																class="profile-page-pic img-fluid pr-2" alt="Unsplash">
+														</div>
+														<div class="col-6 col-md-4 col-lg-4 col-xl-3">
+															<img src="img/avatar7.jpg"
+																class="profile-page-pic img-fluid pr-2" alt="Unsplash">
+														</div>
+													</div>
+
+													<a href="#" class="btn btn-sm btn-danger mt-1"><i
+														class="feather-sm" data-feather="heart"></i> Like</a>
+												</div>
+											</div>
+
+											<hr />
+											<div class="d-flex align-items-start">
+												<img src="img/avatar2.jpg" width="36" height="36"
+													class="rounded-circle mr-2" alt="Someone ">
+												<div class="flex-grow-1">
+													<small class="float-right text-navy">1d ago</small> <strong>Someone
+													</strong> started following <strong>Avni - The Earth</strong><br />
+													<small class="text-muted">Yesterday 3:12 pm</small>
+
+													<div class="d-flex align-items-start mt-1">
+														<a class="pr-3" href="#"> <img src="img/avatar2.jpg"
+															width="36" height="36" class="rounded-circle mr-2"
+															alt="Avni - The Earth">
+														</a>
+														<div class="flex-grow-1">
+															<div class="border text-sm text-muted p-2 mt-1">
+																Nam quam nunc, blandit vel, luctus pulvinar, hendrerit
+																id, lorem. Maecenas nec odio et ante tincidunt tempus.</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<hr />
+											<div class="d-flex align-items-start">
+												<img src="img/avatar2.jpg" width="36" height="36"
+													class="rounded-circle mr-2" alt="Avni - The Earth">
+												<div class="flex-grow-1">
+													<small class="float-right text-navy">1d ago</small> <strong>Avni
+														- The Earth </strong> posted a new blog<br /> <small
+														class="text-muted">Yesterday 2:43 pm</small>
+												</div>
+											</div>
+
+											<hr />
+											<div class="d-flex align-items-start">
+												<img src="img/avatar2.jpg" width="36" height="36"
+													class="rounded-circle mr-2" alt="Someone ">
+												<div class="flex-grow-1">
+													<small class="float-right text-navy">1d ago</small> <strong>Someone
+													</strong> started following <strong>Avni - The Earth</strong><br />
+													<small class="text-muted">Yesterdag 1:51 pm</small>
+												</div>
+											</div>
+
+											<hr />
+											<a href="#" class="btn btn-sm btn-primary btn-block">Load more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</main>
+
+					</div>
+
+
+				</main>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer mt-auto py-3 bg-light">
+		<div class="container">
+			<span class="text-muted">Place sticky footer note here. Its
+				not going anywhere. <a
+				href="https://github.com/ajkr195?tab=repositories" target="_blank">
+					Click here for more details. !!!</a>
+			</span>
+		</div>
+	</footer>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous"></script>
+	<script>
+		feather.replace()
+	</script>
+</body>
+</html>

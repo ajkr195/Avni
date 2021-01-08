@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<title>Avni - The Planet Earth</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+	crossorigin="anonymous">
+<link href="dashboard.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100">
+	<nav
+		class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Avni - The Planet Earth</a>
+		<button class="navbar-toggler position-absolute d-md-none collapsed"
+			type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+			aria-controls="sidebarMenu" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<input class="form-control form-control-dark w-100" type="text"
+			placeholder="Search" aria-label="Search">
+
+
+		<div class="btn-group dropstart">
+			<img src="img/avatar2.jpg"
+				class="avatar-img rounded-circle dropdown-toggle"
+				data-bs-toggle="dropdown" aria-expanded="false">
+
+			<ul class="dropdown-menu dropdown-menu-right">
+				<li><a class="dropdown-item dropdown-menu-right" href="profile.html"><i
+						class="data-feather" data-feather="user"></i> Profile</a></li>
+				<li><a class="dropdown-item dropdown-menu-right" href="settings.html"><i
+						class="data-feather" data-feather="settings"></i> Settings</a></li>
+				<li><a class="dropdown-item dropdown-menu-right" href="#"><i
+						class="data-feather" data-feather="file"></i> My Files</a></li>
+				<li><hr class="dropdown-divider"></li>
+				<li><a class="dropdown-item dropdown-menu-right" href="#"><i
+						class="data-feather" data-feather="log-out"></i> SignOut</a></li>
+			</ul>
+		</div>
+
+
+
+	</nav>
+	<!-- Begin page content -->
+	<main class="flex-shrink-0">
+		<div class="container-fluid">
+			<div class="row">
+				<nav id="sidebarMenu"
+					class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+					<div class="position-sticky pt-3">
+						<ul class="nav flex-column">
+							<li class="nav-item"><a class="nav-link active"
+								aria-current="page" href="index.html"> <i
+									class="data-feather" data-feather="home"></i> Home
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="form.html">
+									<i class="data-feather" data-feather="file-text"></i> Form
+							</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="components.html"> <i class="data-feather"
+									data-feather="file-text"></i> Components
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="extra.html">
+									<i class="data-feather" data-feather="file-text"></i> Extras
+							</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="profile.html"> <i class="data-feather"
+									data-feather="file-text"></i> Profile
+							</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="settings.html"> <i class="data-feather"
+									data-feather="settings"></i> Settings
+							</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="javascript.html"> <i class="data-feather"
+									data-feather="file-text"></i> JavaScript
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="empty.html">
+									<i class="data-feather" data-feather="file-text"></i> Empty
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="#"> <i
+									class="data-feather" data-feather="shopping-cart"></i> Products
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="#"> <i
+									class="data-feather" data-feather="users"></i> Customers
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="#"> <i
+									class="data-feather" data-feather="layers"></i> Reports
+							</a></li>
+						</ul>
+
+						<h6
+							class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+							<span>Saved reports</span> <a class="link-secondary" href="#"
+								aria-label="Add a new report"> <span class="data-feather"
+								data-feather="plus-circle"></span>
+							</a>
+						</h6>
+						<ul class="nav flex-column mb-2">
+							<li class="nav-item"><a class="nav-link" href="#"> <i
+									class="data-feather" data-feather="calendar"></i> Current month
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="#"> <i
+									class="data-feather" data-feather="calendar"></i> Last quarter
+							</a></li>
+						</ul>
+					</div>
+				</nav>
+
+				<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+					<div
+						class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+						<h1 class="h2">Home</h1>
+						<div class="btn-toolbar mb-2 mb-md-0">
+							<div class="btn-group me-2">
+								<button type="button" class="btn btn-sm btn-info">
+									<i class="data-feather" data-feather="share-2"></i> Share
+								</button>
+								<button type="button" class="btn btn-sm btn-danger">
+									<i class="data-feather" data-feather="share"></i> Export
+								</button>
+							</div>
+
+
+
+							<div class="btn-group">
+								<button type="button"
+									class="btn btn-sm btn-success dropdown-toggle"
+									data-bs-toggle="dropdown" aria-expanded="false">
+									<i class="data-feather" data-feather="calendar"></i> This week
+								</button>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li><a class="dropdown-item" href="#">Something else
+											here</a></li>
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item" href="#">Separated link</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!--h2>Section title</h2-->
+
+					<div class="table-responsive">
+						<table class="table table-striped table-sm">
+							<thead>
+								<tr>
+									<th>Id</th>
+									<th>Name</th>
+									<th>Desc</th>
+									<th>Progress</th>
+									<th>Item</th>
+									<th>Status</th>
+									<th>Code</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1,001</td>
+									<td>Lorem</td>
+									<td>ipsum</td>
+									<td><div class="progress">
+											<div class="progress-bar bg-warning" role="progressbar"
+												style="width: 90%" aria-valuenow="50" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div></td>
+									<td>sit</td>
+									<td><span class="badge bg-warning">In progress</span></td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>1,002</td>
+									<td>amet</td>
+									<td>consectetur</td>
+									<td><div class="progress">
+											<div class="progress-bar bg-danger" role="progressbar"
+												style="width: 100%" aria-valuenow="50" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div></td>
+									<td>elit</td>
+									<td><span class="badge bg-danger">Cancelled</span></td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>1,003</td>
+									<td>Integer</td>
+									<td>nec</td>
+									<td><div class="progress">
+											<div class="progress-bar bg-success" role="progressbar"
+												style="width: 100%" aria-valuenow="50" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div></td>
+									<td>Praesent</td>
+									<td><span class="badge bg-success">Done</span></td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>1,003</td>
+									<td>libero</td>
+									<td>Sed</td>
+									<td><div class="progress">
+											<div class="progress-bar bg-success" role="progressbar"
+												style="width: 100%" aria-valuenow="50" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div></td>
+									<td>ante</td>
+									<td><span class="badge bg-success">Done</span></td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>1,004</td>
+									<td>dapibus</td>
+									<td>diam</td>
+									<td><div class="progress">
+											<div class="progress-bar bg-warning" role="progressbar"
+												style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div></td>
+									<td>nisi</td>
+									<td><span class="badge bg-warning">In progress</span></td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>1,005</td>
+									<td>Nulla</td>
+									<td>quis</td>
+									<td><div class="progress">
+											<div class="progress-bar bg-success" role="progressbar"
+												style="width: 100%" aria-valuenow="50" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div></td>
+									<td>at</td>
+									<td><span class="badge bg-success">Done</span></td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>1,006</td>
+									<td>nibh</td>
+									<td>elementum</td>
+									<td><div class="progress">
+											<div class="progress-bar bg-primary" role="progressbar"
+												style="width: 10%" aria-valuenow="50" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div></td>
+									<td>Duis</td>
+									<td><span class="badge bg-primary">New</span></td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>1,007</td>
+									<td>sagittis</td>
+									<td>ipsum</td>
+									<td><div class="progress">
+											<div class="progress-bar bg-success" role="progressbar"
+												style="width: 100%" aria-valuenow="50" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div></td>
+									<td>mauris</td>
+									<td><span class="badge bg-success">Done</span></td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>1,008</td>
+									<td>Fusce</td>
+									<td>nec</td>
+									<td><div class="progress">
+											<div class="progress-bar bg-info" role="progressbar"
+												style="width: 10%" aria-valuenow="50" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div></td>
+									<td>sed</td>
+									<td><span class="badge bg-info">Verify</span></td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>1,009</td>
+									<td>augue</td>
+									<td>semper</td>
+									<td><div class="progress">
+											<div class="progress-bar bg-warning" role="progressbar"
+												style="width: 75%" aria-valuenow="50" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div></td>
+									<td>Mauris</td>
+									<td><span class="badge bg-warning">In progress</span></td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>1,010</td>
+									<td>massa</td>
+									<td>Vestibulum</td>
+									<td><div class="progress">
+											<div class="progress-bar bg-success" role="progressbar"
+												style="width: 100%" aria-valuenow="50" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div></td>
+									<td>arcu</td>
+									<td><span class="badge bg-success">Done</span></td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>1,011</td>
+									<td>eget</td>
+									<td>nulla</td>
+									<td><div class="progress">
+											<div class="progress-bar bg-danger" role="progressbar"
+												style="width: 100%" aria-valuenow="50" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div></td>
+									<td>aptent</td>
+									<td><span class="badge bg-danger">Cancelled</span></td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>1,012</td>
+									<td>taciti</td>
+									<td>sociosqu</td>
+									<td><div class="progress">
+											<div class="progress-bar bg-info" role="progressbar"
+												style="width: 80%" aria-valuenow="50" aria-valuemin="0"
+												aria-valuemax="100"></div>
+										</div></td>
+									<td>litora</td>
+									<td><span class="badge bg-info">Verify</span></td>
+									<td>123</td>
+								</tr>
+
+
+							</tbody>
+						</table>
+					</div>
+
+				</main>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer mt-auto py-3 bg-light">
+		<div class="container">
+			<span class="text-muted">Place sticky footer note here. Its
+				not going anywhere. <a
+				href="https://github.com/ajkr195?tab=repositories" target="_blank">
+					Click here for more details. !!!</a>
+			</span>
+		</div>
+	</footer>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous"></script>
+	<script>
+		feather.replace()
+	</script>
+
+</body>
+</html>

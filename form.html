@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<title>Avni - The Planet Earth</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+	crossorigin="anonymous">
+<link href="dashboard.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100">
+	<nav
+		class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Avni - The Planet Earth</a>
+		<button class="navbar-toggler position-absolute d-md-none collapsed"
+			type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+			aria-controls="sidebarMenu" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<input class="form-control form-control-dark w-100" type="text"
+			placeholder="Search" aria-label="Search">
+
+
+		<div class="btn-group dropstart">
+			<img src="img/avatar2.jpg"
+				class="avatar-img rounded-circle dropdown-toggle"
+				data-bs-toggle="dropdown" aria-expanded="false"> 
+			<ul class="dropdown-menu dropdown-menu-right">
+				<li><a class="dropdown-item dropdown-menu-right" href="profile.html"><i
+						class="data-feather" data-feather="user"></i> Profile</a></li>
+				<li><a class="dropdown-item dropdown-menu-right" href="settings.html"><i
+						class="data-feather" data-feather="settings"></i> Settings</a></li>
+				<li><a class="dropdown-item dropdown-menu-right" href="#"><i
+						class="data-feather" data-feather="file"></i> My Files</a></li>
+				<li><hr class="dropdown-divider"></li>
+				<li><a class="dropdown-item dropdown-menu-right" href="#"><i
+						class="data-feather" data-feather="log-out"></i> SignOut</a></li>
+			</ul>
+		</div>
+
+
+
+	</nav>
+	<!-- Begin page content -->
+	<main class="flex-shrink-0">
+		<div class="container-fluid">
+			<div class="row">
+				<nav id="sidebarMenu"
+					class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+					<div class="position-sticky pt-3">
+						<ul class="nav flex-column">
+							<li class="nav-item"><a class="nav-link" aria-current="page"
+								href="index.html"> <i class="data-feather"
+									data-feather="home"></i> Home
+							</a></li>
+							<li class="nav-item"><a class="nav-link active"
+								href="form.html"> <i class="data-feather"
+									data-feather="file-text"></i> Form
+							</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="components.html"> <i class="data-feather"
+									data-feather="file-text"></i> Components
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="extra.html">
+									<i class="data-feather" data-feather="file-text"></i> Extras
+							</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="profile.html"> <i class="data-feather"
+									data-feather="file-text"></i> Profile
+							</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="settings.html"> <i class="data-feather"
+									data-feather="settings"></i> Settings
+							</a></li>
+							<li class="nav-item"><a class="nav-link"
+								href="javascript.html"> <i class="data-feather"
+									data-feather="file-text"></i> JavaScript
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="empty.html">
+									<i class="data-feather" data-feather="file-text"></i> Empty
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="#"> <i
+									class="data-feather" data-feather="shopping-cart"></i> Products
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="#"> <i
+									class="data-feather" data-feather="users"></i> Customers
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="#"> <i
+									class="data-feather" data-feather="layers"></i> Reports
+							</a></li>
+						</ul>
+
+						<h6
+							class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+							<span>Saved reports</span> <a class="link-secondary" href="#"
+								aria-label="Add a new report"> <span
+								data-feather="plus-circle"></span>
+							</a>
+						</h6>
+						<ul class="nav flex-column mb-2">
+							<li class="nav-item"><a class="nav-link" href="#"> <i
+									class="data-feather" data-feather="calendar"></i> Current month
+							</a></li>
+							<li class="nav-item"><a class="nav-link" href="#"> <i
+									class="data-feather" data-feather="calendar"></i> Last quarter
+							</a></li>
+						</ul>
+					</div>
+				</nav>
+
+				<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+					<div
+						class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+						<h1 class="h2">Form Control and Validation</h1>
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Form-Control</li>
+							</ol>
+						</nav>
+					</div>
+
+					<!--h2>Section title</h2-->
+					<div class="row g-3">
+						<div class="col-md-5 col-lg-4 order-md-last">
+							<h4
+								class="d-flex justify-content-between align-items-center mb-3">
+								<span class="text-muted">Your cart</span> <span
+									class="badge bg-secondary rounded-pill">3</span>
+							</h4>
+							<ul class="list-group mb-3">
+								<li class="list-group-item d-flex justify-content-between lh-sm">
+									<div>
+										<h6 class="my-0">Product name</h6>
+										<small class="text-muted">Brief description</small>
+									</div> <span class="text-muted">$12</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between lh-sm">
+									<div>
+										<h6 class="my-0">Second product</h6>
+										<small class="text-muted">Brief description</small>
+									</div> <span class="text-muted">$8</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between lh-sm">
+									<div>
+										<h6 class="my-0">Third item</h6>
+										<small class="text-muted">Brief description</small>
+									</div> <span class="text-muted">$5</span>
+								</li>
+								<li
+									class="list-group-item d-flex justify-content-between bg-light">
+									<div class="text-success">
+										<h6 class="my-0">Promo code</h6>
+										<small>EXAMPLECODE</small>
+									</div> <span class="text-success">−$5</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between">
+									<span>Total (USD)</span> <strong>$20</strong>
+								</li>
+							</ul>
+
+							<form class="card p-2">
+								<div class="input-group">
+									<input type="text" class="form-control"
+										placeholder="Promo code">
+									<button type="submit" class="btn btn-secondary">Redeem</button>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-7 col-lg-8">
+							<form class="needs-validation" novalidate>
+								<h4 class="mb-3 text-muted">Billing address</h4>
+								<div class="row g-3 mb-3">
+									<div class="col-sm-6">
+										<div class="form-floating">
+											<input type="email" class="form-control" id="floatingInput"
+												placeholder="name@example.com" required> <label
+												for="floatingInput">Email address</label>
+											<div class="invalid-feedback">Valid email is required.</div>
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-floating">
+											<input type="text" class="form-control" id="floatingPassword"
+												placeholder="Username"> <label
+												for="floatingPassword">Username</label>
+
+										</div>
+									</div>
+								</div>
+
+
+								<div class="row g-3">
+									<div class="col-sm-6">
+										<label for="firstName" class="form-label">First name</label> <input
+											type="text" class="form-control" id="firstName"
+											placeholder="" value="" required>
+										<div class="invalid-feedback">Valid first name is
+											required.</div>
+									</div>
+
+									<div class="col-sm-6">
+										<label for="lastName" class="form-label">Last name</label> <input
+											type="text" class="form-control" id="lastName" placeholder=""
+											value="" required>
+										<div class="invalid-feedback">Valid last name is
+											required.</div>
+									</div>
+									<div class="col-12">
+										<label for="username" class="form-label">Username</label>
+										<div class="input-group">
+											<span class="input-group-text">@</span> <input type="text"
+												class="form-control" id="username" placeholder="Username"
+												required>
+											<div class="invalid-feedback">Your username is
+												required.</div>
+										</div>
+									</div>
+
+									<div class="col-12">
+										<label for="email" class="form-label">Email <span
+											class="text-muted">(Optional)</span></label> <input type="email"
+											class="form-control" id="email" placeholder="you@example.com">
+										<div class="invalid-feedback">Please enter a valid email
+											address for shipping updates.</div>
+									</div>
+
+									<div class="col-12">
+										<label for="address" class="form-label">Address</label> <input
+											type="text" class="form-control" id="address"
+											placeholder="1234 Main St" required>
+										<div class="invalid-feedback">Please enter your shipping
+											address.</div>
+									</div>
+
+									<div class="col-12">
+										<label for="address2" class="form-label">Address 2 <span
+											class="text-muted">(Optional)</span></label> <input type="text"
+											class="form-control" id="address2"
+											placeholder="Apartment or suite">
+									</div>
+
+									<div class="col-md-5">
+										<label for="country" class="form-label">Country</label> <select
+											class="form-select" id="country" required>
+											<option value="">Choose...</option>
+											<option>United States</option>
+										</select>
+										<div class="invalid-feedback">Please select a valid
+											country.</div>
+									</div>
+
+									<div class="col-md-4">
+										<label for="state" class="form-label">State</label> <select
+											class="form-select" id="state" required>
+											<option value="">Choose...</option>
+											<option>California</option>
+										</select>
+										<div class="invalid-feedback">Please provide a valid
+											state.</div>
+									</div>
+
+									<div class="col-md-3">
+										<label for="zip" class="form-label">Zip</label> <input
+											type="text" class="form-control" id="zip" placeholder=""
+											required>
+										<div class="invalid-feedback">Zip code required.</div>
+									</div>
+								</div>
+
+								<hr class="my-4">
+
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input"
+										id="same-address"> <label class="form-check-label"
+										for="same-address">Shipping address is the same as my
+										billing address</label>
+								</div>
+
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="save-info">
+									<label class="form-check-label" for="save-info">Save
+										this information for next time</label>
+								</div>
+
+								<hr class="my-4">
+
+								<h4 class="mb-3">Payment</h4>
+
+								<div class="my-3">
+									<div class="form-check">
+										<input id="credit" name="paymentMethod" type="radio"
+											class="form-check-input" checked required> <label
+											class="form-check-label" for="credit">Credit card</label>
+									</div>
+									<div class="form-check">
+										<input id="debit" name="paymentMethod" type="radio"
+											class="form-check-input" required> <label
+											class="form-check-label" for="debit">Debit card</label>
+									</div>
+									<div class="form-check">
+										<input id="paypal" name="paymentMethod" type="radio"
+											class="form-check-input" required> <label
+											class="form-check-label" for="paypal">PayPal</label>
+									</div>
+								</div>
+
+								<div class="row gy-3">
+									<div class="col-md-6">
+										<label for="cc-name" class="form-label">Name on card</label> <input
+											type="text" class="form-control" id="cc-name" placeholder=""
+											required> <small class="text-muted">Full name
+											as displayed on card</small>
+										<div class="invalid-feedback">Name on card is required</div>
+									</div>
+
+									<div class="col-md-6">
+										<label for="cc-number" class="form-label">Credit card
+											number</label> <input type="text" class="form-control" id="cc-number"
+											placeholder="" required>
+										<div class="invalid-feedback">Credit card number is
+											required</div>
+									</div>
+
+									<div class="col-md-3">
+										<label for="cc-expiration" class="form-label">Expiration</label>
+										<input type="text" class="form-control" id="cc-expiration"
+											placeholder="" required>
+										<div class="invalid-feedback">Expiration date required</div>
+									</div>
+
+									<div class="col-md-3">
+										<label for="cc-cvv" class="form-label">CVV</label> <input
+											type="text" class="form-control" id="cc-cvv" placeholder=""
+											required>
+										<div class="invalid-feedback">Security code required</div>
+									</div>
+								</div>
+
+								<hr class="my-4">
+
+								<button class="w-100 btn btn-sm btn-primary btn-lg" type="submit">Continue
+									to checkout</button>
+							</form>
+						</div>
+					</div>
+
+
+				</main>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer mt-auto py-3 bg-light">
+		<div class="container">
+			<span class="text-muted">Place sticky footer note here. Its
+				not going anywhere. <a
+				href="https://github.com/ajkr195?tab=repositories" target="_blank">
+					Click here for more details. !!!</a>
+			</span>
+		</div>
+	</footer>
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous"></script>
+	<script>
+		feather.replace()
+	</script>
+
+	<script type="text/javascript">
+		(function() {
+			'use strict'
+
+			// Fetch all the forms we want to apply custom Bootstrap validation styles to
+			var forms = document.querySelectorAll('.needs-validation')
+
+			// Loop over them and prevent submission
+			Array.prototype.slice.call(forms).forEach(function(form) {
+				form.addEventListener('submit', function(event) {
+					if (!form.checkValidity()) {
+						event.preventDefault()
+						event.stopPropagation()
+					}
+
+					form.classList.add('was-validated')
+				}, false)
+			})
+		})()
+	</script>
+
+</body>
+</html>
