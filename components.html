@@ -88,9 +88,21 @@
 							<li class="nav-item"><a class="nav-link" href="#"> <i
 									class="data-feather" data-feather="users"></i> Customers
 							</a></li>
-							<li class="nav-item"><a class="nav-link" href="#"> <i
-									class="data-feather" data-feather="layers"></i> Reports
-							</a></li>
+							<li class="nav-item" data-bs-toggle="collapse"
+								href="#collapseExample" role="button" aria-expanded="false"
+								aria-controls="collapseExample"><a class="nav-link"
+								href="#"> <i class="data-feather" data-feather="layers"></i>
+									Error Pages
+							</a>
+								<div class="collapse" id="collapseExample">
+									<a class="nav-link" href="#"> <i class="data-feather"
+										data-feather="file-text"></i> 403 Error
+									</a> <a class="nav-link" href="#"> <i class="data-feather"
+										data-feather="file-text"></i> 404 Error
+									</a> <a class="nav-link" href="#"> <i class="data-feather"
+										data-feather="file-text"></i> 500 Error
+									</a>
+								</div></li>
 						</ul>
 
 						<h6
@@ -338,9 +350,9 @@
 								button</button>
 							<button type="button" class="btn btn-sm btn-secondary btn-lg">Large
 								button</button>
-							<button type="button" class="btn btn-sm btn-primary btn-sm">Small
+							<button type="button" class="btn btn-sm btn-warning btn-sm">Small
 								button</button>
-							<button type="button" class="btn btn-sm btn-secondary btn-sm">Small
+							<button type="button" class="btn btn-sm btn-info btn-sm">Small
 								button</button>
 						</div>
 						<div class="col-sm-6">
@@ -369,7 +381,7 @@
 					<div class="row g-3">
 						<div class="col-sm-6">
 							<!-- Button trigger modal -->
-							<button type="button" class="btn btn-sm btn-primary"
+							<button type="button" class="btn btn-sm btn-danger"
 								data-bs-toggle="modal" data-bs-target="#staticBackdrop">
 								Launch static backdrop modal</button>
 
@@ -396,7 +408,7 @@
 								</div>
 							</div>
 
-							<button type="button" class="btn btn-sm btn-primary"
+							<button type="button" class="btn btn-sm btn-success"
 								data-bs-toggle="modal" data-bs-target="#exampleModalCentered">
 								Modal Vertically Centered</button>
 							<div class="modal fade" id="exampleModalCentered" tabindex="-1"
@@ -431,7 +443,7 @@
 
 
 							<!-- Scrollable modal -->
-							<button type="button" class="btn btn-sm btn-primary"
+							<button type="button" class="btn btn-sm btn-warning"
 								data-bs-toggle="modal" data-bs-target="#exampleModalLong">
 								Modal Long</button>
 							<div class="modal-dialog modal-dialog-scrollable">
@@ -516,7 +528,7 @@
 
 						</div>
 						<div class="col-sm-6">
-							<button type="button" class="btn btn-sm btn-primary"
+							<button type="button" class="btn btn-sm btn-info"
 								data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">
 								Scrollable modal</button>
 
@@ -596,7 +608,7 @@
 
 
 							<!-- Button trigger modal -->
-							<button type="button" class="btn btn-sm btn-primary"
+							<button type="button" class="btn btn-sm btn-secondary"
 								data-bs-toggle="modal" data-bs-target="#exampleModal">
 								Launch demo modal</button>
 

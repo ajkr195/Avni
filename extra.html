@@ -90,9 +90,21 @@
 							<li class="nav-item"><a class="nav-link" href="#"> <i
 									class="data-feather" data-feather="users"></i> Customers
 							</a></li>
-							<li class="nav-item"><a class="nav-link" href="#"> <i
-									class="data-feather" data-feather="layers"></i> Reports
-							</a></li>
+							<li class="nav-item" data-bs-toggle="collapse"
+								href="#collapseExample" role="button" aria-expanded="false"
+								aria-controls="collapseExample"><a class="nav-link"
+								href="#"> <i class="data-feather" data-feather="layers"></i>
+									Error Pages
+							</a>
+								<div class="collapse" id="collapseExample">
+									<a class="nav-link" href="#"> <i class="data-feather"
+										data-feather="file-text"></i> 403 Error
+									</a> <a class="nav-link" href="#"> <i class="data-feather"
+										data-feather="file-text"></i> 404 Error
+									</a> <a class="nav-link" href="#"> <i class="data-feather"
+										data-feather="file-text"></i> 500 Error
+									</a>
+								</div></li>
 						</ul>
 
 						<h6
@@ -289,7 +301,7 @@
 					<h4 class="mb-3 text-muted">Dropdown</h4>
 					<div class="row g-3">
 						<div class="col-sm-6">
-							<div class="btn-group">
+							<div class="btn-group btn-group-sm">
 								<button type="button" class="btn btn-sm btn-danger">Action</button>
 								<button type="button"
 									class="btn btn-danger dropdown-toggle dropdown-toggle-split"
@@ -307,7 +319,7 @@
 							</div>
 
 
-							<div class="btn-group">
+							<div class="btn-group btn-group-sm">
 								<button type="button" class="btn btn-sm btn-danger">Action</button>
 								<button type="button"
 									class="btn btn-danger dropdown-toggle dropdown-toggle-split"

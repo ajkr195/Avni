@@ -15,7 +15,8 @@
 <body class="d-flex flex-column h-100">
 	<nav
 		class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Avni - The Planet Earth</a>
+		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Avni
+			- The Planet Earth</a>
 		<button class="navbar-toggler position-absolute d-md-none collapsed"
 			type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
 			aria-controls="sidebarMenu" aria-expanded="false"
@@ -31,10 +32,12 @@
 				class="avatar-img rounded-circle dropdown-toggle"
 				data-bs-toggle="dropdown" aria-expanded="false">
 			<ul class="dropdown-menu dropdown-menu-right">
-				<li><a class="dropdown-item dropdown-menu-right" href="profile.html"><i
-						class="data-feather" data-feather="user"></i> Profile</a></li>
-				<li><a class="dropdown-item dropdown-menu-right" href="settings.html"><i
-						class="data-feather" data-feather="settings"></i> Settings</a></li>
+				<li><a class="dropdown-item dropdown-menu-right"
+					href="profile.html"><i class="data-feather" data-feather="user"></i>
+						Profile</a></li>
+				<li><a class="dropdown-item dropdown-menu-right"
+					href="settings.html"><i class="data-feather"
+						data-feather="settings"></i> Settings</a></li>
 				<li><a class="dropdown-item dropdown-menu-right" href="#"><i
 						class="data-feather" data-feather="file"></i> My Files</a></li>
 				<li><hr class="dropdown-divider"></li>
@@ -42,7 +45,6 @@
 						class="data-feather" data-feather="log-out"></i> SignOut</a></li>
 			</ul>
 		</div>
-
 
 
 	</nav>
@@ -88,9 +90,21 @@
 							<li class="nav-item"><a class="nav-link" href="#"> <i
 									class="data-feather" data-feather="users"></i> Customers
 							</a></li>
-							<li class="nav-item"><a class="nav-link" href="#"> <i
-									class="data-feather" data-feather="layers"></i> Reports
-							</a></li>
+							<li class="nav-item" data-bs-toggle="collapse"
+								href="#collapseExample" role="button" aria-expanded="false"
+								aria-controls="collapseExample"><a class="nav-link"
+								href="#"> <i class="data-feather" data-feather="layers"></i>
+									Error Pages
+							</a>
+								<div class="collapse" id="collapseExample">
+									<a class="nav-link" href="#"> <i class="data-feather"
+										data-feather="file-text"></i> 403 Error
+									</a> <a class="nav-link" href="#"> <i class="data-feather"
+										data-feather="file-text"></i> 404 Error
+									</a> <a class="nav-link" href="#"> <i class="data-feather"
+										data-feather="file-text"></i> 500 Error
+									</a>
+								</div></li>
 						</ul>
 
 						<h6
@@ -193,16 +207,19 @@
 																		class="rounded-circle img-responsive mt-2" width="128"
 																		height="128" />
 																	<div class="mt-2">
-																		<span class="btn btn-primary"><i
-																			class="fas fa-upload"></i> Upload</span>
+																		<span class="btn btn-sm btn-success"><i
+																			data-feather="share" class="data-feather mr-1"></i>
+																			Upload</span>
 																	</div>
 																	<small>Use 128x128px .jpg image</small>
 																</div>
 															</div>
 														</div>
 
-														<button type="submit" class="btn btn-sm btn-primary">Save
-															changes</button>
+														<button type="submit" class="btn btn-sm btn-danger">
+															<i data-feather="save" class="data-feather mr-1"></i>
+															Save changes
+														</button>
 													</form>
 
 												</div>
@@ -260,8 +277,10 @@
 																	type="text" class="form-control" id="inputZip">
 															</div>
 														</div>
-														<button type="submit" class="btn btn-sm btn-primary">Save
-															changes</button>
+														<button type="submit" class="btn btn-sm btn-danger">
+															<i data-feather="save" class="data-feather mr-1"></i> Save
+															changes
+														</button>
 													</form>
 
 												</div>
@@ -285,9 +304,8 @@
 	<footer class="footer mt-auto py-3 bg-light">
 		<div class="container">
 			<span class="text-muted">Place sticky footer note here. Its
-				not going anywhere. <a
-				href="https://github.com/ajkr195/Avni" target="_blank">
-					Click here for more details. !!!</a>
+				not going anywhere. <a href="https://github.com/ajkr195/Avni"
+				target="_blank"> Click here for more details. !!!</a>
 			</span>
 		</div>
 	</footer>
