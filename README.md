@@ -24,3 +24,7 @@ Bootstrap 5 Admin Template and Feather Icons
 <h4> Settings </h4>
 
 ![springbootrocks](https://github.com/ajkr195/Avni/blob/main/screenshots/settings.jpg)
+
+<h4> Empty Template </h4>
+
+![springbootrocks](https://github.com/ajkr195/Avni/blob/main/screenshots/empty.jpg)
