@@ -90,19 +90,17 @@
 							<li class="nav-item"><a class="nav-link" href="#"> <i
 									class="data-feather" data-feather="users"></i> Customers
 							</a></li>
-							<li class="nav-item" data-bs-toggle="collapse"
-								href="#collapseExample" role="button" aria-expanded="false"
-								aria-controls="collapseExample"><a class="nav-link"
-								href="#"> <i class="data-feather" data-feather="layers"></i>
-									Error Pages
+							<li class="nav-item"><a class="nav-link" href="#"
+								id="collapseToggleLink"> <i class="data-feather"
+									data-feather="layers"></i> Error Pages
 							</a>
-								<div class="collapse" id="collapseExample">
-									<a class="nav-link" href="#"> <i class="data-feather"
-										data-feather="file-text"></i> 403 Error
-									</a> <a class="nav-link" href="#"> <i class="data-feather"
-										data-feather="file-text"></i> 404 Error
-									</a> <a class="nav-link" href="#"> <i class="data-feather"
-										data-feather="file-text"></i> 500 Error
+								<div id="collapsibleDiv" class="collapse">
+									<a class="nav-link" href="403.html"> <i
+										class="data-feather" data-feather="file-text"></i> 403 Error
+									</a> <a class="nav-link" href="404.html"> <i
+										class="data-feather" data-feather="file-text"></i> 404 Error
+									</a> <a class="nav-link" href="500.html"> <i
+										class="data-feather" data-feather="file-text"></i> 500 Error
 									</a>
 								</div></li>
 						</ul>
@@ -315,8 +313,21 @@
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
 		crossorigin="anonymous"></script>
-	<script>
-		feather.replace()
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(event) {
+			feather.replace();
+			
+			var toggleButton = document.getElementById('collapseToggleLink');
+			var card = document.getElementById('collapsibleDiv');
+			var collapsableDiv = new bootstrap.Collapse(card, {
+				toggle : false
+			});
+
+			toggleButton.addEventListener('click', function() {
+				collapsableDiv.toggle();
+			});
+
+		});
 	</script>
 </body>
 </html>
