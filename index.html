@@ -11,6 +11,7 @@
 	integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
 	crossorigin="anonymous">
 <link href="dashboard.css" rel="stylesheet">
+
 </head>
 <body class="d-flex flex-column h-100">
 	<nav
@@ -23,9 +24,15 @@
 			aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<input class="form-control form-control-dark w-100" type="text"
-			placeholder="Search" aria-label="Search">
+		<input class="form-control form-control-dark w-100 ms-2 me-2"
+			type="text" placeholder="Search" aria-label="Search">
 
+		<button type="button" class="btn btn-sm btn-primary ms-2 me-2"
+			data-bs-toggle="modal" data-bs-target="#loginModalCentered">
+			Login</button>
+		<button type="button" class="btn btn-sm btn-success ms-2 me-2"
+			data-bs-toggle="modal" data-bs-target="#registerModalCentered">
+			Register</button>
 
 		<div class="btn-group dropstart">
 			<img src="img/avatar2.jpg"
@@ -355,6 +362,122 @@
 		</div>
 	</main>
 
+
+	<div class="loginbox">
+		<div class="modal fade" id="loginModalCentered"
+			aria-labelledby="exampleModalCenteredTitle" aria-hidden="true"
+			data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+
+						<section id="logincontent" class="shiftdown">
+							<form class="needs-validation" novalidate>
+								<h4 class="mb-3 text-muted" style="text-align: center;">Login</h4>
+								<div class="row g-3 mb-3">
+
+									<div class="row g-3">
+										<div class="form-floating">
+											<input type="email" class="form-control" id="floatingInput"
+												placeholder="name@example.com" required> <label
+												for="floatingInput">Email Address</label>
+											<div class="invalid-feedback">Email is required.</div>
+										</div>
+										<div class="form-floating">
+											<input type="Password" class="form-control"
+												id="floatingPassword" placeholder="Username" required>
+											<label for="floatingPassword">Password</label>
+											<div class="invalid-feedback">Password is required.</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input"
+										id="same-address"> <label class="form-check-label"
+										for="same-address">Remember Me</label>
+								</div>
+								<hr class="my-4">
+
+								<button class="btn btn-danger" type="submit">
+									<i data-feather="log-in" class="data-feather mr-1"></i> Log in
+								</button>
+								<button type="button" class="btn btn-secondary"
+									data-bs-dismiss="modal">Cancel</button>
+									
+							</form>
+
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="registerbox">
+		<div class="modal fade" id="registerModalCentered"
+			aria-labelledby="registerModalCenteredTitle" aria-hidden="true"
+			data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+
+						<section id="registercontent" class="shiftdown">
+							<form class="needs-validation" novalidate>
+								<h4 class="mb-3 text-muted" style="text-align: center;">Register</h4>
+								<div class="row g-3 mb-3">
+
+									<div class="row g-3">
+										<div class="form-floating">
+											<input type="email" class="form-control" id="floatingInput"
+												placeholder="name@example.com" required> <label
+												for="floatingInput">Email Address</label>
+											<div class="invalid-feedback">Valid email is required.</div>
+										</div>
+										<div class="form-floating">
+											<input type="Password" class="form-control"
+												id="floatingPassword" placeholder="Username" required>
+											<label for="floatingPassword">Password</label>
+											<div class="invalid-feedback">Password is required.</div>
+										</div>
+										<div class="form-floating">
+											<input type="Password" class="form-control"
+												id="floatingPassword" placeholder="Username" required>
+											<label for="floatingPassword">Repeat Password</label>
+											<div class="invalid-feedback">Repeat Password is
+												required.</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value=""
+											id="invalidCheck" required> <label
+											class="form-check-label" for="invalidCheck"> I agree
+											to all terms and conditions </label>
+										<div class="invalid-feedback">You must agree before
+											submitting.</div>
+									</div>
+								</div>
+								<hr class="my-4">
+
+								<button class="btn btn-success" type="submit">
+									<i data-feather="check-circle" class="data-feather mr-1"></i>
+									Register
+								</button>
+								<button type="button" class="btn btn-secondary"
+									data-bs-dismiss="modal">Cancel</button>
+							</form>
+
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
 	<footer class="footer mt-auto py-3 bg-light">
 		<div class="container">
 			<span class="text-muted">Place sticky footer note here. Its
@@ -374,7 +497,7 @@
 	<script type="text/javascript">
 		document.addEventListener("DOMContentLoaded", function(event) {
 			feather.replace();
-			
+
 			var toggleButton = document.getElementById('collapseToggleLink');
 			var card = document.getElementById('collapsibleDiv');
 			var collapsableDiv = new bootstrap.Collapse(card, {
@@ -386,6 +509,27 @@
 			});
 
 		});
+	</script>
+
+	<script type="text/javascript">
+		(function() {
+			'use strict'
+
+			// Fetch all the forms we want to apply custom Bootstrap validation styles to
+			var forms = document.querySelectorAll('.needs-validation')
+
+			// Loop over them and prevent submission
+			Array.prototype.slice.call(forms).forEach(function(form) {
+				form.addEventListener('submit', function(event) {
+					if (!form.checkValidity()) {
+						event.preventDefault()
+						event.stopPropagation()
+					}
+
+					form.classList.add('was-validated')
+				}, false)
+			})
+		})()
 	</script>
 
 

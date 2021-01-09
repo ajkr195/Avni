@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author"
+	content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.79.0">
+<title>Landing Page</title>
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+	crossorigin="anonymous">
+
+<style>
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+@media ( min-width : 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}
+
+/* stylelint-disable selector-list-comma-newline-after */
+.blog-header {
+	line-height: 1;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+	font-family: "Playfair Display", Georgia, "Times New Roman", serif
+		/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+	font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Playfair Display", Georgia, "Times New Roman", serif
+		/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+}
+
+.display-4 {
+	font-size: 2.5rem;
+}
+
+@media ( min-width : 768px) {
+	.display-4 {
+		font-size: 3rem;
+	}
+}
+
+.nav-scroller {
+	position: relative;
+	z-index: 2;
+	height: 2.75rem;
+	overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+	display: flex;
+	flex-wrap: nowrap;
+	padding-bottom: 1rem;
+	margin-top: -1px;
+	overflow-x: auto;
+	text-align: center;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+	padding-top: .75rem;
+	padding-bottom: .75rem;
+	font-size: .875rem;
+}
+
+.card-img-right {
+	height: 100%;
+	border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+	flex: 0 0 auto;
+}
+
+.h-250 {
+	height: 250px;
+}
+
+@media ( min-width : 768px) {
+	.h-md-250 {
+		height: 250px;
+	}
+}
+
+/* Pagination */
+.blog-pagination {
+	margin-bottom: 4rem;
+}
+
+.blog-pagination>.btn {
+	border-radius: 2rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+	margin-bottom: 4rem;
+}
+
+.blog-post-title {
+	margin-bottom: .25rem;
+	font-size: 2.5rem;
+}
+
+.blog-post-meta {
+	margin-bottom: 1.25rem;
+	color: #727272;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+	padding: 2.5rem 0;
+	color: #727272;
+	text-align: center;
+	background-color: #f9f9f9;
+	border-top: .05rem solid #e5e5e5;
+}
+
+.blog-footer p:last-child {
+	margin-bottom: 0;
+}
+</style>
+
+<link
+	href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap"
+	rel="stylesheet">
+<link href="blog.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+		<header class="blog-header py-3">
+			<div
+				class="row flex-nowrap justify-content-between align-items-center">
+				<div class="col-4 pt-1">
+					<a class="link-secondary" href="#">Subscribe</a>
+				</div>
+				<div class="col-4 text-center">
+					<a class="blog-header-logo text-dark" href="#">Landing Page</a>
+				</div>
+				<div class="col-4 d-flex justify-content-end align-items-center">
+					<a class="link-secondary" href="#" aria-label="Search"> <svg
+							xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+							fill="none" stroke="currentColor" stroke-linecap="round"
+							stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
+							viewBox="0 0 24 24">
+							<title>Search</title><circle cx="10.5" cy="10.5" r="7.5" />
+							<path d="M21 21l-5.2-5.2" /></svg>
+					</a>
+					<button type="button" class="btn btn-sm btn-primary ms-2 me-2"
+						data-bs-toggle="modal" data-bs-target="#loginModalCentered">
+						Login</button>
+					<button type="button" class="btn btn-sm btn-success ms-2 me-2"
+						data-bs-toggle="modal" data-bs-target="#registerModalCentered">
+						Register</button>
+				</div>
+			</div>
+		</header>
+
+		<div class="nav-scroller py-1 mb-2">
+			<nav class="nav d-flex justify-content-between">
+				<a class="p-2 link-secondary" href="#">World</a> <a
+					class="p-2 link-secondary" href="#">U.S.</a> <a
+					class="p-2 link-secondary" href="#">Technology</a> <a
+					class="p-2 link-secondary" href="#">Design</a> <a
+					class="p-2 link-secondary" href="#">Culture</a> <a
+					class="p-2 link-secondary" href="#">Business</a> <a
+					class="p-2 link-secondary" href="#">Politics</a> <a
+					class="p-2 link-secondary" href="#">Opinion</a> <a
+					class="p-2 link-secondary" href="#">Science</a> <a
+					class="p-2 link-secondary" href="#">Health</a> <a
+					class="p-2 link-secondary" href="#">Style</a> <a
+					class="p-2 link-secondary" href="#">Travel</a>
+			</nav>
+		</div>
+	</div>
+
+	<main class="container">
+
+
+		<div class="row">
+			<div class="col-md-8">
+
+				<article class="blog-post">
+					<h2 class="blog-post-title">Update</h2>
+					<p class="blog-post-meta">
+						January 1, 2021 by <a href="#">Somename</a>
+					</p>
+
+					<p>Cum sociis natoque penatibus et magnis dis parturient
+						montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed
+						consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce
+						dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+						ut fermentum massa justo sit amet risus.</p>
+					<ul>
+						<li>Praesent commodo cursus magna, vel scelerisque nisl
+							consectetur et.</li>
+						<li>Donec id elit non mi porta gravida at eget metus.</li>
+						<li>Nulla vitae elit libero, a pharetra augue.</li>
+					</ul>
+					<p>
+						Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras
+						mattis consectetur purus sit amet fermentum. Aenean lacinia
+						bibendum nulla sed consectetur.
+					</p>
+					<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla
+						vitae elit libero, a pharetra augue.</p>
+				</article>
+
+
+			</div>
+
+			<div class="col-md-4">
+				<div class="p-4 mb-3 bg-light rounded">
+					<h4 class="font-italic">About</h4>
+					<p class="mb-0">
+						Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras
+						mattis consectetur purus sit amet fermentum. Aenean lacinia
+						bibendum nulla sed consectetur.
+					</p>
+				</div>
+
+				<div class="p-4">
+					<h4 class="font-italic">Elsewhere</h4>
+					<ol class="list-unstyled">
+						<li><a href="#">GitHub</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Facebook</a></li>
+					</ol>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+
+
+	<div class="loginbox">
+		<div class="modal fade" id="loginModalCentered"
+			aria-labelledby="exampleModalCenteredTitle" aria-hidden="true"
+			data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+
+						<section id="logincontent" class="shiftdown">
+							<form class="needs-validation" novalidate>
+								<h4 class="mb-3 text-muted" style="text-align: center;">Login</h4>
+								<div class="row g-3 mb-3">
+
+									<div class="row g-3">
+										<div class="form-floating">
+											<input type="email" class="form-control" id="floatingInput"
+												placeholder="name@example.com" required> <label
+												for="floatingInput">Email Address</label>
+											<div class="invalid-feedback">Email is required.</div>
+										</div>
+										<div class="form-floating">
+											<input type="Password" class="form-control"
+												id="floatingPassword" placeholder="Username" required>
+											<label for="floatingPassword">Password</label>
+											<div class="invalid-feedback">Password is required.</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input"
+										id="same-address"> <label class="form-check-label"
+										for="same-address">Remember Me</label>
+								</div>
+								<hr class="my-4">
+
+								<button class="btn btn-danger" type="submit">
+									<i data-feather="log-in" class="data-feather mr-1"></i> Log in
+								</button>
+								<button type="button" class="btn btn-secondary"
+									data-bs-dismiss="modal">Cancel</button>
+
+							</form>
+
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="registerbox">
+		<div class="modal fade" id="registerModalCentered"
+			aria-labelledby="registerModalCenteredTitle" aria-hidden="true"
+			data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+
+						<section id="registercontent" class="shiftdown">
+							<form class="needs-validation" novalidate>
+								<h4 class="mb-3 text-muted" style="text-align: center;">Register</h4>
+								<div class="row g-3 mb-3">
+
+									<div class="row g-3">
+										<div class="form-floating">
+											<input type="email" class="form-control" id="floatingInput"
+												placeholder="name@example.com" required> <label
+												for="floatingInput">Email Address</label>
+											<div class="invalid-feedback">Valid email is required.</div>
+										</div>
+										<div class="form-floating">
+											<input type="Password" class="form-control"
+												id="floatingPassword" placeholder="Username" required>
+											<label for="floatingPassword">Password</label>
+											<div class="invalid-feedback">Password is required.</div>
+										</div>
+										<div class="form-floating">
+											<input type="Password" class="form-control"
+												id="floatingPassword" placeholder="Username" required>
+											<label for="floatingPassword">Repeat Password</label>
+											<div class="invalid-feedback">Repeat Password is
+												required.</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value=""
+											id="invalidCheck" required> <label
+											class="form-check-label" for="invalidCheck"> I agree
+											to all terms and conditions </label>
+										<div class="invalid-feedback">You must agree before
+											submitting.</div>
+									</div>
+								</div>
+								<hr class="my-4">
+
+								<button class="btn btn-success" type="submit">
+									<i data-feather="check-circle" class="data-feather mr-1"></i>
+									Register
+								</button>
+								<button type="button" class="btn btn-secondary"
+									data-bs-dismiss="modal">Cancel</button>
+							</form>
+
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+	crossorigin="anonymous"></script>
+
+</html>
