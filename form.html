@@ -1,0 +1,628 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/leaf.svg">
+<title>Avni - Bootstrap 5 Admin Template</title>
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="page">
+		<div class="wrapper">
+			<nav id="sidebar" class="active">
+				<div class="sidebar-header text-center">
+
+					<img src="assets/img/leaf.svg" alt="bootraper logo"
+						class="app-logo">
+					<h4 class="sidebar-title theme-item">AVNI</h4>
+
+				</div>
+				<ul class="list-unstyled components text-secondary">
+					<li><a href="index.html"><i
+							class="data-feather theme-item" data-feather="home"></i> <span
+							class="theme-item">Dashboard</span></a></li>
+					<li><a href="form.html"><i class="data-feather theme-item"
+							data-feather="file-text"></i> <span class="theme-item">Forms</span></a></li>
+					<li><a href="charts.html"><i
+							class="data-feather theme-item" data-feather="pie-chart"></i> <span
+							class="theme-item">Charts</span></a></li>
+					<li><a href="components.html"><i
+							class="data-feather theme-item" data-feather="grid"></i> <span
+							class="theme-item">Components</span></a></li>
+					<li><a href="extras.html"><i
+							class="data-feather theme-item" data-feather="globe"></i> <span
+							class="theme-item">Extras</span></a></li>
+					<li><a href="loginregister.html"><i
+							class="data-feather theme-item" data-feather="users"></i> <span
+							class="data-feather theme-item">Login</span></a></li>
+					<li><a href="profile.html"><i
+							class="data-feather theme-item" data-feather="user"></i> <span
+							class="theme-item">Profile</span></a></li>
+					<li><a href="preferences.html"><i
+							class="data-feather theme-item" data-feather="gift"></i> <span
+							class="theme-item">Preferences</span></a></li>
+					<li><a href="blank.html"><i
+							class="data-feather theme-item" data-feather="file"></i> <span
+							class="data-feather theme-item"> Blank</span></a></li>
+				</ul>
+
+				<div class="text-center mt-5 mb-5">
+					<a href="#" class="theme-btn" onClick="removeCookie()">Reset</a>
+				</div>
+			</nav>
+			<div id="body" class="active">
+
+				<nav class="navbar navbar-expand-md navbar-white bg-white"
+					aria-label="navbarexample" id="navbar">
+					<div class="container-fluid">
+						<button type="button" id="sidebarCollapse" onClick="topFunction()"
+							class="btn btn-light">
+							<i data-feather="menu"></i> <span></span>
+						</button>
+						<img src="assets/img/leaf.svg" alt="bootraper logo"
+							class="app-logo mx-3">
+						<button class="navbar-toggler" type="button"
+							data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+							aria-controls="navbarsExample04" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"><i data-feather="menu"></i></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarsExample04">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+								<li class="nav-item"><div class="nav-dropdown">
+										<a class="nav-item nav-link active text-secondary"
+											aria-current="page" href="index.html"><i
+											class="data-feather theme-item" data-feather="home"></i> <span
+											class="theme-item">Home </span></a>
+									</div></li>
+								<li class="nav-item"><div class="nav-dropdown">
+										<a class="nav-item nav-link active text-secondary"
+											aria-current="page" href="charts.html"> <i
+											class="data-feather theme-item" data-feather="pie-chart"></i>
+											<span class="theme-item">Charts </span></a>
+									</div></li>
+								<li class="nav-item dropdown nav-dropdown"><a
+									class="nav-item nav-link dropdown-toggle text-secondary"
+									href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false"> <i
+										class="data-feather theme-item" data-feather="mail"></i> <span
+										class="theme-item">Dropdown </span> <i
+										class="data-feather theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="cloud"></i> Access</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="cloud-lightning"></i>
+												Back ups</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="upload-cloud"></i>
+												Updates</a></li>
+									</ul></li>
+
+
+								<li class="nav-item dropdown nav-dropdown"><a
+									class="nav-item nav-link dropdown-toggle text-secondary"
+									href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false"> <i
+										class="data-feather theme-item" data-feather="link"></i> <span
+										class="theme-item">Quick Links</span> <i
+										class="data-feather theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a href="form.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="file-text"></i> Forms</a></li>
+										<li><a href="charts.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="pie-chart"></i> Charts</a></li>
+										<li><a href="components.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="grid"></i> Components</a></li>
+										<li><a href="extras.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="globe"></i> Extras</a></li>
+										<li><a href="loginregister.html"
+											class="dropdown-item mt-2"><i class="data-feather"
+												data-feather="log-in"></i> Login</a></li>
+										<li><a href="profile.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="user"></i> Profile</a></li>
+										<li><a href="preferences.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="gift"></i> Preferences</a></li>
+										<li><a href="blank.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="file"></i> Blank</a></li>
+									</ul></li>
+
+
+								<li class="nav-item dropdown nav-dropdown"><a
+									class="nav-item nav-link dropdown-toggle text-secondary"
+									href="#" id="navbarDropdownMenuLink1" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false"><i
+										class="data-feather theme-item" data-feather="grid"></i> <span
+										class="theme-item">Services</span><i
+										class="data-feather theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu"
+										aria-labelledby="navbarDropdownMenuLink1">
+										<li><a class="dropdown-item" href="#">Service 1</a></li>
+										<li><a class="dropdown-item" href="#">Service 2</a></li>
+										<li class="dropdown-submenu"><a
+											class="dropdown-item mr-3" href="#">Service Level 1 <i
+												class="data-feather" data-feather="chevron-right"></i></a>
+											<ul class="dropdown-menu">
+												<li><a class="dropdown-item" href="#">Submenu 0</a></li>
+												<li><a class="dropdown-item" href="#">Submenu 0</a></li>
+												<li class="dropdown-submenu"><a class="dropdown-item"
+													href="#">Service Level 2<i class="data-feather"
+														data-feather="chevron-right"></i></a>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Submenu 1</a></li>
+														<li><a class="dropdown-item" href="#">Submenu 1</a></li>
+													</ul></li>
+												<li class="dropdown-submenu"><a class="dropdown-item"
+													href="#">Service Level 2<i class="data-feather"
+														data-feather="chevron-right"></i></a>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Submenu 2</a></li>
+														<li><a class="dropdown-item" href="#">Submenu 2</a></li>
+													</ul></li>
+											</ul></li>
+									</ul></li>
+							</ul>
+							<form action="#" class="search-form">
+								<input type="text" placeholder="Search">
+								<button type="submit">
+									<i class="data-feather navbar-search-icon"
+										data-feather="search"></i>
+								</button>
+							</form>
+							<div class="usermenu">
+								<div class="nav-dropdown">
+									<a href="#"
+										class="nav-item nav-link dropdown-toggle text-secondary"
+										id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
+										aria-expanded="false"> <i class="theme-item"
+										data-feather="user"></i> <span class="theme-item">My
+											Name</span><i class="theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu dropdown-menu-right"
+										aria-labelledby="navbarDropdown3">
+										<li><a href="profile.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="user"></i> Profile</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="mail"></i> Messages</a></li>
+										<li><a href="#" class="dropdown-item mt-2"
+											data-bs-toggle="modal" data-bs-target="#settingsModal"><i
+												class="data-feather" data-feather="settings"></i> Settings</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="log-out"></i> Logout</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+
+
+				<div class="settings">
+					<div class="modal fade" id="settingsModal"
+						aria-labelledby="settingsModalTitle" aria-hidden="true"
+						tabindex="-1">
+						<!-- 				 data-bs-backdrop="static" data-bs-keyboard="false" -->
+						<div class="modal-dialog modal-dialog-settings">
+							<div class="modal-content">
+								<div class="modal-header text-center">
+									<h5 class="modal-title" id="exampleModalLabel">Settings</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+
+									<section id="logincontent" class="shiftdown">
+
+										<div class="row g-3 mb-3 mt-3">
+
+											<div class="col-md-6">
+												<h6 class="text-muted">Select Color</h6>
+												<span onclick="changeColor('0')"
+													class="btn btn-sm btn-primary rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('1')"
+													class="btn btn-sm btn-success rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('2')"
+													class="btn btn-sm btn-danger rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('3')"
+													class="btn btn-sm btn-warning rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('4')"
+													class="btn btn-sm btn-secondary rounded-circle"><span
+													class="me-2"></span></span>
+											</div>
+											<div class="col-md-6">
+												<h6 class="text-muted">Preferences</h6>
+												<div class="form-check form-switch">
+													<input class="form-check-input" type="checkbox"
+														id="flexSwitchCheckDefault"> <label
+														class="form-check-label" for="flexSwitchCheckDefault">Switch
+														option 1</label>
+												</div>
+												<div class="form-check form-switch">
+													<input class="form-check-input" type="checkbox"
+														id="flexSwitchCheckChecked" checked> <label
+														class="form-check-label" for="flexSwitchCheckChecked">Switch
+														option 2</label>
+												</div>
+											</div>
+										</div>
+										<div class="row g-3 mb-3 mt-3">
+											<div class="col-md-6">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value=""
+														id="defaultCheck1" checked> <label
+														class="form-check-label" for="defaultCheck1">
+														Checkbox 1 </label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value=""
+														id="defaultCheck2"> <label
+														class="form-check-label" for="defaultCheck2">
+														Checkbox 2</label>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-check">
+													<input class="form-check-input" type="radio"
+														name="flexRadioDefault" id="flexRadioDefault1"> <label
+														class="form-check-label" for="flexRadioDefault1">
+														Radio option 1</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="radio"
+														name="flexRadioDefault" id="flexRadioDefault2" checked>
+													<label class="form-check-label" for="flexRadioDefault2">
+														Radio option 2 </label>
+												</div>
+											</div>
+										</div>
+										<hr />
+										<button class="btn btn-sm btn-danger" data-bs-dismiss="modal"
+											type="button">
+											<i data-feather="check-circle" class="mr-1"></i> Ok
+										</button>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<div class="content">
+					<div class="container-fluid">
+						<div class="row mt-2">
+							<div class="col-md-6 float-start">
+								<h4 class="m-0 text-dark text-muted">Form and Validation</h4>
+							</div>
+							<div class="col-md-6">
+								<ol class="breadcrumb float-end">
+									<li class="breadcrumb-item"><a href="#"> Home</a></li>
+									<li class="breadcrumb-item active">Form</li>
+								</ol>
+							</div>
+						</div>
+
+
+						<div class="card">
+							<div class="content">
+								<div class="canvas-wrapper">
+
+									<div class="row g-3 mb-4">
+										<div class="col-md-5 col-lg-4 order-md-last">
+											<h4
+												class="d-flex justify-content-between align-items-center mb-3">
+												<span class="text-muted">Your cart</span> <span
+													class="badge bg-success rounded-pill">3</span>
+											</h4>
+											<ul class="list-group mb-3">
+												<li
+													class="list-group-item d-flex justify-content-between lh-sm">
+													<div>
+														<h6 class="my-0">Product name</h6>
+														<small class="text-muted">Brief description</small>
+													</div> <span class="text-muted">$12</span>
+												</li>
+												<li
+													class="list-group-item d-flex justify-content-between lh-sm">
+													<div>
+														<h6 class="my-0">Second product</h6>
+														<small class="text-muted">Brief description</small>
+													</div> <span class="text-muted">$8</span>
+												</li>
+												<li
+													class="list-group-item d-flex justify-content-between lh-sm">
+													<div>
+														<h6 class="my-0">Third item</h6>
+														<small class="text-muted">Brief description</small>
+													</div> <span class="text-muted">$5</span>
+												</li>
+												<li
+													class="list-group-item d-flex justify-content-between bg-light">
+													<div class="text-success">
+														<h6 class="my-0">Promo code</h6>
+														<small>EXAMPLECODE</small>
+													</div> <span class="text-success">−$5</span>
+												</li>
+												<li class="list-group-item d-flex justify-content-between">
+													<span>Total (USD)</span> <strong>$20</strong>
+												</li>
+											</ul>
+
+											<form class="card p-2">
+												<div class="input-group">
+													<input type="text" class="form-control form-control-sm"
+														placeholder="Promo code">
+													<button type="submit" class="btn btn-sm btn-danger">Redeem</button>
+												</div>
+											</form>
+										</div>
+										<div class="col-md-7 col-lg-8">
+											<form class="needs-validation" novalidate>
+												<h4 class="mb-3 text-muted">Billing address</h4>
+												<div class="row g-3 mb-3">
+													<div class="col-sm-6">
+														<div class="form-floating">
+															<input type="email" class="form-control"
+																id="floatingInput" placeholder="name@example.com"
+																required> <label for="floatingInput">Email
+																address</label>
+															<div class="invalid-feedback">Valid email is
+																required.</div>
+														</div>
+													</div>
+													<div class="col-sm-6">
+														<div class="form-floating">
+															<input type="text" class="form-control"
+																id="floatingPassword" placeholder="Username"> <label
+																for="floatingPassword">Username</label>
+
+														</div>
+													</div>
+												</div>
+
+
+												<div class="row g-3">
+													<div class="col-sm-6">
+														<label for="firstName" class="form-label">First
+															name</label> <input type="text" class="form-control"
+															id="firstName" placeholder="" value="" required>
+														<div class="invalid-feedback">Valid first name is
+															required.</div>
+													</div>
+
+													<div class="col-sm-6">
+														<label for="lastName" class="form-label">Last name</label>
+														<input type="text" class="form-control" id="lastName"
+															placeholder="" value="" required>
+														<div class="invalid-feedback">Valid last name is
+															required.</div>
+													</div>
+													<div class="col-12">
+														<label for="username" class="form-label">Username</label>
+														<div class="input-group">
+															<span class="input-group-text">@</span> <input
+																type="text" class="form-control" id="username"
+																placeholder="Username" required>
+															<div class="invalid-feedback">Your username is
+																required.</div>
+														</div>
+													</div>
+
+													<div class="col-12">
+														<label for="email" class="form-label">Email <span
+															class="text-muted">(Optional)</span></label> <input type="email"
+															class="form-control" id="email"
+															placeholder="you@example.com">
+														<div class="invalid-feedback">Please enter a valid
+															email address for shipping updates.</div>
+													</div>
+
+													<div class="col-12">
+														<label for="address" class="form-label">Address</label> <input
+															type="text" class="form-control" id="address"
+															placeholder="1234 Main St" required>
+														<div class="invalid-feedback">Please enter your
+															shipping address.</div>
+													</div>
+
+													<div class="col-12">
+														<label for="address2" class="form-label">Address 2
+															<span class="text-muted">(Optional)</span>
+														</label> <input type="text" class="form-control" id="address2"
+															placeholder="Apartment or suite">
+													</div>
+
+													<div class="col-md-5">
+														<label for="country" class="form-label">Country</label> <select
+															class="form-select" id="country" required>
+															<option value="">Choose...</option>
+															<option>United States</option>
+														</select>
+														<div class="invalid-feedback">Please select a valid
+															country.</div>
+													</div>
+
+													<div class="col-md-4">
+														<label for="state" class="form-label">State</label> <select
+															class="form-select" id="state" required>
+															<option value="">Choose...</option>
+															<option>California</option>
+														</select>
+														<div class="invalid-feedback">Please provide a valid
+															state.</div>
+													</div>
+
+													<div class="col-md-3">
+														<label for="zip" class="form-label">Zip</label> <input
+															type="text" class="form-control" id="zip" placeholder=""
+															required>
+														<div class="invalid-feedback">Zip code required.</div>
+													</div>
+												</div>
+
+												<hr class="my-4">
+
+												<div class="form-check">
+													<input type="checkbox" class="form-check-input"
+														id="same-address"> <label class="form-check-label"
+														for="same-address">Shipping address is the same as
+														my billing address</label>
+												</div>
+
+												<div class="form-check">
+													<input type="checkbox" class="form-check-input"
+														id="save-info"> <label class="form-check-label"
+														for="save-info">Save this information for next
+														time</label>
+												</div>
+
+												<hr class="my-4">
+
+												<h4 class="mb-3">Payment</h4>
+
+												<div class="my-3">
+													<div class="form-check">
+														<input id="credit" name="paymentMethod" type="radio"
+															class="form-check-input" checked required> <label
+															class="form-check-label" for="credit">Credit card</label>
+													</div>
+													<div class="form-check">
+														<input id="debit" name="paymentMethod" type="radio"
+															class="form-check-input" required> <label
+															class="form-check-label" for="debit">Debit card</label>
+													</div>
+													<div class="form-check">
+														<input id="paypal" name="paymentMethod" type="radio"
+															class="form-check-input" required> <label
+															class="form-check-label" for="paypal">PayPal</label>
+													</div>
+												</div>
+
+												<div class="row gy-3">
+													<div class="col-md-6">
+														<label for="cc-name" class="form-label">Name on
+															card</label> <input type="text" class="form-control" id="cc-name"
+															placeholder="" required> <small
+															class="text-muted">Full name as displayed on card</small>
+														<div class="invalid-feedback">Name on card is
+															required</div>
+													</div>
+
+													<div class="col-md-6">
+														<label for="cc-number" class="form-label">Credit
+															card number</label> <input type="text" class="form-control"
+															id="cc-number" placeholder="" required>
+														<div class="invalid-feedback">Credit card number is
+															required</div>
+													</div>
+
+													<div class="col-md-3">
+														<label for="cc-expiration" class="form-label">Expiration</label>
+														<input type="text" class="form-control" id="cc-expiration"
+															placeholder="" required>
+														<div class="invalid-feedback">Expiration date
+															required</div>
+													</div>
+
+													<div class="col-md-3">
+														<label for="cc-cvv" class="form-label">CVV</label> <input
+															type="text" class="form-control" id="cc-cvv"
+															placeholder="" required>
+														<div class="invalid-feedback">Security code required</div>
+													</div>
+												</div>
+
+												<hr class="my-4">
+
+												<button class="w-100 btn btn-sm btn-primary btn-lg"
+													type="submit">
+													<i data-feather="check-circle" class="data-feather mr-1"></i>
+													Continue to checkout
+												</button>
+											</form>
+										</div>
+									</div>
+
+								</div>
+
+								<!-- 							Canvas Wrapper End -->
+
+							</div>
+						</div>
+
+
+
+						<footer class="footer">
+							<div
+								class="d-sm-flex justify-content-center justify-content-sm-between">
+								<span
+									class="text-muted d-block text-center text-sm-left d-sm-inline-block">No
+									Copyright © Open Source <script>
+										document
+												.write(new Date().getFullYear())
+									</script>
+								</span> <span
+									class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+									AVNI - <a href="https://github.com/ajkr195/Avni"
+									target="_blank">Open Source Bootstrap 5 dashboard</a>
+								</span>
+							</div>
+						</footer>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div id="loading" class="spinner-border text-primary align-middle"
+		role="status"></div>
+
+	<button class="btn btn-sm btn-primary rounded-circle"
+		onclick="scrollToTopFunction()" id="scrollToTop" title="Scroll to top">
+		<i data-feather="arrow-up-circle"></i>
+	</button>
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(event) {
+			feather.replace();
+		});
+	</script>
+	<script type="text/javascript">
+		(function() {
+			'use strict'
+
+			// Fetch all the forms we want to apply custom Bootstrap validation styles to
+			var forms = document.querySelectorAll('.needs-validation')
+
+			// Loop over them and prevent submission
+			Array.prototype.slice.call(forms).forEach(function(form) {
+				form.addEventListener('submit', function(event) {
+					if (!form.checkValidity()) {
+						event.preventDefault()
+						event.stopPropagation()
+					}
+
+					form.classList.add('was-validated')
+				}, false)
+			})
+		})()
+	</script>
+</body>
+
+</html>

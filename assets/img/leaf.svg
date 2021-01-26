@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xml:space="preserve"
+   version="1.1"
+   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+   viewBox="0 0 150.93817 146"
+   x="0px"
+   y="0px"
+   id="svg14"
+   sodipodi:docname="leaf1.svg"
+   width="150.93817"
+   height="146"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"><metadata
+     id="metadata18"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="712"
+     id="namedview16"
+     showgrid="false"
+     inkscape:zoom="2.5863014"
+     inkscape:cx="61.964906"
+     inkscape:cy="101.57186"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14" /><defs
+     id="defs4"><style
+       type="text/css"
+       id="style2">
+   
+    .fil0 {fill:black}
+   
+  </style></defs><g
+     id="g8"
+     transform="translate(0.29659703,0.38665254)"
+     style="fill:#00b000;fill-opacity:1"><path
+       class="fil0"
+       d="M 24,105 C 21,7 105,22 150,0 159,83 108,140 33,124 L 1,146 c -2,-8 -1,-13 6,-17 7,-5 13,-9 20,-14 C 68,87 109,55 139,17 106,50 68,80 24,105 Z"
+       id="path6"
+       inkscape:connector-curvature="0"
+       style="fill:#00b000;fill-opacity:1" /></g></svg>

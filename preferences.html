@@ -1,0 +1,1021 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/leaf.svg">
+<title>Avni - Bootstrap 5 Admin Template</title>
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="page">
+		<div class="wrapper">
+			<nav id="sidebar" class="active">
+				<div class="sidebar-header text-center">
+
+					<img src="assets/img/leaf.svg" alt="bootraper logo"
+						class="app-logo">
+					<h4 class="sidebar-title theme-item">AVNI</h4>
+
+				</div>
+				<ul class="list-unstyled components text-secondary">
+					<li><a href="index.html"><i
+							class="data-feather theme-item" data-feather="home"></i> <span
+							class="theme-item">Dashboard</span></a></li>
+					<li><a href="form.html"><i class="data-feather theme-item"
+							data-feather="file-text"></i> <span class="theme-item">Forms</span></a></li>
+					<li><a href="charts.html"><i
+							class="data-feather theme-item" data-feather="pie-chart"></i> <span
+							class="theme-item">Charts</span></a></li>
+					<li><a href="components.html"><i
+							class="data-feather theme-item" data-feather="grid"></i> <span
+							class="theme-item">Components</span></a></li>
+					<li><a href="extras.html"><i
+							class="data-feather theme-item" data-feather="globe"></i> <span
+							class="theme-item">Extras</span></a></li>
+					<li><a href="loginregister.html"><i
+							class="data-feather theme-item" data-feather="users"></i> <span
+							class="data-feather theme-item">Login</span></a></li>
+					<li><a href="profile.html"><i
+							class="data-feather theme-item" data-feather="user"></i> <span
+							class="theme-item">Profile</span></a></li>
+					<li><a href="preferences.html"><i
+							class="data-feather theme-item" data-feather="gift"></i> <span
+							class="theme-item">Preferences</span></a></li>
+					<li><a href="blank.html"><i
+							class="data-feather theme-item" data-feather="file"></i> <span
+							class="data-feather theme-item"> Blank</span></a></li>
+				</ul>
+
+				<div class="text-center mt-5 mb-5">
+					<a href="#" class="theme-btn" onClick="removeCookie()">Reset</a>
+				</div>
+			</nav>
+			<div id="body" class="active">
+
+				<nav class="navbar navbar-expand-md navbar-white bg-white"
+					aria-label="navbarexample" id="navbar">
+					<div class="container-fluid">
+						<button type="button" id="sidebarCollapse" onClick="topFunction()"
+							class="btn btn-light">
+							<i data-feather="menu"></i> <span></span>
+						</button>
+						<img src="assets/img/leaf.svg" alt="bootraper logo"
+							class="app-logo mx-3">
+						<button class="navbar-toggler" type="button"
+							data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+							aria-controls="navbarsExample04" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"><i data-feather="menu"></i></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarsExample04">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+								<li class="nav-item"><div class="nav-dropdown">
+										<a class="nav-item nav-link active text-secondary"
+											aria-current="page" href="index.html"><i
+											class="data-feather theme-item" data-feather="home"></i> <span
+											class="theme-item">Home </span></a>
+									</div></li>
+								<li class="nav-item"><div class="nav-dropdown">
+										<a class="nav-item nav-link active text-secondary"
+											aria-current="page" href="charts.html"> <i
+											class="data-feather theme-item" data-feather="pie-chart"></i>
+											<span class="theme-item">Charts </span></a>
+									</div></li>
+								<li class="nav-item dropdown nav-dropdown"><a
+									class="nav-item nav-link dropdown-toggle text-secondary"
+									href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false"> <i
+										class="data-feather theme-item" data-feather="mail"></i> <span
+										class="theme-item">Dropdown </span> <i
+										class="data-feather theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="cloud"></i> Access</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="cloud-lightning"></i>
+												Back ups</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="upload-cloud"></i>
+												Updates</a></li>
+									</ul></li>
+
+
+								<li class="nav-item dropdown nav-dropdown"><a
+									class="nav-item nav-link dropdown-toggle text-secondary"
+									href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false"> <i
+										class="data-feather theme-item" data-feather="link"></i> <span
+										class="theme-item">Quick Links</span> <i
+										class="data-feather theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a href="form.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="file-text"></i> Forms</a></li>
+										<li><a href="charts.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="pie-chart"></i> Charts</a></li>
+										<li><a href="components.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="grid"></i> Components</a></li>
+										<li><a href="extras.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="globe"></i> Extras</a></li>
+										<li><a href="loginregister.html"
+											class="dropdown-item mt-2"><i class="data-feather"
+												data-feather="log-in"></i> Login</a></li>
+										<li><a href="profile.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="user"></i> Profile</a></li>
+										<li><a href="preferences.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="gift"></i> Preferences</a></li>
+										<li><a href="blank.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="file"></i> Blank</a></li>
+									</ul></li>
+
+
+								<li class="nav-item dropdown nav-dropdown"><a
+									class="nav-item nav-link dropdown-toggle text-secondary"
+									href="#" id="navbarDropdownMenuLink1" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false"><i
+										class="data-feather theme-item" data-feather="grid"></i> <span
+										class="theme-item">Services</span><i
+										class="data-feather theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu"
+										aria-labelledby="navbarDropdownMenuLink1">
+										<li><a class="dropdown-item" href="#">Service 1</a></li>
+										<li><a class="dropdown-item" href="#">Service 2</a></li>
+										<li class="dropdown-submenu"><a
+											class="dropdown-item mr-3" href="#">Service Level 1 <i
+												class="data-feather" data-feather="chevron-right"></i></a>
+											<ul class="dropdown-menu">
+												<li><a class="dropdown-item" href="#">Submenu 0</a></li>
+												<li><a class="dropdown-item" href="#">Submenu 0</a></li>
+												<li class="dropdown-submenu"><a class="dropdown-item"
+													href="#">Service Level 2<i class="data-feather"
+														data-feather="chevron-right"></i></a>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Submenu 1</a></li>
+														<li><a class="dropdown-item" href="#">Submenu 1</a></li>
+													</ul></li>
+												<li class="dropdown-submenu"><a class="dropdown-item"
+													href="#">Service Level 2<i class="data-feather"
+														data-feather="chevron-right"></i></a>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Submenu 2</a></li>
+														<li><a class="dropdown-item" href="#">Submenu 2</a></li>
+													</ul></li>
+											</ul></li>
+									</ul></li>
+							</ul>
+							<form action="#" class="search-form">
+								<input type="text" placeholder="Search">
+								<button type="submit">
+									<i class="data-feather navbar-search-icon"
+										data-feather="search"></i>
+								</button>
+							</form>
+							<div class="usermenu">
+								<div class="nav-dropdown">
+									<a href="#"
+										class="nav-item nav-link dropdown-toggle text-secondary"
+										id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
+										aria-expanded="false"> <i class="theme-item"
+										data-feather="user"></i> <span class="theme-item">My
+											Name</span><i class="theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu dropdown-menu-right"
+										aria-labelledby="navbarDropdown3">
+										<li><a href="profile.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="user"></i> Profile</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="mail"></i> Messages</a></li>
+										<li><a href="#" class="dropdown-item mt-2"
+											data-bs-toggle="modal" data-bs-target="#settingsModal"><i
+												class="data-feather" data-feather="settings"></i> Settings</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="log-out"></i> Logout</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+
+
+				<div class="settings">
+					<div class="modal fade" id="settingsModal"
+						aria-labelledby="settingsModalTitle" aria-hidden="true"
+						tabindex="-1">
+						<!-- 				 data-bs-backdrop="static" data-bs-keyboard="false" -->
+						<div class="modal-dialog modal-dialog-settings">
+							<div class="modal-content">
+								<div class="modal-header text-center">
+									<h5 class="modal-title" id="exampleModalLabel">Settings</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+
+									<section id="logincontent" class="shiftdown">
+
+										<div class="row g-3 mb-3 mt-3">
+
+											<div class="col-md-6">
+												<h6 class="text-muted">Select Color</h6>
+												<span onclick="changeColor('0')"
+													class="btn btn-sm btn-primary rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('1')"
+													class="btn btn-sm btn-success rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('2')"
+													class="btn btn-sm btn-danger rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('3')"
+													class="btn btn-sm btn-warning rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('4')"
+													class="btn btn-sm btn-secondary rounded-circle"><span
+													class="me-2"></span></span>
+											</div>
+											<div class="col-md-6">
+												<h6 class="text-muted">Preferences</h6>
+												<div class="form-check form-switch">
+													<input class="form-check-input" type="checkbox"
+														id="flexSwitchCheckDefault"> <label
+														class="form-check-label" for="flexSwitchCheckDefault">Switch
+														option 1</label>
+												</div>
+												<div class="form-check form-switch">
+													<input class="form-check-input" type="checkbox"
+														id="flexSwitchCheckChecked" checked> <label
+														class="form-check-label" for="flexSwitchCheckChecked">Switch
+														option 2</label>
+												</div>
+											</div>
+										</div>
+										<div class="row g-3 mb-3 mt-3">
+											<div class="col-md-6">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value=""
+														id="defaultCheck1" checked> <label
+														class="form-check-label" for="defaultCheck1">
+														Checkbox 1 </label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value=""
+														id="defaultCheck2"> <label
+														class="form-check-label" for="defaultCheck2">
+														Checkbox 2</label>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-check">
+													<input class="form-check-input" type="radio"
+														name="flexRadioDefault" id="flexRadioDefault1"> <label
+														class="form-check-label" for="flexRadioDefault1">
+														Radio option 1</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="radio"
+														name="flexRadioDefault" id="flexRadioDefault2" checked>
+													<label class="form-check-label" for="flexRadioDefault2">
+														Radio option 2 </label>
+												</div>
+											</div>
+										</div>
+										<hr />
+										<button class="btn btn-sm btn-danger" data-bs-dismiss="modal"
+											type="button">
+											<i data-feather="check-circle" class="mr-1"></i> Ok
+										</button>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="content">
+					<div class="container-fluid">
+						<div class="row mt-2">
+							<div class="col-md-6 float-start">
+								<h4 class="m-0 text-dark text-muted">Preferences</h4>
+							</div>
+							<div class="col-md-6">
+								<ol class="breadcrumb float-end">
+									<li class="breadcrumb-item"><a href="#"> Home</a></li>
+									<li class="breadcrumb-item active">Preferences</li>
+								</ol>
+							</div>
+						</div>
+
+
+						<div class="content">
+
+							<div class="canvas-wrapper">
+
+								<div class="row">
+									<div class="col-md-12">
+										<div class="row">
+											<div class="col-md-3 col-xl-3">
+												<div class="card mb-3">
+													<div class="card-body text-center">
+														<!--<h5 class="card-title mb-3 text-primary">Select Entity</h5> -->
+														<div class="nav nav-pills flex-column bg-white"
+															id="nav-tab" role="tablist">
+															<a class="nav-link active" id="nav-server-tab"
+																data-bs-toggle="tab" href="#nav-server" role="tab"
+																aria-controls="nav-server" aria-selected="true">Server</a>
+															<div class="dropdown-divider"></div>
+															<a class="nav-link" id="nav-database-tab"
+																data-bs-toggle="tab" href="#nav-database" role="tab"
+																aria-controls="nav-database" aria-selected="false">Database</a>
+															<div class="dropdown-divider"></div>
+															<a class="nav-link" id="nav-application-tab"
+																data-bs-toggle="tab" href="#nav-application" role="tab"
+																aria-controls="nav-application" aria-selected="false">Application</a>
+															<div class="dropdown-divider"></div>
+															<a class="nav-link" id="nav-config-tab"
+																data-bs-toggle="tab" href="#nav-database" role="tab"
+																aria-controls="nav-config-tab" aria-selected="false">Configurations</a>
+															<div class="dropdown-divider"></div>
+															<a class="nav-link" id="nav-global-params-tab"
+																data-bs-toggle="tab" href="#nav-application" role="tab"
+																aria-controls="nav-global-params-tab"
+																aria-selected="false">Global Parameters</a>
+															<div class="dropdown-divider"></div>
+															<a class="nav-link" id="nav-global-params-tab"
+																data-bs-toggle="tab" href="#nav-database" role="tab"
+																aria-controls="nav-global-params-tab"
+																aria-selected="false">Dependencies</a>
+															<div class="dropdown-divider"></div>
+															<a class="nav-link" id="nav-global-params-tab"
+																data-bs-toggle="tab" href="#nav-server" role="tab"
+																aria-controls="nav-global-params-tab"
+																aria-selected="false">Miscellaneous</a>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+
+											<div class="col-md-9 col-xl-9">
+												<div class="card">
+													<div class="card-header bg-white">
+														<h5 class="card-title mb-0 text-muted">Your
+															Preferences</h5>
+													</div>
+													<div class="card-body h-100">
+														<div class="d-flex align-items-start">
+															<div class="tab-content" id="nav-tabContent">
+																<div class="tab-pane fade show active" id="nav-server"
+																	role="tabpanel" aria-labelledby="nav-server-tab">
+																	<p>Be sure to choose your options carefully as it
+																		may lead to usability and accessibility issues.</p>
+
+																	<div class="row g-3 mb-3 mt-3">
+																		<div class="col-md-12">
+																			<form>
+																				<div class="form-check form-check-inline">
+																					<input class="form-check-input" type="checkbox"
+																						id="inlineCheckbox1" value="option1" checked>
+																					<label class="form-check-label"
+																						for="inlineCheckbox1">Check level 1</label>
+																				</div>
+																				<div class="form-check form-check-inline">
+																					<input class="form-check-input" type="checkbox"
+																						id="inlineCheckbox2" value="option2" checked>
+																					<label class="form-check-label"
+																						for="inlineCheckbox2">Check level 2</label>
+																				</div>
+																				<div class="form-check form-check-inline">
+																					<input class="form-check-input" type="checkbox"
+																						id="inlineCheckbox3" value="option3" disabled>
+																					<label class="form-check-label"
+																						for="inlineCheckbox3">Check level 3
+																						(disabled)</label>
+																				</div>
+
+																				<div class="form-group mt-3 mb-3 col-md-6">
+																					<label for="exampleFormControlInput1">Email
+																						address</label> <input type="email" class="form-control"
+																						id="exampleFormControlInput1"
+																						placeholder="name@example.com">
+																				</div>
+
+																				<div class="form-check form-check-inline mt-3">
+																					<input class="form-check-input" type="radio"
+																						name="inlineRadioOptions" id="inlineRadio1"
+																						value="option1" checked> <label
+																						class="form-check-label" for="inlineRadio1">Set
+																						level 1</label>
+																				</div>
+																				<div class="form-check form-check-inline">
+																					<input class="form-check-input" type="radio"
+																						name="inlineRadioOptions" id="inlineRadio2"
+																						value="option2"> <label
+																						class="form-check-label" for="inlineRadio2">Set
+																						level 2</label>
+																				</div>
+																				<div class="form-check form-check-inline">
+																					<input class="form-check-input" type="radio"
+																						name="inlineRadioOptions" id="inlineRadio3"
+																						value="option3" disabled> <label
+																						class="form-check-label" for="inlineRadio3">Set
+																						level 3 (disabled)</label>
+																				</div>
+
+
+																				<div class="form-group mt-3 mb-3 col-md-3">
+																					<label for="exampleFormControlSelect1">Example
+																						select</label> <select class="form-control form-select"
+																						id="exampleFormControlSelect1">
+																						<option>Select Option 1</option>
+																						<option>Select Option 2</option>
+																						<option>Select Option 3</option>
+																						<option>Select Option 4</option>
+																						<option>Select Option 5</option>
+																					</select>
+																				</div>
+																				<div class="form-check mb-3">
+																					<input class="form-check-input" type="checkbox"
+																						value="" id="defaultCheck1" checked> <label
+																						class="form-check-label" for="defaultCheck1">
+																						Checkbox 1 </label>
+																				</div>
+																				<div class="form-group col-md-3">
+																					<label for="exampleFormControlSelect2">Example
+																						multiple select</label> <select multiple
+																						class="form-control form-select"
+																						id="exampleFormControlSelect2">
+																						<option>Select Option 1</option>
+																						<option>Select Option 2</option>
+																						<option>Select Option 3</option>
+																						<option>Select Option 4</option>
+																						<option>Select Option 5</option>
+																					</select>
+																				</div>
+																				<div class="form-group mt-3 mb-3">
+																					<label for="exampleFormControlTextarea1">Example
+																						textarea</label>
+																					<textarea class="form-control"
+																						id="exampleFormControlTextarea1" rows="3"></textarea>
+																				</div>
+																			</form>
+																		</div>
+																		<div class="row col-md-12">
+																			<div class="col-md-6">
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox"
+																						value="" id="defaultCheck1" checked> <label
+																						class="form-check-label" for="defaultCheck1">
+																						Checkbox 1 </label>
+																				</div>
+																			</div>
+																			<div class="col-md-6">
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox"
+																						value="" id="defaultCheck2"> <label
+																						class="form-check-label" for="defaultCheck2">
+																						Checkbox 2</label>
+																				</div>
+																			</div>
+																		</div>
+
+																	</div>
+
+
+																	<div class="row g-3 mb-3 mt-3">
+
+																		<div class="accordion" id="accordionExample">
+																			<div class="accordion-item">
+																				<h2 class="accordion-header" id="headingOne">
+																					<button class="accordion-button" type="button"
+																						data-bs-toggle="collapse"
+																						data-bs-target="#collapseOne" aria-expanded="true"
+																						aria-controls="collapseOne">Info #1</button>
+																				</h2>
+																				<div id="collapseOne"
+																					class="accordion-collapse collapse show"
+																					aria-labelledby="headingOne"
+																					data-bs-parent="#accordionExample">
+																					<div class="accordion-body">
+																						<strong>This is the first information
+																							body.</strong> It is hidden by default, until the collapse
+																						plugin adds the appropriate classes that we use to
+																						style each element. These classes control the
+																						overall appearance, as well as the showing and
+																						hiding via CSS transitions.
+																					</div>
+																				</div>
+																			</div>
+																			<div class="accordion-item">
+																				<h2 class="accordion-header" id="headingTwo">
+																					<button class="accordion-button collapsed"
+																						type="button" data-bs-toggle="collapse"
+																						data-bs-target="#collapseTwo"
+																						aria-expanded="false" aria-controls="collapseTwo">Info
+																						#2</button>
+																				</h2>
+																				<div id="collapseTwo"
+																					class="accordion-collapse collapse"
+																					aria-labelledby="headingTwo"
+																					data-bs-parent="#accordionExample">
+																					<div class="accordion-body">
+																						<strong>This is the second information
+																							body.</strong> It is hidden by default, until the collapse
+																						plugin adds the appropriate classes that we use to
+																						style each element. These classes control the
+																						overall appearance, as well as the showing and
+																						hiding via CSS transitions.
+																					</div>
+																				</div>
+																			</div>
+																			<div class="accordion-item">
+																				<h2 class="accordion-header" id="headingThree">
+																					<button class="accordion-button collapsed"
+																						type="button" data-bs-toggle="collapse"
+																						data-bs-target="#collapseThree"
+																						aria-expanded="false"
+																						aria-controls="collapseThree">Info #3</button>
+																				</h2>
+																				<div id="collapseThree"
+																					class="accordion-collapse collapse"
+																					aria-labelledby="headingThree"
+																					data-bs-parent="#accordionExample">
+																					<div class="accordion-body">
+																						<strong>This is the third information
+																							body.</strong> It is hidden by default, until the collapse
+																						plugin adds the appropriate classes that we use to
+																						style each element. These classes control the
+																						overall appearance, as well as the showing and
+																						hiding via CSS transitions.
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+
+
+
+																	<hr />
+
+																	<div class="row g-3 mb-3 mt-3">
+																		<div class="col-md-6">
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox"
+																					value="" id="defaultCheck1" checked> <label
+																					class="form-check-label" for="defaultCheck1">
+																					Checkbox 1 </label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox"
+																					value="" id="defaultCheck2"> <label
+																					class="form-check-label" for="defaultCheck2">
+																					Checkbox 2</label>
+																			</div>
+																		</div>
+
+																		<hr />
+
+																		<p class="mt-4 mb-4">Note that dynamic tabbed
+																			interfaces should not contain dropdown menus, as this
+																			causes both usability and accessibility issues.</p>
+
+																		<div class="col-md-6">
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio"
+																					name="flexRadioDefault1" id="flexRadioDefault1"
+																					checked> <label class="form-check-label"
+																					for="flexRadioDefault1"> Radio option 1</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio"
+																					name="flexRadioDefault1" id="flexRadioDefault2"
+																					checked> <label class="form-check-label"
+																					for="flexRadioDefault2"> Radio option 2 </label>
+																			</div>
+																		</div>
+																	</div>
+
+																	<p>Can cause confusion. Adapt to a horizontal
+																		layout that fills the available width starting from
+																		the small breakpoint.</p>
+
+																	<div class="row g-3 mb-3 mt-3">
+																		<div class="col-md-6">
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox"
+																					value="" id="defaultCheck1"> <label
+																					class="form-check-label" for="defaultCheck1">
+																					Checkbox 1 </label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox"
+																					value="" id="defaultCheck2" checked> <label
+																					class="form-check-label" for="defaultCheck2">
+																					Checkbox 2</label>
+																			</div>
+																		</div>
+																		<div class="col-md-6">
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio"
+																					name="flexRadioDefaultb" id="flexRadioDefault1z"
+																					checked> <label class="form-check-label"
+																					for="flexRadioDefault1"> Radio option 3</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio"
+																					name="flexRadioDefaultb" id="flexRadioDefault2z">
+																				<label class="form-check-label"
+																					for="flexRadioDefault2z"> Radio option 4 </label>
+																			</div>
+																		</div>
+																	</div>
+
+																	<hr />
+
+																	<div class="row g-3 mb-3 mt-3">
+																		<h6 class="text-muted">Preferences</h6>
+																		<div class="form-check form-switch">
+																			<input class="form-check-input" type="checkbox"
+																				id="flexSwitchCheckDefault"> <label
+																				class="form-check-label"
+																				for="flexSwitchCheckDefault">Switch option 1</label>
+																		</div>
+																		<div class="form-check form-switch">
+																			<input class="form-check-input" type="checkbox"
+																				id="flexSwitchCheckChecked" checked> <label
+																				class="form-check-label"
+																				for="flexSwitchCheckChecked">Switch option 2</label>
+																		</div>
+																	</div>
+																	<p>From an accessibility point of view, there is
+																		currently no sensible way to map this sort of
+																		construct to a standard WAI ARIA pattern, meaning that
+																		it cannot be easily made understandable to users of
+																		assistive technologies.</p>
+
+																</div>
+																<div class="tab-pane fade" id="nav-database"
+																	role="tabpanel" aria-labelledby="nav-database-tab">
+																	<p>From an accessibility point of view, there is
+																		currently no sensible way to map this sort of
+																		construct to a standard WAI ARIA pattern, meaning that
+																		it cannot be easily made understandable to users of
+																		assistive technologies.</p>
+
+																	<hr class="py-0 mb-3 mt-3" />
+
+																	<div class="row g-3 mb-3 mt-3">
+																		<h4 class="text-muted">Preferences section 1</h4>
+																		<div class="form-check form-switch">
+																			<input class="form-check-input" type="checkbox"
+																				id="flexSwitchCheckDefault"> <label
+																				class="form-check-label"
+																				for="flexSwitchCheckDefault">Switch option 1</label>
+																		</div>
+																		<div class="form-check form-switch">
+																			<input class="form-check-input" type="checkbox"
+																				id="flexSwitchCheckChecked" checked> <label
+																				class="form-check-label"
+																				for="flexSwitchCheckChecked">Switch option 2</label>
+																		</div>
+																	</div>
+
+																	<hr class="py-0 mb-3 mt-3" />
+
+																	<div class="row g-3 mb-3 mt-3">
+																		<div class="col-md-6">
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox"
+																					value="" id="defaultCheck1" checked> <label
+																					class="form-check-label" for="defaultCheck1">
+																					Checkbox 1 </label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox"
+																					value="" id="defaultCheck2"> <label
+																					class="form-check-label" for="defaultCheck2">
+																					Checkbox 2</label>
+																			</div>
+																		</div>
+																		<div class="col-md-6">
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio"
+																					name="flexRadioDefaulta" id="flexRadioDefault1a"
+																					checked> <label class="form-check-label"
+																					for="flexRadioDefaulta"> Radio option 1</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio"
+																					name="flexRadioDefaulta" id="flexRadioDefault2b"
+																					checked> <label class="form-check-label"
+																					for="flexRadioDefault2b"> Radio option 2 </label>
+																			</div>
+																		</div>
+																	</div>
+
+																	<hr class="py-0 mb-3 mt-3" />
+
+																	<div class="row g-3 mb-3 mt-3">
+																		<h4 class="text-muted">Preferences section 2</h4>
+																		<div class="form-check form-switch">
+																			<input class="form-check-input" type="checkbox"
+																				id="flexSwitchCheckDefault"> <label
+																				class="form-check-label"
+																				for="flexSwitchCheckDefault">Switch option 1</label>
+																		</div>
+																		<div class="form-check form-switch">
+																			<input class="form-check-input" type="checkbox"
+																				id="flexSwitchCheckChecked" checked> <label
+																				class="form-check-label"
+																				for="flexSwitchCheckChecked">Switch option 2</label>
+																		</div>
+																	</div>
+
+																	<hr class="py-0 mb-3 mt-3" />
+
+
+																	<div class="row g-3 mb-3 mt-3">
+																		<div class="col-md-6">
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox"
+																					value="" id="defaultCheck1" checked> <label
+																					class="form-check-label" for="defaultCheck1">
+																					Checkbox 1 </label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox"
+																					value="" id="defaultCheck2"> <label
+																					class="form-check-label" for="defaultCheck2">
+																					Checkbox 2</label>
+																			</div>
+																		</div>
+																		<div class="col-md-6">
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio"
+																					name="flexRadioDefaultm" id="flexRadioDefault1m">
+																				<label class="form-check-label"
+																					for="flexRadioDefault1m"> Radio option 3</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio"
+																					name="flexRadioDefaultm" id="flexRadioDefault2m"
+																					checked> <label class="form-check-label"
+																					for="flexRadioDefault2m"> Radio option 4 </label>
+																			</div>
+																		</div>
+																	</div>
+
+																	<hr class="py-0 mb-3 mt-3" />
+
+
+																	<div class="row g-3 mb-3 mt-3">
+																		<div class="col-md-6">
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox"
+																					value="" id="defaultCheck1" checked> <label
+																					class="form-check-label" for="defaultCheck1">
+																					Checkbox 1 </label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox"
+																					value="" id="defaultCheck2"> <label
+																					class="form-check-label" for="defaultCheck2">
+																					Checkbox 2</label>
+																			</div>
+																		</div>
+																		<div class="col-md-6">
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio"
+																					name="flexRadioDefaultk" id="flexRadioDefault1k">
+																				<label class="form-check-label"
+																					for="flexRadioDefault1k"> Radio option 5</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio"
+																					name="flexRadioDefaultk" id="flexRadioDefault2k"
+																					checked> <label class="form-check-label"
+																					for="flexRadioDefault2k"> Radio option 6 </label>
+																			</div>
+																		</div>
+																	</div>
+																	<p>Note that dynamic tabbed interfaces should not
+																		contain dropdown menus, as this causes both usability
+																		and accessibility issues. From a usability
+																		perspective, the fact that the currently displayed
+																		tab’s trigger element is not immediately visible (as
+																		it’s inside the closed dropdown menu) can cause
+																		confusion. Adapt to a horizontal layout that fills the
+																		available width starting from the small breakpoint.</p>
+																</div>
+																<div class="tab-pane fade" id="nav-application"
+																	role="tabpanel" aria-labelledby="nav-application-tab">
+																	<p>Nav will be stacked on the lowest breakpoint,
+																		then adapt to a horizontal layout that fills the
+																		available width starting from the small breakpoint.</p>
+																	<hr class="py-0 mb-3 mt-3" />
+
+																	<div class="row g-3 mb-3 mt-3">
+																		<h4 class="text-muted">Preferences section 1</h4>
+																		<div class="form-check form-switch">
+																			<input class="form-check-input" type="checkbox"
+																				id="flexSwitchCheckDefault"> <label
+																				class="form-check-label"
+																				for="flexSwitchCheckDefault">Switch option 1</label>
+																		</div>
+																		<div class="form-check form-switch">
+																			<input class="form-check-input" type="checkbox"
+																				id="flexSwitchCheckChecked" checked> <label
+																				class="form-check-label"
+																				for="flexSwitchCheckChecked">Switch option 2</label>
+																		</div>
+																	</div>
+																	<div class="row g-3 mb-3 mt-3">
+																		<div class="col-md-6">
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox"
+																					value="" id="defaultCheck1" checked> <label
+																					class="form-check-label" for="defaultCheck1">
+																					Checkbox 1 </label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox"
+																					value="" id="defaultCheck2"> <label
+																					class="form-check-label" for="defaultCheck2">
+																					Checkbox 2</label>
+																			</div>
+																		</div>
+																		<div class="col-md-6">
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio"
+																					name="flexRadioDefault" id="flexRadioDefault11">
+																				<label class="form-check-label"
+																					for="flexRadioDefault11"> Radio option 1</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio"
+																					name="flexRadioDefault" id="flexRadioDefault12"
+																					checked> <label class="form-check-label"
+																					for="flexRadioDefault12"> Radio option 2 </label>
+																			</div>
+																		</div>
+																	</div>
+																	<hr class="py-0" />
+																	<div class="row g-3 mb-3 mt-3">
+																		<h4 class="text-muted">Preferences section 2</h4>
+																		<div class="form-check form-switch">
+																			<input class="form-check-input" type="checkbox"
+																				id="flexSwitchCheckDefault"> <label
+																				class="form-check-label"
+																				for="flexSwitchCheckDefault">Switch option 1</label>
+																		</div>
+																		<div class="form-check form-switch">
+																			<input class="form-check-input" type="checkbox"
+																				id="flexSwitchCheckChecked" checked> <label
+																				class="form-check-label"
+																				for="flexSwitchCheckChecked">Switch option 2</label>
+																		</div>
+																	</div>
+																	<div class="row g-3 mb-3 mt-3">
+																		<div class="col-md-6">
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox"
+																					value="" id="defaultCheck1" checked> <label
+																					class="form-check-label" for="defaultCheck1">
+																					Checkbox 1 </label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox"
+																					value="" id="defaultCheck2"> <label
+																					class="form-check-label" for="defaultCheck2">
+																					Checkbox 2</label>
+																			</div>
+																		</div>
+																		<div class="col-md-6">
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio"
+																					name="flexRadioDefaultx" id="flexRadioDefault1x">
+																				<label class="form-check-label"
+																					for="flexRadioDefault1x"> Radio option 3</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio"
+																					name="flexRadioDefaultx" id="flexRadioDefault2x"
+																					checked> <label class="form-check-label"
+																					for="flexRadioDefault2x"> Radio option 4 </label>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="row g-3 mb-3 mt-3">
+																		<div class="col-md-6">
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox"
+																					value="" id="defaultCheck1" checked> <label
+																					class="form-check-label" for="defaultCheck1">
+																					Checkbox 1 </label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox"
+																					value="" id="defaultCheck2"> <label
+																					class="form-check-label" for="defaultCheck2">
+																					Checkbox 2</label>
+																			</div>
+																		</div>
+																		<div class="col-md-6">
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio"
+																					name="flexRadioDefaultv" id="flexRadioDefault1v"
+																					checked> <label class="form-check-label"
+																					for="flexRadioDefault1v"> Radio option 5</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="radio"
+																					name="flexRadioDefaultv" id="flexRadioDefault2v">
+																				<label class="form-check-label"
+																					for="flexRadioDefault2v"> Radio option 6 </label>
+																			</div>
+																		</div>
+																	</div>
+																	<p>Note that dynamic tabbed interfaces should not
+																		contain dropdown menus, as this causes both usability
+																		and accessibility issues. From a usability
+																		perspective, the fact that the currently displayed
+																		tab’s trigger element is not immediately visible (as
+																		it’s inside the closed dropdown menu) can cause
+																		confusion. Adapt to a horizontal layout that fills the
+																		available width starting from the small breakpoint.</p>
+																</div>
+
+																<button class="btn btn-sm btn-danger" type="submit">
+																	<i class="text-white me-2" data-feather="check-circle"></i>Save
+																</button>
+
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+
+							</div>
+
+							<!-- 							Canvas Wrapper End -->
+
+						</div>
+
+
+
+						<footer class="footer">
+							<div
+								class="d-sm-flex justify-content-center justify-content-sm-between">
+								<span
+									class="text-muted d-block text-center text-sm-left d-sm-inline-block">No
+									Copyright © Open Source <script>
+										document
+												.write(new Date().getFullYear())
+									</script>
+								</span> <span
+									class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+									AVNI - <a href="https://github.com/ajkr195/Avni"
+									target="_blank">Open Source Bootstrap 5 dashboard</a>
+								</span>
+							</div>
+						</footer>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div id="loading" class="spinner-border text-primary align-middle"
+		role="status"></div>
+
+	<button class="btn btn-sm btn-primary rounded-circle"
+		onclick="scrollToTopFunction()" id="scrollToTop" title="Scroll to top">
+		<i data-feather="arrow-up-circle"></i>
+	</button>
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(event) {
+			feather.replace();
+		});
+	</script>
+</body>
+
+</html>

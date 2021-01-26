@@ -1,0 +1,852 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/leaf.svg">
+<title>Avni - Bootstrap 5 Admin Template</title>
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="page">
+		<div class="wrapper">
+			<nav id="sidebar" class="active">
+				<div class="sidebar-header text-center">
+
+					<img src="assets/img/leaf.svg" alt="bootraper logo"
+						class="app-logo">
+					<h4 class="sidebar-title theme-item">AVNI</h4>
+
+				</div>
+				<ul class="list-unstyled components text-secondary">
+					<li><a href="index.html"><i
+							class="data-feather theme-item" data-feather="home"></i> <span
+							class="theme-item">Dashboard</span></a></li>
+					<li><a href="form.html"><i class="data-feather theme-item"
+							data-feather="file-text"></i> <span class="theme-item">Forms</span></a></li>
+					<li><a href="charts.html"><i
+							class="data-feather theme-item" data-feather="pie-chart"></i> <span
+							class="theme-item">Charts</span></a></li>
+					<li><a href="components.html"><i
+							class="data-feather theme-item" data-feather="grid"></i> <span
+							class="theme-item">Components</span></a></li>
+					<li><a href="extras.html"><i
+							class="data-feather theme-item" data-feather="globe"></i> <span
+							class="theme-item">Extras</span></a></li>
+					<li><a href="loginregister.html"><i
+							class="data-feather theme-item" data-feather="users"></i> <span
+							class="data-feather theme-item">Login</span></a></li>
+					<li><a href="profile.html"><i
+							class="data-feather theme-item" data-feather="user"></i> <span
+							class="theme-item">Profile</span></a></li>
+					<li><a href="preferences.html"><i
+							class="data-feather theme-item" data-feather="gift"></i> <span
+							class="theme-item">Preferences</span></a></li>
+					<li><a href="blank.html"><i
+							class="data-feather theme-item" data-feather="file"></i> <span
+							class="data-feather theme-item"> Blank</span></a></li>
+				</ul>
+
+				<div class="text-center mt-5 mb-5">
+					<a href="#" class="theme-btn" onClick="removeCookie()">Reset</a>
+				</div>
+			</nav>
+			<div id="body" class="active">
+
+				<nav class="navbar navbar-expand-md navbar-white bg-white"
+					aria-label="navbarexample" id="navbar">
+					<div class="container-fluid">
+						<button type="button" id="sidebarCollapse" onClick="topFunction()"
+							class="btn btn-light">
+							<i data-feather="menu"></i> <span></span>
+						</button>
+						<img src="assets/img/leaf.svg" alt="bootraper logo"
+							class="app-logo mx-3">
+						<button class="navbar-toggler" type="button"
+							data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+							aria-controls="navbarsExample04" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"><i data-feather="menu"></i></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarsExample04">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+								<li class="nav-item"><div class="nav-dropdown">
+										<a class="nav-item nav-link active text-secondary"
+											aria-current="page" href="index.html"><i
+											class="data-feather theme-item" data-feather="home"></i> <span
+											class="theme-item">Home </span></a>
+									</div></li>
+								<li class="nav-item"><div class="nav-dropdown">
+										<a class="nav-item nav-link active text-secondary"
+											aria-current="page" href="charts.html"> <i
+											class="data-feather theme-item" data-feather="pie-chart"></i>
+											<span class="theme-item">Charts </span></a>
+									</div></li>
+								<li class="nav-item dropdown nav-dropdown"><a
+									class="nav-item nav-link dropdown-toggle text-secondary"
+									href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false"> <i
+										class="data-feather theme-item" data-feather="mail"></i> <span
+										class="theme-item">Dropdown </span> <i
+										class="data-feather theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="cloud"></i> Access</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="cloud-lightning"></i>
+												Back ups</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="upload-cloud"></i>
+												Updates</a></li>
+									</ul></li>
+
+
+								<li class="nav-item dropdown nav-dropdown"><a
+									class="nav-item nav-link dropdown-toggle text-secondary"
+									href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false"> <i
+										class="data-feather theme-item" data-feather="link"></i> <span
+										class="theme-item">Quick Links</span> <i
+										class="data-feather theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a href="form.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="file-text"></i> Forms</a></li>
+										<li><a href="charts.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="pie-chart"></i> Charts</a></li>
+										<li><a href="components.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="grid"></i> Components</a></li>
+										<li><a href="extras.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="globe"></i> Extras</a></li>
+										<li><a href="loginregister.html"
+											class="dropdown-item mt-2"><i class="data-feather"
+												data-feather="log-in"></i> Login</a></li>
+										<li><a href="profile.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="user"></i> Profile</a></li>
+										<li><a href="preferences.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="gift"></i> Preferences</a></li>
+										<li><a href="blank.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="file"></i> Blank</a></li>
+									</ul></li>
+
+
+								<li class="nav-item dropdown nav-dropdown"><a
+									class="nav-item nav-link dropdown-toggle text-secondary"
+									href="#" id="navbarDropdownMenuLink1" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false"><i
+										class="data-feather theme-item" data-feather="grid"></i> <span
+										class="theme-item">Services</span><i
+										class="data-feather theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu"
+										aria-labelledby="navbarDropdownMenuLink1">
+										<li><a class="dropdown-item" href="#">Service 1</a></li>
+										<li><a class="dropdown-item" href="#">Service 2</a></li>
+										<li class="dropdown-submenu"><a
+											class="dropdown-item mr-3" href="#">Service Level 1 <i
+												class="data-feather" data-feather="chevron-right"></i></a>
+											<ul class="dropdown-menu">
+												<li><a class="dropdown-item" href="#">Submenu 0</a></li>
+												<li><a class="dropdown-item" href="#">Submenu 0</a></li>
+												<li class="dropdown-submenu"><a class="dropdown-item"
+													href="#">Service Level 2<i class="data-feather"
+														data-feather="chevron-right"></i></a>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Submenu 1</a></li>
+														<li><a class="dropdown-item" href="#">Submenu 1</a></li>
+													</ul></li>
+												<li class="dropdown-submenu"><a class="dropdown-item"
+													href="#">Service Level 2<i class="data-feather"
+														data-feather="chevron-right"></i></a>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Submenu 2</a></li>
+														<li><a class="dropdown-item" href="#">Submenu 2</a></li>
+													</ul></li>
+											</ul></li>
+									</ul></li>
+							</ul>
+							<form action="#" class="search-form">
+								<input type="text" placeholder="Search">
+								<button type="submit">
+									<i class="data-feather navbar-search-icon"
+										data-feather="search"></i>
+								</button>
+							</form>
+							<div class="usermenu">
+								<div class="nav-dropdown">
+									<a href="#"
+										class="nav-item nav-link dropdown-toggle text-secondary"
+										id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
+										aria-expanded="false"> <i class="theme-item"
+										data-feather="user"></i> <span class="theme-item">My
+											Name</span><i class="theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu dropdown-menu-right"
+										aria-labelledby="navbarDropdown3">
+										<li><a href="profile.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="user"></i> Profile</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="mail"></i> Messages</a></li>
+										<li><a href="#" class="dropdown-item mt-2"
+											data-bs-toggle="modal" data-bs-target="#settingsModal"><i
+												class="data-feather" data-feather="settings"></i> Settings</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="log-out"></i> Logout</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+
+
+				<div class="settings">
+					<div class="modal fade" id="settingsModal"
+						aria-labelledby="settingsModalTitle" aria-hidden="true"
+						tabindex="-1">
+						<!-- 				 data-bs-backdrop="static" data-bs-keyboard="false" -->
+						<div class="modal-dialog modal-dialog-settings">
+							<div class="modal-content">
+								<div class="modal-header text-center">
+									<h5 class="modal-title" id="exampleModalLabel">Settings</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+
+									<section id="logincontent" class="shiftdown">
+
+										<div class="row g-3 mb-3 mt-3">
+
+											<div class="col-md-6">
+												<h6 class="text-muted">Select Color</h6>
+												<span onclick="changeColor('0')"
+													class="btn btn-sm btn-primary rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('1')"
+													class="btn btn-sm btn-success rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('2')"
+													class="btn btn-sm btn-danger rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('3')"
+													class="btn btn-sm btn-warning rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('4')"
+													class="btn btn-sm btn-secondary rounded-circle"><span
+													class="me-2"></span></span>
+											</div>
+											<div class="col-md-6">
+												<h6 class="text-muted">Preferences</h6>
+												<div class="form-check form-switch">
+													<input class="form-check-input" type="checkbox"
+														id="flexSwitchCheckDefault"> <label
+														class="form-check-label" for="flexSwitchCheckDefault">Switch
+														option 1</label>
+												</div>
+												<div class="form-check form-switch">
+													<input class="form-check-input" type="checkbox"
+														id="flexSwitchCheckChecked" checked> <label
+														class="form-check-label" for="flexSwitchCheckChecked">Switch
+														option 2</label>
+												</div>
+											</div>
+										</div>
+										<div class="row g-3 mb-3 mt-3">
+											<div class="col-md-6">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value=""
+														id="defaultCheck1" checked> <label
+														class="form-check-label" for="defaultCheck1">
+														Checkbox 1 </label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value=""
+														id="defaultCheck2"> <label
+														class="form-check-label" for="defaultCheck2">
+														Checkbox 2</label>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-check">
+													<input class="form-check-input" type="radio"
+														name="flexRadioDefault" id="flexRadioDefault1"> <label
+														class="form-check-label" for="flexRadioDefault1">
+														Radio option 1</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="radio"
+														name="flexRadioDefault" id="flexRadioDefault2" checked>
+													<label class="form-check-label" for="flexRadioDefault2">
+														Radio option 2 </label>
+												</div>
+											</div>
+										</div>
+										<hr />
+										<button class="btn btn-sm btn-danger" data-bs-dismiss="modal"
+											type="button">
+											<i data-feather="check-circle" class="mr-1"></i> Ok
+										</button>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<div class="content">
+					<div class="container-fluid">
+						<div class="row mt-2">
+							<div class="col-md-6 float-start">
+								<h4 class="m-0 text-dark text-muted">Charts</h4>
+							</div>
+							<div class="col-md-6">
+								<ol class="breadcrumb float-end">
+									<li class="breadcrumb-item"><a href="#"> Home</a></li>
+									<li class="breadcrumb-item active">Charts</li>
+								</ol>
+							</div>
+						</div>
+
+
+						<div class="content">
+
+							<div class="canvas-wrapper">
+
+								<div class="row">
+									<div class="col-md-12">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="card">
+													<div class="content">
+														<div class="head">
+															<h6>bar-chart-grouped</h6>
+														</div>
+														<canvas id="bar-chart-grouped" width="500" height="250"></canvas>
+
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="card">
+													<div class="content">
+														<div class="head">
+															<h6>doughnut-chart</h6>
+														</div>
+														<canvas id="doughnut-chart" width="500" height="250"></canvas>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+								<div class="row">
+									<div class="col-md-12">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="card">
+													<div class="content">
+														<div class="head">
+															<h6>pie-chart</h6>
+														</div>
+														<canvas id="pie-chart" width="500" height="250"></canvas>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="card">
+													<div class="content">
+														<div class="head">
+															<h6>radar-chart</h6>
+														</div>
+														<canvas id="radar-chart" width="500" height="250"></canvas>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+								<div class="row">
+									<div class="col-md-12">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="card">
+													<div class="content">
+														<div class="head">
+															<h6>polar-chart</h6>
+														</div>
+														<canvas id="polar-chart" width="500" height="250"></canvas>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="card">
+													<div class="content">
+														<div class="head">
+															<h6>line-chart</h6>
+														</div>
+														<canvas id="line-chart" width="500" height="250"></canvas>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+								<div class="row">
+									<div class="col-md-12">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="card">
+													<div class="content">
+														<div class="head">
+															<h6>bar-chart-horizontal</h6>
+														</div>
+														<canvas id="bar-chart-horizontal" width="500" height="250"></canvas>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="card">
+													<div class="content">
+														<div class="head">
+															<h6>bar-chart</h6>
+														</div>
+														<canvas id="bar-chart" width="500" height="250"></canvas>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="row">
+									<div class="col-md-12">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="card">
+													<div class="content">
+														<div class="head">
+															<h6>Mixed Chart</h6>
+														</div>
+														<canvas id="mixed-chart" width="500" height="250"></canvas>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="card">
+													<div class="content">
+														<div class="head">
+															<h6>Bubble Chart</h6>
+														</div>
+														<canvas id="bubble-chart" width="500" height="250"></canvas>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+
+							<!-- 							Canvas Wrapper End -->
+
+						</div>
+
+
+
+						<footer class="footer">
+							<div
+								class="d-sm-flex justify-content-center justify-content-sm-between">
+								<span
+									class="text-muted d-block text-center text-sm-left d-sm-inline-block">No
+									Copyright © Open Source <script>
+										document
+												.write(new Date().getFullYear())
+									</script>
+								</span> <span
+									class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+									AVNI - <a href="https://github.com/ajkr195/Avni"
+									target="_blank">Open Source Bootstrap 5 dashboard</a>
+								</span>
+							</div>
+						</footer>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div id="loading" class="spinner-border text-primary align-middle"
+		role="status"></div>
+
+	<button class="btn btn-sm btn-primary rounded-circle"
+		onclick="scrollToTopFunction()" id="scrollToTop" title="Scroll to top">
+		<i data-feather="arrow-up-circle"></i>
+	</button>
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(event) {
+			feather.replace();
+		});
+	</script>
+	<script type="text/javascript">
+		new Chart(document.getElementById("bar-chart"), {
+			type : 'bar',
+			data : {
+				labels : [ "Africa", "Asia", "Europe", "Latin America",
+						"North America" ],
+				datasets : [ {
+					label : "Population (millions)",
+					backgroundColor : [ "#3e95cd", "#e20a0a", "#3cba9f",
+							"#0f00f5", "#08a012" ],
+					data : [ 2478, 5267, 734, 784, 433 ]
+				} ]
+			},
+			options : {
+				legend : {
+					display : false
+				},
+				title : {
+					display : true,
+					text : 'Predicted world population (millions) in 2050'
+				}
+			}
+		});
+	</script>
+
+	<script type="text/javascript">
+		new Chart(document.getElementById("line-chart"),
+				{
+					type : 'line',
+					data : {
+						labels : [ 1500, 1600, 1700, 1750, 1800, 1850, 1900,
+								1950, 1999, 2050 ],
+						datasets : [
+								{
+									data : [ 86, 114, 106, 106, 107, 111, 133,
+											221, 783, 2478 ],
+									label : "Africa",
+									borderColor : "#0f00f5",
+									fill : false
+								},
+								{
+									data : [ 282, 350, 411, 502, 635, 809, 947,
+											1402, 3700, 5267 ],
+									label : "Asia",
+									borderColor : "#e20a0a",
+									fill : false
+								},
+								{
+									data : [ 168, 170, 178, 190, 203, 276, 408,
+											547, 675, 734 ],
+									label : "Europe",
+									borderColor : "#08a012",
+									fill : false
+								},
+								{
+									data : [ 40, 20, 10, 16, 24, 38, 74, 167,
+											508, 784 ],
+									label : "Latin America",
+									borderColor : "#ff5e00",
+									fill : false
+								},
+								{
+									data : [ 6, 3, 2, 2, 7, 26, 82, 172, 312,
+											433 ],
+									label : "North America",
+									borderColor : "#c45850",
+									fill : false
+								} ]
+					},
+					options : {
+						title : {
+							display : true,
+							text : 'World population per region (in millions)'
+						}
+					}
+				});
+	</script>
+	<script type="text/javascript">
+		new Chart(document.getElementById("pie-chart"), {
+			type : 'pie',
+			data : {
+				labels : [ "Africa", "Asia", "Europe", "Latin America",
+						"North America" ],
+				datasets : [ {
+					label : "Population (millions)",
+					backgroundColor : [ "#3e95cd", "#e20a0a", "#3cba9f",
+							"#e8c3b9", "#0f00f5" ],
+					data : [ 2478, 5267, 734, 784, 433 ]
+				} ]
+			},
+			options : {
+				title : {
+					display : true,
+					text : 'Predicted world population (millions) in 2050'
+				}
+			}
+		});
+	</script>
+
+	<script type="text/javascript">
+		new Chart(document.getElementById("radar-chart"), {
+			type : 'radar',
+			data : {
+				labels : [ "Africa", "Asia", "Europe", "Latin America",
+						"North America" ],
+				datasets : [ {
+					label : "1950",
+					fill : true,
+					backgroundColor : "rgba(179,181,198,0.2)",
+					borderColor : "rgba(179,181,198,1)",
+					pointBorderColor : "#fff",
+					pointBackgroundColor : "rgba(179,181,198,1)",
+					data : [ 8.77, 55.61, 21.69, 6.62, 6.82 ]
+				}, {
+					label : "2050",
+					fill : true,
+					backgroundColor : "rgba(255,99,132,0.2)",
+					borderColor : "rgba(255,99,132,1)",
+					pointBorderColor : "#fff",
+					pointBackgroundColor : "rgba(255,99,132,1)",
+					pointBorderColor : "#fff",
+					data : [ 25.48, 54.16, 7.61, 8.06, 4.45 ]
+				} ]
+			},
+			options : {
+				title : {
+					display : true,
+					text : 'Distribution in % of world population'
+				}
+			}
+		});
+	</script>
+
+	<script type="text/javascript">
+		new Chart(document.getElementById("polar-chart"), {
+			type : 'polarArea',
+			data : {
+				labels : [ "Africa", "Asia", "Europe", "Latin America",
+						"North America" ],
+				datasets : [ {
+					label : "Population (millions)",
+					backgroundColor : [ "#3e95cd", "#e20a0a", "#3cba9f",
+							"#e8c3b9", "#c45850" ],
+					data : [ 2478, 5267, 734, 784, 433 ]
+				} ]
+			},
+			options : {
+				title : {
+					display : true,
+					text : 'Predicted world population (millions) in 2050'
+				}
+			}
+		});
+	</script>
+
+	<script type="text/javascript">
+		new Chart(document.getElementById("doughnut-chart"), {
+			type : 'doughnut',
+			data : {
+				labels : [ "Africa", "Asia", "Europe", "Latin America",
+						"North America" ],
+				datasets : [ {
+					label : "Population (millions)",
+					backgroundColor : [ "#00a7e4", "#0f00f5", "#08a012",
+							"#e8c3b9", "#e20a0a" ],
+					data : [ 2478, 5267, 734, 784, 433 ]
+				} ]
+			},
+			options : {
+				title : {
+					display : true,
+					text : 'Predicted world population (millions) in 2050'
+				}
+			}
+		});
+	</script>
+
+	<script type="text/javascript">
+		new Chart(document.getElementById("bar-chart-horizontal"), {
+			type : 'horizontalBar',
+			data : {
+				labels : [ "Africa", "Asia", "Europe", "Latin America",
+						"North America" ],
+				datasets : [ {
+					label : "Population (millions)",
+					backgroundColor : [ "#0f00f5", "#e20a0a", "#3cba9f",
+							"#e8c3b9", "#08a012" ],
+					data : [ 2478, 5267, 734, 784, 433 ]
+				} ]
+			},
+			options : {
+				legend : {
+					display : false
+				},
+				title : {
+					display : true,
+					text : 'Predicted world population (millions) in 2050'
+				}
+			}
+		});
+	</script>
+
+	<script type="text/javascript">
+		new Chart(document.getElementById("bar-chart-grouped"), {
+			type : 'bar',
+			data : {
+				labels : [ "1900", "1950", "1999", "2050" ],
+				datasets : [ {
+					label : "Africa",
+					backgroundColor : "#0f00f5",
+					data : [ 133, 221, 783, 2478 ]
+				}, {
+					label : "Europe",
+					backgroundColor : "#08a012",
+					data : [ 408, 547, 675, 734 ]
+				} ]
+			},
+			options : {
+				title : {
+					display : true,
+					text : 'Population growth (millions)'
+				}
+			}
+		});
+	</script>
+
+	<script type="text/javascript">
+		new Chart(document.getElementById("mixed-chart"), {
+			type : 'bar',
+			data : {
+				labels : [ "1900", "1950", "1999", "2050" ],
+				datasets : [ {
+					label : "Europe",
+					type : "line",
+					borderColor : "#08a012",
+					data : [ 408, 547, 675, 734 ],
+					fill : false
+				}, {
+					label : "Africa",
+					type : "line",
+					borderColor : "#0f00f5",
+					data : [ 133, 221, 783, 2478 ],
+					fill : false
+				}, {
+					label : "Europe",
+					type : "bar",
+					backgroundColor : "rgba(0,0,0,0.2)",
+					data : [ 408, 547, 675, 734 ],
+				}, {
+					label : "Africa",
+					type : "bar",
+					backgroundColor : "rgba(0,0,0,0.2)",
+					backgroundColorHover : "#3e95cd",
+					data : [ 133, 221, 783, 2478 ]
+				} ]
+			},
+			options : {
+				title : {
+					display : true,
+					text : 'Population growth (millions): Europe & Africa'
+				},
+				legend : {
+					display : false
+				}
+			}
+		});
+	</script>
+
+	<script type="text/javascript">
+		new Chart(document.getElementById("bubble-chart"), {
+			type : 'bubble',
+			data : {
+				labels : "Africa",
+				datasets : [ {
+					label : [ "China" ],
+					backgroundColor : "rgba(255,221,50,0.2)",
+					borderColor : "rgba(255,221,50,1)",
+					data : [ {
+						x : 21269017,
+						y : 5.245,
+						r : 15
+					} ]
+				}, {
+					label : [ "Denmark" ],
+					backgroundColor : "rgba(60,186,159,0.2)",
+					borderColor : "rgba(60,186,159,1)",
+					data : [ {
+						x : 258702,
+						y : 7.526,
+						r : 10
+					} ]
+				}, {
+					label : [ "Germany" ],
+					backgroundColor : "rgba(0,0,0,0.2)",
+					borderColor : "#000",
+					data : [ {
+						x : 3979083,
+						y : 6.994,
+						r : 15
+					} ]
+				}, {
+					label : [ "Japan" ],
+					backgroundColor : "rgba(193,46,12,0.2)",
+					borderColor : "rgba(193,46,12,1)",
+					data : [ {
+						x : 4931877,
+						y : 5.921,
+						r : 15
+					} ]
+				} ]
+			},
+			options : {
+				title : {
+					display : true,
+					text : 'Predicted world population (millions) in 2050'
+				},
+				scales : {
+					yAxes : [ {
+						scaleLabel : {
+							display : true,
+							labelString : "Happiness"
+						}
+					} ],
+					xAxes : [ {
+						scaleLabel : {
+							display : true,
+							labelString : "GDP (PPP)"
+						}
+					} ]
+				}
+			}
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,1046 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/leaf.svg">
+<title>Avni - Bootstrap 5 Admin Template</title>
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="page">
+		<div class="wrapper">
+			<nav id="sidebar" class="active">
+				<div class="sidebar-header text-center">
+
+					<img src="assets/img/leaf.svg" alt="bootraper logo"
+						class="app-logo">
+					<h4 class="sidebar-title theme-item">AVNI</h4>
+
+				</div>
+				<ul class="list-unstyled components text-secondary">
+					<li><a href="index.html"><i
+							class="data-feather theme-item" data-feather="home"></i> <span
+							class="theme-item">Dashboard</span></a></li>
+					<li><a href="form.html"><i class="data-feather theme-item"
+							data-feather="file-text"></i> <span class="theme-item">Forms</span></a></li>
+					<li><a href="charts.html"><i
+							class="data-feather theme-item" data-feather="pie-chart"></i> <span
+							class="theme-item">Charts</span></a></li>
+					<li><a href="components.html"><i
+							class="data-feather theme-item" data-feather="grid"></i> <span
+							class="theme-item">Components</span></a></li>
+					<li><a href="extras.html"><i
+							class="data-feather theme-item" data-feather="globe"></i> <span
+							class="theme-item">Extras</span></a></li>
+					<li><a href="loginregister.html"><i
+							class="data-feather theme-item" data-feather="users"></i> <span
+							class="data-feather theme-item">Login</span></a></li>
+					<li><a href="profile.html"><i
+							class="data-feather theme-item" data-feather="user"></i> <span
+							class="theme-item">Profile</span></a></li>
+					<li><a href="preferences.html"><i
+							class="data-feather theme-item" data-feather="gift"></i> <span
+							class="theme-item">Preferences</span></a></li>
+					<li><a href="blank.html"><i
+							class="data-feather theme-item" data-feather="file"></i> <span
+							class="data-feather theme-item"> Blank</span></a></li>
+				</ul>
+
+				<div class="text-center mt-5 mb-5">
+					<a href="#" class="theme-btn" onClick="removeCookie()">Reset</a>
+				</div>
+			</nav>
+			<div id="body" class="active">
+
+				<nav class="navbar navbar-expand-md navbar-white bg-white"
+					aria-label="navbarexample" id="navbar">
+					<div class="container-fluid">
+						<button type="button" id="sidebarCollapse" onClick="topFunction()"
+							class="btn btn-light">
+							<i data-feather="menu"></i> <span></span>
+						</button>
+						<img src="assets/img/leaf.svg" alt="bootraper logo"
+							class="app-logo mx-3">
+						<button class="navbar-toggler" type="button"
+							data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+							aria-controls="navbarsExample04" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"><i data-feather="menu"></i></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarsExample04">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+								<li class="nav-item"><div class="nav-dropdown">
+										<a class="nav-item nav-link active text-secondary"
+											aria-current="page" href="index.html"><i
+											class="data-feather theme-item" data-feather="home"></i> <span
+											class="theme-item">Home </span></a>
+									</div></li>
+								<li class="nav-item"><div class="nav-dropdown">
+										<a class="nav-item nav-link active text-secondary"
+											aria-current="page" href="charts.html"> <i
+											class="data-feather theme-item" data-feather="pie-chart"></i>
+											<span class="theme-item">Charts </span></a>
+									</div></li>
+								<li class="nav-item dropdown nav-dropdown"><a
+									class="nav-item nav-link dropdown-toggle text-secondary"
+									href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false"> <i
+										class="data-feather theme-item" data-feather="mail"></i> <span
+										class="theme-item">Dropdown </span> <i
+										class="data-feather theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="cloud"></i> Access</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="cloud-lightning"></i>
+												Back ups</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="upload-cloud"></i>
+												Updates</a></li>
+									</ul></li>
+
+
+								<li class="nav-item dropdown nav-dropdown"><a
+									class="nav-item nav-link dropdown-toggle text-secondary"
+									href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false"> <i
+										class="data-feather theme-item" data-feather="link"></i> <span
+										class="theme-item">Quick Links</span> <i
+										class="data-feather theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a href="form.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="file-text"></i> Forms</a></li>
+										<li><a href="charts.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="pie-chart"></i> Charts</a></li>
+										<li><a href="components.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="grid"></i> Components</a></li>
+										<li><a href="extras.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="globe"></i> Extras</a></li>
+										<li><a href="loginregister.html"
+											class="dropdown-item mt-2"><i class="data-feather"
+												data-feather="log-in"></i> Login</a></li>
+										<li><a href="profile.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="user"></i> Profile</a></li>
+										<li><a href="preferences.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="gift"></i> Preferences</a></li>
+										<li><a href="blank.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="file"></i> Blank</a></li>
+									</ul></li>
+
+
+								<li class="nav-item dropdown nav-dropdown"><a
+									class="nav-item nav-link dropdown-toggle text-secondary"
+									href="#" id="navbarDropdownMenuLink1" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false"><i
+										class="data-feather theme-item" data-feather="grid"></i> <span
+										class="theme-item">Services</span><i
+										class="data-feather theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu"
+										aria-labelledby="navbarDropdownMenuLink1">
+										<li><a class="dropdown-item" href="#">Service 1</a></li>
+										<li><a class="dropdown-item" href="#">Service 2</a></li>
+										<li class="dropdown-submenu"><a
+											class="dropdown-item mr-3" href="#">Service Level 1 <i
+												class="data-feather" data-feather="chevron-right"></i></a>
+											<ul class="dropdown-menu">
+												<li><a class="dropdown-item" href="#">Submenu 0</a></li>
+												<li><a class="dropdown-item" href="#">Submenu 0</a></li>
+												<li class="dropdown-submenu"><a class="dropdown-item"
+													href="#">Service Level 2<i class="data-feather"
+														data-feather="chevron-right"></i></a>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Submenu 1</a></li>
+														<li><a class="dropdown-item" href="#">Submenu 1</a></li>
+													</ul></li>
+												<li class="dropdown-submenu"><a class="dropdown-item"
+													href="#">Service Level 2<i class="data-feather"
+														data-feather="chevron-right"></i></a>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Submenu 2</a></li>
+														<li><a class="dropdown-item" href="#">Submenu 2</a></li>
+													</ul></li>
+											</ul></li>
+									</ul></li>
+							</ul>
+							<form action="#" class="search-form">
+								<input type="text" placeholder="Search">
+								<button type="submit">
+									<i class="data-feather navbar-search-icon"
+										data-feather="search"></i>
+								</button>
+							</form>
+							<div class="usermenu">
+								<div class="nav-dropdown">
+									<a href="#"
+										class="nav-item nav-link dropdown-toggle text-secondary"
+										id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
+										aria-expanded="false"> <i class="theme-item"
+										data-feather="user"></i> <span class="theme-item">My
+											Name</span><i class="theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu dropdown-menu-right"
+										aria-labelledby="navbarDropdown3">
+										<li><a href="profile.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="user"></i> Profile</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="mail"></i> Messages</a></li>
+										<li><a href="#" class="dropdown-item mt-2"
+											data-bs-toggle="modal" data-bs-target="#settingsModal"><i
+												class="data-feather" data-feather="settings"></i> Settings</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="log-out"></i> Logout</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+
+
+				<div class="settings">
+					<div class="modal fade" id="settingsModal"
+						aria-labelledby="settingsModalTitle" aria-hidden="true"
+						tabindex="-1">
+						<!-- 				 data-bs-backdrop="static" data-bs-keyboard="false" -->
+						<div class="modal-dialog modal-dialog-settings">
+							<div class="modal-content">
+								<div class="modal-header text-center">
+									<h5 class="modal-title" id="exampleModalLabel">Settings</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+
+									<section id="logincontent" class="shiftdown">
+
+										<div class="row g-3 mb-3 mt-3">
+
+											<div class="col-md-6">
+												<h6 class="text-muted">Select Color</h6>
+												<span onclick="changeColor('0')"
+													class="btn btn-sm btn-primary rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('1')"
+													class="btn btn-sm btn-success rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('2')"
+													class="btn btn-sm btn-danger rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('3')"
+													class="btn btn-sm btn-warning rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('4')"
+													class="btn btn-sm btn-secondary rounded-circle"><span
+													class="me-2"></span></span>
+											</div>
+											<div class="col-md-6">
+												<h6 class="text-muted">Preferences</h6>
+												<div class="form-check form-switch">
+													<input class="form-check-input" type="checkbox"
+														id="flexSwitchCheckDefault"> <label
+														class="form-check-label" for="flexSwitchCheckDefault">Switch
+														option 1</label>
+												</div>
+												<div class="form-check form-switch">
+													<input class="form-check-input" type="checkbox"
+														id="flexSwitchCheckChecked" checked> <label
+														class="form-check-label" for="flexSwitchCheckChecked">Switch
+														option 2</label>
+												</div>
+											</div>
+										</div>
+										<div class="row g-3 mb-3 mt-3">
+											<div class="col-md-6">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value=""
+														id="defaultCheck1" checked> <label
+														class="form-check-label" for="defaultCheck1">
+														Checkbox 1 </label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value=""
+														id="defaultCheck2"> <label
+														class="form-check-label" for="defaultCheck2">
+														Checkbox 2</label>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-check">
+													<input class="form-check-input" type="radio"
+														name="flexRadioDefault" id="flexRadioDefault1"> <label
+														class="form-check-label" for="flexRadioDefault1">
+														Radio option 1</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="radio"
+														name="flexRadioDefault" id="flexRadioDefault2" checked>
+													<label class="form-check-label" for="flexRadioDefault2">
+														Radio option 2 </label>
+												</div>
+											</div>
+										</div>
+										<hr />
+										<button class="btn btn-sm btn-danger" data-bs-dismiss="modal"
+											type="button">
+											<i data-feather="check-circle" class="mr-1"></i> Ok
+										</button>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<div class="content">
+					<div class="container-fluid">
+						<div class="row mt-2">
+							<div class="col-md-6 float-start">
+								<h4 class="m-0 text-dark text-muted">Dashboard</h4>
+							</div>
+							<div class="col-md-6">
+								<ol class="breadcrumb float-end">
+									<li class="breadcrumb-item"><a href="#"> Home</a></li>
+									<li class="breadcrumb-item active">Dashboard</li>
+								</ol>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="card card-rounded">
+									<div class="content">
+										<div class="row">
+											<div class="col-sm-4">
+												<div class="icon-big text-center">
+													<i class="teal data-feather-big" stroke-width="3"
+														data-feather="shopping-cart"></i>
+												</div>
+											</div>
+											<div class="col-sm-8">
+												<div class="detail">
+													<p class="detail-subtitle">New Orders</p>
+													<span class="number">7,265</span>
+												</div>
+											</div>
+										</div>
+										<div class="footer">
+											<hr />
+											<div class="d-flex justify-content-between box-font-small">
+												<div class="col-md-6 stats">
+													<i data-feather="calendar"></i> This Week
+												</div>
+												<div class="col-md-6">
+													<a class="text-primary float-end" href="#"><i
+														class="blue" data-feather="chevrons-right"></i>See Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="card card-rounded">
+									<div class="content">
+										<div class="row">
+											<div class="col-sm-4">
+												<div class="icon-big text-center">
+													<i class="olive data-feather-big" stroke-width="3"
+														data-feather="dollar-sign"></i>
+												</div>
+											</div>
+											<div class="col-sm-8">
+												<div class="detail">
+													<p class="detail-subtitle">Revenue</p>
+													<span class="number">$880,900</span>
+												</div>
+											</div>
+										</div>
+										<div class="footer">
+											<hr />
+											<div class="d-flex justify-content-between box-font-small">
+												<div class="col-md-6 stats">
+													<i data-feather="calendar"></i> This Week
+												</div>
+												<div class="col-md-6">
+													<a class="text-primary float-end" href="#"><i
+														class="blue" data-feather="chevrons-right"></i>See Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="card card-rounded">
+									<div class="content">
+										<div class="row">
+											<div class="col-sm-4">
+												<div class="icon-big text-center">
+													<i class="violet data-feather-big" stroke-width="3"
+														data-feather="eye"></i>
+												</div>
+											</div>
+											<div class="col-sm-8">
+												<div class="detail">
+													<p class="detail-subtitle">Views</p>
+													<span class="number">28,210</span>
+												</div>
+											</div>
+										</div>
+										<div class="footer">
+											<hr />
+											<div class="d-flex justify-content-between box-font-small">
+												<div class="col-md-6 stats">
+													<i data-feather="clock"></i> This month
+												</div>
+												<div class="col-md-6">
+													<a class="text-primary float-end" href="#"><i
+														class="blue" data-feather="chevrons-right"></i>See Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="card card-rounded">
+									<div class="content">
+										<div class="row">
+											<div class="col-sm-4">
+												<div class="icon-big text-center">
+													<i class="orange data-feather-big" stroke-width="3"
+														data-feather="mail"></i>
+												</div>
+											</div>
+											<div class="col-sm-8">
+												<div class="detail">
+													<p class="detail-subtitle">Notifications</p>
+													<span class="number">1275</span>
+												</div>
+											</div>
+										</div>
+										<div class="footer">
+											<hr />
+											<div class="d-flex justify-content-between box-font-small">
+												<div class="col-md-6 stats">
+													<i data-feather="mail"></i> This month
+												</div>
+												<div class="col-md-6">
+													<a class="text-primary float-end" href="#"><i
+														class="blue" data-feather="chevrons-right"></i>See Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="card">
+											<div class="content">
+												<div class="head">
+													<h5 class="mb-0">Web Traffic</h5>
+													<p class="text-muted">Visitor data</p>
+												</div>
+												<div class="canvas-wrapper">
+													<canvas class="chart" id="trafficflow"></canvas>
+												</div>
+												<div class="ui hidden divider"></div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="card">
+											<div class="content">
+												<div class="head">
+													<h5 class="mb-0">Number of Users</h5>
+													<p class="text-muted">Users per month</p>
+												</div>
+												<div class="canvas-wrapper">
+													<canvas class="chart" id="sales"></canvas>
+												</div>
+												<div class="ui hidden divider"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="card">
+									<div class="content">
+										<div class="head">
+											<h5 class="mb-0">Top Visitors by Country</h5>
+											<p class="text-muted">Fiscal user data</p>
+										</div>
+										<div class="canvas-wrapper">
+											<table class="table no-margin">
+												<thead class="success">
+													<tr>
+														<th>Country</th>
+														<th class="text-right">Unique Visitors</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><i class="text-primary" data-feather="flag"></i>
+															United States</td>
+														<td class="text-right">27,340</td>
+													</tr>
+													<tr>
+														<td><i class="text-danger" data-feather="flag"></i>
+															India</td>
+														<td class="text-right">21,280</td>
+													</tr>
+													<tr>
+														<td><i class="text-primary" data-feather="flag"></i>
+															Japan</td>
+														<td class="text-right">18,210</td>
+													</tr>
+													<tr>
+														<td><i class="text-success" data-feather="flag"></i>
+															United Kingdom</td>
+														<td class="text-right">15,176</td>
+													</tr>
+													<tr>
+														<td><i class="text-warning" data-feather="flag"></i>
+															India</td>
+														<td class="text-right">14,276</td>
+													</tr>
+													<tr>
+														<td><i class="text-warning" data-feather="flag"></i>
+															Germany</td>
+														<td class="text-right">13,176</td>
+													</tr>
+													<tr>
+														<td><i class="text-success" data-feather="flag"></i>
+															India</td>
+														<td class="text-right">12,176</td>
+													</tr>
+													<tr>
+														<td><i class="text-primary" data-feather="flag"></i>
+															United States</td>
+														<td class="text-right">11,886</td>
+													</tr>
+													<tr>
+														<td><i class="text-success" data-feather="flag"></i>
+															India</td>
+														<td class="text-right">11,509</td>
+													</tr>
+													<tr>
+														<td><i class="text-info" data-feather="flag"></i>
+															India</td>
+														<td class="text-right">1,700</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="card">
+									<div class="content">
+										<div class="head">
+											<h5 class="mb-0">Most Visited Pages</h5>
+											<p class="text-muted">Fiscal visitor data</p>
+										</div>
+										<div class="canvas-wrapper">
+											<table class="table no-margin table-striped">
+												<thead class="success">
+													<tr>
+														<th>Page Name</th>
+														<th class="text-right">Visitors</th>
+														<th>Target</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><a href="index.html" class="text-info"><i
+																data-feather="link" class="data-feather blue"></i>index.html
+														</a></td>
+														<td class="text-right">8,340</td>
+														<td><div class="progress">
+																<div class="progress-bar bg-warning" role="progressbar"
+																	style="width: 75%" aria-valuenow="50" aria-valuemin="0"
+																	aria-valuemax="100"></div>
+															</div></td>
+													</tr>
+													<tr>
+														<td><a href="index.html" class="text-info"><i
+																data-feather="link" class="data-feather blue"></i>index.html
+														</a></td>
+														<td class="text-right">7,280</td>
+														<td><div class="progress">
+																<div class="progress-bar bg-success" role="progressbar"
+																	style="width: 100%" aria-valuenow="50"
+																	aria-valuemin="0" aria-valuemax="100"></div>
+															</div></td>
+													</tr>
+													<tr>
+														<td><a href="index.html" class="text-info"><i
+																data-feather="link" class="data-feather blue"></i>index.html
+														</a></td>
+														<td class="text-right">6,210</td>
+														<td><div class="progress">
+																<div class="progress-bar bg-danger" role="progressbar"
+																	style="width: 100%" aria-valuenow="50"
+																	aria-valuemin="0" aria-valuemax="100"></div>
+															</div></td>
+													</tr>
+													<tr>
+														<td><a href="index.html" class="text-info"><i
+																data-feather="link" class="data-feather blue"></i>index.html
+														</a></td>
+														<td class="text-right">5,176</td>
+														<td><div class="progress">
+																<div class="progress-bar bg-info" role="progressbar"
+																	style="width: 80%" aria-valuenow="50" aria-valuemin="0"
+																	aria-valuemax="100"></div>
+															</div></td>
+													</tr>
+													<tr>
+														<td><a href="index.html" class="text-info"><i
+																data-feather="link" class="data-feather blue"></i>index.html
+														</a></td>
+														<td class="text-right">4,276</td>
+														<td><div class="progress">
+																<div class="progress-bar bg-warning" role="progressbar"
+																	style="width: 90%" aria-valuenow="50" aria-valuemin="0"
+																	aria-valuemax="100"></div>
+															</div></td>
+													</tr>
+													<tr>
+														<td><a href="index.html" class="text-info"><i
+																data-feather="link" class="data-feather blue"></i>index.html
+														</a></td>
+														<td class="text-right">3,176</td>
+														<td><div class="progress">
+																<div class="progress-bar bg-danger" role="progressbar"
+																	style="width: 100%" aria-valuenow="50"
+																	aria-valuemin="0" aria-valuemax="100"></div>
+															</div></td>
+													</tr>
+													<tr>
+														<td><a href="index.html" class="text-info"><i
+																data-feather="link" class="data-feather blue"></i>index.html
+														</a></td>
+														<td class="text-right">2,176</td>
+														<td><div class="progress">
+																<div class="progress-bar bg-success" role="progressbar"
+																	style="width: 100%" aria-valuenow="50"
+																	aria-valuemin="0" aria-valuemax="100"></div>
+													</tr>
+													<tr>
+														<td><a href="index.html" class="text-info"><i
+																data-feather="link" class="data-feather blue"></i>index.html
+														</a></td>
+														<td class="text-right">1,886</td>
+														<td><div class="progress">
+																<div class="progress-bar bg-success" role="progressbar"
+																	style="width: 100%" aria-valuenow="50"
+																	aria-valuemin="0" aria-valuemax="100"></div>
+															</div></td>
+													</tr>
+													<tr>
+														<td><a href="index.html" class="text-info"><i
+																data-feather="link" class="data-feather blue"></i>index.html
+														</a></td>
+														<td class="text-right">1,509</td>
+														<td><div class="progress">
+																<div class="progress-bar bg-warning" role="progressbar"
+																	style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+																	aria-valuemax="100"></div>
+															</div></td>
+													</tr>
+													<tr>
+														<td><a href="index.html" class="text-info"><i
+																data-feather="link" class="data-feather blue"></i>index.html
+														</a></td>
+														<td class="text-right">1,100</td>
+														<td><div class="progress">
+																<div class="progress-bar bg-success" role="progressbar"
+																	style="width: 100%" aria-valuenow="50"
+																	aria-valuemin="0" aria-valuemax="100"></div>
+															</div></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="card">
+
+							<div class="content">
+								<div class="head">
+									<h5 class="mb-0">Financial review</h5>
+									<p class="text-muted">Of the data</p>
+								</div>
+								<div class="canvas-wrapper">
+									<table class="table no-margin">
+										<thead class="success">
+											<tr>
+												<th>Name</th>
+												<th>Sale-Rate</th>
+												<th>Actual</th>
+												<th>Variance</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><i class="text-success" data-feather="flag"></i>
+													Jacob Jensen</td>
+												<td>
+													<div class="d-flex">
+														<span class="pr-2 d-flex align-items-center">85%</span>
+													</div>
+												</td>
+												<td>32,435</td>
+												<td>40,234</td>
+											</tr>
+											<tr>
+												<td><i class="text-primary" data-feather="flag"></i>
+													Cecelia Bradley</td>
+												<td>
+													<div class="d-flex">
+														<span class="pr-2 d-flex align-items-center">55%</span>
+													</div>
+												</td>
+												<td>4,36780</td>
+												<td>765728</td>
+											</tr>
+											<tr>
+												<td><i class="text-secondary" data-feather="flag"></i>
+													Leah Sherman</td>
+												<td>
+													<div class="d-flex">
+														<span class="pr-2 d-flex align-items-center">23%</span>
+													</div>
+												</td>
+												<td>2300</td>
+												<td>22437</td>
+											</tr>
+											<tr>
+												<td><i class="text-danger" data-feather="flag"></i> Ina
+													Curry</td>
+												<td>
+													<div class="d-flex">
+														<span class="pr-2 d-flex align-items-center">44%</span>
+													</div>
+												</td>
+												<td>53462</td>
+												<td>1,75938</td>
+											</tr>
+											<tr>
+												<td><i class="text-info" data-feather="flag"></i> Lida
+													Fitzgerald</td>
+												<td>
+													<div class="d-flex">
+														<span class="pr-2 d-flex align-items-center">65%</span>
+													</div>
+												</td>
+												<td>67453</td>
+												<td>765377</td>
+											</tr>
+											<tr>
+												<td><i class="text-warning" data-feather="flag"></i>
+													Stella Johnson</td>
+												<td>
+													<div class="d-flex">
+														<span class="pr-2 d-flex align-items-center">49%</span>
+													</div>
+												</td>
+												<td>43662</td>
+												<td>96535</td>
+											</tr>
+											<tr>
+												<td><i class="text-primary" data-feather="flag"></i>
+													Maria Ortiz</td>
+												<td>
+													<div class="d-flex">
+														<span class="pr-2 d-flex align-items-center">65%</span>
+													</div>
+												</td>
+												<td>76555</td>
+												<td>258546</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="card card-rounded">
+									<div class="content">
+										<div class="row">
+											<div class="dfd text-center">
+												<i class="blue data-feather-big" stroke-width="3"
+													data-feather="thumbs-up"></i>
+												<h4 class="mb-0">+21,900</h4>
+												<p class="text-muted">Social Likes</p>
+											</div>
+										</div>
+										<div class="footer">
+											<hr />
+											<div class="d-flex justify-content-between box-font-small">
+												<div class="col-md-6 stats">
+													<i data-feather="calendar"></i> This Week
+												</div>
+												<div class="col-md-6">
+													<a class="text-primary float-end" href="#"><i
+														class="blue" data-feather="chevrons-right"></i>See Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="card card-rounded">
+									<div class="content">
+										<div class="row">
+											<div class="dfd text-center">
+												<i class="grey data-feather-big" stroke-width="3"
+													data-feather="share-2"></i>
+												<h4 class="mb-0">+22,566</h4>
+												<p class="text-muted">Followers</p>
+											</div>
+										</div>
+										<div class="footer">
+											<hr />
+											<div class="d-flex justify-content-between box-font-small">
+												<div class="col-md-6 stats">
+													<i data-feather="calendar"></i> This Week
+												</div>
+												<div class="col-md-6">
+													<a class="text-primary float-end" href="#"><i
+														class="blue" data-feather="chevrons-right"></i>See Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="card card-rounded">
+									<div class="content">
+										<div class="row">
+											<div class="dfd text-center">
+												<i class="orange data-feather-big" stroke-width="3"
+													data-feather="mail"></i>
+												<h4 class="mb-0">+15,566</h4>
+												<p class="text-muted">Subscribers</p>
+											</div>
+										</div>
+										<div class="footer">
+											<hr />
+											<div class="d-flex justify-content-between box-font-small">
+												<div class="col-md-6 stats">
+													<i data-feather="calendar"></i> This Week
+												</div>
+												<div class="col-md-6">
+													<a class="text-primary float-end" href="#"><i
+														class="blue" data-feather="chevrons-right"></i>See Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-3">
+								<div class="card card-rounded">
+									<div class="content">
+										<div class="row">
+											<div class="dfd text-center">
+												<i class="olive data-feather-big" stroke-width="3"
+													data-feather="dollar-sign"></i>
+												<h4 class="mb-0">+98,601</h4>
+												<p class="text-muted">Sales</p>
+											</div>
+										</div>
+										<div class="footer">
+											<hr />
+											<div class="d-flex justify-content-between box-font-small">
+												<div class="col-md-6 stats">
+													<i data-feather="calendar"></i> This Week
+												</div>
+												<div class="col-md-6">
+													<a class="text-primary float-end" href="#"><i
+														class="blue" data-feather="chevrons-right"></i>See Details</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<footer class="footer">
+							<div
+								class="d-sm-flex justify-content-center justify-content-sm-between">
+								<span
+									class="text-muted d-block text-center text-sm-left d-sm-inline-block">No
+									Copyright © Open Source <script>
+										document
+												.write(new Date().getFullYear())
+									</script>
+								</span> <span
+									class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+									AVNI - <a href="https://github.com/ajkr195/Avni"
+									target="_blank">Open Source Bootstrap 5 dashboard</a>
+								</span>
+							</div>
+						</footer>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<div id="loading" class="spinner-border text-primary align-middle"
+		role="status"></div>
+
+	<button class="btn btn-sm btn-primary rounded-circle"
+		onclick="scrollToTopFunction()" id="scrollToTop" title="Scroll to top">
+		<i data-feather="arrow-up-circle"></i>
+	</button>
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(event) {
+			feather.replace();
+		});
+	</script>
+	<script type="text/javascript">
+		var trafficchart = document.getElementById("trafficflow");
+		var saleschart = document.getElementById("sales");
+
+		var myChart1 = new Chart(trafficchart, {
+			type : 'line',
+			data : {
+				labels : [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul',
+						'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ],
+				datasets : [ {
+					backgroundColor : "rgba(48, 164, 255, 0.5)",
+					borderColor : "rgba(48, 164, 255, 0.8)",
+					data : [ '1135', '1135', '1140', '1168', '1150', '1145',
+							'1155', '1155', '1150', '1160', '1185', '1190' ],
+					label : '',
+					fill : true
+				} ]
+			},
+			options : {
+				responsive : true,
+				title : {
+					display : false,
+					text : 'Chart'
+				},
+				legend : {
+					position : 'top',
+					display : false,
+				},
+				tooltips : {
+					mode : 'index',
+					intersect : false,
+				},
+				hover : {
+					mode : 'nearest',
+					intersect : true
+				},
+				scales : {
+					xAxes : [ {
+						display : true,
+						scaleLabel : {
+							display : true,
+							labelString : 'Months'
+						}
+					} ],
+					yAxes : [ {
+						display : true,
+						scaleLabel : {
+							display : true,
+							labelString : 'Number of Visitors'
+						}
+					} ]
+				}
+			}
+		});
+
+		var myChart2 = new Chart(saleschart, {
+			type : 'bar',
+			data : {
+				labels : [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul',
+						'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ],
+				datasets : [ {
+					label : 'Income',
+					backgroundColor : "rgba(76, 175, 80, 0.5)",
+					borderColor : "#6da252",
+					borderWidth : 1,
+					data : [ "280", "300", "400", "600", "450", "400", "500",
+							"550", "450", "650", "950", "1000" ],
+				} ]
+			},
+			options : {
+				responsive : true,
+				title : {
+					display : false,
+					text : 'Chart'
+				},
+				legend : {
+					position : 'top',
+					display : false,
+				},
+				tooltips : {
+					mode : 'index',
+					intersect : false,
+				},
+				hover : {
+					mode : 'nearest',
+					intersect : true
+				},
+				scales : {
+					xAxes : [ {
+						display : true,
+						scaleLabel : {
+							display : true,
+							labelString : 'Months'
+						}
+					} ],
+					yAxes : [ {
+						display : true,
+						scaleLabel : {
+							display : true,
+							labelString : 'Number of Users'
+						}
+					} ]
+				}
+			}
+		});
+	</script>
+
+
+</body>
+
+</html>
