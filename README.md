@@ -24,7 +24,7 @@ Added feature to disable (remove) sidebar and its toggle button. It can be done 
 
 <h4> Settings Menu </h4>
 
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/settingsmodal.jpg)
+![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/settingsmodal2.jpg)
 
 <h4> Color Palette </h4>
 
