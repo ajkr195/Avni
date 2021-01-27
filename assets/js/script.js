@@ -44,9 +44,6 @@ function functionCompactFullView() {
 
 })();
 
-window.onload = function() {
-	document.getElementById("changeviewsize").addEventListener('click', functionCompactFullView);
-}
 
 
 // PRE-LOADER - SPINNER
