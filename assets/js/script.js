@@ -1,3 +1,53 @@
+function functionCompactFullView() {
+	// Code examples from above
+	alert('yo');
+	var bodywrapper = document.getElementById("bodywrapper");
+
+	if (bodywrapper.className == "container-fluid")
+		bodywrapper.className = "container";
+	else
+		bodywrapper.className = "container-fluid";
+
+}
+
+(function() {
+	"use strict";
+	var bodywrapper = document.getElementById("bodywrapper");
+	var pagewrapper = document.getElementById("page");
+	var thesidebar = document.getElementById("sidebar");
+	var thesidebarCollapsebtn = document.getElementById("sidebarCollapse");
+
+	document.querySelector("#radioCompactView").addEventListener("change", function() {
+
+		if (bodywrapper.className == "container-fluid") {
+			bodywrapper.className = "container";
+			pagewrapper.classList.add("container");
+			thesidebar.remove();
+			thesidebarCollapsebtn.remove();
+		} else {
+			bodywrapper.className = "container-fluid";
+			pagewrapper.classList.remove("container");
+		}
+	});
+
+	document.querySelector("#radioFullView").addEventListener("change", function() {
+		if (bodywrapper.className == "container-fluid") {
+			bodywrapper.className = "container";
+			pagewrapper.classList.add("container");
+			thesidebar.remove();
+			thesidebarCollapsebtn.remove();
+		} else {
+			bodywrapper.className = "container-fluid";
+			pagewrapper.classList.remove("container");
+		}
+	});
+
+})();
+
+window.onload = function() {
+	document.getElementById("changeviewsize").addEventListener('click', functionCompactFullView);
+}
+
 
 // PRE-LOADER - SPINNER
 

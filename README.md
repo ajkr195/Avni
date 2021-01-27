@@ -5,6 +5,19 @@ Pure (vanilla) Java Script - NO JQuery
 
 <h6> Cookies to store show/hide sidebar wont work for local file in Google Chrome. Try Firefox instead. </h6>
 
+
+<h4>Change log</h4>
+
+Version : 1.1
+
+
+Sidebar is responsive now to varying screen sizes -- icons+text, icons only and hidden.
+
+
+Added feature to disable (remove) sidebar and its toggle button from "settings" panel.
+
+
+
 <h4> Home </h4>
 
 ![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard.jpg)
