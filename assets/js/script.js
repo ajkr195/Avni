@@ -1,14 +1,4 @@
-function functionCompactFullView() {
-	// Code examples from above
-	alert('yo');
-	var bodywrapper = document.getElementById("bodywrapper");
-
-	if (bodywrapper.className == "container-fluid")
-		bodywrapper.className = "container";
-	else
-		bodywrapper.className = "container-fluid";
-
-}
+checkCookie();
 
 (function() {
 	"use strict";
@@ -22,6 +12,8 @@ function functionCompactFullView() {
 		if (bodywrapper.className == "container-fluid") {
 			bodywrapper.className = "container";
 			pagewrapper.classList.add("container");
+			alert('setting sidebar removal cookie');
+			setCookie("thesidebarremoved", "true", 1);
 			thesidebar.remove();
 			thesidebarCollapsebtn.remove();
 		} else {
@@ -75,7 +67,7 @@ function topFunction() {
 	setCookie("showHideSideBar", "active", 1);
 }
 
-checkCookie();
+
 
 function setCookie(name, value, daysToLive) {
 	//alert('Sidebar will stay for 1 day. !');
@@ -103,7 +95,14 @@ function getCookie(name) {
 
 function checkCookie() {
 	// Get cookie using our custom function
+	//alert("In the bakery shop. Checking Cookies... ");
 	var showHideSideBar = getCookie("showHideSideBar");
+
+	var thesidebarremoved = getCookie("thesidebarremoved");
+	var bodywrapper = document.getElementById("bodywrapper");
+	var pagewrapper = document.getElementById("page");
+	var thesidebar = document.getElementById("sidebar");
+	var thesidebarCollapsebtn = document.getElementById("sidebarCollapse");
 
 	var item1 = document.querySelector('#sidebar');
 
@@ -113,6 +112,14 @@ function checkCookie() {
 	} else {
 		//alert(' !! Sidebar DEACTIVED !!');
 		item1.classList.add("active");
+	}
+
+	if (thesidebarremoved != null) {
+		item1.classList.remove("active");
+		bodywrapper.className = "container";
+		pagewrapper.classList.add("container");
+		item1.remove();
+		thesidebarCollapsebtn.remove();
 	}
 }
 

@@ -17,6 +17,9 @@ Sidebar is now more responsive to varying screen sizes -- icons+text, icons only
 Added feature to disable (remove) sidebar and its toggle button. It can be done by activating/selecting compact mode  from "settings" panel modal. Setting panel/modal can be located in Settings from user icon in top right corner, as shown in the corresponding screenshots below.
 
 
+Added cookie to retain the compact/full screen settings. (To test file locally - use Firefox as Chrom doesnt allow to set cookies for local files.
+
+<hr/>
 
 <h4> Home </h4>
 

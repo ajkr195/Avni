@@ -248,7 +248,52 @@ body {
 	top: 17px;
 }
 
+
 /* 	sidebar related */
+
+.theme-btn {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	padding: 10px 24px;
+	font-size: 18px;
+	border-radius: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 5;
+	transition: all .4s ease-in-out;
+	border: none;
+	background: linear-gradient(to left, #3763eb 0%, #6f58e8 50.39%, #3763eb 100%);
+	background-size: 200% auto;
+	overflow: hidden;
+}
+
+.theme-btn:hover, .theme-btn:focus {
+	background-position: right center;
+	color: #fff;
+	-webkit-box-shadow: 0px 0px 30px rgba(46, 87, 217, 0.45);
+	-moz-box-shadow: 0px 0px 30px rgba(46, 87, 217, 0.45);
+	box-shadow: 0px 0px 30px rgba(46, 87, 217, 0.45);
+}
+
+.theme-btn.border-btn {
+	padding: 10px 24px;
+	background: transparent;
+	border: 1.5px solid #3763EB;
+	color: #6A7C92;
+	font-size: 18px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+
 #sidebar {
 	min-width: 220px;
 	max-width: 220px;
@@ -341,6 +386,11 @@ body {
 /* 	} */
 /* } */
 @media ( max-width : 1150px) {
+	
+	.theme-btn {
+	padding: 5px 10px;
+	font-size: 14px;
+	}
 	#bodywrapper {
 		margin-right: 0px;
 	}
@@ -357,47 +407,7 @@ body {
 	}
 }
 
-.theme-btn {
-	display: inline-block;
-	font-weight: 400;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	padding: 10px 24px;
-	font-size: 18px;
-	border-radius: 50px;
-	color: #fff;
-	cursor: pointer;
-	z-index: 5;
-	transition: all .4s ease-in-out;
-	border: none;
-	background: linear-gradient(to left, #3763eb 0%, #6f58e8 50.39%, #3763eb 100%);
-	background-size: 200% auto;
-	overflow: hidden;
-}
 
-.theme-btn:hover, .theme-btn:focus {
-	background-position: right center;
-	color: #fff;
-	-webkit-box-shadow: 0px 0px 30px rgba(46, 87, 217, 0.45);
-	-moz-box-shadow: 0px 0px 30px rgba(46, 87, 217, 0.45);
-	box-shadow: 0px 0px 30px rgba(46, 87, 217, 0.45);
-}
-
-.theme-btn.border-btn {
-	padding: 10px 24px;
-	background: transparent;
-	border: 1.5px solid #3763EB;
-	color: #6A7C92;
-	font-size: 18px;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-}
 
 .box-font-small {
 	font-size: 0.8rem;
