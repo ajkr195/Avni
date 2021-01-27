@@ -6,9 +6,9 @@ Pure (vanilla) Java Script - NO JQuery
 <h6> Cookies to store show/hide sidebar wont work for local file in Google Chrome. Try Firefox instead. </h6>
 
 
-<h4>Change log</h4>
+# Change log
 
-Version : 1.1
+<h4>Version : 1.1</h4>
 
 
 Sidebar is now more responsive to varying screen sizes -- icons+text, icons only and hidden.
