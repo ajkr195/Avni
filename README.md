@@ -11,10 +11,10 @@ Pure (vanilla) Java Script - NO JQuery
 Version : 1.1
 
 
-Sidebar is responsive now to varying screen sizes -- icons+text, icons only and hidden.
+Sidebar is now more responsive to varying screen sizes -- icons+text, icons only and hidden.
 
 
-Added feature to disable (remove) sidebar and its toggle button from "settings" panel.
+Added feature to disable (remove) sidebar and its toggle button. It can be done by activating/selecting compact mode  from "settings" panel modal. Setting panel/modal can be located in Settings from user icon in top right corner, as shown in the corresponding screenshots below.
 
 
 
