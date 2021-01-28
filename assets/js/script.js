@@ -12,7 +12,7 @@ checkCookie();
 		if (bodywrapper.className == "container-fluid") {
 			bodywrapper.className = "container";
 			pagewrapper.classList.add("container");
-			alert('setting sidebar removal cookie');
+			//alert('setting sidebar removal cookie');
 			setCookie("thesidebarremoved", "true", 1);
 			thesidebar.remove();
 			thesidebarCollapsebtn.remove();
