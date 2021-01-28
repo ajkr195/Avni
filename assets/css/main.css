@@ -72,6 +72,11 @@ body {
 	/* 		border: 1px solid #555; */
 }
 
+.slider-picture {
+	width: 600px;
+	height: 250px;
+}
+
 .profile-page-pic {
 	width: 160px;
 	height: 160px;
@@ -391,6 +396,11 @@ body {
 	padding: 5px 10px;
 	font-size: 14px;
 	}
+	.js-Carousel{
+	height: 100px;
+	width: 300px;
+	}
+		
 	#bodywrapper {
 		margin-right: 0px;
 	}

@@ -68,6 +68,9 @@ Added cookie to retain the compact/full screen settings. (To test file locally -
 
 ![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/preferences.jpg)
 
+<h4> Carousel </h4>
+
+![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/carousel.jpg)
 
 <h4> Pre-loader </h4>
 
