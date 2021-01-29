@@ -1,0 +1,1265 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/leaf.svg">
+<title>Avni - Bootstrap 5 Admin Template</title>
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/main.css" rel="stylesheet">
+<link href="assets/css/anicollection.css" rel="stylesheet">
+<link href="assets/css/loaders.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="page">
+		<div class="wrapper">
+			<nav id="sidebar" class="active">
+				<div class="sidebar-header text-center">
+
+					<img src="assets/img/leaf.svg" alt="bootraper logo"
+						class="app-logo">
+					<h4 class="sidebar-title theme-item">AVNI</h4>
+
+				</div>
+				<ul class="list-unstyled components text-secondary">
+					<li><a href="index.html"><i
+							class="data-feather theme-item" data-feather="home"></i> <span
+							class="theme-item">Dashboard</span></a></li>
+					<li><a href="form.html"><i class="data-feather theme-item"
+							data-feather="file-text"></i> <span class="theme-item">Forms</span></a></li>
+					<li><a href="charts.html"><i
+							class="data-feather theme-item" data-feather="pie-chart"></i> <span
+							class="theme-item">Charts</span></a></li>
+					<li><a href="components.html"><i
+							class="data-feather theme-item" data-feather="grid"></i> <span
+							class="theme-item">Components</span></a></li>
+					<li><a href="extras.html"><i
+							class="data-feather theme-item" data-feather="globe"></i> <span
+							class="theme-item">Extras</span></a></li>
+					<li><a href="loginregister.html"><i
+							class="data-feather theme-item" data-feather="users"></i> <span
+							class="data-feather theme-item">Login</span></a></li>
+					<li><a href="profile.html"><i
+							class="data-feather theme-item" data-feather="user"></i> <span
+							class="theme-item">Profile</span></a></li>
+					<li><a href="preferences.html"><i
+							class="data-feather theme-item" data-feather="gift"></i> <span
+							class="theme-item">Preferences</span></a></li>
+					<li><a href="animation.html"><i
+							class="data-feather theme-item" data-feather="loader"></i> <span
+							class="theme-item">Animation</span></a></li>
+					<li><a href="carousel.html"><i
+							class="data-feather theme-item" data-feather="play"></i> <span
+							class="theme-item">Carousel</span></a></li>
+					<li><a href="blank.html"><i
+							class="data-feather theme-item" data-feather="file"></i> <span
+							class="data-feather theme-item"> Blank</span></a></li>
+				</ul>
+
+				<div class="text-center mt-5 mb-5">
+					<a href="#" class="theme-btn" onClick="removeCookie()">Reset</a>
+				</div>
+			</nav>
+			<div id="bodywrapper" class="container-fluid">
+
+				<nav class="navbar navbar-expand-md navbar-white bg-white"
+					aria-label="navbarexample" id="navbar">
+					<div class="container-fluid">
+						<button type="button" id="sidebarCollapse" onClick="topFunction()"
+							class="btn btn-light">
+							<i data-feather="menu"></i> <span></span>
+						</button>
+						<img src="assets/img/leaf.svg" alt="bootraper logo"
+							class="app-logo mx-3">
+						<button class="navbar-toggler" type="button"
+							data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+							aria-controls="navbarsExample04" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"><i data-feather="menu"></i></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarsExample04">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+								<li class="nav-item"><div class="nav-dropdown">
+										<a class="nav-item nav-link active text-secondary"
+											aria-current="page" href="index.html"><i
+											class="data-feather theme-item" data-feather="home"></i> <span
+											class="theme-item">Home </span></a>
+									</div></li>
+								<li class="nav-item"><div class="nav-dropdown">
+										<a class="nav-item nav-link active text-secondary"
+											aria-current="page" href="charts.html"> <i
+											class="data-feather theme-item" data-feather="pie-chart"></i>
+											<span class="theme-item">Charts </span></a>
+									</div></li>
+								<li class="nav-item dropdown nav-dropdown"><a
+									class="nav-item nav-link dropdown-toggle text-secondary"
+									href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false"> <i
+										class="data-feather theme-item" data-feather="mail"></i> <span
+										class="theme-item">Dropdown </span> <i
+										class="data-feather theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="cloud"></i> Access</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="cloud-lightning"></i>
+												Back ups</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="upload-cloud"></i>
+												Updates</a></li>
+									</ul></li>
+
+
+								<li class="nav-item dropdown nav-dropdown"><a
+									class="nav-item nav-link dropdown-toggle text-secondary"
+									href="#" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false"> <i
+										class="data-feather theme-item" data-feather="link"></i> <span
+										class="theme-item">Quick Links</span> <i
+										class="data-feather theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a href="form.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="file-text"></i> Forms</a></li>
+										<li><a href="charts.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="pie-chart"></i> Charts</a></li>
+										<li><a href="components.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="grid"></i> Components</a></li>
+										<li><a href="extras.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="globe"></i> Extras</a></li>
+										<li><a href="loginregister.html"
+											class="dropdown-item mt-2"><i class="data-feather"
+												data-feather="log-in"></i> Login</a></li>
+										<li><a href="profile.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="user"></i> Profile</a></li>
+										<li><a href="preferences.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="gift"></i> Preferences</a></li>
+										<li><a href="animation.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="loader"></i> Animation</a></li>
+										<li><a href="carousel.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="play"></i> Carousel</a></li>
+										<li><a href="blank.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="file"></i> Blank</a></li>
+									</ul></li>
+
+
+								<li class="nav-item dropdown nav-dropdown"><a
+									class="nav-item nav-link dropdown-toggle text-secondary"
+									href="#" id="navbarDropdownMenuLink1" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false"><i
+										class="data-feather theme-item" data-feather="grid"></i> <span
+										class="theme-item">Services</span><i
+										class="data-feather theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu"
+										aria-labelledby="navbarDropdownMenuLink1">
+										<li><a class="dropdown-item" href="#">Service 1</a></li>
+										<li><a class="dropdown-item" href="#">Service 2</a></li>
+										<li class="dropdown-submenu"><a
+											class="dropdown-item mr-3" href="#">Service Level 1 <i
+												class="data-feather" data-feather="chevron-right"></i></a>
+											<ul class="dropdown-menu">
+												<li><a class="dropdown-item" href="#">Submenu 0</a></li>
+												<li><a class="dropdown-item" href="#">Submenu 0</a></li>
+												<li class="dropdown-submenu"><a class="dropdown-item"
+													href="#">Service Level 2<i class="data-feather"
+														data-feather="chevron-right"></i></a>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Submenu 1</a></li>
+														<li><a class="dropdown-item" href="#">Submenu 1</a></li>
+													</ul></li>
+												<li class="dropdown-submenu"><a class="dropdown-item"
+													href="#">Service Level 2<i class="data-feather"
+														data-feather="chevron-right"></i></a>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Submenu 2</a></li>
+														<li><a class="dropdown-item" href="#">Submenu 2</a></li>
+													</ul></li>
+											</ul></li>
+									</ul></li>
+							</ul>
+							<form action="#" class="search-form">
+								<input type="text" placeholder="Search">
+								<button type="submit">
+									<i class="data-feather navbar-search-icon"
+										data-feather="search"></i>
+								</button>
+							</form>
+							<div class="usermenu">
+								<div class="nav-dropdown">
+									<a href="#"
+										class="nav-item nav-link dropdown-toggle text-secondary"
+										id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
+										aria-expanded="false"> <i class="theme-item"
+										data-feather="user"></i> <span class="theme-item">My
+											Name</span><i class="theme-item" data-feather="chevron-down"></i></a>
+									<ul class="dropdown-menu dropdown-menu-right"
+										aria-labelledby="navbarDropdown3">
+										<li><a href="profile.html" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="user"></i> Profile</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="mail"></i> Messages</a></li>
+										<li><a href="#" class="dropdown-item mt-2"
+											data-bs-toggle="modal" data-bs-target="#settingsModal"><i
+												class="data-feather" data-feather="settings"></i> Settings</a></li>
+										<li><a href="#" class="dropdown-item mt-2"><i
+												class="data-feather" data-feather="log-out"></i> Logout</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+
+
+				<div class="settings">
+					<div class="modal fade" id="settingsModal"
+						aria-labelledby="settingsModalTitle" aria-hidden="true"
+						tabindex="-1">
+						<!-- 				 data-bs-backdrop="static" data-bs-keyboard="false" -->
+						<div class="modal-dialog modal-dialog-settings">
+							<div class="modal-content">
+								<div class="modal-header text-center">
+									<h5 class="modal-title" id="exampleModalLabel">Settings</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+
+									<section id="logincontent" class="shiftdown">
+
+										<div class="row g-3 mb-3 mt-3">
+
+											<div class="col-md-6">
+												<h6 class="text-muted">Select Color</h6>
+												<span onclick="changeColor('0')"
+													class="btn btn-sm btn-primary rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('1')"
+													class="btn btn-sm btn-success rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('2')"
+													class="btn btn-sm btn-danger rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('3')"
+													class="btn btn-sm btn-warning rounded-circle"><span
+													class="me-2"></span></span> <span onclick="changeColor('4')"
+													class="btn btn-sm btn-secondary rounded-circle"><span
+													class="me-2"></span></span>
+											</div>
+											<div class="col-md-6">
+												<h6 class="text-muted">Preferences</h6>
+												<div class="form-check form-switch">
+													<input class="form-check-input" type="checkbox"
+														id="flexSwitchCheckDefault"> <label
+														class="form-check-label" for="flexSwitchCheckDefault">Switch
+														option 1</label>
+												</div>
+												<div class="form-check form-switch">
+													<input class="form-check-input" type="checkbox"
+														id="flexSwitchCheckChecked" checked> <label
+														class="form-check-label" for="flexSwitchCheckChecked">Switch
+														option 2</label>
+												</div>
+											</div>
+										</div>
+										<div class="row g-3 mb-3 mt-3">
+											<div class="col-md-6">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value=""
+														id="defaultCheck1" checked> <label
+														class="form-check-label" for="defaultCheck1">
+														Checkbox 1 </label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value=""
+														id="defaultCheck2"> <label
+														class="form-check-label" for="defaultCheck2">
+														Checkbox 2</label>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<h6 class="text-muted">View Size</h6>
+												<div class="form-check">
+													<input class="form-check-input" type="radio"
+														name="flexRadioDefault" id="radioCompactView"> <label
+														class="form-check-label" for="radioCompactView">
+														Compact</label>
+												</div>
+												<div class="form-check">
+													<input class="form-check-input" type="radio"
+														name="flexRadioDefault" id="radioFullView" checked>
+													<label class="form-check-label" for="radioFullView">
+														Full-screen </label>
+												</div>
+											</div>
+										</div>
+										<hr />
+										<button class="btn btn-sm btn-danger" data-bs-dismiss="modal"
+											type="button">
+											<i data-feather="check-circle" class="mr-1"></i> Ok
+										</button>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<div class="content">
+					<div class="container-fluid">
+						<div class="row mt-2">
+							<div class="col-md-6 float-start">
+								<h4 class="m-0 text-dark text-muted">Animation</h4>
+							</div>
+							<div class="col-md-6">
+								<ol class="breadcrumb float-end">
+									<li class="breadcrumb-item"><a href="#"> Home</a></li>
+									<li class="breadcrumb-item active">Animation</li>
+								</ol>
+							</div>
+						</div>
+
+
+
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="card">
+										<div class="content">
+											<div class="head">
+												<h5 class="mb-0">Animation</h5>
+												<p class="text-muted">Using anijs</p>
+											</div>
+											<div class="canvas-wrapper">
+
+
+
+
+												<div class="row">
+													<div class="col-md-12">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="content">
+																		<div class="canvas-wrapper">
+
+																			<div class="anyotherclass"
+																				data-anijs="if: scroll, on: window, do: rubberBand animated, before: scrollReveal">
+																				<div class="caption">
+																					<div class="caption-content">
+																						<i class="fa fa-search-plus fa-3x"></i>
+																					</div>
+																				</div>
+																				<div class="card text-white bg-danger mb-3">
+																					<div class="card-header">Header</div>
+																					<div class="card-body">
+																						<h5 class="card-title">Danger card title</h5>
+																						<p class="card-text">Some quick example text
+																							to build on the card title and make up the bulk
+																							of the card's content.</p>
+																					</div>
+																				</div>
+																			</div>
+
+
+																		</div>
+																		<div class="ui hidden divider"></div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="content">
+																		<div class="canvas-wrapper">
+
+
+																			<div class="anyotherclass"
+																				data-anijs="if: scroll, on: window, do: fadeInRightBig animated, before: scrollReveal, after: removeAnim">
+																				<div class="card">
+																					<div class="card-header">Featured</div>
+																					<div class="card-body">
+																						<h5 class="card-title">Special title
+																							treatment</h5>
+																						<p class="card-text">With supporting text
+																							below as a natural lead-in to additional content.</p>
+																						<a href="#" class="btn btn-primary">Go
+																							somewhere</a>
+																					</div>
+																				</div>
+																			</div>
+
+																		</div>
+																		<div class="ui hidden divider"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="row">
+													<div class="col-md-12">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="content">
+																		<div class="canvas-wrapper">
+
+																			<div class="anyotherclass"
+																				data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal, after: removeAnim">
+																				<div class="caption">
+																					<div class="caption-content">
+																						<i class="fa fa-search-plus fa-3x"></i>
+																					</div>
+																				</div>
+																				<div class="card text-center">
+																					<div class="card-header">Featured</div>
+																					<div class="card-body">
+																						<h5 class="card-title">Special title
+																							treatment</h5>
+																						<p class="card-text">With supporting text
+																							below as a natural lead-in to additional content.</p>
+																						<a href="#" class="btn btn-primary">Go
+																							somewhere</a>
+																					</div>
+																					<div class="card-footer text-muted">2 days
+																						ago</div>
+																				</div>
+
+
+																			</div>
+
+
+
+																		</div>
+																		<div class="ui hidden divider"></div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="content">
+																		<div class="canvas-wrapper">
+
+																			<div class="anyotherclass"
+																				data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal, after: removeAnim">
+																				<div class="caption">
+																					<div class="caption-content">
+																						<i class="fa fa-search-plus fa-3x"></i>
+																					</div>
+																				</div>
+
+																				<div class="card text-dark bg-warning mb-3">
+																					<div class="card-header">Header</div>
+																					<div class="card-body">
+																						<h5 class="card-title">Warning card title</h5>
+																						<p class="card-text">Some quick example text
+																							to build on the card title and make up the bulk
+																							of the card's content.</p>
+																					</div>
+																				</div>
+
+
+																			</div>
+
+
+																		</div>
+																		<div class="ui hidden divider"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="row">
+													<div class="col-md-12">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="content">
+																		<div class="canvas-wrapper">
+
+																			<div class="anyotherclass"
+																				data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
+																				<div class="caption">
+																					<div class="caption-content">
+																						<i class="fa fa-search-plus fa-3x"></i>
+																					</div>
+																				</div>
+																				<div class="card text-dark bg-info mb-3">
+																					<div class="card-header">Header</div>
+																					<div class="card-body">
+																						<h5 class="card-title">Info card title</h5>
+																						<p class="card-text">Some quick example text
+																							to build on the card title and make up the bulk
+																							of the card's content.</p>
+																					</div>
+																				</div>
+																			</div>
+
+
+																		</div>
+																		<div class="ui hidden divider"></div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="content">
+																		<div class="canvas-wrapper">
+
+																			<div class="anyotherclass"
+																				data-anijs="if: scroll, on: window, do: flipInY animated, before: scrollReveal, after: removeAnim">
+																				<div class="caption">
+																					<div class="caption-content">
+																						<i class="fa fa-search-plus fa-3x"></i>
+																					</div>
+																				</div>
+																				<div class="card text-white bg-success mb-3">
+																					<div class="card-header">Header</div>
+																					<div class="card-body">
+																						<h5 class="card-title">Success card title</h5>
+																						<p class="card-text">Some quick example text
+																							to build on the card title and make up the bulk
+																							of the card's content.</p>
+																					</div>
+																				</div>
+																			</div>
+
+
+																		</div>
+																		<div class="ui hidden divider"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="row">
+													<div class="col-md-12">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="content">
+																		<div class="canvas-wrapper">
+
+																			<div class="anyotherclass"
+																				data-anijs="if: scroll, on: window, do: fadeInRightBig animated, before: scrollReveal">
+																				<div class="caption">
+																					<div class="caption-content">
+																						<i class="fa fa-search-plus fa-3x"></i>
+																					</div>
+																				</div>
+																				<div class="card text-white bg-secondary mb-3">
+																					<div class="card-header">Header</div>
+																					<div class="card-body">
+																						<h5 class="card-title">Secondary card title</h5>
+																						<p class="card-text">Some quick example text
+																							to build on the card title and make up the bulk
+																							of the card's content.</p>
+																					</div>
+																				</div>
+																			</div>
+
+
+																		</div>
+																		<div class="ui hidden divider"></div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="content">
+																		<div class="canvas-wrapper">
+
+
+																			<div class="anyotherclass"
+																				data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal, after: removeAnim">
+																				<div class="caption">
+																					<div class="caption-content">
+																						<i class="fa fa-search-plus fa-3x"></i>
+																					</div>
+																				</div>
+																				<div class="card text-dark bg-warning mb-3">
+																					<div class="card-header">Header</div>
+																					<div class="card-body">
+																						<h5 class="card-title">Warning card title</h5>
+																						<p class="card-text">Some quick example text
+																							to build on the card title and make up the bulk
+																							of the card's content.</p>
+																					</div>
+																				</div>
+																			</div>
+
+																		</div>
+																		<div class="ui hidden divider"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="row">
+													<div class="col-md-12">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="content">
+																		<div class="canvas-wrapper">
+
+																			<div class="anyotherclass"
+																				data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
+																				<div class="caption">
+																					<div class="caption-content">
+																						<i class="fa fa-search-plus fa-3x"></i>
+																					</div>
+																				</div>
+																				<div class="card text-dark bg-warning mb-3">
+																					<div class="card-header">Header</div>
+																					<div class="card-body">
+																						<h5 class="card-title">Warning card title</h5>
+																						<p class="card-text">Some quick example text
+																							to build on the card title and make up the bulk
+																							of the card's content.</p>
+																					</div>
+																				</div>
+																			</div>
+
+
+
+																		</div>
+																		<div class="ui hidden divider"></div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="content">
+																		<div class="canvas-wrapper">
+
+																			<div class="anyotherclass"
+																				data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
+																				<div class="caption">
+																					<div class="caption-content">
+																						<i class="fa fa-search-plus fa-3x"></i>
+																					</div>
+																				</div>
+																				<div class="card text-white bg-danger mb-3">
+																					<div class="card-header">Header</div>
+																					<div class="card-body">
+																						<h5 class="card-title">Danger card title</h5>
+																						<p class="card-text">Some quick example text
+																							to build on the card title and make up the bulk
+																							of the card's content.</p>
+																					</div>
+																				</div>
+																			</div>
+
+
+
+																		</div>
+																		<div class="ui hidden divider"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="row">
+													<div class="col-md-12">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="content">
+																		<div class="canvas-wrapper">
+
+																			<div class="anyotherclass"
+																				data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal, after: removeAnim">
+																				<div class="caption">
+																					<div class="caption-content">
+																						<i class="fa fa-search-plus fa-3x"></i>
+																					</div>
+																				</div>
+																				<div class="card text-dark bg-warning mb-3">
+																					<div class="card-header">Header</div>
+																					<div class="card-body">
+																						<h5 class="card-title">Warning card title</h5>
+																						<p class="card-text">Some quick example text
+																							to build on the card title and make up the bulk
+																							of the card's content.</p>
+																					</div>
+																				</div>
+																			</div>
+
+
+																		</div>
+																		<div class="ui hidden divider"></div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="content">
+																		<div class="canvas-wrapper">
+
+
+																			<div class="anyotherclass"
+																				data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal, after: removeAnim">
+																				<div class="caption">
+																					<div class="caption-content">
+																						<i class="fa fa-search-plus fa-3x"></i>
+																					</div>
+																				</div>
+																				<div class="card text-white bg-success mb-3">
+																					<div class="card-header">Header</div>
+																					<div class="card-body">
+																						<h5 class="card-title">Success card title</h5>
+																						<p class="card-text">Some quick example text
+																							to build on the card title and make up the bulk
+																							of the card's content.</p>
+																					</div>
+																				</div>
+																			</div>
+
+
+
+																		</div>
+																		<div class="ui hidden divider"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="row">
+													<div class="col-md-12">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="content">
+																		<div class="canvas-wrapper">
+
+
+																			<div class="anyotherclass"
+																				data-anijs="if: scroll, on: window, do: bounceInUp animated, before: scrollReveal">
+																				<div class="caption">
+																					<div class="caption-content">
+																						<i class="fa fa-search-plus fa-3x"></i>
+																					</div>
+																				</div>
+																				<div class="card">
+																					<div class="card-header">Featured</div>
+																					<div class="card-body">
+																						<h5 class="card-title">Special title
+																							treatment</h5>
+																						<p class="card-text">With supporting text
+																							below as a natural lead-in to additional content.</p>
+																						<a href="#" class="btn btn-primary">Go
+																							somewhere</a>
+																					</div>
+																				</div>
+																			</div>
+
+
+																		</div>
+																		<div class="ui hidden divider"></div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="content">
+																		<div class="canvas-wrapper">
+
+
+																			<div class="anyotherclass"
+																				data-anijs="if: scroll, on: window, do: rotateIn animated, before: scrollReveal, after: removeAnim">
+																				<div class="caption">
+																					<div class="caption-content">
+																						<i class="fa fa-search-plus fa-3x"></i>
+																					</div>
+																				</div>
+																				<div class="card text-white bg-info mb-3">
+																					<div class="card-header">Header</div>
+																					<div class="card-body">
+																						<h5 class="card-title">Info card title</h5>
+																						<p class="card-text">Some quick example text
+																							to build on the card title and make up the bulk
+																							of the card's content.</p>
+																					</div>
+																				</div>
+																			</div>
+
+																		</div>
+																		<div class="ui hidden divider"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="row">
+													<div class="col-md-12">
+														<div class="row">
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="content">
+																		<div class="canvas-wrapper">
+
+
+
+																			<div class="anyotherclass"
+																				data-anijs="if: scroll, on: window, do: bounceInUp animated, before: scrollReveal">
+																				<div class="caption">
+																					<div class="caption-content">
+																						<i class="fa fa-search-plus fa-3x"></i>
+																					</div>
+																				</div>
+																				<div class="card text-center">
+																					<div class="card-header">Featured</div>
+																					<div class="card-body">
+																						<h5 class="card-title">Special title
+																							treatment</h5>
+																						<p class="card-text">With supporting text
+																							below as a natural lead-in to additional content.</p>
+																						<a href="#" class="btn btn-primary">Go
+																							somewhere</a>
+																					</div>
+																					<div class="card-footer text-muted">2 days
+																						ago</div>
+																				</div>
+																			</div>
+
+
+																		</div>
+																		<div class="ui hidden divider"></div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="card">
+																	<div class="content">
+																		<div class="canvas-wrapper">
+
+
+
+																			<section class="success" id="intro"
+																				data-anijs="if: scroll, on:window, do: rollIn animated, before: scrollReveal, after: removeAnim">
+																				<div class="container">
+																					<div class="row">
+																						<div class="card text-white bg-primary mb-3">
+																							<div class="card-header">Header</div>
+																							<div class="card-body">
+																								<h5 class="card-title">Primary card title</h5>
+																								<p class="card-text">Some quick example text
+																									to build on the card title and make up the bulk
+																									of the card's content.</p>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</section>
+
+																			<div id="source" class="text-center"
+																				data-anijs="if: scroll, on:window, do: flipInY animated, before: scrollReveal, after: removeAnim">
+																				<div class="container">
+																					<div class="row">
+																						<div class="card text-white bg-info mb-3">
+																							<div class="card-header">Header</div>
+																							<div class="card-body">
+																								<h5 class="card-title">Info card title</h5>
+																								<p class="card-text">Some quick example text
+																									to build on the card title and make up the bulk
+																									of the card's content.</p>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+
+
+
+																		</div>
+																		<div class="ui hidden divider"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="row me-5">
+													<div class="col-md-12">
+														<div class="head">
+															<h5 class="mb-0">Animation</h5>
+															<p class="text-muted">Using CSS only - loaders.css</p>
+														</div>
+														<div class="card text-white bg-primary">
+															<div class="loaders row">
+																<div class="row mt-5 mb-5">
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-pulse">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-grid-pulse">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-clip-rotate">
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-clip-rotate-pulse">
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																</div>
+
+
+
+																<div class="row mt-5 mb-5">
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner square-spin">
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-clip-rotate-multiple">
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-pulse-rise">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-rotate">
+																			<div></div>
+																		</div>
+																	</div>
+																</div>
+
+
+
+
+																<div class="row mt-5 mb-5">
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner cube-transition">
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-zig-zag">
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-zig-zag-deflect">
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-triangle-path">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																</div>
+
+
+
+
+																<div class="row mt-5 mb-5">
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-scale">
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner line-scale">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner line-scale-party">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-scale-multiple">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																</div>
+
+
+
+
+																<div class="row mt-5 mb-5">
+
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-pulse-sync">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-beat">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner line-scale-pulse-out">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner line-scale-pulse-out-rapid">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																</div>
+
+
+
+
+																<div class="row mt-5 mb-5">
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-scale-ripple">
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-scale-ripple-multiple">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-spin-fade-loader">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner line-spin-fade-loader">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																</div>
+
+
+
+
+																<div class="row mt-5 mb-5">
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner triangle-skew-spin">
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner pacman">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner semi-circle-spin">
+																			<div></div>
+																		</div>
+																	</div>
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-grid-beat">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																</div>
+
+
+
+
+																<div class="row mt-5 mb-5">
+																	<div class="loader col-md-2 mx-4">
+																		<div class="loader-inner ball-scale-random">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+
+
+
+
+
+
+											</div>
+											<div class="ui hidden divider"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+						<footer class="footer">
+							<div
+								class="d-sm-flex justify-content-center justify-content-sm-between">
+								<span
+									class="text-muted d-block text-center text-sm-left d-sm-inline-block">No
+									Copyright © Open Source <script>
+										document
+												.write(new Date().getFullYear())
+									</script>
+								</span> <span
+									class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+									AVNI - <a href="https://github.com/ajkr195/Avni"
+									target="_blank">Open Source Bootstrap 5 dashboard</a>
+								</span>
+							</div>
+						</footer>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<div id="loading" class="spinner-border text-primary align-middle"
+		role="status"></div>
+
+	<button class="btn btn-sm btn-primary rounded-circle"
+		onclick="scrollToTopFunction()" id="scrollToTop" title="Scroll to top">
+		<i data-feather="arrow-up-circle"></i>
+	</button>
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/anijs.js"></script>
+	<script src="assets/js/anijs-helper-scrollreveal.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(event) {
+			feather.replace();
+		});
+	</script>
+	<script>
+		const navbar = document.querySelector('#navbar');
+		const scrollspy = new VanillaScrollspy(navbar);
+		scrollspy.init();
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			document.querySelector('main').className += 'loaded';
+		});
+	</script>
+
+</body>
+
+</html>
