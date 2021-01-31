@@ -15,56 +15,82 @@
 <link href="assets/css/loaders.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
 	<div id="page">
-		<div class="wrapper">
-			<nav id="sidebar" class="active">
-				<div class="sidebar-header text-center">
 
+		<div class="wrapper">
+
+			<nav id="sidebar" class="active">
+
+				<div class="sidebar-header text-center">
 					<img src="assets/img/leaf.svg" alt="bootraper logo"
 						class="app-logo">
 					<h4 class="sidebar-title theme-item">AVNI</h4>
-
 				</div>
+
+
 				<ul class="list-unstyled components text-secondary">
 					<li><a href="index.html"><i
 							class="data-feather theme-item" data-feather="home"></i> <span
-							class="theme-item">Dashboard</span></a></li>
+							class="theme-item"> Dashboard</span></a></li>
 					<li><a href="form.html"><i class="data-feather theme-item"
 							data-feather="file-text"></i> <span class="theme-item">Forms</span></a></li>
 					<li><a href="charts.html"><i
 							class="data-feather theme-item" data-feather="pie-chart"></i> <span
-							class="theme-item">Charts</span></a></li>
+							class="theme-item"> Charts</span></a></li>
 					<li><a href="components.html"><i
 							class="data-feather theme-item" data-feather="grid"></i> <span
-							class="theme-item">Components</span></a></li>
+							class="theme-item"> Components</span></a></li>
 					<li><a href="extras.html"><i
 							class="data-feather theme-item" data-feather="globe"></i> <span
-							class="theme-item">Extras</span></a></li>
+							class="theme-item"> Extras</span></a></li>
 					<li><a href="loginregister.html"><i
 							class="data-feather theme-item" data-feather="users"></i> <span
-							class="data-feather theme-item">Login</span></a></li>
+							class="data-feather theme-item"> Login</span></a></li>
 					<li><a href="profile.html"><i
 							class="data-feather theme-item" data-feather="user"></i> <span
-							class="theme-item">Profile</span></a></li>
+							class="theme-item"> Profile</span></a></li>
 					<li><a href="preferences.html"><i
 							class="data-feather theme-item" data-feather="gift"></i> <span
-							class="theme-item">Preferences</span></a></li>
+							class="theme-item"> Preferences</span></a></li>
 					<li><a href="animation.html"><i
 							class="data-feather theme-item" data-feather="loader"></i> <span
-							class="theme-item">Animation</span></a></li>
+							class="theme-item"> Animation</span></a></li>
 					<li><a href="carousel.html"><i
 							class="data-feather theme-item" data-feather="play"></i> <span
-							class="theme-item">Carousel</span></a></li>
+							class="theme-item"> Carousel</span></a></li>
 					<li><a href="blank.html"><i
 							class="data-feather theme-item" data-feather="file"></i> <span
 							class="data-feather theme-item"> Blank</span></a></li>
+					<li>
+						<div class="sidebardropdown">
+							<a href="javascript:void(0);" class="sidebar-dropdown-btn"
+								id="dropdown-btn" onclick="myFunction()"><i
+								class="data-feather theme-item" data-feather="grid"></i> <span
+								class="theme-item"> Dropdown</span><i
+								class="sidenaviconopen float-end" id="sidenavicon"
+								data-feather="chevron-up"></i></a>
+
+							<div class="dropdown-container">
+								<a href="#" class="text-center"><i
+									class="data-feather theme-item" data-feather="file"></i> <span
+									class="data-feather theme-item"> 404 Error</span></a> <a href="#"
+									class="text-center"><i class="data-feather theme-item"
+									data-feather="file"></i> <span class="data-feather theme-item">
+										403 Error</span></a> <a href="#" class="text-center"><i
+									class="data-feather theme-item" data-feather="file"></i> <span
+									class="data-feather theme-item"> 500 Error</span></a>
+							</div>
+						</div>
+					</li>
 				</ul>
 
 				<div class="text-center mt-5 mb-5">
 					<a href="#" class="theme-btn" onClick="removeCookie()">Reset</a>
 				</div>
+
 			</nav>
+
 			<div id="bodywrapper" class="container-fluid">
 
 				<nav class="navbar navbar-expand-md navbar-white bg-white"
@@ -182,6 +208,13 @@
 													</ul></li>
 											</ul></li>
 									</ul></li>
+								<li class="nav-item"><div class="nav-dropdown">
+										<a class="nav-item nav-link active text-secondary"
+											aria-current="page" href="#" onclick="openOverlayNav()">
+											<i class="data-feather theme-item" data-feather="bookmark"></i>
+											<span class="theme-item">Favorites </span>
+										</a>
+									</div></li>
 							</ul>
 							<form action="#" class="search-form">
 								<input type="text" placeholder="Search">
@@ -190,6 +223,7 @@
 										data-feather="search"></i>
 								</button>
 							</form>
+
 							<div class="usermenu">
 								<div class="nav-dropdown">
 									<a href="#"
@@ -212,6 +246,7 @@
 									</ul>
 								</div>
 							</div>
+
 						</div>
 					</div>
 				</nav>
@@ -305,6 +340,15 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+
+				<div id="sidebarOverlayNav" class="screen-overlay float-end">
+					<a href="javascript:void(0)" class="closebtn"
+						onclick="closeOverlayNav()">&times;</a>
+					<div class="screen-overlay-content text-secondary">
+						<a href="#" class="active">About</a> <a href="#">Services</a> <a
+							href="#">Clients</a> <a href="#">Contact</a>
 					</div>
 				</div>
 
@@ -1202,22 +1246,6 @@
 
 
 
-						<footer class="footer">
-							<div
-								class="d-sm-flex justify-content-center justify-content-sm-between">
-								<span
-									class="text-muted d-block text-center text-sm-left d-sm-inline-block">No
-									Copyright © Open Source <script>
-										document
-												.write(new Date().getFullYear())
-									</script>
-								</span> <span
-									class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
-									AVNI - <a href="https://github.com/ajkr195/Avni"
-									target="_blank">Open Source Bootstrap 5 dashboard</a>
-								</span>
-							</div>
-						</footer>
 					</div>
 
 				</div>
@@ -1226,7 +1254,21 @@
 
 		</div>
 	</div>
-
+	<footer class="footer mt-auto py-1 mx-4">
+		<div
+			class="d-sm-flex justify-content-center justify-content-sm-between">
+			<span
+				class="text-muted d-block text-center text-sm-left d-sm-inline-block">No
+				Copyright © Open Source <script>
+					document.write(new Date().getFullYear())
+				</script>
+			</span> <span
+				class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+				AVNI - <a href="https://github.com/ajkr195/Avni" target="_blank">Open
+					Source Bootstrap 5 dashboard</a>
+			</span>
+		</div>
+	</footer>
 
 	<div id="loading" class="spinner-border text-primary align-middle"
 		role="status"></div>
@@ -1249,17 +1291,6 @@
 			feather.replace();
 		});
 	</script>
-	<script>
-		const navbar = document.querySelector('#navbar');
-		const scrollspy = new VanillaScrollspy(navbar);
-		scrollspy.init();
-	</script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			document.querySelector('main').className += 'loaded';
-		});
-	</script>
-
 </body>
 
 </html>
