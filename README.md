@@ -21,70 +21,9 @@ Added cookie to retain the compact/full screen settings. (To test file locally -
 
 <hr/>
 
-<h4> Home </h4>
+<h4> Dashboard </h4>
 
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard.jpg)
-
-<h4> Settings Menu </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/settingsmodal.jpg)
-
-<h4> Settings Panel - UI Preferences  </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/settingsmodal2.jpg)
-
-<h4> Colored Navbar and Sidebar </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard2.jpg)
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard3.jpg)
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard4.jpg)
+![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard_new.jpg)
 
 
-<h4> Form </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/form.jpg)
-
-<h4> Components </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/components.jpg)
-
-
-<h4> Extras </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/extras.jpg)
-
-
-<h4> Profile </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/profile.jpg)
-
-<h4> Charts </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/charts.jpg)
-
-<h4> Preferences </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/preferences.jpg)
-
-<h4> Carousel </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/carousel.jpg)
-
-<h4> Pre-loader </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/pre-loader.gif)
-
-<h4> Blank Template </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/blank.jpg)
-
-<h4> Login </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/logindialog.jpg)
-
-<h4> Register </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/registerdialog.jpg)
 
