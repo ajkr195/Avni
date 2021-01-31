@@ -14,10 +14,10 @@ Pure (vanilla) Java Script - NO JQuery
 Sidebar is now more responsive to varying screen sizes -- icons+text, icons only and hidden.
 
 
-Added feature to disable (remove) sidebar and its toggle button. It can be done by activating/selecting compact mode  from "settings" panel modal. Setting panel/modal can be located in Settings from user icon in top right corner, as shown in the corresponding screenshots below.
+Added feature to disable (remove) sidebar and its toggle button. It can be done by activating/selecting compact mode  from "settings" panel modal. Setting panel/modal can be located in Settings from user icon in top right corner.
 
 
-Added cookie to retain the compact/full screen settings. (To test file locally - use Firefox as Chrom doesnt allow to set cookies for local files.
+Added cookie to retain the compact/full screen settings. (To test file locally - use Firefox as Chrome doesnt allow to set cookies for local files.
 
 <hr/>
 
