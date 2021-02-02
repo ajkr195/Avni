@@ -8,7 +8,7 @@ body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, a, td {
 	display: none;
 	position: fixed;
 	bottom: 20px;
-	right: 30px;
+	right: 140px;
 	z-index: 99;
 	border: none;
 	outline: none;
@@ -72,7 +72,7 @@ body {
 .screen-overlay a:hover:not(.closebtn), .screen-overlayy a:focus {
 	color: #f1f1f1;
 	background-color: #3FB449;;
-/* 	#3FB449; #0d6efd; */
+	/* 	#3FB449; #0d6efd; */
 }
 
 .screen-overlay .closebtn {
@@ -81,6 +81,7 @@ body {
 	right: 45px;
 	font-size: 60px;
 }
+
 .screen-overlay .closebtn:hover {
 	color: #f1f1f1;
 	position: absolute;
@@ -127,8 +128,8 @@ body {
 }
 
 .app-logo {
-	width: 40px;
-	height: 40px;
+	width: 20px;
+	height: 20px;
 	/* 		border-radius:50%; */
 	/* 		border: 1px solid #555; */
 }
@@ -164,28 +165,6 @@ body {
 	top: -12px;
 	left: 20px;
 	right: 0px;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-	.search-form {
-		width: 220px;
-	}
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-	.search-form {
-		width: 100%;
-		margin: 10px 0;
-	}
-}
-
-@media ( max-width : 991px) {
-	/* 	@media ( max-width : 767px) { */
-	.search-form {
-		width: 100%;
-		margin: 10px 0;
-		display: none;
-	}
 }
 
 .dropdown-submenu {
@@ -281,7 +260,7 @@ body {
 .search-form {
 	position: relative;
 	width: 236px;
-	height: 36px;
+	height: 32px;
 	border-radius: 50%;
 }
 
@@ -443,11 +422,11 @@ body {
 
 @media ( max-width : 768px) {
 	#sidebarCollapse {
-		display: none;
+		display: none !important;
 		/* 		bottom: 0; */
 	}
 	#sidebar {
-		display: none;
+		display: none !important;
 		/* 		bottom: 0; */
 	}
 	#body .nav-dropdown .nav-item span {
@@ -460,6 +439,29 @@ body {
 /* 	margin-right: 0px;  */
 /* 	} */
 /* } */
+
+/* @media only screen and (min-width: 992px) and (max-width: 1199px) { */
+/* 	.search-form { */
+/* 		width: 220px; */
+/* 	} */
+/* } */
+
+/* @media only screen and (min-width: 768px) and (max-width: 991px) { */
+/* 	.search-form { */
+/* 		width: 100%; */
+/* 		margin: 10px 0; */
+/* 	} */
+/* } */
+
+/* @media ( max-width : 991px) { */
+/* 	/* 	@media ( max-width : 767px) { */ 
+/* 	.search-form { */
+/* 		width: 100%; */
+/* 		margin: 10px 0; */
+/* 		display: none; */
+/* 	} */
+/* } */
+
 @media ( max-width : 1150px) {
 	.theme-btn {
 		padding: 5px 10px;
@@ -468,6 +470,10 @@ body {
 	.js-Carousel {
 		height: 100px;
 		width: 300px;
+	}
+	.search-form {
+		width: 50%;
+		margin: 5px 0;
 	}
 	#bodywrapper {
 		margin-right: 0px;
@@ -478,12 +484,20 @@ body {
 	#sidebar {
 		min-width: 80px;
 		max-width: 80px;
+/* 		left: 0; */
 		/* 		bottom: 0; */
 	}
 	#sidebar .list-unstyled span {
 		display: none !important;
 	}
+	.sidebar-title {
+		color: #767676;
+		font-weight: 900;
+		font-size: 14px;
+	}
 }
+
+
 
 .box-font-small {
 	font-size: 0.8rem;

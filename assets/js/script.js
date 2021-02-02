@@ -1,44 +1,164 @@
+var theSideBar = document.getElementById("sidebar");
+var bodywrapper = document.getElementById("bodywrapper");
+var thesidebarCollapsebtn = document.getElementById("sidebarCollapse");
+var navSearchForm = document.getElementById("navSearchForm");
+var navBarElement = document.getElementById("navbar");
+var navbarnavlinks = document.getElementsByClassName("theme-item");
+
+document.getElementById("radioCompactView").addEventListener("click", function() {
+	//alert('yoyo1');
+	bodywrapper.classList.remove("container-fluid");
+	bodywrapper.classList.add("container");
+	navBarElement.classList.add("container");
+	thesidebarCollapsebtn.style.display = "none";
+//	theSideBar.style.display = "none";
+	setCookie("compactView", "true", 1);
+});
+
+document.getElementById("radioFullView").addEventListener("click", function() {
+	//alert('yoyo2');
+	bodywrapper.classList.remove("container");
+	bodywrapper.classList.add("container-fluid");
+	navBarElement.classList.remove("container");
+	thesidebarCollapsebtn.style.display = "block";
+//	theSideBar.style.display = "block";
+	removeViewSizeCookie();
+});
+
 checkCookie();
 
-(function() {
-	"use strict";
-	var bodywrapper = document.getElementById("bodywrapper");
-	var pagewrapper = document.getElementById("page");
-	var thesidebar = document.getElementById("sidebar");
-	var thesidebarCollapsebtn = document.getElementById("sidebarCollapse");
+thesidebarCollapsebtn.addEventListener("click", pinSideBar);
 
-	document.querySelector("#radioCompactView").addEventListener("change", function() {
+function pinSideBar() {
+	if (theSideBar.classList.contains("active")) {
+		theSideBar.classList.toggle('active');
+		setCookie("sidebarUnpinned", "true", 1);
+	} else {
+		theSideBar.classList.remove('active');
+		theSideBar.style.display = "none";
+		removeCookieSidebar();
+	}
+}
 
-		if (bodywrapper.className == "container-fluid") {
-			bodywrapper.className = "container";
-			pagewrapper.classList.add("container");
-			//alert('setting sidebar removal cookie');
-			setCookie("thesidebarremoved", "true", 1);
-			thesidebar.remove();
-			thesidebarCollapsebtn.remove();
-		} else {
-			bodywrapper.className = "container-fluid";
-			pagewrapper.classList.remove("container");
+function checkCookie() {
+	var sidebarUnpinned = getCookie("sidebarUnpinned");
+	var colornumber = getCookie("colornumber");
+	var theSideBar = document.getElementById("sidebar");
+	if (sidebarUnpinned != null) {
+		theSideBar.classList.toggle('active');
+	}
+
+	if (colornumber === '0') {
+		//alert('0');
+		theSideBar.style.background = getSpecificColor('0');
+		navBarElement.style.background = getSpecificColor('0');
+		for (var i = 0, length = navbarnavlinks.length; i < length; i++) {
+			navbarnavlinks[i].style.color = '#ffff';
 		}
-	});
-
-	document.querySelector("#radioFullView").addEventListener("change", function() {
-		if (bodywrapper.className == "container-fluid") {
-			bodywrapper.className = "container";
-			pagewrapper.classList.add("container");
-			thesidebar.remove();
-			thesidebarCollapsebtn.remove();
-		} else {
-			bodywrapper.className = "container-fluid";
-			pagewrapper.classList.remove("container");
+	}
+	if (colornumber === '1') {
+		//alert('1');
+		theSideBar.style.background = getSpecificColor('1');
+		navBarElement.style.background = getSpecificColor('1');
+		for (var i = 0, length = navbarnavlinks.length; i < length; i++) {
+			navbarnavlinks[i].style.color = '#ffff';
 		}
-	});
+	}
+	if (colornumber === '2') {
+		//alert('2');
+		theSideBar.style.background = getSpecificColor('2');
+		navBarElement.style.background = getSpecificColor('2');
+		for (var i = 0, length = navbarnavlinks.length; i < length; i++) {
+			navbarnavlinks[i].style.color = '#ffff';
+		}
+	}
+	if (colornumber === '3') {
+		//alert('3');
+		theSideBar.style.background = getSpecificColor('3');
+		navBarElement.style.background = getSpecificColor('3');
+		for (var i = 0, length = navbarnavlinks.length; i < length; i++) {
+			navbarnavlinks[i].style.color = '#ffff';
+		}
+	}
+	if (colornumber === '4') {
+		//alert('4');
+		theSideBar.style.background = getSpecificColor('4');
+		navBarElement.style.background = getSpecificColor('4');
+		for (var i = 0, length = navbarnavlinks.length; i < length; i++) {
+			navbarnavlinks[i].style.color = '#767676';
+		}
+	}
 
-})();
+
+
+	var compactView = getCookie("compactView");
+
+	if (compactView != null) {
+		bodywrapper.classList.remove("container-fluid");
+		bodywrapper.classList.add("container");
+		navBarElement.classList.remove("container-fluid");
+		navBarElement.classList.add("container");
+		thesidebarCollapsebtn.style.display = "none";
+		theSideBar.style.display = "none";
+	} else {
+		bodywrapper.classList.remove("container");
+		bodywrapper.classList.add("container-fluid");
+		navBarElement.classList.remove("container");
+		navBarElement.classList.add("container-fluid");
+		thesidebarCollapsebtn.style.display = "block";
+		theSideBar.style.display = "block";
+	}
 
 
 
-// PRE-LOADER - SPINNER
+}
+
+function setCookie(name, value, daysToLive) {
+	var cookie = name + "=" + encodeURIComponent(value);
+	cookie += "; max-age=" + (1 * 24 * 60 * 60);
+	document.cookie = cookie;
+}
+
+function removeCookieSidebar() {
+	document.cookie = "sidebarUnpinned=; expires=Thu, 01 Jan 1900 00:00:00 UTC;";
+	location.reload();
+}
+
+function removeColorCookie() {
+	document.cookie = "colornumber=; expires=Thu, 01 Jan 1900 00:00:00 UTC;";
+	location.reload();
+}
+function removeViewSizeCookie() {
+	document.cookie = "compactView=; expires=Thu, 01 Jan 1900 00:00:00 UTC;";
+	location.reload();
+}
+
+
+function getCookie(cookieName) {
+	var cookieArr = document.cookie.split(";");
+	for (var i = 0; i < cookieArr.length; i++) {
+		var cookiePair = cookieArr[i].split("=");
+		if (cookieName == cookiePair[0].trim()) {
+			return decodeURIComponent(cookiePair[1]);
+		}
+	}
+	return null;
+}
+
+
+scrollToTop = document.getElementById("scrollToTop");
+window.onscroll = function() { scrollFunction() };
+function scrollFunction() {
+	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+		scrollToTop.style.display = "block";
+	} else {
+		scrollToTop.style.display = "none";
+	}
+}
+function scrollToTopFunction() {
+	document.body.scrollTop = 0; // For Safari
+	document.documentElement.scrollTop = 0;
+}
 
 function onReady(callback) {
 	var intervalId = window.setInterval(function() {
@@ -59,102 +179,8 @@ onReady(function() {
 	setVisible('#loading', false);
 });
 
-// TOGGLE SIDEBAR
 
-function topFunction() {
-	var item1 = document.querySelector('#sidebar');
-	item1.classList.toggle('active');
-	setCookie("showHideSideBar", "active", 1);
-}
-
-
-
-function setCookie(name, value, daysToLive) {
-	//alert('Sidebar will stay for 1 day. !');
-	var cookie = name + "=" + encodeURIComponent(value);
-	cookie += "; max-age=" + (1 * 24 * 60 * 60);
-	document.cookie = cookie;
-}
-
-function removeCookie() {
-	//alert('Sidebar wont appear again till you reveal it again. !');
-	document.cookie = "showHideSideBar=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-	location.reload();
-}
-
-function getCookie(name) {
-	var cookieArr = document.cookie.split(";");
-	for (var i = 0; i < cookieArr.length; i++) {
-		var cookiePair = cookieArr[i].split("=");
-		if (name == cookiePair[0].trim()) {
-			return decodeURIComponent(cookiePair[1]);
-		}
-	}
-	return null;
-}
-
-function checkCookie() {
-	// Get cookie using our custom function
-	//alert("In the bakery shop. Checking Cookies... ");
-	var showHideSideBar = getCookie("showHideSideBar");
-
-	var thesidebarremoved = getCookie("thesidebarremoved");
-	var bodywrapper = document.getElementById("bodywrapper");
-	var pagewrapper = document.getElementById("page");
-	var thesidebar = document.getElementById("sidebar");
-	var thesidebarCollapsebtn = document.getElementById("sidebarCollapse");
-
-	var item1 = document.querySelector('#sidebar');
-
-	if (showHideSideBar != null) {
-		//alert(' ! Sidebar activated  !');
-		item1.classList.remove("active");
-	} else {
-		//alert(' !! Sidebar DEACTIVED !!');
-		item1.classList.add("active");
-	}
-
-	if (thesidebarremoved != null) {
-		item1.classList.remove("active");
-		bodywrapper.className = "container";
-		pagewrapper.classList.add("container");
-		item1.remove();
-		thesidebarCollapsebtn.remove();
-	}
-}
-
-
-
-// Scroll to top function
-
-scrollToTop = document.getElementById("scrollToTop");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() { scrollFunction() };
-
-function scrollFunction() {
-	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-		scrollToTop.style.display = "block";
-	} else {
-		scrollToTop.style.display = "none";
-	}
-}
-
-// On Click Scroll to the top of the document
-function scrollToTopFunction() {
-	document.body.scrollTop = 0; // For Safari
-	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-
-// CHANGE THEME COLOR
-
-var sidebarelement = document.getElementById("sidebar");
-var navbarelement = document.getElementById("navbar");
-
-var navbarnavlinks = document.getElementsByClassName("theme-item");
-
-function getRandomColor(colornumber) {
+function getSpecificColor(colornumber) {
 	var linearbackgrounds = [
 		'linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,rgba(4, 80, 130, 1) 0%, rgba(6, 26, 245, 1) 0%, rgba(0, 212, 255, 1)100%, rgba(2, 0, 36, 1) 100%, rgba(2, 0, 36, 1) 100%)',
 
@@ -187,39 +213,44 @@ function getRandomColor(colornumber) {
 
 function changeColor(colornumber) {
 	if (colornumber === '0') {
-		sidebarelement.style.background = getRandomColor('0');
-		navbarelement.style.background = getRandomColor('0');
+		theSideBar.style.background = getSpecificColor('0');
+		navBarElement.style.background = getSpecificColor('0');
 		for (var i = 0, length = navbarnavlinks.length; i < length; i++) {
 			navbarnavlinks[i].style.color = '#ffff';
 		}
+		setCookie("colornumber", "0", 1);
 	}
 	if (colornumber === '1') {
-		sidebarelement.style.background = getRandomColor('1');
-		navbarelement.style.background = getRandomColor('1');
+		theSideBar.style.background = getSpecificColor('1');
+		navBarElement.style.background = getSpecificColor('1');
 		for (var i = 0, length = navbarnavlinks.length; i < length; i++) {
 			navbarnavlinks[i].style.color = '#ffff';
 		}
+		setCookie("colornumber", "1", 1);
 	}
 	if (colornumber === '2') {
-		sidebarelement.style.background = getRandomColor('2');
-		navbarelement.style.background = getRandomColor('2');
+		theSideBar.style.background = getSpecificColor('2');
+		navBarElement.style.background = getSpecificColor('2');
 		for (var i = 0, length = navbarnavlinks.length; i < length; i++) {
 			navbarnavlinks[i].style.color = '#ffff';
 		}
+		setCookie("colornumber", "2", 1);
 	}
 	if (colornumber === '3') {
-		sidebarelement.style.background = getRandomColor('3');
-		navbarelement.style.background = getRandomColor('3');
+		theSideBar.style.background = getSpecificColor('3');
+		navBarElement.style.background = getSpecificColor('3');
 		for (var i = 0, length = navbarnavlinks.length; i < length; i++) {
 			navbarnavlinks[i].style.color = '#ffff';
 		}
+		setCookie("colornumber", "3", 1);
 	}
 	if (colornumber === '4') {
-		sidebarelement.style.background = getRandomColor('4');
-		navbarelement.style.background = getRandomColor('4');
+		theSideBar.style.background = getSpecificColor('4');
+		navBarElement.style.background = getSpecificColor('4');
 		for (var i = 0, length = navbarnavlinks.length; i < length; i++) {
 			navbarnavlinks[i].style.color = '#767676';
 		}
+		setCookie("colornumber", "4", 1);
 	}
 }
 
@@ -253,3 +284,4 @@ function openOverlayNav() {
 function closeOverlayNav() {
 	document.getElementById("sidebarOverlayNav").style.width = "0%";
 }
+

@@ -8,6 +8,17 @@ Pure (vanilla) Java Script - NO JQuery
 
 # Change log
 
+<h4>Version : 1.2</h4>
+
+Bug fixes. 
+
+Added more responsiveness to elements.
+
+
+
+
+# Change log
+
 <h4>Version : 1.1</h4>
 
 
@@ -17,7 +28,7 @@ Sidebar is now more responsive to varying screen sizes -- icons+text, icons only
 Added feature to disable (remove) sidebar and its toggle button. It can be done by activating/selecting compact mode  from "settings" panel modal. Setting panel/modal can be located in Settings from user icon in top right corner.
 
 
-Added cookie to retain the compact/full screen settings. (To test file locally - use Firefox as Chrome doesnt allow to set cookies for local files.
+Added cookie to retain the compact/full screen settings (Experimental). To test file locally - use Firefox as Chrome doesnt allow to set cookies for local files.
 
 <hr/>
 

@@ -23,8 +23,7 @@
 			<nav id="sidebar" class="active">
 
 				<div class="sidebar-header text-center">
-					<img src="assets/img/leaf.svg" alt="bootraper logo"
-						class="app-logo">
+					<img src="assets/img/leaf.svg" alt="logo" class="app-logo">
 					<h4 class="sidebar-title theme-item">AVNI</h4>
 				</div>
 
@@ -86,23 +85,24 @@
 				</ul>
 
 				<div class="text-center mt-5 mb-5">
-					<a href="#" class="theme-btn" onClick="removeCookie()">Reset</a>
+					<a href="#" class="theme-btn" onClick="removeCookieSidebar()">Reset</a>
 				</div>
 
 			</nav>
 
-			<div id="bodywrapper" class="container-fluid">
+			<div id="bodywrapper" class="container-fluid showhidetoggle">
 
-				<nav class="navbar navbar-expand-md navbar-white bg-white"
+				<nav class="navbar navbar-expand-md navbar-white bg-white py-0"
 					aria-label="navbarexample" id="navbar">
 					<div class="container-fluid">
-						<button type="button" id="sidebarCollapse" onClick="topFunction()"
-							class="btn btn-light">
+						<button type="button" id="sidebarCollapse"
+							class="btn btn-light py-0">
 							<i data-feather="menu"></i> <span></span>
 						</button>
-						<img src="assets/img/leaf.svg" alt="bootraper logo"
-							class="app-logo mx-3">
-						<button class="navbar-toggler" type="button"
+						<img src="assets/img/leaf.svg" alt="logo"
+							class="app-logo theme-item">
+						<!-- 						<h4 class="sidebar-title theme-item mt-2 mx-5">AVNI</h4> -->
+						<button class="navbar-toggler py-0" type="button"
 							data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
 							aria-controls="navbarsExample04" aria-expanded="false"
 							aria-label="Toggle navigation">
@@ -113,70 +113,75 @@
 							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
 								<li class="nav-item"><div class="nav-dropdown">
-										<a class="nav-item nav-link active text-secondary"
+										<a class="nav-item nav-link active text-secondary py-0"
 											aria-current="page" href="index.html"><i
 											class="data-feather theme-item" data-feather="home"></i> <span
 											class="theme-item">Home </span></a>
 									</div></li>
-								<li class="nav-item"><div class="nav-dropdown">
-										<a class="nav-item nav-link active text-secondary"
-											aria-current="page" href="charts.html"> <i
-											class="data-feather theme-item" data-feather="pie-chart"></i>
-											<span class="theme-item">Charts </span></a>
-									</div></li>
-								<li class="nav-item dropdown nav-dropdown"><a
-									class="nav-item nav-link dropdown-toggle text-secondary"
-									href="#" id="navbarDropdown" role="button"
-									data-bs-toggle="dropdown" aria-expanded="false"> <i
-										class="data-feather theme-item" data-feather="mail"></i> <span
-										class="theme-item">Dropdown </span> <i
-										class="data-feather theme-item" data-feather="chevron-down"></i></a>
-									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<li><a href="#" class="dropdown-item mt-2"><i
-												class="data-feather" data-feather="cloud"></i> Access</a></li>
-										<li><a href="#" class="dropdown-item mt-2"><i
-												class="data-feather" data-feather="cloud-lightning"></i>
-												Back ups</a></li>
-										<li><a href="#" class="dropdown-item mt-2"><i
-												class="data-feather" data-feather="upload-cloud"></i>
-												Updates</a></li>
-									</ul></li>
+								<!-- 								<li class="nav-item"><div class="nav-dropdown"> -->
+								<!-- 										<a class="nav-item nav-link active text-secondary py-0" -->
+								<!-- 											aria-current="page" href="charts.html"> <i -->
+								<!-- 											class="data-feather theme-item" data-feather="pie-chart"></i> -->
+								<!-- 											<span class="theme-item">Charts </span></a> -->
+								<!-- 									</div></li> -->
+								<!-- 								<li class="nav-item dropdown nav-dropdown"><a -->
+								<!-- 									class="nav-item nav-link dropdown-toggle text-secondary" -->
+								<!-- 									href="#" id="navbarDropdown" role="button" -->
+								<!-- 									data-bs-toggle="dropdown" aria-expanded="false"> <i -->
+								<!-- 										class="data-feather theme-item" data-feather="mail"></i> <span -->
+								<!-- 										class="theme-item">Dropdown </span> <i -->
+								<!-- 										class="data-feather theme-item" data-feather="chevron-down"></i></a> -->
+								<!-- 									<ul class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
+								<!-- 										<li><a href="#" class="dropdown-item mt-2"><i -->
+								<!-- 												class="data-feather" data-feather="cloud"></i> Access</a></li> -->
+								<!-- 										<li><a href="#" class="dropdown-item mt-2"><i -->
+								<!-- 												class="data-feather" data-feather="cloud-lightning"></i> -->
+								<!-- 												Back ups</a></li> -->
+								<!-- 										<li><a href="#" class="dropdown-item mt-2"><i -->
+								<!-- 												class="data-feather" data-feather="upload-cloud"></i> -->
+								<!-- 												Updates</a></li> -->
+								<!-- 									</ul></li> -->
 
 
 								<li class="nav-item dropdown nav-dropdown"><a
-									class="nav-item nav-link dropdown-toggle text-secondary"
+									class="nav-item nav-link dropdown-toggle text-secondary py-0"
 									href="#" id="navbarDropdown" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false"> <i
 										class="data-feather theme-item" data-feather="link"></i> <span
-										class="theme-item">Quick Links</span> <i
+										class="theme-item">Links</span> <i
 										class="data-feather theme-item" data-feather="chevron-down"></i></a>
 									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<li><a href="form.html" class="dropdown-item mt-2"><i
+										<li><a href="form.html" class="dropdown-item mt-2 py-0"><i
 												class="data-feather" data-feather="file-text"></i> Forms</a></li>
-										<li><a href="charts.html" class="dropdown-item mt-2"><i
+										<li><a href="charts.html" class="dropdown-item mt-2 py-0"><i
 												class="data-feather" data-feather="pie-chart"></i> Charts</a></li>
-										<li><a href="components.html" class="dropdown-item mt-2"><i
-												class="data-feather" data-feather="grid"></i> Components</a></li>
-										<li><a href="extras.html" class="dropdown-item mt-2"><i
+										<li><a href="components.html"
+											class="dropdown-item mt-2 py-0"><i class="data-feather"
+												data-feather="grid"></i> Components</a></li>
+										<li><a href="extras.html" class="dropdown-item mt-2 py-0"><i
 												class="data-feather" data-feather="globe"></i> Extras</a></li>
 										<li><a href="loginregister.html"
-											class="dropdown-item mt-2"><i class="data-feather"
+											class="dropdown-item mt-2 py-0"><i class="data-feather"
 												data-feather="log-in"></i> Login</a></li>
-										<li><a href="profile.html" class="dropdown-item mt-2"><i
-												class="data-feather" data-feather="user"></i> Profile</a></li>
-										<li><a href="preferences.html" class="dropdown-item mt-2"><i
-												class="data-feather" data-feather="gift"></i> Preferences</a></li>
-										<li><a href="animation.html" class="dropdown-item mt-2"><i
-												class="data-feather" data-feather="loader"></i> Animation</a></li>
-										<li><a href="carousel.html" class="dropdown-item mt-2"><i
-												class="data-feather" data-feather="play"></i> Carousel</a></li>
-										<li><a href="blank.html" class="dropdown-item mt-2"><i
+										<li><a href="profile.html"
+											class="dropdown-item mt-2 py-0"><i class="data-feather"
+												data-feather="user"></i> Profile</a></li>
+										<li><a href="preferences.html"
+											class="dropdown-item mt-2 py-0"><i class="data-feather"
+												data-feather="gift"></i> Preferences</a></li>
+										<li><a href="animation.html"
+											class="dropdown-item mt-2 py-0"><i class="data-feather"
+												data-feather="loader"></i> Animation</a></li>
+										<li><a href="carousel.html"
+											class="dropdown-item mt-2 py-0"><i class="data-feather"
+												data-feather="play"></i> Carousel</a></li>
+										<li><a href="blank.html" class="dropdown-item mt-2 py-0"><i
 												class="data-feather" data-feather="file"></i> Blank</a></li>
 									</ul></li>
 
 
 								<li class="nav-item dropdown nav-dropdown"><a
-									class="nav-item nav-link dropdown-toggle text-secondary"
+									class="nav-item nav-link dropdown-toggle text-secondary py-0"
 									href="#" id="navbarDropdownMenuLink1" role="button"
 									data-bs-toggle="dropdown" aria-expanded="false"><i
 										class="data-feather theme-item" data-feather="grid"></i> <span
@@ -209,25 +214,27 @@
 											</ul></li>
 									</ul></li>
 								<li class="nav-item"><div class="nav-dropdown">
-										<a class="nav-item nav-link active text-secondary"
+										<a class="nav-item nav-link active text-secondary py-0"
 											aria-current="page" href="#" onclick="openOverlayNav()">
 											<i class="data-feather theme-item" data-feather="bookmark"></i>
 											<span class="theme-item">Favorites </span>
 										</a>
 									</div></li>
 							</ul>
-							<form action="#" class="search-form">
-								<input type="text" placeholder="Search">
-								<button type="submit">
-									<i class="data-feather navbar-search-icon"
-										data-feather="search"></i>
-								</button>
-							</form>
+							<div id="navSearchForm">
+								<form action="#" class="search-form py-0">
+									<input type="text" placeholder="Search">
+									<button type="submit">
+										<i class="data-feather navbar-search-icon"
+											data-feather="search"></i>
+									</button>
+								</form>
+							</div>
 
 							<div class="usermenu">
-								<div class="nav-dropdown">
+								<div class="nav-dropdown py-0">
 									<a href="#"
-										class="nav-item nav-link dropdown-toggle text-secondary"
+										class="nav-item nav-link dropdown-toggle text-secondary py-0"
 										id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
 										aria-expanded="false"> <i class="theme-item"
 										data-feather="user"></i> <span class="theme-item">My
@@ -316,7 +323,7 @@
 												</div>
 											</div>
 											<div class="col-md-6">
-												<h6 class="text-muted">View Size</h6>
+												<h6 class="text-muted">View Size (Experimental)</h6>
 												<div class="form-check">
 													<input class="form-check-input" type="radio"
 														name="flexRadioDefault" id="radioCompactView"> <label
@@ -325,8 +332,8 @@
 												</div>
 												<div class="form-check">
 													<input class="form-check-input" type="radio"
-														name="flexRadioDefault" id="radioFullView" checked>
-													<label class="form-check-label" for="radioFullView">
+														name="flexRadioDefault" id="radioFullView"> <label
+														class="form-check-label" for="radioFullView">
 														Full-screen </label>
 												</div>
 											</div>
@@ -351,6 +358,7 @@
 							href="#">Clients</a> <a href="#">Contact</a>
 					</div>
 				</div>
+
 
 
 
