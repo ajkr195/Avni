@@ -8,6 +8,11 @@ Pure (vanilla) Java Script - NO JQuery
 
 # Change log
 
+
+<h4>Version : 1.2.1</h4>
+
+Fixed "container" responsiveness.
+
 <h4>Version : 1.2</h4>
 
 Bug fixes. 
