@@ -37,6 +37,10 @@
 	display: none;
 }
 
+.no-decor {
+	text-decoration: none;
+}
+
 .bg-primary {
   background: var(--primary-color);
 }
