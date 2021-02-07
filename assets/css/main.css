@@ -4,6 +4,12 @@ body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, a, td {
 	-webkit-font-smoothing: antialiased;
 }
 
+.highlight {
+	color: #ffff;
+	background-color: #0d6efd;
+	
+}
+
 #scrollToTop {
 	display: none;
 	position: fixed;
@@ -454,14 +460,13 @@ body {
 /* } */
 
 /* @media ( max-width : 991px) { */
-/* 	/* 	@media ( max-width : 767px) { */ 
+/* 	/* 	@media ( max-width : 767px) { */
 /* 	.search-form { */
 /* 		width: 100%; */
 /* 		margin: 10px 0; */
 /* 		display: none; */
 /* 	} */
 /* } */
-
 @media ( max-width : 1150px) {
 	.theme-btn {
 		padding: 5px 10px;
@@ -484,7 +489,7 @@ body {
 	#sidebar {
 		min-width: 80px;
 		max-width: 80px;
-/* 		left: 0; */
+		/* 		left: 0; */
 		/* 		bottom: 0; */
 	}
 	#sidebar .list-unstyled span {
@@ -496,8 +501,6 @@ body {
 		font-size: 14px;
 	}
 }
-
-
 
 .box-font-small {
 	font-size: 0.8rem;
