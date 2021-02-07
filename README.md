@@ -37,6 +37,10 @@ Added cookie to retain the compact/full screen settings. To test file locally - 
 
 <hr/>
 
+<h4> Landing Page </h4>
+
+![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/landing.jpg)
+
 <h4> Dashboard Full-Screen </h4>
 
 ![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard_new.jpg)
