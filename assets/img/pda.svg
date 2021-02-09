@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg3621" viewBox="0 0 64 64" version="1.1">
+  <defs id="defs3623">
+    <linearGradient id="linearGradient4209" y2="9.9091" gradientUnits="userSpaceOnUse" x2="45.818" y1="51.455" x1="21.818">
+      <stop id="stop4205" offset="0"/>
+      <stop id="stop4207" stop-color="#a9a9a9" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="layer1">
+    <rect id="rect4201" height="46.727" width="30.545" y="4.7273" x="15.273" fill="url(#linearGradient4209)"/>
+    <g id="g4195" stroke-linejoin="round" transform="matrix(1.2913 0 0 1.2913 -6.8514 -5.6844)" stroke="#000" stroke-width=".58081" fill="#6a6a6a">
+      <path id="path3631" d="m15.281 6.9062v39.469s5.0724 5.0956 13.438 5.0938c8.8277-0.002 13.656-4 13.656-4v-40.375l-27.094-0.1875zm2 2.0625h22.906v32.844h-22.906v-32.844z"/>
+      <path id="path4145" d="m30.364 46.636c0 1.3556-1.0989 2.4545-2.4545 2.4545s-2.4545-1.0989-2.4545-2.4545 1.0989-2.4545 2.4545-2.4545 2.4545 1.0989 2.4545 2.4545z" transform="translate(1.0909 -.13636)"/>
+      <rect id="rect4147" y="43.682" width="6.3182" height="3" x="18.409"/>
+      <rect id="rect4147-8" y="43.682" width="6.3182" height="3" x="33.25"/>
+    </g>
+    <path id="path4219" d="m17.795 51.636h1.1364l0.20454 1.0682s2.4915 0.67034 3.4091 0c0.3018-0.22048 0.34091-1.0682 0.34091-1.0682h1s0.05882 1.4416-0.46379 1.7309c-0.65716 0.36372-3.7628 0.56562-4.9908 0-0.55833-0.25719-0.63636-1.7309-0.63636-1.7309z" fill="#32b71d"/>
+    <path id="path4219-3" d="m37.022 51.617h1.1364l0.20454 1.0682s2.4915 0.67034 3.4091 0c0.3018-0.22048 0.34091-1.0682 0.34091-1.0682h1s0.05882 1.4416-0.46379 1.7309c-0.65716 0.36372-3.7628 0.56562-4.9908 0-0.55833-0.25719-0.63636-1.7309-0.63636-1.7309z" fill="#b71d1d"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>PDA</dc:title>
+        <dc:date>2010-08-04T23:41:33</dc:date>
+        <dc:description>A mobile device that represents a PDA or smartphone.</dc:description>
+        <dc:source>http://openclipart.org/detail/77635/pda-by-george_edison55</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>george_edison55</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>device</rdf:li>
+            <rdf:li>electronic</rdf:li>
+            <rdf:li>mobile</rdf:li>
+            <rdf:li>pda</rdf:li>
+            <rdf:li>phone</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

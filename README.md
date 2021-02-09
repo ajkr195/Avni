@@ -37,9 +37,13 @@ Added cookie to retain the compact/full screen settings. To test file locally - 
 
 <hr/>
 
-<h4> Landing Page </h4>
+<h4> Landing Page 1 </h4>
 
 ![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/landing.jpg)
+
+<h4> Landing Page 2</h4>
+
+![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/landing2.jpg)
 
 <h4> Dashboard Full-Screen </h4>
 
@@ -48,6 +52,10 @@ Added cookie to retain the compact/full screen settings. To test file locally - 
 <h4> Dashboard Compact </h4>
 
 ![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard_compact.jpg)
+
+<h4> Dashboard 2 </h4>
+
+![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard_new2.jpg)
 
 
 

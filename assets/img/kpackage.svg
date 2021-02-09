@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://web.resource.org/cc/"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    id="svg1"
+    viewBox="0 0 437.5 437.5"
+    version="1.0"
+    y="0"
+    x="0"
+  >
+  <path
+      id="path584"
+      style="stroke-linejoin:bevel;fill-rule:evenodd;stroke:#eb6000;stroke-width:13.001;fill:#ffdc9c"
+      d="m251.54 96.347c-16.04 4.403-167.69 42.573-205.6 55.793-17.497-41.11-20.413-80.751-26.245-101.3 51.034-16.154 144.36-39.645 199.76-38.176 13.12 24.958 27.7 55.788 32.08 83.683z"
+  />
+  <path
+      id="path579"
+      style="fill-rule:evenodd;stroke:#0000c5;stroke-width:13.001;fill:#ffffff"
+      d="m126.14 413.46c55.41-5.87 195.38-60.19 236.21-82.21 7.29-41.11 18.96-149.75 10.21-179.11-35 13.21-204.14 64.59-239.13 80.74-2.92 19.09-4.38 138.01-7.29 180.58z"
+  />
+  <path
+      id="path580"
+      style="stroke-linejoin:bevel;fill-rule:evenodd;stroke:#007500;stroke-width:13.001;fill:#00da00"
+      d="m124.68 416.4c-24.789-16.15-67.074-61.66-81.656-85.15 0-33.77-2.916-142.41 0-179.11 11.665 13.21 65.616 55.78 90.406 80.74 1.46 13.22-5.83 142.41-8.75 183.52z"
+  />
+  <path
+      id="path583"
+      style="stroke-linejoin:bevel;fill-rule:evenodd;stroke:#fc9700;stroke-width:13.001;fill:#ffe8b0"
+      d="m372.56 153.6c-27.71-7.34-104.99-44.04-118.11-57.253s-4.37-58.725 1.46-74.875c30.62 5.873 129.77 33.767 161.85 45.512 10.21 42.576-43.74 88.086-45.2 86.616z"
+  />
+  <path
+      id="path582"
+      style="stroke-linejoin:bevel;fill-rule:evenodd;stroke:#fc8b00;stroke-width:13.001;fill:#ffffff"
+      d="m131.97 231.41c7.29-57.25 1.46-101.3 4.37-132.13-10.2-8.806-96.232-61.658-88.941-33.764 7.29 27.895-4.375 85.154-4.375 85.154l88.946 80.74z"
+  />
+  <path
+      id="path581"
+      style="stroke-linejoin:bevel;fill-rule:evenodd;stroke:#f27f00;stroke-width:13.001;fill:#ffffff"
+      d="m133.43 232.88c-13.13-41.1-45.204-70.47-51.036-102.77 21.876-23.49 279.96-85.148 317.87-77.807 5.84 30.831-11.66 76.347-26.24 99.837-24.79 8.8-204.14 64.59-240.59 80.74z"
+  />
+  <path
+      id="path586"
+      style="stroke-linejoin:bevel;fill-rule:evenodd;stroke:#000086;stroke-width:13.001;fill:#00b2ff"
+      d="m127.6 413.46c1.45-55.79 4.22-172.14 11.51-170.67s137.21 126.63 125.55 131.03c-11.67 4.41-129.77 44.05-137.06 39.64z"
+  />
+  <path
+      id="path587"
+      style="stroke-linejoin:bevel;fill-rule:evenodd;stroke:#6b0000;stroke-width:12.518;fill:#a70000"
+      d="m373.28 168.1c4.37 50.36-4.38 163.37-11.67 162.01s-134.25-116.96-122.58-121.04c23.33-5.45 126.96-45.06 134.25-40.97z"
+  />
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >kpackage</dc:title
+        >
+        <dc:date
+          >2011-01-21T16:58:49</dc:date
+        >
+        <dc:description
+          >Originally uploaded by Jose Hevia for OCAL 0.18</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/107875/kpackage-by-anonymous</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >Anonymous</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >fix</rdf:li
+            >
+            <rdf:li
+              >keyword</rdf:li
+            >
+            <rdf:li
+              >librarians</rdf:li
+            >
+            <rdf:li
+              >tag</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
