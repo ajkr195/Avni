@@ -140,6 +140,12 @@ body {
 	/* 		border: 1px solid #555; */
 }
 
+.user-avatar{
+	width: 30px;
+	height: 30px;
+	
+}
+
 .slider-picture {
 	width: 600px;
 	height: 250px;
@@ -362,7 +368,7 @@ body {
 }
 
 .sidebar-title {
-	color: #767676;
+	color: #008000;
 	font-weight: 900;
 }
 
@@ -496,7 +502,7 @@ body {
 		display: none !important;
 	}
 	.sidebar-title {
-		color: #767676;
+		color: #008000;
 		font-weight: 900;
 		font-size: 14px;
 	}
