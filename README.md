@@ -7,7 +7,7 @@ Mulitple Landing pages.
 
 Pure (vanilla) Java Script Based. Since JQuery is kicked out from Bootstrap 5, NO JQuery or any related dependency is used at all. That makes the overall template feather weight.
 
-<h6> To test persistence of various navbar and color settings instead of Chrome try it in Firefox instead since Chrome does not allow local file's cookies.</h6>
+<h4> To test persistence of various navbar and color settings try it in Firefox instead of Chrome. Chrome does not allow local file's cookies.</h4>
 
 
 # Change log
