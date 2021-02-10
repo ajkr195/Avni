@@ -1,12 +1,32 @@
 # Avni - The Planet Earth
-Bootstrap 5 Admin Template and Feather Icons
+Bootstrap 5 Admin Template and Feather & FontAwesome Icons
 
-Pure (vanilla) Java Script - NO JQuery
+Multiple Dashboard Layouts.
 
-<h6> Cookies to store show/hide sidebar wont work for local file in Google Chrome. Try Firefox instead. </h6>
+Mulitple Landing pages.
+
+Pure (vanilla) Java Script Based. Since JQuery is kicked out from Bootstrap 5, NO JQuery or any related dependency is used at all. That makes the overall template feather weight.
+
+<h6> To test persistence of various navbar and color settings instead of Chrome try it in Firefox instead since Chrome does not allow local file's cookies.</h6>
 
 
 # Change log
+
+
+<h4>Version : 2.0</h4>
+
+Stable Version
+
+Summary: 
+<ul>
+<li>Fixed all known issues related to functionalities.</li>
+<li>Fixed all broken known responsiveness.</li>
+<li>Fixed all show/hide navbar brand related issues.</li>
+<li>Removed all page reloads from everywhere.</li>
+<li>Added "export HTML table to pdf" using jspdf.js</li>
+</ul>
+
+Since this project started on a learn and develop philosophy, the next milestone will be to reduce/concise the custom css and custom js used. And if time permits will create gulp package for the same.
 
 
 <h4>Version : 1.2.1</h4>
@@ -32,8 +52,6 @@ Sidebar is now more responsive to varying screen sizes -- icons+text, icons only
 
 Added feature to disable (remove) sidebar and its toggle button. It can be done by activating/selecting compact mode  from "settings" panel modal. Setting panel/modal can be located in Settings from user icon in top right corner.
 
-
-Added cookie to retain the compact/full screen settings. To test file locally - use Firefox as Chrome doesnt allow to set cookies for local files.
 
 <hr/>
 

@@ -198,13 +198,13 @@ onReady(function() {
 
 function getSpecificColor(colornumber) {
 	var linearbackgrounds = [
-		'linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,rgba(4, 80, 130, 1) 0%, rgba(6, 26, 245, 1) 0%, rgba(0, 212, 255, 1)100%, rgba(2, 0, 36, 1) 100%, rgba(2, 0, 36, 1) 100%)',
+		'linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%)',
 
 		'linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,rgba(4, 80, 130, 1) 0%, rgba(6, 26, 005, 1) 0%, rgba(0, 212, 255, 1)100%, rgba(2, 0, 36, 1) 100%, rgba(2, 0, 36, 1) 100%)',
 
-		'linear-gradient(90deg, rgba(2, 0, 36, 1) 0%,rgba(4, 80, 130, 1) 0%, rgba(50, 0, 0, 1) 0%, rgba(246, 26, 005, 1)100%, rgba(2, 0, 36, 1) 100%, rgba(2, 0, 36, 1) 100%)',
+		'linear-gradient(147deg, #f71735 0%, #db3445 74%)',
 
-		'linear-gradient(315deg, #f5d020 0%, #f53803 74%)',
+		'linear-gradient(316deg, #f94327 0%, #ff7d14 74%)',
 		'#ffff'];
 
 	if (colornumber === '0') {
