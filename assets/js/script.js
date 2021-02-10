@@ -41,8 +41,11 @@ function pinSideBar() {
 		setVisible('.navbrandarea2', false);
 		setCookie("sidebarUnpinned", "true", 1);
 	} else {
-		theSideBar.classList.remove('active');
-		theSideBar.style.display = "none";
+		theSideBar.classList.toggle('active');
+		setVisible('.navbrandarea1', true);
+		setVisible('.navbrandarea2', true);
+		//theSideBar.classList.remove('active');
+		//theSideBar.style.display = "none";
 		removeCookieSidebar();
 	}
 }
@@ -132,7 +135,7 @@ function setCookie(name, value, daysToLive) {
 
 function removeCookieSidebar() {
 	document.cookie = "sidebarUnpinned=; expires=Thu, 01 Jan 1900 00:00:00 UTC;";
-	location.reload();
+	//location.reload();
 }
 
 function removeColorCookie() {
@@ -166,6 +169,8 @@ function scrollFunction() {
 		scrollToTop.style.display = "none";
 	}
 }
+
+
 function scrollToTopFunction() {
 	document.body.scrollTop = 0; // For Safari
 	document.documentElement.scrollTop = 0;

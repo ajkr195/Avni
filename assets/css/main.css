@@ -7,7 +7,6 @@ body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, a, td {
 .highlight {
 	color: #ffff;
 	background-color: #0d6efd;
-	
 }
 
 #scrollToTop {
@@ -140,10 +139,9 @@ body {
 	/* 		border: 1px solid #555; */
 }
 
-.user-avatar{
+.user-avatar {
 	width: 30px;
 	height: 30px;
-	
 }
 
 .slider-picture {
@@ -444,6 +442,12 @@ body {
 	#body .nav-dropdown .nav-item span {
 		display: none !important;
 	}
+	.navbrandarea1 {
+		display: block !important;
+	}
+	.navbrandarea2 {
+		display: block !important;
+	}
 }
 
 /* @media ( max-width : 1200px) { */
@@ -483,8 +487,11 @@ body {
 		width: 300px;
 	}
 	.search-form {
-		width: 50%;
+		width: 100%;
 		margin: 5px 0;
+	}
+	.usermenu {
+		float: right;
 	}
 	#bodywrapper {
 		margin-right: 0px;
