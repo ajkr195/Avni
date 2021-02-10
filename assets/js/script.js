@@ -14,6 +14,8 @@ document.getElementById("radioCompactView").addEventListener("click", function()
 	bodywrapper.classList.add("container");
 	navBarElement.classList.add("container");
 	thesidebarCollapsebtn.style.display = "none";
+	setVisible('.navbrandarea1', true);
+	setVisible('.navbrandarea2', true);
 	setCookie("compactView", "true", 1);
 });
 
@@ -35,6 +37,8 @@ thesidebarCollapsebtn.addEventListener("click", pinSideBar);
 function pinSideBar() {
 	if (theSideBar.classList.contains("active")) {
 		theSideBar.classList.toggle('active');
+		setVisible('.navbrandarea1', false);
+		setVisible('.navbrandarea2', false);
 		setCookie("sidebarUnpinned", "true", 1);
 	} else {
 		theSideBar.classList.remove('active');
