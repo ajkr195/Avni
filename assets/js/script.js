@@ -6,6 +6,7 @@ var navSearchForm = document.getElementById("navSearchForm");
 var navBarElement = document.getElementById("navbar");
 var navbarnavlinks = document.getElementsByClassName("theme-item");
 
+
 document.getElementById("radioCompactView").addEventListener("click", function() {
 	//alert('yoyo1');
 	theSideBar.style.display = "none";
@@ -266,6 +267,8 @@ function changeColor(colornumber) {
 		for (var i = 0, length = navbarnavlinks.length; i < length; i++) {
 			navbarnavlinks[i].style.color = '#767676';
 		}
+		document.querySelector(".navbrandarea2").style.color='#008000';
+		document.querySelector(".sidebar-title").style.color='#008000';
 		setCookie("colornumber", "4", 1);
 	}
 }
