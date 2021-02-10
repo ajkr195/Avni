@@ -53,6 +53,8 @@ function checkCookie() {
 	var theSideBar = document.getElementById("sidebar");
 	if (sidebarUnpinned != null) {
 		theSideBar.classList.toggle('active');
+		setVisible('.navbrandarea1', false);
+		setVisible('.navbrandarea2', false);
 	}
 
 	if (colornumber === '0') {
@@ -107,6 +109,8 @@ function checkCookie() {
 		navBarElement.classList.add("container");
 		thesidebarCollapsebtn.style.display = "none";
 		theSideBar.style.display = "none";
+		setVisible('.navbrandarea1', true);
+		setVisible('.navbrandarea2', true);
 	} else {
 		bodywrapper.classList.remove("container");
 		bodywrapper.classList.add("container-fluid");
