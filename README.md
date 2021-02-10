@@ -55,6 +55,19 @@ Added feature to disable (remove) sidebar and its toggle button. It can be done 
 
 <hr/>
 
+
+<h4> Dashboard Full-Screen </h4>
+
+![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard.jpg)
+
+<h4> Dashboard Compact </h4>
+
+![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboardcompact.jpg)
+
+<h4> Dashboard 2 </h4>
+
+![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard_new2.jpg)
+
 <h4> Landing Page 1 </h4>
 
 ![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/landing.jpg)
@@ -62,19 +75,4 @@ Added feature to disable (remove) sidebar and its toggle button. It can be done 
 <h4> Landing Page 2</h4>
 
 ![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/landing2.jpg)
-
-<h4> Dashboard Full-Screen </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard_new.jpg)
-
-<h4> Dashboard Compact </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard_compact.jpg)
-
-<h4> Dashboard 2 </h4>
-
-![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard_new2.jpg)
-
-
-
 
