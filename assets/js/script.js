@@ -27,7 +27,7 @@ document.getElementById("radioFullView").addEventListener("click", function() {
 	bodywrapper.classList.add("container-fluid");
 	navBarElement.classList.remove("container");
 	thesidebarCollapsebtn.style.display = "block";
-//	theSideBar.style.display = "block";
+    theSideBar.style.display = "block";
 	removeViewSizeCookie();
 });
 
