@@ -68,6 +68,16 @@ Added feature to disable (remove) sidebar and its toggle button. It can be done 
 
 ![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard_new2.jpg)
 
+<h4> Dashboard 3 </h4>
+
+![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard3.jpg)
+
+
+<h4> Dashboard 3 - Dark Mode On (Lights Off) </h4>
+
+![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard3_lightsoff.jpg)
+
+
 <h4> Landing Page 1 </h4>
 
 ![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/landing.jpg)
