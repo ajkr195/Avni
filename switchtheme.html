@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" color-mode="light">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"
+	content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+<title>Avni - Bootstrap 5 Admin Template</title>
+<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+<link rel="stylesheet" href="assets/css/bootstrap.css" />
+<link rel="stylesheet" href="assets/css/switch.css" />
+</head>
+<body class="d-flex flex-column h-100">
+
+	<div class="container-fluid">
+
+		<main class="color-mode">
+			<section class="color-mode__section">
+
+
+				<header class="color-mode__header text-center">
+
+					<a class="btn btn-sm btn-primary color-mode__btn light--hidden"> <i
+						class="fas fa-sun"></i>
+					Toggle Light</a> <a class="btn btn-sm btn-primary color-mode__btn dark--hidden"> <i
+						class="fas fa-moon"></i>
+					Toggle Dark</a>
+
+				</header>
+
+
+				<div class="color-mode__pagesection">
+					<h1>Switch between dark and light mode.</h1>
+					<div class="color-mode__link-pagesection">
+						<a href="https://github.com/ajkr195/Avni" target="blank"
+							class="color-mode__link">Explore More.</a>
+					</div>
+					<h2>Title</h2>
+					<p>Nam libero tempore, cum soluta nobis est eligendi optio,
+						cumque nihil impedit, quo minus id, quod maxime placeat, facere
+						possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+						Temporibus autem quibusdam et aut officiis debitis aut rerum
+						necessitatibus saepe eveniet, ut et voluptates repudiandae sint et
+						molestiae non recusandae. Itaque earum rerum hic tenetur a
+						sapiente delectus, ut aut reiciendis voluptatibus maiores alias
+						consequatur aut perferendis doloribus asperiores repellat.”</p>
+					<p class="color-mode__excerpt">
+						👆 Learn More about this <a
+							href="https://github.com/ajkr195/Avni"
+							target="_blank"><em>Avni - Bootstrap 5 Admin Template</em></a> (<script>
+					document.write(new Date().getFullYear())
+				</script>)
+					</p>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script>
+		if (localStorage.getItem("color-mode") === "dark"
+				|| (window.matchMedia("(prefers-color-scheme: dark)").matches && !localStorage
+						.getItem("color-mode"))) {
+			document.documentElement.setAttribute("color-mode", "dark");
+		}
+	</script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/switch.js"></script>
+</body>
+</html>
