@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+<style>
+
+
+.header {
+	background-color: #000000; background-image : linear-gradient( 147deg,
+	#000000 0%, #04619f 74%);
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	top: 0;
+	left: 0;
+	text-align: center;
+	transition: 0.5s ease-in-out;
+}
+
+.header a {
+	position: absolute;
+	text-decoration: none;
+	color: white;
+	font-size: 40px;
+	top: 5px;
+	left: 20px;
+}
+
+.close-menu {
+	display: none;
+}
+
+
+.sidebar {
+	position: fixed;
+	background: #343131;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	overflow-y: auto;
+	transition: 0.5s ease-in-out;
+}
+
+.sidebar a {
+	text-decoration: none;
+	display: block;
+	background: #343131;
+	color: white;
+	font-family: arial black;
+	font-size: 20px;
+	padding: 20px;
+	border-bottom: solid #1A1818 1px;
+}
+
+.sidebar a:hover {
+	background: linear-gradient(#343131, #1A1818);
+}
+
+.sidebar a:after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	content: "";
+	width: 15px;
+	background: -webkit-linear-gradient(left, rgba(26, 24, 24, 0),
+		rgba(26, 24, 24, 0.3));
+}
+
+.page {
+	float: right;
+	width: 100%;
+	transition: 0.5s ease-in-out;
+}
+
+section {
+	font-family: arial;
+	margin: 0 auto;
+	padding: 50px 20px 20px 20px;
+}
+
+
+#sidebar:target {
+	width: 20%;
+}
+
+#sidebar:target+.page {
+	width: 80%;
+	transition: 0.5s ease-in-out;
+}
+
+#sidebar:target+.page .header {
+	width: 80%;
+	left: 20%;
+	transition: 0.5s ease-in-out;
+}
+
+#sidebar:target+.page .open-menu {
+	display: none;
+}
+
+#sidebar:target+.page .close-menu {
+	display: block;
+}
+
+#sidebar:target+.page h1 {
+	opacity: 0;
+}
+
+</style>
+
+</head>
+<body>
+
+	<div class='sidebar' id='sidebar'>
+		<a href="#"><i class="fa fa-users"></i>Our Team</a> <a href="#"><i
+			class="fa fa-globe"></i>Mission</a><a href=""> <i class="fa fa-gift"></i>Surprise
+		</a><a href="#"><i class="fa fa-users"></i>Our Team</a> <a href="#"><i
+			class="fa fa-globe"></i>Mission</a><a href=""> <i class="fa fa-gift"></i>Surprise
+		</a>
+	</div>
+
+	<div class='page'>
+
+		<header class='header'>
+			<a href='#sidebar' class='open-menu'>&#9776</a> <a href='#'
+				class='close-menu'>&#9776</a>
+		</header>
+
+		<section>
+			<h2>Heading 1</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+				do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+				enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+				ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+				reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+				culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h3>Heading 2</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+				do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+				enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+				ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+				reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+				culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+<style>
+
+.spot-grad::before,
+.spot-grad::after,
+.adjust {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+@supports (filter: grayscale(1)) {
+  .spot-grad img {
+    filter: grayscale(1) contrast(.7) brightness(1.3);
+  }
+}
+
+/* main color */
+@supports (mix-blend-mode: exclusion) {
+  .spot-grad::before {
+    z-index: 1;
+    background: rgb(126, 8, 150);
+    mix-blend-mode: exclusion;
+  }
+/* alternate 'red' version   */
+  body.red .spot-grad::before {
+    background: rgb(0, 81, 102);
+  }
+}
+
+/* bring in the secondary tones */
+@supports (mix-blend-mode: difference) {
+  .spot-grad::after {
+    z-index: 2;
+    background: rgb(13, 53, 255);
+    mix-blend-mode: difference;
+  }
+/* alternate 'red' version  */
+  body.red .spot-grad::after {
+  background: rgb(53, 107, 215);
+  }
+}
+
+/* tones down the Frankenstein effect */
+@supports (mix-blend-mode: overlay) {
+  .adjust {
+    z-index: 3;
+    background: hsl(248, 17%, 66%);
+    mix-blend-mode: overlay;
+  }
+/* alternate 'red' version   */
+  body.red .adjust {
+    background: hsl(322, 28%, 53%);
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #483c32;
+}
+
+.grid-container {
+  max-width: 50rem;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem auto 0;
+}
+
+header {
+  padding: 1rem 1rem 0;
+  text-align: center;
+  color:#fffffc;
+  font-size: 2vmax;    
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+} 
+
+h2 {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+header p {
+  font-style: italic;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.88em;
+  color: #9897a9;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75em 1em;
+  background: transparent;
+  border: 0.225em solid;
+  border-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  border-image-slice: 1;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  color: #fffffc;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+body.red .btn {
+  border-image: linear-gradient(60deg, #bf30de, #9cf0e1);    
+  border-image-slice: 1;
+}
+
+.btn:hover {
+  background-color: #20bf55;
+background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+
+}
+
+body.red .btn:hover {
+  background: linear-gradient(60deg, #bf30de, #9cf0e1);    
+}
+
+
+body.red .spot::after {
+  color: #d33249;
+}
+
+
+.spot-grad {
+  position: relative;
+  min-height: 10rem;
+  max-height: 15rem;
+  margin: 0;
+  display: flex;
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+.spot-grad img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* reverts the image to original on hover */
+
+.spot-grad:hover::before,
+.spot-grad:hover::after,
+.spot-grad:hover .adjust {
+  opacity: 0;
+}
+
+.spot-grad:hover img {
+  filter: none;
+}
+
+@media screen and (min-width: 40rem) {
+  .grid-container {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+  .spot-grad:not(:nth-of-type(1)) {
+    flex-basis: calc(50% - 0.25em);
+    margin-top: 0.5rem;
+  }
+  .spot-grad:nth-child(2n+3) {
+    margin-left: 0.5em;
+  }
+}
+
+@media screen and (min-width: 62rem) {
+  header {
+    font-size: 1.4rem;
+  }
+}
+</style>
+
+</head>
+<body>
+
+	<header>
+  <p>(Hover over the image to see the original.)</p>
+  <button class="btn" id="btn">Alternate Version</button>
+</header>
+
+<div class="grid-container">
+  <figure class="spot-grad">
+    <img src="assets/img/earth.svg" />
+    <div class="adjust"></div>
+  </figure>
+  <figure class="spot-grad">
+    <img src="assets/img/earth2.svg" />
+    <div class="adjust"></div>
+  </figure>
+  <figure class="spot-grad">
+    <img src="assets/img/earth3.svg" />
+    <div class="adjust"></div>
+  </figure>
+  <figure class="spot-grad">
+    <img src="assets/img/earth.svg" />
+    <div class="adjust"> </div>
+  </figure>
+  <figure class="spot-grad">
+    <img src="assets/img/earth2.svg" />
+    <div class="adjust"></div>
+  </figure>
+</div>
+</body>
+<script>
+var btn = document.getElementById('btn');
+
+btn.addEventListener('click', function() {
+    document.body.classList.toggle('red');
+}, false);
+</script>
+</html>
