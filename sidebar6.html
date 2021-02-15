@@ -33,13 +33,15 @@ a, a:hover, a:focus {
 	border-radius: 20px;
 	margin-bottom: 40px;
 	margin-top: 0;
-	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+	background-color: #2a2a72;
+	background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 }
 
 .navbar-btn {
 	box-shadow: none;
 	outline: none !important;
 	border: none;
+	border-radius: 50%;
 }
 
 .line {
@@ -59,10 +61,11 @@ a, a:hover, a:focus {
 #sidebar {
 	min-width: 250px;
 	max-width: 250px;
-	background: #7386D5;
 	color: #fff;
 	transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
 	transform-origin: bottom left;
+	background-color: #2a2a72;
+	background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 }
 
 #sidebar.active {
@@ -72,7 +75,8 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
 	padding: 20px;
-	background: #6d7fcc;
+	background-color: #009ffd;
+	background-image: linear-gradient(315deg, #009ffd 0%, #2a2a72 74%);
 }
 
 #sidebar ul.components {
@@ -98,7 +102,8 @@ a, a:hover, a:focus {
 
 #sidebar ul li.active>a, a[aria-expanded="true"] {
 	color: #fff;
-	background: #6d7fcc;
+	background-color: #009ffd;
+	background-image: linear-gradient(315deg, #009ffd 0%, #2a2a72 74%);
 }
 
 a[data-toggle="collapse"] {
