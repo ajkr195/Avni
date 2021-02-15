@@ -77,6 +77,9 @@ Added feature to disable (remove) sidebar and its toggle button. It can be done 
 
 ![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/dashboard3_lightsoff.jpg)
 
+<h4> Slider </h4>
+
+![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/team.gif)
 
 <h4> Landing Page 1 </h4>
 
