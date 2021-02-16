@@ -5,6 +5,12 @@ Multiple Dashboard Layouts.
 
 Mulitple Landing pages.
 
+Mulitple Sidebar examples.
+
+Mulitple Login/Register examples.
+
+...and many more....
+
 Pure (vanilla) Java Script Based. Since JQuery is kicked out from Bootstrap 5, NO JQuery or any related dependency is used at all. That makes the overall template feather weight.
 
 <h4> To test persistence of various navbar and color settings try it in Firefox instead of Chrome. Chrome does not allow local file's cookies.</h4>
