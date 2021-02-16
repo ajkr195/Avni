@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<title>Avni - Bootstrap 5 Admin Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/leaf.svg">
+<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+<style>
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap')
+	;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+	color: #ffff;
+	background: rgb(142, 73, 232);
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	/* overflow: hidden; */
+	padding: 10px;
+	background: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+
+.wrapper {
+	background: #fff;
+	max-width: 400px;
+	width: 100%;
+	margin: 120px auto;
+	padding: 25px;
+	border-radius: 5px;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper header {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.wrapper .inputField {
+	margin: 20px 0;
+	width: 100%;
+	display: flex;
+	height: 45px;
+}
+
+.inputField input {
+	width: 85%;
+	height: 100%;
+	outline: none;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	font-size: 17px;
+	padding-left: 15px;
+	transition: all 0.3s ease;
+}
+
+.inputField input:focus {
+	border-color: #8E49E8;
+}
+
+.inputField button {
+	width: 50px;
+	height: 100%;
+	border: none;
+	color: #fff;
+	margin-left: 5px;
+	font-size: 21px;
+	outline: none;
+	background: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+	cursor: pointer;
+	border-radius: 3px;
+	opacity: 0.6;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+
+.inputField button:hover, .footer button:hover {
+	background: linear-gradient(315deg, #009ffd 0%, #2a2a72 74%);
+}
+
+.inputField button.active {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.wrapper .todoList {
+	max-height: 250px;
+	overflow-y: auto;
+}
+
+.todoList li {
+	position: relative;
+	list-style: none;
+	height: 45px;
+	line-height: 45px;
+	margin-bottom: 8px;
+	background: #f2f2f2;
+	border-radius: 3px;
+	padding: 0 15px;
+	cursor: default;
+	overflow: hidden;
+}
+
+.todoList li .icon {
+	position: absolute;
+	right: -45px;
+	background-color: #feae96;
+	background-image: linear-gradient(315deg, #feae96 0%, #fe0944 74%);
+	width: 45px;
+	text-align: center;
+	color: #fff;
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	background-image: linear-gradient(315deg, #feae96 0%, #fe0944 74%);
+}
+
+.todoList li:hover .icon {
+	right: 0px;
+	background-image: linear-gradient(315deg, #fe0944 0%, #feae96 74%);
+}
+
+.icon:hover {
+	right: 0px;
+	background-image: linear-gradient(315deg, #fe0944 0%, #feae96 74%);
+}
+
+.wrapper .footer {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer button {
+	padding: 6px 10px;
+	border-radius: 3px;
+	border: none;
+	outline: none;
+	color: #fff;
+	font-weight: 400;
+	font-size: 16px;
+	margin-left: 5px;
+	background: linear-gradient(315deg, #fe0944 0%, #feae96 74%);
+	cursor: pointer;
+	user-select: none;
+	opacity: 0.6;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+
+.footer button:hover {
+	background: linear-gradient(315deg, #feae96 0%, #fe0944 74%);
+}
+
+.footer button.active {
+	opacity: 1;
+	pointer-events: auto;
+}
+</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header>Todo List</header>
+		<div class="inputField">
+			<input type="text" placeholder="Add your new todo">
+			<button>
+				<i class="fas fa-plus"></i>
+			</button>
+		</div>
+		<ul class="todoList">
+			<!-- data are comes from local storage -->
+		</ul>
+		<div class="footer">
+			<span>You have <span class="pendingTasks"></span> pending
+				tasks
+			</span>
+			<button>Clear All</button>
+		</div>
+	</div>
+
+
+</body>
+<script>
+//getting all required elements
+const inputBox = document.querySelector(".inputField input");
+const addBtn = document.querySelector(".inputField button");
+const todoList = document.querySelector(".todoList");
+const deleteAllBtn = document.querySelector(".footer button");
+
+// onkeyup event
+inputBox.onkeyup = ()=>{
+  let userEnteredValue = inputBox.value; //getting user entered value
+  if(userEnteredValue.trim() != 0){ //if the user value isn't only spaces
+    addBtn.classList.add("active"); //active the add button
+  }else{
+    addBtn.classList.remove("active"); //unactive the add button
+  }
+}
+
+showTasks(); //calling showTask function
+
+addBtn.onclick = ()=>{ //when user click on plus icon button
+  let userEnteredValue = inputBox.value; //getting input field value
+  let getLocalStorageData = localStorage.getItem("New Todo"); //getting localstorage
+  if(getLocalStorageData == null){ //if localstorage has no data
+    listArray = []; //create a blank array
+  }else{
+    listArray = JSON.parse(getLocalStorageData);  //transforming json string into a js object
+  }
+  listArray.push(userEnteredValue); //pushing or adding new value in array
+  localStorage.setItem("New Todo", JSON.stringify(listArray)); //transforming js object into a json string
+  showTasks(); //calling showTask function
+  addBtn.classList.remove("active"); //unactive the add button once the task added
+}
+
+function showTasks(){
+  let getLocalStorageData = localStorage.getItem("New Todo");
+  if(getLocalStorageData == null){
+    listArray = [];
+  }else{
+    listArray = JSON.parse(getLocalStorageData); 
+  }
+  const pendingTasksNumb = document.querySelector(".pendingTasks");
+  pendingTasksNumb.textContent = listArray.length; //passing the array length in pendingtask
+  if(listArray.length > 0){ //if array length is greater than 0
+    deleteAllBtn.classList.add("active"); //active the delete button
+  }else{
+    deleteAllBtn.classList.remove("active"); //unactive the delete button
+  }
+  let newLiTag = "";
+  listArray.forEach((element, index) => {
+    newLiTag += `<li>${element}<span class="icon" onclick="deleteTask(${index})"><i class="fas fa-trash"></i></span></li>`;
+  });
+  todoList.innerHTML = newLiTag; //adding new li tag inside ul tag
+  inputBox.value = ""; //once task added leave the input field blank
+}
+
+// delete task function
+function deleteTask(index){
+  let getLocalStorageData = localStorage.getItem("New Todo");
+  listArray = JSON.parse(getLocalStorageData);
+  listArray.splice(index, 1); //delete or remove the li
+  localStorage.setItem("New Todo", JSON.stringify(listArray));
+  showTasks(); //call the showTasks function
+}
+
+// delete all tasks function
+deleteAllBtn.onclick = ()=>{
+  listArray = []; //empty the array
+  localStorage.setItem("New Todo", JSON.stringify(listArray)); //set the item in localstorage
+  showTasks(); //call the showTasks function
+}
+
+</script>
+</html>
