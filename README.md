@@ -1,5 +1,5 @@
 # Avni - The Planet Earth
-Bootstrap 5 Admin Template and Feather & FontAwesome Icons
+Bootstrap 5 Admin Template and Feather & FontAwesome Icons with lots of additional goodies.
 
 Multiple Dashboard Layouts.
 
