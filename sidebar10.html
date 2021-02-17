@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"
+	content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+<title>Avni - Bootstrap 5 Admin Template</title>
+<link href="https://fonts.googleapis.com/css?family=Oxygen:400,700"
+	rel="stylesheet" type="text/css" />
+<style type="text/css">
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+#mainsidebar {
+	width: 150px;;
+	left: 0;
+	right: 0;
+	margin-left: 0;
+	margin-right: 0;
+	display: block;
+}
+
+#mainsidebar ul {
+	list-style: none;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+
+#mainsidebar ul li {
+	background-color: #3366ff;
+	color: #FFF;
+	position: relative;
+	float: left;
+	width: 100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+
+#mainsidebar ul li a {
+	color: #FFF;
+	display: block;
+	padding: 16px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+#mainsidebar li>ul {
+	display: block;
+	height: 0;
+	-webkit-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+	-moz-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+	-ms-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+	-o-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+	transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+	background-color: #2C8DB7;
+}
+
+#mainsidebar li:hover>ul {
+	height: auto;
+	overflow: visible;
+}
+
+#mainsidebar li ul>li a {
+	background-color: #FEFEFE;
+	color: #000;
+	font-weight: 400;
+	padding: 12px;
+}
+
+#mainsidebar li ul {
+	padding: 0;
+	list-style-type: none;
+}
+/* #mainsidebar li ul>li:nth-of-type(odd) a { */
+/* 	background-color: #DDF;  */
+/* } */
+#mainsidebar li ul>li a:hover {
+	background-color: #1f7a1f;
+	color: #ffff;
+	font-weight: 900;
+}
+</style>
+
+</head>
+
+<body>
+	<header>
+		<div id="title">
+			<h1>Sidebar</h1>
+		</div>
+	</header>
+	<div id="mainsidebar" role="divigation">
+		<div>
+
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Dashboards</a>
+					<ul>
+						<li><a href="#">Dashboard1</a></li>
+						<li><a href="#">Dashboard2</a></li>
+					</ul></li>
+				<li><a href="#">Settings</a>
+					<ul>
+						<li><a href="#">Setting1</a></li>
+						<li><a href="#">Setting2</a></li>
+						<li><a href="#">Setting3</a></li>
+					</ul></li>
+				<li><a href="#">Servers</a>
+					<ul>
+						<li><a href="#">Server1</a></li>
+						<li><a href="#">Server2</a></li>
+					</ul></li>
+				<li><a href="#">Databases</a>
+					<ul>
+						<li><a href="#">Database1</a></li>
+						<li><a href="#">Database2</a></li>
+					</ul></li>
+				<li><a href="#">Services</a>
+					<ul>
+						<li><a href="#">Service1</a></li>
+						<li><a href="#">Service2</a></li>
+					</ul></li>
+				<li><a href="#">About</a>
+					<ul>
+						<li><a href="#">About Me</a></li>
+						<li><a href="#">Contact Me</a></li>
+					</ul></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
+

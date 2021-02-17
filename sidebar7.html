@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"
+	content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+<title>Avni - Bootstrap 5 Admin Template</title>
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<style>
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #eee;
+/* 	line-height: 1.5; */
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+/* 	list-style: none; */
+/* 	text-decoration: none; */
+}
+
+
+.sidebar-menu {
+	width: 300px;
+	border-radius: 18px;
+	overflow: hidden;
+	text-decoration: none;
+	
+}
+
+.sidebar-menu-item {
+	border-top: 1px solid #18dcff;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.sidebar-menu-item a {
+	text-decoration: none;
+}
+
+.sidebar-btn {
+	display: block;
+	padding: 16px 20px;
+	background: #17c0eb;
+	color: white;
+	position: relative;
+}
+
+.sidebar-btn::before {
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background: #17c0eb;
+	left: 20px;
+	bottom: -7px;
+	transform: rotate(45deg);
+}
+
+.sidebar-btn i {
+	margin-right: 10px;
+}
+
+.sidebar-submenu {
+	background: #333;
+	overflow: auto;
+	transition: max-height 0.3s;
+	max-height: 0;
+}
+
+.sidebar-submenu a {
+	display: block;
+	padding: 10px 26px;
+	color: white;
+	margin: 4px 0;
+	position: relative;
+	text-decoration: none;
+}
+
+.sidebar-submenu a:hover {
+	color: white;
+	background-color: #045de9;
+background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+}
+
+.sidebar-submenu a::before {
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 100%;
+	background: #18dcff;
+	left: 0;
+	top: 0;
+	transition: .3s;
+	opacity: 0;
+}
+
+.sidebar-submenu a:hover::before {
+	opacity: 1;
+}
+
+.sidebar-menu-item:target .sidebar-submenu {
+	max-height: 10em;
+}
+</style>
+
+</head>
+<body>
+	<main>
+		<h1>CSS Vertical Accordion Menu Example</h1>
+		<p>Written in HTML and CSS...</p>
+
+			<div class="sidebar-menu">
+				<ul>
+					<li class="sidebar-menu-item" id="profile"><a href="#profile" class="sidebar-btn"><i
+							class="fa fa-user"></i> Profile</a>
+						<div class="sidebar-submenu">
+							<a href="">Post</a> <a href="">Picture</a>
+						</div></li>
+
+					<li class="sidebar-menu-item" id="messages"><a href="#messages" class="sidebar-btn"><i
+							class="fa fa-envelope"></i> Messages</a>
+						<div class="sidebar-submenu">
+							<a href="">New</a> <a href="">Sent</a> <a href="">Spam</a><a href="">Spam</a><a href="">Spam</a>
+						</div></li>
+
+					<li class="sidebar-menu-item" id="settings"><a href="#settings" class="sidebar-btn"><i
+							class="fa fa-cog"></i> Settings</a>
+						<div class="sidebar-submenu">
+							<a href="">Password</a> <a href="">Language</a>
+						</div></li>
+
+					<li class="sidebar-menu-item"><a href="#" class="sidebar-btn"><i
+							class="fa fa-sign-out-alt"></i> Logout</a></li>
+				</ul>
+			</div>
+	</main>
+</body>
+</html>

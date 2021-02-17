@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"
+	content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+<title>Avni - Bootstrap 5 Admin Template</title>
+<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body .swanky {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+body {
+  height: 100vh;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  background-color: #734ae8;
+background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%);
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+}
+body .swanky {
+  perspective: 600px;
+  width: 700px;
+  position: absolute;
+  margin: auto;
+  height: 360px;
+}
+body .swanky-title {
+  float: right;
+  text-align: left;
+  width: 400px;
+  color: white;
+  position: relative;
+  top: 70px;
+}
+body .swanky-title-social a .slide .arrow {
+  position: absolute;
+  right: 31px;
+  top: 24px;
+  opacity: 0;
+  transform: skew(-20deg);
+}
+body .swanky-title-social a .slide .arrow .stem {
+  width: 10px;
+  height: 2px;
+  background: #858490;
+}
+body .swanky-title-social a .slide .arrow .point {
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #858490;
+  top: -3px;
+  right: 1px;
+  position: absolute;
+  transform: rotate(45deg);
+  border-top: 2px solid #858490;
+}
+body .swanky-title-social a img {
+  width: 16px;
+  margin-left: 10px;
+  position: relative;
+  margin-right: 8px;
+  transition-property: margin-left;
+  transition-duration: 0.1s;
+  margin-top: 10px;
+  top: 4px;
+}
+body .swanky-title-social a:hover > .slide {
+  left: -70px;
+  transition-property: left;
+  transition-duration: 0.1s;
+}
+body .swanky-title-social a:hover > img {
+  margin-left: 40px;
+  transition-property: margin-left;
+  transition-duration: 0.1s;
+}
+body .swanky-title-social a:hover > .slide .arrow {
+  right: 11px;
+  opacity: 1;
+  transition-property: right, opacity;
+  transition-delay: 0.07s;
+  transition-duration: 0.2s;
+}
+body .swanky .intro {
+  float: right;
+  color: white;
+  width: 370px;
+  top: 50px;
+  position: relative;
+}
+body .swanky .intro h1 {
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.26);
+}
+body .swanky .intro p {
+  line-height: 20px;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.26);
+}
+body .swanky-wrapper {
+  width: 225px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #2a394f;
+}
+body .swanky-wrapper label {
+  padding: 25px;
+  float: left;
+  height: 72px;
+  border-bottom: 1px solid #293649;
+  position: relative;
+  width: 100%;
+  color: #eff4fa;
+  transition: text-indent 0.15s, height 0.3s;
+  box-sizing: border-box;
+}
+body .swanky-wrapper label img {
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+  width: 16px;
+}
+body .swanky-wrapper label span {
+  position: relative;
+  top: -3px;
+}
+body .swanky-wrapper label:hover {
+  background: #212e41;
+  border-bottom: 1px solid #2A394F;
+  text-indent: 4px;
+}
+body .swanky-wrapper label:hover .bar {
+  width: 100%;
+}
+body .swanky-wrapper label .bar {
+  width: 0px;
+  transition: width 0.15s;
+  height: 2px;
+  position: absolute;
+  display: block;
+  background: #355789;
+  bottom: 0;
+  left: 0;
+}
+body .swanky-wrapper label .lil-arrow {
+  width: 5px;
+  height: 5px;
+  transition: transform 0.8s;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  float: right;
+  position: relative;
+  top: 6px;
+  right: 2px;
+  transform: rotate(45deg);
+}
+body .swanky-wrapper-content {
+  position: absolute;
+  display: none;
+  overflow: hidden;
+  left: 0;
+  width: 100%;
+}
+body .swanky-wrapper-content li {
+  width: 100%;
+  opacity: 0;
+  left: -100%;
+  background: #15a4fa;
+  padding: 25px 0px;
+  text-indent: 25px;
+  box-shadow: 0px 0px #126CA1 inset;
+  transition: box-shadow 0.3s, text-indent 0.3s;
+  position: relative;
+}
+body .swanky-wrapper-content li:hover {
+  background: #0c93e4;
+  box-shadow: 3px 0px #126CA1 inset;
+  transition: box-shadow 0.3s linear, text-indent 0.3s linear;
+  text-indent: 31px;
+}
+body .swanky-wrapper-content .clear {
+  clear: both;
+}
+
+input[type=radio]:checked + label .swanky-wrapper-content {
+  display: block;
+  top: 68px;
+  border-bottom: 1px solid #212e41;
+}
+
+input[type=radio]:checked + label > .lil-arrow {
+  transition: transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: rotate(135deg);
+  border-top: 2px solid #14a3f9;
+  border-right: 2px solid #14a3f9;
+}
+
+input[type=radio]:checked + label {
+  height: 325px;
+  background: #212e41;
+  text-indent: 4px;
+  transition-property: height;
+  transition-duration: 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+input[type=radio]:checked + label .bar {
+  width: 0;
+}
+
+input[type=radio]:checked + label li:nth-of-type(1) {
+  -webkit-animation: in 0.15s 0.575s forwards;
+          animation: in 0.15s 0.575s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-animation: in 0.15s 0.575s forwards;
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input[type=radio]:checked + label li:nth-of-type(2) {
+  -webkit-animation: in 0.15s 0.7s forwards;
+          animation: in 0.15s 0.7s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-animation: in 0.15s 0.7s forwards;
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input[type=radio]:checked + label li:nth-of-type(3) {
+  -webkit-animation: in 0.15s 0.825s forwards;
+          animation: in 0.15s 0.825s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-animation: in 0.15s 0.825s forwards;
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input[type=radio]:checked + label li:nth-of-type(4) {
+  -webkit-animation: in 0.15s 0.95s forwards;
+          animation: in 0.15s 0.95s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-animation: in 0.15s 0.95s forwards;
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@-webkit-keyframes in {
+  from {
+    left: -100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes in {
+  from {
+    left: -100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+.love {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  font-size: 11px;
+  font-weight: normal;
+}
+.love p {
+  color: white;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+}
+.love a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+.love img {
+  position: relative;
+  top: 3px;
+  margin: 0px 4px;
+  width: 10px;
+}
+
+.brand {
+  position: absolute;
+  left: 20px;
+  bottom: 14px;
+}
+.brand img {
+  width: 30px;
+}
+</style>
+</head>
+<body>
+	<div class='swanky-wrapper'>
+		<input id='Dashboard' name='radio' type='radio'> <label
+			for='Dashboard'> <i class="fa fa-tachometer-alt"></i> <span>Dashboard</span>
+			<div class='lil-arrow'></div>
+			<div class='bar'></div>
+			<div class='swanky-wrapper-content'>
+				<ul>
+					<li>Tools</li>
+					<li>Reports</li>
+					<li>Analytics</li>
+					<li>Code Blocks</li>
+				</ul>
+			</div>
+		</label> <input id='Sales' name='radio' type='radio'> <label
+			for='Sales'> <i class="fa fa-cog"></i> <span>Settings</span>
+			<div class='lil-arrow'></div>
+			<div class='bar'></div>
+			<div class='swanky-wrapper-content'>
+				<ul>
+					<li>Settings1</li>
+					<li>Settings2</li>
+					<li>Settings3</li>
+					<li>Settings4</li>
+				</ul>
+			</div>
+		</label> <input id='Messages' name='radio' type='radio'> <label
+			for='Messages'> <i class="fab fa-linux"></i> <span>Servers</span>
+			<div class='lil-arrow'></div>
+			<div class='bar'></div>
+			<div class='swanky-wrapper-content'>
+				<ul>
+					<li>Server1</li>
+					<li>Server2</li>
+					<li>Server3</li>
+					<li>Server4</li>
+				</ul>
+			</div>
+		</label> <input id='Users' name='radio' type='radio'> <label
+			for='Users'> <i class="fa fa-users"></i> <span>Users</span>
+			<div class='lil-arrow'></div>
+			<div class='bar'></div>
+			<div class='swanky-wrapper-content'>
+				<ul>
+					<li>New User</li>
+					<li>Groups</li>
+					<li>Permissions</li>
+					<li>Priveleges</li>
+				</ul>
+			</div>
+		</label>
+	</div>
+
+</body>
+</html>

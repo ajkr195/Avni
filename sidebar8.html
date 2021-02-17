@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"
+	content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+<title>Avni - Bootstrap 5 Admin Template</title>
+<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+<style>
+
+@import
+	url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300)
+	;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+nav {
+	position: fixed;
+	display: flex;
+	align-items: flex-start;
+	width: 20%;
+	height: 100%;
+	background-color: #111;
+}
+
+main {
+	position: fixed;
+	right: 0;
+	width: 80%;
+	height: 100%;
+	background-color: #fff;
+	overflow: auto;
+	padding: 40px;
+}
+
+h1 {
+	font-weight: bold;
+	margin-bottom: 50px;
+	font-size: 55px;
+	text-align: center;
+}
+
+p {
+	margin-bottom: 20px;
+	line-height: 26px;
+}
+
+
+li, ul label.title, ul, a {
+	width: 100%;
+	color: #FFF;
+	font-family: 'Montserrat', 'Open Sans', sans-serif;
+	display: block;
+	font-weight: bold;
+}
+
+ul label {
+	height: 35px;
+}
+
+ul li {
+	height: 35px;
+	overflow: hidden;
+	transition: all .3s;
+}
+
+li {
+	display: block;
+	background-color: #363636;
+}
+
+label.title {
+	font-size: 14px;
+	background: linear-gradient(#111, #2f2f2f);
+	padding: 10px 15px;
+	cursor: pointer;
+	transition: all .25s;
+}
+
+a {
+	font-size: 12px;
+	text-decoration: none;
+	color: #FFF;
+	display: block;
+	padding: 10px 25px;
+	transition: all .25s;
+}
+
+a:hover {
+	background-color: #444;
+	box-shadow: inset 5px 0px 0px 0px #fff;
+}
+
+label:hover {
+	text-shadow: 0px 0px 10px #fff;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+#edit:checked+li, #archive:checked+li, #tools:checked+li, #preferences:checked+li
+	{
+	height: auto;
+}
+
+i {
+	margin-right: 12px;
+}
+
+@media screen and (max-width: 600px) {
+	nav {
+		width: 100%;
+		position: relative;
+	}
+	main {
+		width: 100%;
+		position: relative;
+	}
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<nav class="menu">
+			<ul>
+				<input type="radio" name="menu" id="archive">
+				<li><label for="archive" class="title"><i
+						class="fa fa-folder"></i>Archive</label> <a href="#">New File</a> <a
+					href="#">Open File</a> <a href="#">Save As...</a> <a href="#">Exit</a>
+				</li>
+				<input type="radio" name="menu" id="edit">
+				<li><label for="edit" class="title"><i
+						class="fa fa-edit"></i>Edit</label> <a href="#">Copy</a> <a href="#">Cut</a>
+					<a href="#">Paste</a> <a href="#">Undo</a></li>
+				<input type="radio" name="menu" id="tools">
+				<li><label for="tools" class="title"><i
+						class="fa fa-tools"></i>Tools</label> <a href="#">Build</a> <a href="#">Macros</a>
+					<a href="#">Command</a> <a href="#">Snippets</a></li>
+				<input type="radio" name="menu" id="preferences">
+				<li><label for="preferences" class="title"><i
+						class="fa fa-cogs"></i>Preferences</label> <a href="#">Browser</a> <a
+					href="#">Settings</a> <a href="#">Packages</a> <a href="#">Theme</a>
+				</li>
+			</ul>
+		</nav>
+		<main class="main">
+			<h1>Accordion using HTML and CSS</h1>
+			<p>Sunt est aliquid
+				ipsam sequi vel repudiandae minima alias earum facere nisi nostrum
+				voluptatum tenetur, iusto illo harum aliquam reprehenderit porro
+				molestias quas possimus voluptatem, doloribus, maiores ea ullam.
+				Sint accusamus vel adipisci delectus nesciunt inventore,
+				exercitationem saepe nulla, dignissimos cum amet consectetur odit
+				voluptas. </p>
+		</main>
+	</div>
+</body>
+</html>
