@@ -1,0 +1,251 @@
+<html lang="en" class="h-100">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/leaf.svg">
+<title>Avni - Bootstrap 5 Admin Template</title>
+<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Cookie'
+	rel='stylesheet' type='text/css'>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.main-content {
+	font-family: Arial, Helvetica, sans-serif;
+	max-width: 600px;
+	padding-top: 40px;
+	margin: 0 0 40px 260px;
+}
+
+.sidebar-left-collapse {
+	font-family: Arial, Helvetica, sans-serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #292c2f;
+	width: 180px;
+	height: 100%;
+	padding: 20px 0;
+}
+
+.sidebar-left-collapse>a {
+	display: block;
+	text-decoration: none;
+	font-family: Cookie, cursive;
+	width: 122px;
+	height: 122px;
+	margin: 0 auto;
+	text-align: center;
+	color: #ffffff;
+	font-size: 44px;
+	font-weight: normal;
+	line-height: 2.6;
+	border-radius: 50%;
+	background-color: #181a1b;
+}
+
+.sidebar-left-collapse .sidebar-links {
+	margin: 30px auto;
+}
+
+.sidebar-links div>a {
+	display: block;
+	text-decoration: none;
+	margin: 0 auto 5px auto;
+	padding: 10px 0 10px 5px;
+	background-color: #35393e;
+	text-align: left;
+	color: #b3bcc5;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 2;
+	border-left-width: 2px;
+	border-left-style: solid;
+}
+
+.sidebar-links div.selected>a {
+	background-color: #ffffff;
+	color: #565d63;
+	line-height: 2.3;
+	margin: 0;
+}
+
+.sidebar-links div>a i.fa {
+	position: relative;
+	font-size: 20px;
+	top: 3px;
+	width: 40px;
+	text-align: center;
+}
+
+.sidebar-links div ul.sub-links {
+	max-height: 0;
+	overflow: hidden;
+	list-style: none;
+	padding: 0 0 0 30px;
+	color: #b3bcc5;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 24px;
+	margin: 0;
+	transition: 0.4s;
+}
+
+.sidebar-links div.selected ul.sub-links {
+	max-height: 150px;
+	padding: 12px 0 12px 30px;
+}
+
+.sidebar-links div .sub-links a {
+	text-decoration: none;
+	color: #b3bcc5;
+	display: block;
+	text-align: left;
+}
+
+.sidebar-links div.link-blue>a {
+	border-color: #487db2;
+}
+
+.sidebar-links div.link-blue>a i.fa {
+	color: #487db2;
+}
+
+.sidebar-links div.link-red>a {
+	border-color: #da4545;
+}
+
+.sidebar-links div.link-red>a i.fa {
+	color: #da4545;
+}
+
+.sidebar-links div.link-yellow>a {
+	border-color: #d0d237;
+}
+
+.sidebar-links div.link-yellow>a i.fa {
+	color: #d0d237;
+}
+
+.sidebar-links div.link-green>a {
+	border-color: #86be2e;
+}
+
+.sidebar-links div.link-green>a i.fa {
+	color: #86be2e;
+}
+</style>
+
+</head>
+
+<body>
+
+	<aside class="sidebar-left-collapse">
+
+		<a href="#" class="company-logo">Avni</a>
+
+		<div class="sidebar-links">
+
+			<div class="link-blue ddmenu selected">
+
+				<a href="#"> <i class="fa far fa-image"></i>Photography
+				</a>
+
+				<ul class="sub-links">
+					<li><a href="#">Portraits</a></li>
+					<li><a href="#">Landscape</a></li>
+					<li><a href="#">Studio shots</a></li>
+					<li><a href="#">Macros</a></li>
+				</ul>
+
+			</div>
+
+			<div class="link-red ddmenu">
+
+				<a href="#"><i class="fa fas fa-cog"></i>Favorites
+				</a>
+
+				<ul class="sub-links">
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+
+			</div>
+
+			<div class="link-yellow ddmenu">
+
+				<a href="#"> <i class="fa fas fa-tools"></i>Projects
+				</a>
+
+				<ul class="sub-links">
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+
+			</div>
+
+			<div class="link-green ddmenu">
+
+				<a href="#"> <i class="fa fas fa-user-cog"></i>Places
+				</a>
+
+				<ul class="sub-links">
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</aside>
+
+	<div class="main-content">
+
+		<div class="menu">
+
+			<h1>Avni</h1>
+
+			<h4>
+				<a href="#">Download</a>
+			</h4>
+
+			<ul>
+				<li><a href="#">Link1</a></li>
+				<li><a href="#">Link2</a></li>
+				<li><a href="#">Link3</a></li>
+				<li><a href="#" class="active">Link4</a></li>
+				<li><a href="#">Link5</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+	<script>
+		var thelinks = document.getElementsByClassName("ddmenu");
+		for (i = 0; i < thelinks.length; i++) {
+			thelinks[i].addEventListener("click", function() {
+				if (this.classList.contains("selected")) {
+					this.classList.remove("selected");
+				} else {
+					this.classList.add("selected");
+				}
+			});
+		}
+	</script>
+</body>
+
+</html>
