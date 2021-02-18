@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"
+	content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+<title>Avni - Bootstrap 5 Admin Template</title>
+<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+
+<link rel="canonical"
+	href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
+
+
+
+<!-- Bootstrap core CSS -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+<style>
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #F0F0F0;
+}
+
+main>.container-fluid {
+	padding: 60px 15px 0;
+}
+
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+@media ( min-width : 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}
+
+@import
+	"https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+a, a:hover, a:focus {
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.navbar {
+	padding: 5px 5px;
+	background: #fff;
+	border: none;
+	/* 	border-radius: 20px; */
+	/* 	margin-bottom: 20px; */
+	min-height: 30px;
+	margin-top: 0;
+	background-color: #2a2a72;
+	background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+
+.navbar-btn {
+	/* 	box-shadow: none; */
+	outline: none !important;
+	border: none;
+	border-radius: 50%;
+}
+
+.wrapper {
+	display: flex;
+	width: 100%;
+}
+
+#sidebar {
+	min-width: 250px;
+	max-width: 250px;
+	color: #fff;
+	transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+	transform-origin: bottom left;
+	background-color: #2a2a72;
+	background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+
+#sidebar.active {
+	margin-left: -250px;
+	transform: rotateY(180deg);
+}
+
+#sidebar .sidebar-header {
+	padding: 20px;
+	background-color: #009ffd;
+	background-image: linear-gradient(315deg, #009ffd 0%, #2a2a72 74%);
+}
+
+#content {
+	width: 100%;
+	min-height: 100vh;
+	transition: all 0.3s;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#sidebarCollapse {
+	width: 30px;
+	height: 30px;
+	background: #f5f5f5;
+	cursor: pointer;
+	margin-left: -12px;
+	/* 	margin: 0; */
+	/* 	left: 0; */
+	/* 	padding: 0; */
+}
+
+#sidebarCollapse span {
+	width: 80%;
+	height: 2px;
+	margin: 0 auto;
+	display: block;
+	background: #555;
+	transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+	transition-delay: 0.2s;
+}
+
+#sidebarCollapse span:first-of-type {
+	transform: rotate(45deg) translate(2px, 2px);
+}
+
+#sidebarCollapse span:nth-of-type(2) {
+	opacity: 0;
+}
+
+#sidebarCollapse span:last-of-type {
+	transform: rotate(-45deg) translate(1px, -1px);
+}
+
+#sidebarCollapse.active span {
+	transform: none;
+	opacity: 1;
+	margin: 5px auto;
+}
+
+@media ( max-width : 968px) {
+	#sidebar {
+		margin-left: -250px;
+		transform: rotateY(90deg);
+	}
+	/* 	#sidebar.active { */
+	/* 		margin-left: 0; */
+	/* 		transform: none; */
+	/* 	} */
+	#sidebarCollapse span:first-of-type, #sidebarCollapse span:nth-of-type(2),
+		#sidebarCollapse span:last-of-type {
+		transform: none;
+		opacity: 1;
+		margin: 5px auto;
+	}
+	#sidebarCollapse {
+		display: none;
+	}
+	#sidebarCollapse.active span {
+		margin: 0 auto;
+	}
+	#sidebarCollapse.active span:first-of-type {
+		transform: rotate(45deg) translate(2px, 2px);
+	}
+	#sidebarCollapse.active span:nth-of-type(2) {
+		opacity: 0;
+	}
+	#sidebarCollapse.active span:last-of-type {
+		transform: rotate(-45deg) translate(1px, -1px);
+	}
+}
+
+#mainsidebar {
+	width: 250px;;
+	left: 0;
+	right: 0;
+	margin-left: 0;
+	margin-right: 0;
+	display: block;
+}
+
+#mainsidebar ul {
+	list-style: none;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	padding: 0;
+	list-style-type: none;
+}
+
+#mainsidebar ul li {
+	background-color: #3366ff;
+	color: #FFF;
+	position: relative;
+	float: left;
+	width: 100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+
+#mainsidebar ul li a {
+	color: #FFF;
+	display: block;
+	padding: 16px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+#mainsidebar li>ul {
+	display: block;
+	height: 0;
+	-webkit-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+	-moz-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+	-ms-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+	-o-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+	transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+	background-color: #2C8DB7;
+}
+
+#mainsidebar li:hover>ul {
+	height: auto;
+	overflow: auto;
+}
+
+#mainsidebar li ul>li a {
+	background-color: #FEFEFE;
+	color: #000;
+	font-weight: 400;
+	padding: 12px;
+}
+
+#mainsidebar li ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+/* #mainsidebar li ul>li:nth-of-type(odd) a { */
+/* 	background-color: #DDF;  */
+/* } */
+#mainsidebar li ul>li a:hover {
+	background-color: #537895; background-image : linear-gradient( 315deg,
+	#537895 0%, #09203f 74%);
+	color: #ffff;
+	font-weight: 900;
+	background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+}
+
+#mainsidebar ul li:hover {
+	background-color: #2a2a72;
+	background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+	color: white;
+	background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+
+#mainsidebar ul li:hover .fa-chevron-right {
+	/*     color: red; */
+	transition: 0.3s;
+	transform: rotate(90deg);
+}
+</style>
+
+
+</head>
+<body class="d-flex flex-column h-100">
+
+
+
+	<main class="flex-shrink-0">
+		<div class="wrapper">
+
+			<div id="sidebar">
+				<div class="sidebar-header text-center">
+					<h3>Company</h3>
+				</div>
+				<div id="mainsidebar" role="divigation">
+
+					<p class="text-center">Header Area</p>
+
+					<div>
+
+						<ul class="menu">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Dashboards<i
+									class="fas fa-chevron-right float-end"></i></a>
+								<ul>
+									<li><a href="#">Dashboard1</a></li>
+									<li><a href="#">Dashboard2</a></li>
+								</ul></li>
+							<li><a href="#">Preferences</a></li>
+							<li><a href="#">Settings<i
+									class="fas fa-chevron-right float-end"></i></a>
+								<ul>
+									<li><a href="#">Setting1</a></li>
+									<li><a href="#">Setting2</a></li>
+									<li><a href="#">Setting3</a></li>
+								</ul></li>
+							<li><a href="#">Services<i
+									class="fas fa-chevron-right float-end"></i></a>
+								<ul>
+									<li><a href="#">Service1</a></li>
+									<li><a href="#">Service2</a></li>
+								</ul></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+
+			<div id="content">
+
+				<header>
+					<nav class="navbar navbar-expand-sm navbar-dark bg-dark"
+						aria-label="Third navbar example">
+						<div class="container-fluid">
+							<button type="button" id="sidebarCollapse" class="navbar-btn">
+								<span></span> <span></span> <span></span>
+							</button>
+							<a class="navbar-brand mx-2" href="#">Expand at sm</a>
+							<button class="navbar-toggler" type="button"
+								data-bs-toggle="collapse" data-bs-target="#mainAppNavbar"
+								aria-controls="mainAppNavbar" aria-expanded="false"
+								aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse" id="mainAppNavbar">
+								<ul class="navbar-nav me-auto mb-2 mb-sm-0">
+									<li class="nav-item active"><a class="nav-link"
+										aria-current="page" href="#">Home</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+									<li class="nav-item"><a class="nav-link disabled" href="#"
+										tabindex="-1" aria-disabled="true">Disabled</a></li>
+									<li class="nav-item dropdown"><a
+										class="nav-link dropdown-toggle" href="#" id="dropdown03"
+										data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+										<ul class="dropdown-menu" aria-labelledby="dropdown03">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else
+													here</a></li>
+										</ul></li>
+								</ul>
+								<form>
+									<input class="form-control" type="text" placeholder="Search"
+										aria-label="Search">
+								</form>
+							</div>
+						</div>
+					</nav>
+				</header>
+
+
+				<div class="container-fluid mt-2">
+					<h1>Sticky footer with navbar</h1>
+					<p class="lead">
+						Pin a footer to the bottom of the viewport in desktop browsers
+						with this custom HTML and CSS. A navbar has been added with
+						<code class="small">padding-top: 60px;</code>
+						on the
+						<code class="small">main &gt; .container-fluid</code>
+						.
+					</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+						nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat
+						nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+						sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+						nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat
+						nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+						sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer mt-auto py-3 bg-light">
+		<div class="container">
+			<span class="text-muted">Place sticky footer content here.</span>
+		</div>
+	</footer>
+
+
+
+
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+<script type="text/javascript">
+	document.getElementById("sidebarCollapse").addEventListener('click',
+			function() {
+				document.getElementById("sidebar").classList.toggle("active");
+				this.classList.toggle("active");
+			});
+</script>
+</html>
