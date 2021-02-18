@@ -65,9 +65,15 @@ a, a:hover, a:focus {
 
 .navbar-btn {
 	/* 	box-shadow: none; */
-	outline: none !important;
+	outline: none;
 	border: none;
 	border-radius: 50%;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus
+	{
+	outline: none;
+	box-shadow: none;
 }
 
 .wrapper {
@@ -245,8 +251,8 @@ a, a:hover, a:focus {
 /* 	background-color: #DDF;  */
 /* } */
 #mainsidebar li ul>li a:hover {
-	background-color: #537895; background-image : linear-gradient( 315deg,
-	#537895 0%, #09203f 74%);
+	background-color: #537895;
+	background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
 	color: #ffff;
 	font-weight: 900;
 	background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
@@ -263,6 +269,11 @@ a, a:hover, a:focus {
 	/*     color: red; */
 	transition: 0.3s;
 	transform: rotate(90deg);
+}
+
+#mainsidebar ul li i {
+	margin-left: 10px;
+	margin-right: 20px;
 }
 </style>
 
@@ -286,29 +297,30 @@ a, a:hover, a:focus {
 					<div>
 
 						<ul class="menu">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Dashboards<i
+							<li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+							<li><a href="#"><i class="fa fa-tachometer-alt"></i>Dashboards<i
 									class="fas fa-chevron-right float-end"></i></a>
 								<ul>
 									<li><a href="#">Dashboard1</a></li>
 									<li><a href="#">Dashboard2</a></li>
 								</ul></li>
-							<li><a href="#">Preferences</a></li>
-							<li><a href="#">Settings<i
+							<li><a href="#"><i class="fas fa-tools"></i>Tools</a></li>
+							<li><a href="#"><i class="fas fa-cog"></i>Settings<i
 									class="fas fa-chevron-right float-end"></i></a>
 								<ul>
 									<li><a href="#">Setting1</a></li>
 									<li><a href="#">Setting2</a></li>
 									<li><a href="#">Setting3</a></li>
 								</ul></li>
-							<li><a href="#">Services<i
+							<li><a href="#"><i class="fas fa-cogs"></i>Services<i
 									class="fas fa-chevron-right float-end"></i></a>
 								<ul>
 									<li><a href="#">Service1</a></li>
 									<li><a href="#">Service2</a></li>
 								</ul></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Logout</a></li>
+							<li><a href="#"><i class="fas fa-address-card"></i>About
+									Us</a></li>
+							<li><a href="#"><i class="fas fa-power-off"></i>Logout</a></li>
 						</ul>
 
 					</div>
