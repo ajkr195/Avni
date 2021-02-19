@@ -1,0 +1,356 @@
+﻿<html lang="en" class="h-100">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/leaf.svg">
+<title>Avni - Bootstrap 5 Admin Template</title>
+<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500'
+	rel='stylesheet'>
+<style>
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	font-size: calc(16px + ( 20 - 16)*(100vw- 320px)/(1024- 320));
+}
+
+body, button {
+	font: 1em Catamaran, sans-serif;
+	line-height: 1.5;
+}
+
+body, nav a, nav a:active, nav a:visited {
+	color: #171717;
+}
+
+body {
+	background: #d9d9d9;
+}
+
+a {
+	color: #f22626;
+	text-decoration: none;
+}
+
+a:focus, button:focus {
+	outline: transparent;
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+}
+
+a:active {
+	color: #db0a0a;
+}
+
+a:visited {
+	color: #f45555;
+}
+
+header, main {
+	padding: 1.5em;
+}
+
+header, nav {
+	display: flex;
+}
+
+header {
+	background-color: #36096d; background-image : linear-gradient( 315deg,
+	#36096d 0%, #37d5d6 74%);
+	box-shadow: 0 0 0.5em #0007;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 0;
+	background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+}
+
+main {
+	display: block;
+	margin: auto;
+	max-width: 37.5em;
+	padding-top: 6em;
+}
+
+nav {
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	transition: all 0.2s linear;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+}
+
+nav ul, h1, h2, .logo {
+	font-size: 1.5em;
+	line-height: 1;
+}
+
+nav a, h1, h2 {
+	font-weight: bold;
+}
+
+nav ul {
+	list-style: none;
+	text-align: center;
+}
+
+nav li, p {
+	margin-bottom: 1.5rem;
+}
+
+h1 {
+	color: #f1f1f1;
+}
+
+h2 {
+	margin-bottom: 1em;
+}
+
+.logo {
+	margin-right: 0.5rem;
+}
+
+.logo a:hover, .logo a:focus {
+	text-decoration: none;
+}
+
+.logo a:focus, .nav-btn[aria-expanded="false"]:focus {
+	filter: brightness(0.7);
+	-webkit-filter: brightness(0.7);
+}
+
+.nav-close-btn:focus {
+	opacity: 0.7;
+}
+
+.nav-btn, .nav-close-btn {
+	background: transparent;
+	cursor: pointer;
+	height: 1.5em;
+}
+
+.nav-btn {
+	position: relative;
+	width: 2em;
+	z-index: 1;
+}
+
+.nav-btn span, .nav-close-btn span {
+	display: block;
+	position: absolute;
+	height: 0.25em;
+	width: 100%;
+	z-index: 2;
+}
+
+.nav-btn span {
+	background: #f1f1f1;
+	top: 0;
+	right: 0;
+	transition: all 0.2s 0.2s ease-out;
+}
+
+.nav-btn span:nth-of-type(2) {
+	top: calc(50% - 0.125em);
+	transition-delay: 0.4s;
+}
+
+.nav-btn span:nth-of-type(3) {
+	top: calc(100% - 0.25em);
+	transition-delay: 0.6s;
+}
+
+.nav-btn[aria-expanded="true"] span {
+	top: -1.5em;
+	right: -1.5em;
+	height: 33.33vh;
+	width: 100vw;
+	transition-delay: 0.4s;
+}
+
+.nav-btn[aria-expanded="true"] span:nth-of-type(2) {
+	top: calc(-1.5em + 33.33vh);
+	transition-delay: 0.2s;
+}
+
+.nav-btn[aria-expanded="true"] span:nth-of-type(3) {
+	top: calc(-1.5em + 66.67vh);
+	transition-delay: 0s;
+}
+
+.nav-btn[aria-expanded="true"] ~ nav {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.2s 0.8s ease-out;
+}
+
+.nav-close-btn {
+	position: absolute;
+	top: 1.5em;
+	right: 1.5em;
+	width: 1.5em;
+}
+
+.nav-close-btn span {
+	background: #171717;
+	top: 50%;
+}
+
+.nav-close-btn span:first-of-type {
+	transform: translateY(-50%) rotate(-45deg);
+}
+
+.nav-close-btn span:nth-of-type(2) {
+	transform: translateY(-50%) rotate(45deg);
+}
+
+.nav-btn span.sr, .nav-close-btn span.sr {
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	body, nav a, nav a:active, nav a:visited {
+		color: #f1f1f1;
+	}
+	body {
+		background: #171717;
+	}
+	a {
+		color: #f45555;
+	}
+	a:active {
+		color: #f22626;
+	}
+	a:visited {
+		color: #f98686;
+	}
+	nav {
+		background: #242424;
+	}
+	.nav-close-btn span {
+		background: #f1f1f1;
+	}
+}
+</style>
+
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<a href="#0">Image</a>
+		</div>
+		<h1>Lorem ipsum</h1>
+		<button class="nav-btn" aria-expanded="false" aria-controls="nav">
+			<span></span> <span></span> <span></span> <span class="sr">Menu</span>
+		</button>
+		<nav id="nav">
+			<button class="nav-close-btn">
+				<span></span> <span></span> <span class="sr">Close</span>
+			</button>
+			<ul>
+				<li><a href="#0">Home</a></li>
+				<li><a href="#0">About</a></li>
+				<li><a href="#0">Contact</a></li>
+				<li><a href="#0">Services</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2>Lorem ipsum dolor sit amet</h2>
+		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
+			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+			dolor in reprehenderit in voluptate velit esse cillum dolore eu
+			fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est
+			laborum.</p>
+		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
+			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+			dolor in reprehenderit in voluptate velit esse cillum dolore eu
+			fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est
+			laborum.</p>
+		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
+			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+			dolor in reprehenderit in voluptate velit esse cillum dolore eu
+			fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est
+			laborum.</p>
+	</main>
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+	let navBtn = this.querySelector(".nav-btn"),
+		navCloseBtn = this.querySelector(".nav-close-btn"),
+		toggleNav = newState => {
+			let attr = "aria-expanded",
+				state = navBtn.getAttribute(attr);
+
+			navBtn.setAttribute(attr,newState);
+		};
+		menuTab = e => {
+			let target = this.querySelector(".nav-btn[aria-expanded=true] ~ nav");
+
+			if (target !== null) {
+				let navLinks = target.querySelectorAll("a, button"),
+					tries = 0,
+					last = navLinks.length - 1;
+				// try to find focus in open nav
+				for (let l of navLinks) {
+					if (this.activeElement !== l)
+						++tries;
+				}
+				// put focus on X (first link) if outside or tabbing from last link
+				let onLast = this.activeElement === navLinks[last],
+					onFirst = this.activeElement === navLinks[0],
+					notShifting = !e.shiftKey,
+					shifting = e.shiftKey;
+
+				if (tries === navLinks.length || (onLast && notShifting)) {
+					e.preventDefault();
+					navLinks[0].focus();
+				// go to last link if shift-tabbing from X
+				} else if (onFirst && shifting) {
+					e.preventDefault();
+					navLinks[last].focus();
+				}
+			}
+		};
+
+	navBtn.addEventListener("click",() => {
+		toggleNav(true);
+	});
+	navCloseBtn.addEventListener("click",() => {
+		toggleNav(false);
+	});
+	this.addEventListener("keydown",e => {
+		// Esc
+		if (e.keyCode === 27)
+			toggleNav(false);
+		// Tab
+		else if (e.keyCode === 9)
+			menuTab(e);
+	});
+});
+</script>
+</html>

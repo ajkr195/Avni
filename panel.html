@@ -1,0 +1,252 @@
+﻿<html lang="en" class="h-100">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/leaf.svg">
+<title>Avni - Bootstrap 5 Admin Template</title>
+<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500'
+	rel='stylesheet'>
+<style>
+@import
+	url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+
+body {
+	background: #202020;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+main>.container-fluid {
+	padding: 0 15px 0;
+}
+
+.buttons-container {
+	margin: auto;
+	top: 0;
+	width: 100wh;
+	/* 	height: 100vh; */
+	/*   border-radius: 45px; */
+	background: #151515;
+	box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+	list-style: none;
+	width: inherit;
+	height: inherit;
+	display: flex;
+	justify-content: center;
+}
+
+ul li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1px;
+	height: 70px;
+	width: 75px;
+	background: #202020;
+	border-top: 1px solid #353535;
+	box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
+	transition: all 0.5s;
+}
+
+ul li:nth-of-type(1) {
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+}
+
+ul li:last-of-type {
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+
+ul li:hover {
+	cursor: pointer;
+}
+
+ul li a {
+	display: inline-block;
+	color: gray;
+	text-decoration: none;
+	font-size: 35px;
+	transition: all 0.5s;
+}
+
+ul li a i:hover {
+	color: #ffb3b3;
+}
+
+ul li a:hover {
+	color: #ffb3b3;
+}
+
+.card-content {
+	background: lightgray;
+	color: gray;
+}
+
+.created-by {
+	bottom: 0;
+	text-align: center;
+	font-size: 10px;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.created-by p {
+	color: white;
+}
+
+.created-by a {
+	color: crimson;
+	text-shadow: 0 0 15px rgba(244, 0, 0, 0.71);
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.created-by a:hover {
+	text-decoration: underline;
+}
+
+.active {
+	background: #151515;
+	border-top: none;
+	border-bottom: 1px solid #252525;
+	box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.8);
+}
+
+.active-text {
+	color: crimson;
+	text-shadow: 0 0 15px rgba(220, 10, 10, 0.5);
+}
+</style>
+
+</head>
+
+<body class="d-flex flex-column h-100">
+	<main class="flex-shrink-0">
+
+
+		<div class="buttons-container">
+			<ul>
+				<li class="active"><a href="#" class="active-text"><i
+						class="fas fa-list" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-database"
+						aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-server" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+
+
+
+		<div class="container-fluid mt-2 mb-5">
+			<div class="content" id="content">
+
+				<div class="card">
+					<h5 class="card-header bg-secondary text-white">Featured</h5>
+					<div class="card-body card-content">
+						<div class="table-responsive">
+							<table class="table table-sm" id="finTable">
+								<thead class="success">
+									<tr>
+										<th>Name</th>
+										<th>Sale-Rate</th>
+										<th>Actual</th>
+										<th>Variance</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jacob Jensen</td>
+										<td>85%</td>
+										<td>32,435</td>
+										<td>40,234</td>
+									</tr>
+									<tr>
+										<td>Cecelia Bradley</td>
+										<td>55%</td>
+										<td>4,36780</td>
+										<td>765728</td>
+									</tr>
+									<tr>
+										<td>Leah Sherman</td>
+										<td>23%</td>
+										<td>2300</td>
+										<td>22437</td>
+									</tr>
+									<tr>
+										<td>Ina Curry</td>
+										<td>44%</td>
+										<td>53462</td>
+										<td>1,75938</td>
+									</tr>
+									<tr>
+										<td>Lida Fitzgerald</td>
+										<td>65%</td>
+										<td>67453</td>
+										<td>765377</td>
+									</tr>
+									<tr>
+										<td>Stella Johnson</td>
+										<td>49%</td>
+										<td>43662</td>
+										<td>96535</td>
+									</tr>
+									<tr>
+										<td>Maria Ortiz</td>
+										<td>65%</td>
+										<td>76555</td>
+										<td>258546</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</main>
+
+
+	<div class="created-by mt-5 mb-5">
+		<p>Panel Created by</p>
+		<a href="#" target="_blank">Your Signature</a>
+	</div>
+
+
+	<footer class="footer mt-auto py-1 bg-dark text-center">
+		<div class="container">
+			<span class="text-muted">Place sticky footer content here.</span>
+		</div>
+	</footer>
+
+
+
+</body>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+	const alllistitems = document.querySelectorAll("li");
+	const alllistlinks = document.querySelectorAll("li a");
+
+	for (let i = 0; i < alllistitems.length; i++) {
+		alllistitems[i].addEventListener("click", function() {
+			for (let i = 0; i < alllistitems.length; i++) {
+				alllistitems[i].classList.remove("active");
+				alllistlinks[i].classList.remove("active-text");
+			}
+			this.classList.add("active");
+			alllistlinks[i].classList.add("active-text");
+		});
+	}
+</script>
+</html>
