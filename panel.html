@@ -33,7 +33,7 @@ main>.container-fluid {
 	box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-ul {
+.buttons-container ul {
 	list-style: none;
 	width: inherit;
 	height: inherit;
@@ -41,7 +41,7 @@ ul {
 	justify-content: center;
 }
 
-ul li {
+.buttons-container ul li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -54,21 +54,21 @@ ul li {
 	transition: all 0.5s;
 }
 
-ul li:nth-of-type(1) {
+.buttons-container ul li:nth-of-type(1) {
 	border-top-left-radius: 40px;
 	border-bottom-left-radius: 40px;
 }
 
-ul li:last-of-type {
+.buttons-container ul li:last-of-type {
 	border-top-right-radius: 40px;
 	border-bottom-right-radius: 40px;
 }
 
-ul li:hover {
+.buttons-container ul li:hover {
 	cursor: pointer;
 }
 
-ul li a {
+.buttons-container ul li a {
 	display: inline-block;
 	color: gray;
 	text-decoration: none;
@@ -76,11 +76,11 @@ ul li a {
 	transition: all 0.5s;
 }
 
-ul li a i:hover {
+.buttons-container ul li a i:hover {
 	color: #ffb3b3;
 }
 
-ul li a:hover {
+.buttons-container ul li a:hover {
 	color: #ffb3b3;
 }
 
@@ -113,14 +113,14 @@ ul li a:hover {
 	text-decoration: underline;
 }
 
-.active {
+.buttons-container .active {
 	background: #151515;
 	border-top: none;
 	border-bottom: 1px solid #252525;
 	box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.8);
 }
 
-.active-text {
+.buttons-container .active-text {
 	color: crimson;
 	text-shadow: 0 0 15px rgba(220, 10, 10, 0.5);
 }

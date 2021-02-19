@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/leaf.svg">
+<title>Avni - Bootstrap 5 Admin Template</title>
+<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+
+<link rel="canonical"
+	href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+<style>
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #F0F0F0;
+}
+
+main>.container-fluid {
+	padding: 60px 15px 0;
+}
+
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+@media ( min-width : 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}
+
+@import
+	"https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+a, a:hover, a:focus {
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.navbar {
+	padding: 5px 5px;
+	background: #fff;
+	border: none;
+	/* 	border-radius: 20px; */
+	/* 	margin-bottom: 20px; */
+	min-height: 30px;
+	margin-top: 0;
+	/* 	background-color: #2a2a72; */
+	/* 	background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); */
+}
+
+.navbar-btn {
+	/* 	box-shadow: none; */
+	outline: none;
+	border: none;
+	border-radius: 50%;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus
+	{
+	outline: none;
+	box-shadow: none;
+}
+
+.navbarcounter {
+	position: absolute;
+	top: 1px;
+	padding: 4px 4px;
+	border-radius: 50%;
+	font-size: 8px;
+	text-decoration: none;
+}
+
+.search-form {
+	position: relative;
+	width: 336px;
+	height: 32px;
+	border-radius: 50%;
+}
+
+.search-form input {
+	width: 100%;
+	height: 100%;
+	padding: 0 25px;
+	border: 1px solid #F4EEFB;
+	background: #fff;
+	border-radius: 50px;
+	-webkit-transition: all 0.3s ease-out 0.3s;
+	-moz-transition: all 0.3s ease-out 0.3s;
+	-ms-transition: all 0.3s ease-out 0.3s;
+	-o-transition: all 0.3s ease-out 0.3s;
+	transition: all 0.3s ease-out 0.3s;
+}
+
+.search-form input:focus {
+	outline: none;
+	-webkit-box-shadow: 0px 0px 30px rgba(215, 224, 252, 0.45);
+	-moz-box-shadow: 0px 0px 30px rgba(215, 224, 252, 0.45);
+	box-shadow: 0px 0px 30px rgba(215, 224, 252, 0.45);
+}
+
+.search-form button {
+	background: none;
+	border: none;
+	position: absolute;
+	right: 15px;
+	top: 7px;
+}
+
+.wrapper {
+	display: flex;
+	width: 100%;
+}
+
+#sidebar {
+	min-width: 250px;
+	max-width: 250px;
+	color: #fff;
+	transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+	transform-origin: bottom left;
+	background-color: #2a2a72;
+	background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+
+#sidebar.active {
+	margin-left: -250px;
+	transform: rotateY(180deg);
+}
+
+#sidebar .sidebar-header {
+	padding: 20px;
+	background-color: #009ffd;
+	background-image: linear-gradient(315deg, #009ffd 0%, #2a2a72 74%);
+}
+
+#content {
+	width: 100%;
+	min-height: 100vh;
+	transition: all 0.3s;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#sidebarCollapse {
+	width: 30px;
+	height: 30px;
+	background: #f5f5f5;
+	cursor: pointer;
+	margin-left: -12px;
+	/* 	margin: 0; */
+	/* 	left: 0; */
+	/* 	padding: 0; */
+}
+
+#sidebarCollapse:focus {
+	outline: 0;
+}
+
+#sidebarCollapse span {
+	width: 80%;
+	height: 2px;
+	margin: 0 auto;
+	display: block;
+	background: #555;
+	transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+	transition-delay: 0.2s;
+}
+
+#sidebarCollapse span:first-of-type {
+	transform: rotate(45deg) translate(2px, 2px);
+}
+
+#sidebarCollapse span:nth-of-type(2) {
+	opacity: 0;
+}
+
+#sidebarCollapse span:last-of-type {
+	transform: rotate(-45deg) translate(1px, -1px);
+}
+
+#sidebarCollapse.active span {
+	transform: none;
+	opacity: 1;
+	margin: 5px auto;
+}
+
+@media ( max-width : 1168px) {
+	#mainAppNavbar ul li .tobehidden {
+		display: none;
+	}
+	
+	.search-form {
+	width: 80%;
+	}
+}
+
+@media ( max-width : 768px) {
+	
+	.search-form {
+	width: 80%;
+	}
+}
+
+@media ( max-width : 968px) {
+	#sidebar {
+		margin-left: -250px;
+		transform: rotateY(90deg);
+	}
+	/* 	#sidebar.active { */
+	/* 		margin-left: 0; */
+	/* 		transform: none; */
+	/* 	} */
+	#sidebarCollapse span:first-of-type, #sidebarCollapse span:nth-of-type(2),
+		#sidebarCollapse span:last-of-type {
+		transform: none;
+		opacity: 1;
+		margin: 5px auto;
+	}
+	#sidebarCollapse {
+		display: none;
+	}
+	#sidebarCollapse.active span {
+		margin: 0 auto;
+	}
+	#sidebarCollapse.active span:first-of-type {
+		transform: rotate(45deg) translate(2px, 2px);
+	}
+	#sidebarCollapse.active span:nth-of-type(2) {
+		opacity: 0;
+	}
+	#sidebarCollapse.active span:last-of-type {
+		transform: rotate(-45deg) translate(2px, -2px);
+	}
+}
+
+.mainsidebar {
+	font-family: Arial, Helvetica, sans-serif;
+	/* 	position: fixed; */
+	top: 55px;
+	left: 0;
+	background-color: #292c2f;
+	width: 100%;
+	height: 100vh;
+	padding: 20px 0;
+}
+
+.mainsidebar>a {
+	display: block;
+	text-decoration: none;
+	font-family: Cookie, cursive;
+	width: 122px;
+	height: 122px;
+	margin: 0 auto;
+	text-align: center;
+	color: #ffffff;
+	font-size: 44px;
+	font-weight: normal;
+	line-height: 2.6;
+	border-radius: 50%;
+	background-color: #181a1b;
+}
+
+.mainsidebar .mainsidebar-links {
+	margin: 30px auto;
+}
+
+.mainsidebar-links div>a {
+	display: block;
+	text-decoration: none;
+	margin: 0 auto 5px auto;
+	padding: 10px 0 10px 5px;
+	background-color: #35393e;
+	text-align: left;
+	color: #b3bcc5;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 2;
+	border-left-width: 2px;
+	border-left-style: solid;
+}
+
+.mainsidebar-links div.selected>a {
+	background-color: #ffffff;
+	color: #565d63;
+	line-height: 2.3;
+	margin: 0;
+}
+
+.mainsidebar-links div>a i.fa {
+	position: relative;
+	font-size: 20px;
+	top: 3px;
+	width: 40px;
+	text-align: center;
+}
+
+.mainsidebar-links div ul.sub-links {
+	max-height: 0;
+	overflow: hidden;
+	list-style: none;
+	padding: 0 0 0 30px;
+	/* 	color: #b3bcc5; */
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 24px;
+	margin: 0;
+	transition: 0.4s;
+}
+
+.mainsidebar-links div.selected ul.sub-links {
+	max-height: 250px;
+	padding: 12px 0 12px 30px;
+}
+
+.mainsidebar-links div .sub-links a {
+	text-decoration: none;
+	/* 	color: #b3bcc5; */
+	display: block;
+	text-align: left;
+	padding: 5px 0 5px 10px;
+}
+
+.mainsidebar-links div .sub-links li {
+	width: 85%;
+}
+
+.mainsidebar-links div .sub-links li:hover {
+	color: #b3bcc5;
+	background: #dc3545;
+}
+
+.mainsidebar-links div.link-blue>a {
+	border-color: #487db2;
+}
+
+.mainsidebar-links div.link-blue>a i.fa {
+	color: #487db2;
+}
+
+.mainsidebar-links div.link-red>a {
+	border-color: #da4545;
+}
+
+.mainsidebar-links div.link-red>a i.fa {
+	color: #da4545;
+}
+
+.mainsidebar-links div.link-yellow>a {
+	border-color: #d0d237;
+}
+
+.mainsidebar-links div.link-yellow>a i.fa {
+	color: #d0d237;
+}
+
+.mainsidebar-links div.link-green>a {
+	border-color: #86be2e;
+}
+
+.mainsidebar-links div.link-green>a i.fa {
+	color: #86be2e;
+}
+
+.buttons-container {
+	width: 100wh;
+	background: #151515;
+	box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.5);
+	border-radius: 40px;
+	display: none;
+}
+
+.buttons-container ul {
+	list-style: none;
+	width: inherit;
+	height: inherit;
+	display: flex;
+	justify-content: center;
+}
+
+.buttons-container ul li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1px;
+	height: 50px;
+	width: 55px;
+	background: #202020;
+	border-top: 1px solid #353535;
+	box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
+	transition: all 0.5s;
+	box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.buttons-container ul li:nth-of-type(1) {
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+}
+
+.buttons-container ul li:last-of-type {
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+
+.buttons-container ul li:hover {
+	cursor: pointer;
+}
+
+.buttons-container ul li a {
+	display: inline-block;
+	color: gray;
+	text-decoration: none;
+	font-size: 35px;
+	transition: all 0.5s;
+}
+
+.buttons-container ul li a i:hover {
+	color: #ffb3b3;
+}
+
+.buttons-container ul li a:hover {
+	color: #ffb3b3;
+}
+
+.buttons-container .active {
+	background: #151515;
+	border-top: none;
+	border-bottom: 1px solid #252525;
+	box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.8);
+}
+
+.buttons-container .active-text {
+	color: crimson;
+	text-shadow: 0 0 15px rgba(220, 10, 10, 0.5);
+}
+</style>
+
+
+</head>
+<body class="d-flex flex-column h-100">
+
+	<main class="flex-shrink-0">
+		<div class="wrapper">
+
+			<div id="sidebar">
+				<!-- <div class="sidebar-header text-center"> -->
+				<!-- <h3>Company</h3> -->
+				<!-- </div> -->
+				<div class="mainsidebar" id="mainsidebar">
+					<!-- <p class="text-center">Header Area</p> -->
+					<aside class="mainsidebar" id="mainsidebar">
+
+						<a href="#" class="company-logo">Avni</a>
+
+						<div class="mainsidebar-links">
+
+							<div class="link-red ddmenu selected">
+								<a href="#"> <i class="fa fas fa-home"></i>Home
+								</a>
+							</div>
+
+							<div class="link-blue ddmenu">
+								<a href="#"> <i class="fa far fa-image"></i>Photography
+								</a>
+								<ul class="sub-links">
+									<li><a href="#">Portraits</a></li>
+									<li><a href="#">Landscape</a></li>
+									<li><a href="#">Studio shots</a></li>
+									<li><a href="#">Macros</a></li>
+								</ul>
+							</div>
+
+							<div class="link-red ddmenu">
+								<a href="#"><i class="fa fas fa-cog"></i>Favorites </a>
+								<ul class="sub-links">
+									<li><a href="#">Link 1</a></li>
+									<li><a href="#">Link 2</a></li>
+									<li><a href="#">Link 3</a></li>
+									<li><a href="#">Link 4</a></li>
+								</ul>
+							</div>
+
+							<div class="link-yellow ddmenu">
+								<a href="#"> <i class="fa fas fa-tools"></i>Projects
+								</a>
+								<ul class="sub-links">
+									<li><a href="#">Link 1</a></li>
+									<li><a href="#">Link 2</a></li>
+									<li><a href="#">Link 3</a></li>
+									<li><a href="#">Link 4</a></li>
+								</ul>
+							</div>
+
+							<div class="link-green ddmenu">
+
+								<a href="#"> <i class="fa fas fa-user-cog"></i>Places
+								</a>
+
+								<ul class="sub-links">
+									<li><a href="#">Link 1</a></li>
+									<li><a href="#">Link 2</a></li>
+									<li><a href="#">Link 3</a></li>
+									<li><a href="#">Link 4</a></li>
+								</ul>
+
+							</div>
+							<div class="link-red ddmenu">
+								<a href="#"> <i class="fa fas fa-th-large"></i>SomeOther
+								</a>
+							</div>
+
+						</div>
+					</aside>
+
+
+				</div>
+			</div>
+
+			<div id="content">
+
+				<header>
+					<nav class="navbar navbar-expand-sm navbar-dark bg-dark"
+						aria-label="Third navbar example">
+
+						<div class="container-fluid">
+
+							<button type="button" id="sidebarCollapse" class="navbar-btn">
+								<span></span> <span></span> <span></span>
+							</button>
+
+							<a class="navbar-brand mx-2" href="#">Expand at sm</a>
+
+							<button class="navbar-toggler" type="button"
+								data-bs-toggle="collapse" data-bs-target="#mainAppNavbar"
+								aria-controls="mainAppNavbar" aria-expanded="false"
+								aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse" id="mainAppNavbar">
+								<ul class="navbar-nav me-auto mb-2 mb-sm-0">
+									<li class="nav-item active"><a class="nav-link"
+										aria-current="page" href="#"><i
+											class="fa fas fa-home text-danger"></i> <span
+											class="tobehidden">Home</span></a></li>
+									<li class="nav-item"><a class="nav-link" href="#"><i
+											class="fa fas fa-cog text-danger"></i> <span
+											class="tobehidden">Services</span></a></li>
+									<li class="nav-item dropdown"><a
+										class="nav-link dropdown-toggle" href="#" id="dropdown03"
+										data-bs-toggle="dropdown" aria-expanded="false"><i
+											class="fa fas fa-database text-danger"></i> <span
+											class="tobehidden">Databases</span></a>
+										<ul class="dropdown-menu" aria-labelledby="dropdown03">
+											<li><a class="dropdown-item" href="#"><i
+													class="fa fas fa-database text-success me-3"></i> Action</a></li>
+											<li><a class="dropdown-item" href="#"><i
+													class="fa fas fa-database text-success me-3"></i> Another
+													action</a></li>
+											<li><a class="dropdown-item" href="#"><i
+													class="fa fas fa-database text-success me-3"></i> Something
+													else here</a></li>
+										</ul></li>
+
+									<li class="nav-item dropdown mx-2"><a class="nav-link"
+										href="#" id="dropdown02" data-bs-toggle="dropdown"
+										aria-expanded="false"><i class="fa fa-bell"></i><span
+											class="badge badge-pill bg-danger navbarcounter">13</span></a>
+										<ul class="dropdown-menu dropdown-menu-end"
+											aria-labelledby="dropdown02">
+											<li><a class="dropdown-item text-center" href="#"><i
+													class="far fa-clock text-danger"> 2 Hours ago</i><br />This
+													is the alert message1...</a>
+												<div class="dropdown-divider"></div></li>
+											<li><a class="dropdown-item text-center" href="#"><i
+													class="far fa-clock text-danger"> 2 Hours ago</i><br />This
+													is the alert message2...</a>
+												<div class="dropdown-divider"></div></li>
+											<li><a class="dropdown-item text-center" href="#"><i
+													class="far fa-clock text-danger"> 2 Hours ago</i><br />This
+													is the alert message3...</a>
+												<div class="dropdown-divider"></div></li>
+										</ul></li>
+
+									<li class="nav-item dropdown"><a class="nav-link" href="#"
+										id="dropdown03" data-bs-toggle="dropdown"
+										aria-expanded="false"><i class="fa fa-envelope"></i> <span
+											class="badge badge-pill bg-primary navbarcounter">17</span></a>
+										<ul class="dropdown-menu dropdown-menu-end"
+											aria-labelledby="dropdown03">
+
+											<li><a class="dropdown-item text-center" href="#"><i
+													class="far fa-clock text-danger"> 2 Hours ago</i><br />This
+													is the notification message1...</a>
+												<div class="dropdown-divider"></div></li>
+											<li><a class="dropdown-item text-center" href="#"><i
+													class="far fa-clock text-danger"> 2 Hours ago</i><br />This
+													is the notification message2...</a>
+												<div class="dropdown-divider"></div></li>
+											<li><a class="dropdown-item text-center" href="#"><i
+													class="far fa-clock text-danger"> 2 Hours ago</i><br />This
+													is the notification message3...</a>
+												<div class="dropdown-divider"></div></li>
+										</ul></li>
+
+									<li class="nav-item active mx-2"><a class="nav-link"
+										aria-current="page" href="#" onClick="toggleBtnCntnr();"><i
+											class="fa fas fa-tools text-danger"></i> </a></li>
+
+
+								</ul>
+
+								<div id="navSearchForm" class="mx-1">
+									<form action="#" class="search-form py-0">
+										<input type="text">
+										<button type="submit">
+											<i class="fas fa-search navbar-search-icon text-danger"></i>
+										</button>
+									</form>
+								</div>
+
+							</div>
+						</div>
+					</nav>
+				</header>
+
+				<div class="container-fluid mt-2">
+					<div class="buttons-container" id="buttons-container">
+						<ul>
+							<li class="active"><a href="#" class="active-text"><i
+									class="fas fa-list"></i></a></li>
+							<li><a href="#"><i class="fa fa-cog"></i></a></li>
+							<li><a href="#"><i class="fa fa-database"></i></a></li>
+							<li><a href="#"><i class="fa fa-server"></i></a></li>
+							<li><a href="#"><i class="fab fa-accessible-icon"></i></a></li>
+							<li><a href="#"><i class="fas fa-anchor"></i></a></li>
+							<li><a href="#"><i class="far fa-address-card"></i></a></li>
+							<li><a href="#"><i class="fas fa-filter"></i></a></li>
+							<li><a href="#"><i class="fas fa-radiation"></i></a></li>
+							<li><a href="#"><i class="fas fa-atom"></i></a></li>
+							<li><a href="#"><i class="fas fa-camera-retro"></i></a></li>
+							<li><a href="#"><i class="fas fa-chart-pie"></i></a></li>
+							<li><a href="#"><i class="fas fa-chart-bar"></i></a></li>
+							<li><a href="#"><i class="fas fa-bullseye"></i></a></li>
+							<li><a href="#"><i class="fas fa-bookmark"></i></a></li>
+							<li><a href="#"><i class="fas fa-bolt"></i></a></li>
+							<li><a href="#"><i class="fas fa-battery-full"></i></a></li>
+
+						</ul>
+
+					</div>
+					<h1>Sticky footer with navbar</h1>
+					<p class="lead">Pin a footer to the bottom of the viewport in
+						desktop browsers.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+						nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat
+						nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+						sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+						nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat
+						nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+						sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer mt-auto py-2 bg-dark text-center">
+		<div class="container">
+			<span class="text-danger"><strong>Place sticky footer
+					content here. Its not going anywhere.!!</strong></span>
+		</div>
+	</footer>
+
+</body>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+	document.getElementById("sidebarCollapse").addEventListener('click',
+			function() {
+				document.getElementById("sidebar").classList.toggle("active");
+				this.classList.toggle("active");
+			});
+</script>
+<script>
+	var el = document.querySelectorAll('.ddmenu');
+	for (let i = 0; i < el.length; i++) {
+		el[i].onclick = function() {
+			var c = 0;
+			while (c < el.length) {
+				el[c++].classList.remove("selected");
+			}
+			el[i].className = 'selected';
+		};
+	}
+</script>
+<script>
+	const alllistitems = document.querySelectorAll(".buttons-container li");
+	const alllistlinks = document.querySelectorAll(".buttons-container li a");
+
+	for (let i = 0; i < alllistitems.length; i++) {
+		alllistitems[i].addEventListener("click", function() {
+			for (let i = 0; i < alllistitems.length; i++) {
+				alllistitems[i].classList.remove("active");
+				alllistlinks[i].classList.remove("active-text");
+			}
+			this.classList.add("active");
+			alllistlinks[i].classList.add("active-text");
+		});
+	}
+</script>
+<script>
+	function toggleBtnCntnr() {
+		var toggleBtnCntnr = document.getElementById("buttons-container");
+		if (toggleBtnCntnr.style.display === "block") {
+			toggleBtnCntnr.style.display = "none";
+		} else {
+			toggleBtnCntnr.style.display = "block";
+		}
+	}
+</script>
+</html>
