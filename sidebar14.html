@@ -153,7 +153,13 @@ body {
 
 		<div class="sidebar-links">
 
-			<div class="link-blue ddmenu selected">
+
+			<div class="link-red ddmenu selected">
+				<a href="#"> <i class="fa fas fa-home"></i>Home
+				</a>
+			</div>
+
+			<div class="link-blue ddmenu">
 
 				<a href="#"> <i class="fa far fa-image"></i>Photography
 				</a>
@@ -169,8 +175,7 @@ body {
 
 			<div class="link-red ddmenu">
 
-				<a href="#"><i class="fa fas fa-cog"></i>Favorites
-				</a>
+				<a href="#"><i class="fa fas fa-cog"></i>Favorites </a>
 
 				<ul class="sub-links">
 					<li><a href="#">Link 1</a></li>
@@ -209,6 +214,11 @@ body {
 
 			</div>
 
+			<div class="link-red ddmenu">
+				<a href="#"> <i class="fa fas fa-th-large"></i>SomeOther
+				</a>
+			</div>
+
 		</div>
 
 	</aside>
@@ -235,15 +245,28 @@ body {
 
 	</div>
 	<script>
-		var thelinks = document.getElementsByClassName("ddmenu");
-		for (i = 0; i < thelinks.length; i++) {
-			thelinks[i].addEventListener("click", function() {
-				if (this.classList.contains("selected")) {
-					this.classList.remove("selected");
-				} else {
-					this.classList.add("selected");
+// 		var thelinks = document.getElementsByClassName("ddmenu");
+// 		for (i = 0; i < thelinks.length; i++) {
+// 			thelinks[i].addEventListener("click", function() {
+// 				if (this.classList.contains("selected")) {
+// 					this.classList.remove("selected");
+// 				} else {
+// 					this.classList.add("selected");
+// 				}
+// 			});
+// 		}
+	</script>
+
+	<script>
+		var el = document.querySelectorAll('.ddmenu');
+		for (let i = 0; i < el.length; i++) {
+			el[i].onclick = function() {
+				var c = 0;
+				while (c < el.length) {
+					el[c++].classList.remove("selected");
 				}
-			});
+				el[i].className = 'selected';
+			};
 		}
 	</script>
 </body>
