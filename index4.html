@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"
+	content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+<title>Avni - Bootstrap 5 Admin Template</title>
+<link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+<link href='http://fonts.googleapis.com/css?family=Cookie'
+	rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="assets/css/bootstrap.css" />
+<link rel="stylesheet" href="assets/css/main4.css" />
+</head>
+<body class="d-flex flex-column h-100">
+	<div class="page-wrapper sidebar-theme sidebartoggled">
+
+		<nav id="sidebar" class="sidebar-wrapper">
+			<div class="sidebar-content">
+				<div class="sidebar-brand">
+					<a href="#" class="text-center"><img src="assets/img/leaf.svg"
+						alt="logo" class="app-logo theme-item mx-2 navbrandarea1">
+						<h4 class="sidebar-title">AVNI</h4></a>
+					<div id="close-sidebar">
+						<i class="fas fa-times"></i>
+					</div>
+				</div>
+				<div class="sidebar-header">
+					<div class="user-pic">
+						<img class="img-responsive img-rounded" src="assets/img/earth.svg"
+							height="40" width="40" alt="User picture">
+					</div>
+					<div class="user-info">
+						<span class="user-name">Planet <strong>Earth</strong>
+						</span> <span class="user-role">Full Of Life</span> <span
+							class="user-status"> <i class="fa fa-circle"></i> <span>Online</span>
+						</span>
+					</div>
+				</div>
+				<!-- sidebar-header  -->
+
+				<!-- sidebar-search  -->
+				<div class="sidebar-menu">
+					<ul>
+						<!--<li class="header-menu"><span>General</span></li> -->
+						<li class="sidebar-dropdown"><a href="#"
+							class="toggledropdownbtn"> <i class="fa fa-tachometer-alt"></i>
+								<span>Dashboards</span> <span
+								class="badge badge-pill bg-warning">New</span>
+						</a>
+							<div class="sidebar-submenu">
+								<ul>
+									<li><a href="index.html"> <i class="fa fa-cog"></i><span>Dashboard
+												1</span> <span class="badge badge-pill bg-success">Pro</span>
+									</a></li>
+									<li><a href="index2.html"> <i class="fa fa-cog"></i> <span>Dashboard
+												2</span>
+									</a></li>
+									<li><a href="index3.html"> <i class="fa fa-cog"></i> <span>Dashboard
+												3</span>
+									</a></li>
+								</ul>
+							</div></li>
+
+						<li class="sidebar-dropdown"><a href="#"
+							class="toggledropdownbtn"> <i class="fas fa-server"></i> <span>Servers</span>
+								<span class="badge badge-pill bg-danger">3</span>
+						</a>
+							<div class="sidebar-submenu">
+								<ul>
+									<li><a href="#"><i class="fab fa-linux"></i>The Linux
+									</a></li>
+									<li><a href="#"><i class="fab fa-ubuntu"></i>Ubuntu </a></li>
+									<li><a href="#"><i class="fas fa-database"></i>Cassandra</a></li>
+									<li><a href="#"><i class="fas fa-database"></i>MongoDB</a></li>
+								</ul>
+							</div></li>
+						<li class="sidebar-dropdown"><a href="#"
+							class="toggledropdownbtn"> <i class="fas fa-th-large"></i> <span>Components</span>
+						</a>
+							<div class="sidebar-submenu">
+								<ul>
+									<li><a href="#"><i class="fas fa-th"></i>General</a></li>
+									<li><a href="#"><i class="fas fa-th"></i>Panels</a></li>
+									<li><a href="#"><i class="fas fa-th"></i>Tables</a></li>
+									<li><a href="#"><i class="fas fa-th"></i>Icons</a></li>
+									<li><a href="#"><i class="fas fa-th"></i>Forms</a></li>
+								</ul>
+							</div></li>
+
+						<!--<li class="header-menu"><span>Extra</span></li> -->
+						<li><a href="#"> <i class="fa fa-book"></i> <span>
+									Gadgets</span> <span class="badge badge-pill bg-primary">Beta</span>
+						</a></li>
+
+						<li><a href="#"> <i class="fab fa-artstation"></i> <span>ArtStation</span></a></li>
+
+						<li><a href="#"> <i class="fas fa-basketball-ball"></i> <span>Off-Work</span></a></li>
+
+						<li><a href="#"> <i class="far fa-bookmark"></i> <span>Bookmarks</span></a></li>
+
+						<li><a href="#"> <i class="fa fa-calendar"></i> <span>Calendar</span>
+						</a></li>
+
+
+					</ul>
+				</div>
+
+				<aside class="sidebar-left-collapse">
+					<div class="sidebar-links">
+
+						<div class="link-red ddmenu selected">
+							<a href="#"> <i class="fa fas fa-home"></i>Home
+							</a>
+						</div>
+
+						<div class="link-blue ddmenu">
+
+							<a href="#"> <i class="fa far fa-image"></i>Photography
+							</a>
+
+							<ul class="sub-links">
+								<li><a href="#">Portraits</a></li>
+								<li><a href="#">Landscape</a></li>
+								<li><a href="#">Studio shots</a></li>
+								<li><a href="#">Macros</a></li>
+							</ul>
+
+						</div>
+
+						<div class="link-red ddmenu">
+
+							<a href="#"><i class="fa fas fa-cog"></i>Favorites </a>
+
+							<ul class="sub-links">
+								<li><a href="#">Link 1</a></li>
+								<li><a href="#">Link 2</a></li>
+								<li><a href="#">Link 3</a></li>
+								<li><a href="#">Link 4</a></li>
+							</ul>
+
+						</div>
+
+						<div class="link-yellow ddmenu">
+
+							<a href="#"> <i class="fa fas fa-tools"></i>Projects
+							</a>
+
+							<ul class="sub-links">
+								<li><a href="#">Link 1</a></li>
+								<li><a href="#">Link 2</a></li>
+								<li><a href="#">Link 3</a></li>
+								<li><a href="#">Link 4</a></li>
+							</ul>
+
+						</div>
+
+						<div class="link-green ddmenu">
+
+							<a href="#"> <i class="fa fas fa-user-cog"></i>Places
+							</a>
+
+							<ul class="sub-links">
+								<li><a href="#">Link 1</a></li>
+								<li><a href="#">Link 2</a></li>
+								<li><a href="#">Link 3</a></li>
+								<li><a href="#">Link 4</a></li>
+							</ul>
+
+						</div>
+
+						<div class="link-red ddmenu">
+
+							<a href="#"> <i class="fa fas fa-th-large"></i>SomeOther
+							</a>
+
+
+						</div>
+
+					</div>
+				</aside>
+				<!-- sidebar-menu  -->
+			</div>
+			<!-- sidebar-content  -->
+			<div class="sidebar-footer">
+				<a href="#" class="tobehidden"> <i style="color: white;"
+					class="fa fa-bell"></i> <span
+					class="badge badge-pill bg-danger notification">13</span>
+				</a> <a href="#" class="tobehidden mx-3"> <i style="color: white;"
+					class="fa fa-envelope"></i> <span
+					class="badge badge-pill bg-primary notification">17</span>
+				</a> <a href="#" class="tobehidden mx-2"> <i style="color: white;"
+					class="fa fa-cog"></i> <span class="badge-sonar"></span>
+				</a> <a href="#"> <i style="color: #ff5500;" class="fa fa-power-off"></i>
+				</a>
+			</div>
+		</nav>
+
+
+
+		<div class="page-content">
+			<div class="container-fluid">
+				<header>
+					<nav
+						class="navbar topnavbar navbar-expand-md navbar-dark bg-dark py-0">
+						<div class="container-fluid">
+							<button id="show-sidebar" class="btn btn-sm btn-dark">
+								<i class="fas fa-bars"></i>
+							</button>
+
+							<img src="assets/img/leaf.svg" alt="logo"
+								class="app-logo theme-item navbrandarea1">
+
+							<h4 class="sidebar-title mt-2" href="#">AVNI</h4>
+							<button class="navbar-toggler" type="button"
+								data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+								aria-controls="navbarCollapse" aria-expanded="false"
+								aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarCollapse">
+								<ul class="navbar-nav me-auto mb-2 mb-md-0">
+									<li class="nav-item active"><a class="nav-link"
+										aria-current="page" href="#">Home</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Link</a>
+									</li>
+
+									<li class="nav-item dropdown"><a
+										class="nav-link dropdown-toggle" href="#" id="dropdown01"
+										data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+										<ul class="dropdown-menu" aria-labelledby="dropdown01">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else
+													here</a></li>
+										</ul></li>
+								</ul>
+
+								<div id="navSearchForm" class="mx-1">
+									<form action="#" class="search-form py-0">
+										<input type="text">
+										<button type="submit">
+											<i class="fas fa-search navbar-search-icon"></i>
+										</button>
+									</form>
+								</div>
+
+
+								<ul class="navbar-nav dropdown-menu-end mx-2">
+
+									<li class="nav-item mode"><a class="nav-link" href="#"
+										onclick="switchTheme()"> <i class="fas fa-moon dark-icon"></i>
+											<i class="fas fa-sun light-icon"></i>
+									</a></li>
+
+
+									<li class="nav-item dropdown"><a class="nav-link" href="#"
+										id="dropdown02" data-bs-toggle="dropdown"
+										aria-expanded="false"><i class="fa fa-bell"></i><span
+											class="badge badge-pill bg-danger navbarcounter">13</span></a>
+										<ul class="dropdown-menu dropdown-menu-end"
+											aria-labelledby="dropdown02">
+											<li><a class="dropdown-item text-center" href="#"><i
+													class="far fa-clock text-danger"> 2 Hours ago</i><br />This
+													is the alert message1...</a>
+												<div class="dropdown-divider"></div></li>
+											<li><a class="dropdown-item text-center" href="#"><i
+													class="far fa-clock text-danger"> 2 Hours ago</i><br />This
+													is the alert message2...</a>
+												<div class="dropdown-divider"></div></li>
+											<li><a class="dropdown-item text-center" href="#"><i
+													class="far fa-clock text-danger"> 2 Hours ago</i><br />This
+													is the alert message3...</a>
+												<div class="dropdown-divider"></div></li>
+										</ul></li>
+								</ul>
+
+								<ul class="navbar-nav dropdown-menu-end mx-2">
+
+
+									<li class="nav-item dropdown"><a class="nav-link" href="#"
+										id="dropdown03" data-bs-toggle="dropdown"
+										aria-expanded="false"><i class="fa fa-envelope"></i> <span
+											class="badge badge-pill bg-primary navbarcounter">17</span></a>
+										<ul class="dropdown-menu dropdown-menu-end"
+											aria-labelledby="dropdown03">
+
+											<li><a class="dropdown-item text-center" href="#"><i
+													class="far fa-clock text-danger"> 2 Hours ago</i><br />This
+													is the notification message1...</a>
+												<div class="dropdown-divider"></div></li>
+											<li><a class="dropdown-item text-center" href="#"><i
+													class="far fa-clock text-danger"> 2 Hours ago</i><br />This
+													is the notification message2...</a>
+												<div class="dropdown-divider"></div></li>
+											<li><a class="dropdown-item text-center" href="#"><i
+													class="far fa-clock text-danger"> 2 Hours ago</i><br />This
+													is the notification message3...</a>
+												<div class="dropdown-divider"></div></li>
+										</ul></li>
+								</ul>
+
+								<ul class="navbar-nav dropdown-menu-end">
+									<li class="nav-item dropdown"><a
+										class="nav-link dropdown-toggle" href="#" id="dropdown01"
+										data-bs-toggle="dropdown" aria-expanded="false"><img
+											class="img-responsive img-rounded" src="assets/img/earth.svg"
+											height="30" width="30" alt="User picture"></a>
+										<ul class="dropdown-menu dropdown-menu-end"
+											aria-labelledby="dropdown01">
+											<li><a href="profile.html" class="dropdown-item mt-2"><i
+													class="far fa-id-badge mx-2"></i> Profile</a></li>
+											<li><a href="#" class="dropdown-item mt-2"><i
+													class="far fa-comments mx-2"></i>Messages</a></li>
+											<li><a href="#" class="dropdown-item mt-2"
+												data-bs-toggle="modal" data-bs-target="#settingsModal"><i
+													class="fas fa-cog mx-2"></i>Settings</a></li>
+											<li><a href="#" class="dropdown-item mt-2"><i
+													class="fas fa-sign-out-alt mx-2"></i>Logout</a></li>
+										</ul></li>
+								</ul>
+							</div>
+
+
+						</div>
+					</nav>
+				</header>
+			</div>
+
+			<div class="flex-shrink-0">
+				<main class="main-content">
+					<div class="container-fluid">
+						<!--Page Content Start -->
+						<div class="row mt-3 contentheader mb-2">
+							<div class="col-md-6 float-start">
+								<h4 class="m-0 text-dark text-muted">Dashboard</h4>
+							</div>
+							<div class="col-md-6">
+								<ol class="breadcrumb float-end">
+									<li class="breadcrumb-item"><a href="#"> Home</a></li>
+									<li class="breadcrumb-item active">Dashboard</li>
+								</ol>
+							</div>
+						</div>
+
+
+						<div class="card mb-4">
+							<h5 class="card-header">Widgets</h5>
+
+							<div class="card-body">
+								<div class="widget-tiles">
+									<div class="row text-center">
+
+
+
+										<div class="col-md-3 mb-2">
+											<a target="_blank" href="https://github.com/ajkr195/Avni">
+												<div class="widget">
+													<div class="icon">
+														<i class="fas fa-tasks"></i>
+													</div>
+													<div class="description">
+														<h3>Widget 1</h3>
+														<p>Some descriptive text. Try to zoom in-out the
+															screen to see responsiveness.</p>
+													</div>
+												</div>
+											</a>
+										</div>
+
+
+										<div class="col-md-3 mb-2">
+											<a target="_blank" href="https://github.com/ajkr195/Avni">
+												<div class="widget">
+													<div class="icon">
+														<i class="fas fa-chart-line"></i>
+													</div>
+													<div class="description">
+														<h3>Widget 2</h3>
+														<p>Some descriptive text. Try to zoom in-out the
+															screen to see responsiveness.</p>
+													</div>
+												</div>
+											</a>
+										</div>
+
+										<div class="col-md-3 mb-2">
+											<a target="_blank" href="https://github.com/ajkr195/Avni">
+												<div class="widget">
+													<div class="icon">
+														<i class="fas fa-gift"></i>
+													</div>
+													<div class="description">
+														<h3>Widget 3</h3>
+														<p>Some descriptive text. Try to zoom in-out the
+															screen to see responsiveness.</p>
+													</div>
+												</div>
+											</a>
+										</div>
+
+
+
+
+										<div class="col-md-3 mb-2">
+											<a target="_blank" href="https://github.com/ajkr195/Avni">
+												<div class="widget">
+													<div class="icon">
+														<i class="fas fa-book-open"></i>
+													</div>
+													<div class="description">
+														<h3>Widget 4</h3>
+														<p>Some descriptive text. Try to zoom in-out the
+															screen to see responsiveness.</p>
+													</div>
+												</div>
+											</a>
+										</div>
+
+
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="card mb-4">
+							<h5 class="card-header">Financial review</h5>
+
+							<div class="card-body">
+								<!-- 								<h5 class="card-title">..</h5> -->
+								<div class="table-responsive">
+									<table class="table no-margin" id="finTable">
+										<thead class="success">
+											<tr>
+												<th>Name</th>
+												<th>Sale-Rate</th>
+												<th>Actual</th>
+												<th>Variance</th>
+												<td>Status</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Jacob Jensen</td>
+												<td>85%</td>
+												<td>32,435</td>
+												<td>40,234</td>
+												<td><div class="progress" style="height: 10px;">
+														<div class="progress-bar bg-danger" role="progressbar"
+															style="width: 25%" aria-valuenow="50" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div></td>
+											</tr>
+											<tr>
+												<td>Cecelia Bradley</td>
+												<td>55%</td>
+												<td>4,36780</td>
+												<td>765728</td>
+												<td><div class="progress" style="height: 10px;">
+														<div class="progress-bar bg-success" role="progressbar"
+															style="width: 25%" aria-valuenow="50" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div></td>
+											</tr>
+											<tr>
+												<td>Leah Sherman</td>
+												<td>23%</td>
+												<td>2300</td>
+												<td>22437</td>
+												<td><div class="progress" style="height: 10px;">
+														<div class="progress-bar bg-danger" role="progressbar"
+															style="width: 85%" aria-valuenow="50" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div></td>
+											</tr>
+											<tr>
+												<td>Ina Curry</td>
+												<td>44%</td>
+												<td>53462</td>
+												<td>1,75938</td>
+												<td><div class="progress" style="height: 10px;">
+														<div class="progress-bar bg-warning" role="progressbar"
+															style="width: 35%" aria-valuenow="50" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div></td>
+											</tr>
+											<tr>
+												<td>Lida Fitzgerald</td>
+												<td>65%</td>
+												<td>67453</td>
+												<td>765377</td>
+												<td><div class="progress" style="height: 10px;">
+														<div class="progress-bar bg-success" role="progressbar"
+															style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div></td>
+											</tr>
+											<tr>
+												<td>Stella Johnson</td>
+												<td>49%</td>
+												<td>43662</td>
+												<td>96535</td>
+												<td><div class="progress" style="height: 10px;">
+														<div class="progress-bar bg-danger" role="progressbar"
+															style="width: 70%" aria-valuenow="50" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div></td>
+											</tr>
+											<tr>
+												<td>Maria Ortiz</td>
+												<td>65%</td>
+												<td>76555</td>
+												<td>258546</td>
+												<td><div class="progress" style="height: 10px;">
+														<div class="progress-bar bg-primary" role="progressbar"
+															style="width: 45%" aria-valuenow="50" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div></td>
+											</tr>
+											<tr>
+												<td>Stella Johnson</td>
+												<td>49%</td>
+												<td>43662</td>
+												<td>96535</td>
+												<td><div class="progress" style="height: 10px;">
+														<div class="progress-bar bg-danger" role="progressbar"
+															style="width: 70%" aria-valuenow="50" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div></td>
+											</tr>
+											<tr>
+												<td>Maria Ortiz</td>
+												<td>65%</td>
+												<td>76555</td>
+												<td>258546</td>
+												<td><div class="progress" style="height: 10px;">
+														<div class="progress-bar bg-primary" role="progressbar"
+															style="width: 45%" aria-valuenow="50" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div></td>
+											</tr>
+											<tr>
+												<td>Stella Johnson</td>
+												<td>49%</td>
+												<td>43662</td>
+												<td>96535</td>
+												<td><div class="progress" style="height: 10px;">
+														<div class="progress-bar bg-danger" role="progressbar"
+															style="width: 70%" aria-valuenow="50" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div></td>
+											</tr>
+											<tr>
+												<td>Maria Ortiz</td>
+												<td>65%</td>
+												<td>76555</td>
+												<td>258546</td>
+												<td><div class="progress" style="height: 10px;">
+														<div class="progress-bar bg-primary" role="progressbar"
+															style="width: 45%" aria-valuenow="50" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div></td>
+											</tr>
+											<tr>
+												<td>Stella Johnson</td>
+												<td>49%</td>
+												<td>43662</td>
+												<td>96535</td>
+												<td><div class="progress" style="height: 10px;">
+														<div class="progress-bar bg-danger" role="progressbar"
+															style="width: 70%" aria-valuenow="50" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div></td>
+											</tr>
+											<tr>
+												<td>Maria Ortiz</td>
+												<td>65%</td>
+												<td>76555</td>
+												<td>258546</td>
+												<td><div class="progress" style="height: 10px;">
+														<div class="progress-bar bg-primary" role="progressbar"
+															style="width: 45%" aria-valuenow="50" aria-valuemin="0"
+															aria-valuemax="100"></div>
+													</div></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+
+
+						</div>
+
+
+
+						<!--Page Content End -->
+					</div>
+				</main>
+				<div class="container-fluid">
+					<footer id="footer" class="footer mt-auto py-1">
+						<div class="container-fluid">
+							<span class="text-muted">Place sticky footer content here.</span>
+						</div>
+					</footer>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+</body>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script4.js"></script>
+</html>
