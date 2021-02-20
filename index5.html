@@ -9,8 +9,6 @@
 <title>Avni - Bootstrap 5 Admin Template</title>
 <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
 
-<link rel="canonical"
-	href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 
 <style>
@@ -50,7 +48,7 @@ a, a:hover, a:focus {
 	padding: 5px 5px;
 	background: #fff;
 	border: none;
-	/* 	border-radius: 20px; */
+	border-radius: 40px;
 	/* 	margin-bottom: 20px; */
 	min-height: 30px;
 	margin-top: 0;
@@ -78,6 +76,11 @@ a, a:hover, a:focus {
 	border-radius: 50%;
 	font-size: 8px;
 	text-decoration: none;
+}
+
+.company-logo {
+	height: 30px;
+	width: 30px;
 }
 
 .search-form {
@@ -127,8 +130,8 @@ a, a:hover, a:focus {
 	color: #fff;
 	transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
 	transform-origin: bottom left;
-	background-color: #2a2a72;
-	background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+	/* 	background-color: #2a2a72; */
+	/* 	background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); */
 }
 
 #sidebar.active {
@@ -151,9 +154,9 @@ a, a:hover, a:focus {
 }
 
 #sidebarCollapse {
-	width: 30px;
+	width: 32px;
 	height: 30px;
-	background: #f5f5f5;
+	background: #86be2e;
 	cursor: pointer;
 	margin-left: -12px;
 	/* 	margin: 0; */
@@ -197,16 +200,14 @@ a, a:hover, a:focus {
 	#mainAppNavbar ul li .tobehidden {
 		display: none;
 	}
-	
 	.search-form {
-	width: 80%;
+		width: 80%;
 	}
 }
 
 @media ( max-width : 768px) {
-	
 	.search-form {
-	width: 80%;
+		width: 80%;
 	}
 }
 
@@ -249,24 +250,40 @@ a, a:hover, a:focus {
 	left: 0;
 	background-color: #292c2f;
 	width: 100%;
-	height: 100vh;
+	/* 	height: 100vh; */
+	height: calc(100% - 5px);
 	padding: 20px 0;
+	border-radius: 40px;
 }
 
 .mainsidebar>a {
 	display: block;
 	text-decoration: none;
 	font-family: Cookie, cursive;
-	width: 122px;
-	height: 122px;
+	width: 100px;
+	height: 100px;
 	margin: 0 auto;
+	top: 0;
 	text-align: center;
 	color: #ffffff;
-	font-size: 44px;
-	font-weight: normal;
-	line-height: 2.6;
+	font-size: 14px;
+	font-weight: bold;
+	/* 	line-height: 2.6; */
 	border-radius: 50%;
 	background-color: #181a1b;
+	margin-bottom: 10px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.mainsidebar>h4 {
+	color: #86be2e;
+	font-weight: 900;
 }
 
 .mainsidebar .mainsidebar-links {
@@ -441,6 +458,223 @@ a, a:hover, a:focus {
 	color: crimson;
 	text-shadow: 0 0 15px rgba(220, 10, 10, 0.5);
 }
+
+.footer {
+	border-radius: 40px;
+}
+
+.stat-widget-one .stat-icon {
+	vertical-align: top;
+}
+
+.stat-widget-one .stat-icon i {
+	font-size: 30px;
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 100px;
+	padding: 15px;
+	font-weight: 900;
+	display: inline-block;
+}
+
+.stat-widget-one .stat-content {
+	margin-left: 30px;
+	margin-top: 7px;
+}
+
+.stat-widget-one .stat-text {
+	font-size: 14px;
+	color: #868e96;
+}
+
+.stat-widget-one .stat-digit {
+	font-size: 24px;
+	color: #373757;
+}
+
+.dib {
+	display: inline-block;
+}
+
+.card-body {
+	padding: 0;
+}
+
+.card {
+	background: #ffffff;
+	margin: 7.5px 0;
+	padding: 20px;
+	border: 1px solid #e7e7e7;
+	border-radius: 3px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-subtitle {
+	font-size: 12px;
+	margin: 10px 0;
+}
+
+.card-title {
+	font-weight: 400;
+	font-size: 18px;
+	margin: 0;
+}
+
+.card-title h4 {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.card-title p {
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 12px;
+}
+
+.card-header-right-icon {
+	display: inline-block;
+	float: right;
+}
+
+.card-header-right-icon li {
+	float: right;
+	padding-left: 14px;
+	color: #868e96;
+	cursor: pointer;
+	vertical-align: middle;
+	transition: all 0.5s ease-in-out;
+	display: inline-block;
+}
+
+.card-header-right-icon li .ti-close {
+	font-size: 12px;
+}
+
+.card-option {
+	position: relative;
+}
+
+.card-option-dropdown {
+	display: none;
+	left: auto;
+	right: 0;
+}
+
+.card-option-dropdown li {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 0;
+}
+
+.card-option-dropdown li a {
+	line-height: 25px;
+	font-size: 12px;
+}
+
+.card-option-dropdown li a i {
+	margin-right: 10px;
+}
+
+.widget-tiles a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.widget-tiles .widget {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 10px;
+	border: 2px solid #3FB449;
+	-webkit-box-shadow: 0 0 3px 0 #ccc;
+	box-shadow: 0 0 3px 0 #ccc;
+	border-radius: 10px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.widget-tiles .widget:hover {
+	border: 2px solid #0d6efd;
+	cursor: pointer;
+}
+
+.widget-tiles .widget:hover .icon {
+	background: #0d6efd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#43484D),
+		to(#27292B));
+	background: linear-gradient(to bottom, #43484D 0%, #27292B 100%);
+}
+
+.widget-tiles .widget .icon {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 10px;
+	min-width: 80px;
+	background: #0dcaf0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0dcaf0),
+		to(#25682a));
+	background: linear-gradient(to bottom, #0dcaf0 0%, #25682a 100%);
+}
+
+.widget-tiles .widget .icon i {
+	color: #fff;
+	font-size: 40px;
+}
+
+.widget-tiles .widget .description {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	padding: 10px;
+	text-align: left;
+	overflow: hidden;
+}
+
+.widget-tiles .widget .description h3 {
+	margin-bottom: 5px;
+	color: #43484D;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.widget-tiles .widget .description p {
+	margin-bottom: 0;
+	font-weight: normal;
+	font-size: 14px;
+	color: #666;
+}
+
+.widget-tiles .tile {
+	font-size: 14px;
+}
+
+.widget-tiles .tile a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.widget-tiles .tile h3 {
+	font-size: 24px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	color: inherit;
+	font-weight: 500;
+}
+
+.widget-tiles .tile p {
+	color: #666;
+	font-weight: normal;
+}
 </style>
 
 
@@ -451,14 +685,14 @@ a, a:hover, a:focus {
 		<div class="wrapper">
 
 			<div id="sidebar">
-				<!-- <div class="sidebar-header text-center"> -->
-				<!-- <h3>Company</h3> -->
-				<!-- </div> -->
 				<div class="mainsidebar" id="mainsidebar">
 					<!-- <p class="text-center">Header Area</p> -->
 					<aside class="mainsidebar" id="mainsidebar">
 
-						<a href="#" class="company-logo">Avni</a>
+						<a href="#"><img src="assets/img/earth.svg"
+							alt="The Planet Earth"> </a>
+
+						<h4 class="text-center">AVNI</h4>
 
 						<div class="mainsidebar-links">
 
@@ -535,8 +769,9 @@ a, a:hover, a:focus {
 							<button type="button" id="sidebarCollapse" class="navbar-btn">
 								<span></span> <span></span> <span></span>
 							</button>
-
-							<a class="navbar-brand mx-2" href="#">Expand at sm</a>
+							<img class="company-logo mx-2" src="assets/img/leaf.svg"
+								alt="The Planet Earth"> <a class="navbar-brand mx-2"
+								href="#">AVNI</a>
 
 							<button class="navbar-toggler" type="button"
 								data-bs-toggle="collapse" data-bs-target="#mainAppNavbar"
@@ -627,6 +862,26 @@ a, a:hover, a:focus {
 									</form>
 								</div>
 
+								<ul class="navbar-nav dropdown-menu-end">
+									<li class="nav-item dropdown"><a
+										class="nav-link dropdown-toggle" href="#" id="dropdown01"
+										data-bs-toggle="dropdown" aria-expanded="false"><img
+											class="img-responsive img-rounded" src="assets/img/earth.svg"
+											height="30" width="30" alt="User picture"></a>
+										<ul class="dropdown-menu dropdown-menu-end"
+											aria-labelledby="dropdown01">
+											<li><a href="profile.html" class="dropdown-item mt-2"><i
+													class="far fa-id-badge mx-2"></i> Profile</a></li>
+											<li><a href="#" class="dropdown-item mt-2"><i
+													class="far fa-comments mx-2"></i>Messages</a></li>
+											<li><a href="#" class="dropdown-item mt-2"
+												data-bs-toggle="modal" data-bs-target="#settingsModal"><i
+													class="fas fa-cog mx-2"></i>Settings</a></li>
+											<li><a href="#" class="dropdown-item mt-2"><i
+													class="fas fa-sign-out-alt mx-2"></i>Logout</a></li>
+										</ul></li>
+								</ul>
+
 							</div>
 						</div>
 					</nav>
@@ -657,24 +912,228 @@ a, a:hover, a:focus {
 						</ul>
 
 					</div>
-					<h1>Sticky footer with navbar</h1>
-					<p class="lead">Pin a footer to the bottom of the viewport in
-						desktop browsers.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-						nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat
-						nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-						sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-						nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat
-						nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-						sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="row">
+						<div class="col-md-12 grid-margin">
+							<div class="card">
+								<div class="card-body">
+
+
+									<div class="row">
+										<div class="col-lg-3">
+											<div class="card">
+												<div class="stat-widget-one">
+													<div class="stat-icon dib">
+														<i class="fa fa-database border-success"></i>
+													</div>
+													<div class="stat-content dib">
+														<div class="stat-text">Total Profit</div>
+														<div class="stat-digit">1,012</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="card">
+												<div class="stat-widget-one">
+													<div class="stat-icon dib">
+														<i class="fas fa-user border-primary"></i>
+													</div>
+													<div class="stat-content dib">
+														<div class="stat-text">New Customer</div>
+														<div class="stat-digit">961</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="card">
+												<div class="stat-widget-one">
+													<div class="stat-icon dib">
+														<i class="fas fa-filter border-warning"></i>
+													</div>
+													<div class="stat-content dib">
+														<div class="stat-text">Active Projects</div>
+														<div class="stat-digit">770</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="card">
+												<div class="stat-widget-one">
+													<div class="stat-icon dib">
+														<i class="fas fa-radiation border-danger"></i>
+													</div>
+													<div class="stat-content dib">
+														<div class="stat-text">Referral</div>
+														<div class="stat-digit">2,781</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+
+									<div class="row mt-2 mb-2">
+										<div class="widget-tiles">
+											<div class="row text-center">
+
+												<div class="col-sm-6 col-md-6 col-lg-3">
+													<a target="_blank" href="https://github.com/ajkr195/Avni">
+														<div class="widget">
+															<div class="icon">
+																<i class="fa fa-database"></i>
+															</div>
+															<div class="description">
+																<h3>Widget 1</h3>
+																<p>Some descriptive text. Try to zoom in-out the
+																	screen to see responsiveness.</p>
+															</div>
+														</div>
+													</a>
+												</div>
+
+
+												<div class="col-sm-6 col-md-6 col-lg-3">
+													<a target="_blank" href="https://github.com/ajkr195/Avni">
+														<div class="widget">
+															<div class="icon">
+																<i class="fas fa-user"></i>
+															</div>
+															<div class="description">
+																<h3>Widget 2</h3>
+																<p>Some descriptive text. Try to zoom in-out the
+																	screen to see responsiveness.</p>
+															</div>
+														</div>
+													</a>
+												</div>
+
+												<div class="col-sm-6 col-md-6 col-lg-3">
+													<a target="_blank" href="https://github.com/ajkr195/Avni">
+														<div class="widget">
+															<div class="icon">
+																<i class="fas fa-filter"></i>
+															</div>
+															<div class="description">
+																<h3>Widget 3</h3>
+																<p>Some descriptive text. Try to zoom in-out the
+																	screen to see responsiveness.</p>
+															</div>
+														</div>
+													</a>
+												</div>
+
+												<div class="col-sm-6 col-md-6 col-lg-3">
+													<a target="_blank" href="https://github.com/ajkr195/Avni">
+														<div class="widget">
+															<div class="icon">
+																<i class="fas fa-radiation"></i>
+															</div>
+															<div class="description">
+																<h3>Widget 4</h3>
+																<p>Some descriptive text. Try to zoom in-out the
+																	screen to see responsiveness.</p>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="row">
+										
+										<div class="col-lg-3">
+											<div class="card">
+												<div class="stat-widget-one">
+													<div class="stat-icon dib">
+														<i class="fas fa-user border-primary"></i>
+													</div>
+													<div class="stat-content dib">
+														<div class="stat-text">New Customer</div>
+														<div class="stat-digit">961</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="col-lg-3">
+											<div class="card">
+												<div class="stat-widget-one">
+													<div class="stat-icon dib">
+														<i class="fa fa-database border-success"></i>
+													</div>
+													<div class="stat-content dib">
+														<div class="stat-text">Total Profit</div>
+														<div class="stat-digit">1,012</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										
+										<div class="col-lg-3">
+											<div class="card">
+												<div class="stat-widget-one">
+													<div class="stat-icon dib">
+														<i class="fas fa-radiation border-danger"></i>
+													</div>
+													<div class="stat-content dib">
+														<div class="stat-text">Referral</div>
+														<div class="stat-digit">2,781</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="col-lg-3">
+											<div class="card">
+												<div class="stat-widget-one">
+													<div class="stat-icon dib">
+														<i class="fas fa-filter border-warning"></i>
+													</div>
+													<div class="stat-content dib">
+														<div class="stat-text">Active Projects</div>
+														<div class="stat-digit">770</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+
+
+									<div class="col-lg-12">
+										<div class="card">
+											<div class="stat-widget-one">
+												<div class="stat-icon dib">
+													<i class="fas fa-radiation border-danger"></i>
+												</div>
+												<div class="stat-content dib">
+													<div class="stat-text">Referral</div>
+													<div class="stat-digit">2,781</div>
+												</div>
+											</div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+												elit, sed do eiusmod tempor incididunt ut labore et dolore
+												magna aliqua. Ut enim ad minim veniam, quis nostrud
+												exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in
+												voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+												Excepteur sint occaecat cupidatat non proident, sunt in
+												culpa qui officia deserunt mollit anim id est laborum.</p>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -697,14 +1156,14 @@ a, a:hover, a:focus {
 			});
 </script>
 <script>
-	var el = document.querySelectorAll('.ddmenu');
-	for (let i = 0; i < el.length; i++) {
-		el[i].onclick = function() {
+	var mainparentelements = document.querySelectorAll('.ddmenu');
+	for (let i = 0; i < mainparentelements.length; i++) {
+		mainparentelements[i].onclick = function() {
 			var c = 0;
-			while (c < el.length) {
-				el[c++].classList.remove("selected");
+			while (c < mainparentelements.length) {
+				mainparentelements[c++].classList.remove("selected");
 			}
-			el[i].className = 'selected';
+			mainparentelements[i].classList.add("selected");
 		};
 	}
 </script>
