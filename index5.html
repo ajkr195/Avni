@@ -10,719 +10,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
 
 <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-<style>
-:root { --light-background: #ffffff; --dark-background: #303030; }
-
-.light { --main-bg-color: var(--light-background); --main-text-color: #292c2f;}
-
-.dark { --main-bg-color: var(--dark-background); --main-text-color: gray;}
-
-body {
-	font-family: 'Poppins', sans-serif;
-	/* 	background: #F0F0F0; */
-	color: var(--main-text-color);
-	background: gray;
-	background-image: url("/home/ajay/git/Avni/assets/img/metal2.jpg");
-}
-
-main>.container-fluid {
-	padding: 60px 15px 0;
-}
-
-.bd-placeholder-img {
-	font-size: 1.125rem;
-	text-anchor: middle;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	user-select: none;
-}
-
-@media ( min-width : 768px) {
-	.bd-placeholder-img-lg {
-		font-size: 3.5rem;
-	}
-}
-
-@import
-	"https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
-a, a:hover, a:focus {
-	color: inherit;
-	text-decoration: none;
-	transition: all 0.3s;
-}
-
-.navbar {
-	padding: 5px 5px;
-	background: #fff;
-	border: none;
-	border-radius: 40px;
-	margin-bottom: 20px;
-	min-height: 30px;
-	margin-top: 0;
-	/* 	background-color: #2a2a72; */
-	/* 	background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); */
-}
-
-.navbar-btn {
-	/* 	box-shadow: none; */
-	outline: none;
-	border: none;
-	border-radius: 50%;
-}
-
-.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus
-	{
-	outline: none;
-	box-shadow: none;
-}
-
-.navbarcounter {
-	position: absolute;
-	top: 1px;
-	padding: 4px 4px;
-	border-radius: 50%;
-	font-size: 8px;
-	text-decoration: none;
-}
-
-.company-logo {
-	height: 30px;
-	width: 30px;
-}
-
-.search-form {
-	position: relative;
-	width: 336px;
-	height: 32px;
-	border-radius: 50%;
-}
-
-.search-form input {
-	width: 100%;
-	height: 100%;
-	padding: 0 25px;
-	border: 1px solid #F4EEFB;
-	background: #fff;
-	border-radius: 50px;
-	-webkit-transition: all 0.3s ease-out 0.3s;
-	-moz-transition: all 0.3s ease-out 0.3s;
-	-ms-transition: all 0.3s ease-out 0.3s;
-	-o-transition: all 0.3s ease-out 0.3s;
-	transition: all 0.3s ease-out 0.3s;
-}
-
-.search-form input:focus {
-	outline: none;
-	-webkit-box-shadow: 0px 0px 30px rgba(215, 224, 252, 0.45);
-	-moz-box-shadow: 0px 0px 30px rgba(215, 224, 252, 0.45);
-	box-shadow: 0px 0px 30px rgba(215, 224, 252, 0.45);
-}
-
-.search-form button {
-	background: none;
-	border: none;
-	position: absolute;
-	right: 15px;
-	top: 7px;
-}
-
-.wrapper {
-	display: flex;
-	width: 100%;
-}
-
-.light .logo-dark, .light .light-icon {
-	display: none;
-}
-
-.dark .logo-light, .dark .dark-icon {
-	display: none;
-}
-
-.detail-subtitle {
-	font-size: 1.2rem;
-	/* 	text-transform: uppercase; */
-	text-transform: capitalize;
-	line-height: 1.6;
-	/* 	font-weight: 900; */
-}
-
-#sidebar {
-	min-width: 250px;
-	max-width: 250px;
-	color: #fff;
-	transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
-	transform-origin: bottom left;
-	/* 	background-color: #2a2a72; */
-	/* 	background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); */
-}
-
-#sidebar.active {
-	margin-left: -250px;
-	transform: rotateY(180deg);
-}
-
-#sidebar .sidebar-header {
-	padding: 20px;
-	background-color: #009ffd;
-	background-image: linear-gradient(315deg, #009ffd 0%, #2a2a72 74%);
-}
-
-#content {
-	width: 100%;
-	min-height: 100vh;
-	transition: all 0.3s;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-bottom: 10px;
-}
-
-#sidebarCollapse {
-	width: 32px;
-	height: 30px;
-	background: #86be2e;
-	cursor: pointer;
-	margin-left: -12px;
-	/* 	margin: 0; */
-	/* 	left: 0; */
-	/* 	padding: 0; */
-}
-
-#sidebarCollapse:focus {
-	outline: 0;
-}
-
-#sidebarCollapse span {
-	width: 80%;
-	height: 2px;
-	margin: 0 auto;
-	display: block;
-	background: #555;
-	transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
-	transition-delay: 0.2s;
-}
-
-#sidebarCollapse span:first-of-type {
-	transform: rotate(45deg) translate(2px, 2px);
-}
-
-#sidebarCollapse span:nth-of-type(2) {
-	opacity: 0;
-}
-
-#sidebarCollapse span:last-of-type {
-	transform: rotate(-45deg) translate(1px, -1px);
-}
-
-#sidebarCollapse.active span {
-	transform: none;
-	opacity: 1;
-	margin: 5px auto;
-}
-
-@media ( max-width : 1168px) {
-	#mainAppNavbar ul li .tobehidden {
-		display: none;
-	}
-	.search-form {
-		width: 80%;
-	}
-}
-
-@media ( max-width : 768px) {
-	.search-form {
-		width: 80%;
-	}
-}
-
-@media ( max-width : 968px) {
-	#sidebar {
-		margin-left: -250px;
-		transform: rotateY(90deg);
-	}
-	/* 	#sidebar.active { */
-	/* 		margin-left: 0; */
-	/* 		transform: none; */
-	/* 	} */
-	#sidebarCollapse span:first-of-type, #sidebarCollapse span:nth-of-type(2),
-		#sidebarCollapse span:last-of-type {
-		transform: none;
-		opacity: 1;
-		margin: 5px auto;
-	}
-	#sidebarCollapse {
-		display: none;
-	}
-	#sidebarCollapse.active span {
-		margin: 0 auto;
-	}
-	#sidebarCollapse.active span:first-of-type {
-		transform: rotate(45deg) translate(2px, 2px);
-	}
-	#sidebarCollapse.active span:nth-of-type(2) {
-		opacity: 0;
-	}
-	#sidebarCollapse.active span:last-of-type {
-		transform: rotate(-45deg) translate(2px, -2px);
-	}
-}
-
-.mainsidebar {
-	font-family: Arial, Helvetica, sans-serif;
-	/* 	position: fixed; */
-	top: 55px;
-	left: 0;
-	background-color: #292c2f;
-	width: 100%;
-	/* 	height: 100vh; */
-	height: calc(100% - 5px);
-	padding: 20px 0;
-	border-radius: 40px;
-}
-
-.mainsidebar>a {
-	display: block;
-	text-decoration: none;
-	font-family: Cookie, cursive;
-	width: 100px;
-	height: 100px;
-	margin: 0 auto;
-	top: 0;
-	text-align: center;
-	color: #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	/* 	line-height: 2.6; */
-	border-radius: 50%;
-	background-color: #181a1b;
-	margin-bottom: 10px;
-	text-align: center;
-	color: #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	color: #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-}
-
-.mainsidebar>h4 {
-	color: #86be2e;
-	font-weight: 900;
-}
-
-.mainsidebar .mainsidebar-links {
-	margin: 30px auto;
-}
-
-.mainsidebar-links div>a {
-	display: block;
-	text-decoration: none;
-	margin: 0 auto 5px auto;
-	padding: 10px 0 10px 5px;
-	background-color: #35393e;
-	text-align: left;
-	color: #b3bcc5;
-	font-size: 12px;
-	font-weight: bold;
-	line-height: 2;
-	border-left-width: 2px;
-	border-left-style: solid;
-}
-
-.mainsidebar-links div.selected>a {
-	background-color: #ffffff;
-	color: #565d63;
-	line-height: 2.3;
-	margin: 0;
-}
-
-.mainsidebar-links div>a i.fa {
-	position: relative;
-	font-size: 20px;
-	top: 3px;
-	width: 40px;
-	text-align: center;
-}
-
-.mainsidebar-links div ul.sub-links {
-	max-height: 0;
-	overflow: hidden;
-	list-style: none;
-	padding: 0 0 0 30px;
-	/* 	color: #b3bcc5; */
-	font-size: 12px;
-	font-weight: bold;
-	line-height: 24px;
-	margin: 0;
-	transition: 0.4s;
-}
-
-.mainsidebar-links div.selected ul.sub-links {
-	max-height: 250px;
-	padding: 12px 0 12px 30px;
-}
-
-.mainsidebar-links div .sub-links a {
-	text-decoration: none;
-	/* 	color: #b3bcc5; */
-	display: block;
-	text-align: left;
-	padding: 5px 0 5px 10px;
-}
-
-.mainsidebar-links div .sub-links li {
-	width: 85%;
-}
-
-.mainsidebar-links div .sub-links li:hover {
-	color: #b3bcc5;
-	background: #dc3545;
-}
-
-.mainsidebar-links div.link-blue>a {
-	border-color: #487db2;
-}
-
-.mainsidebar-links div.link-blue>a i.fa {
-	color: #487db2;
-}
-
-.mainsidebar-links div.link-red>a {
-	border-color: #da4545;
-}
-
-.mainsidebar-links div.link-red>a i.fa {
-	color: #da4545;
-}
-
-.mainsidebar-links div.link-yellow>a {
-	border-color: #d0d237;
-}
-
-.mainsidebar-links div.link-yellow>a i.fa {
-	color: #d0d237;
-}
-
-.mainsidebar-links div.link-green>a {
-	border-color: #86be2e;
-}
-
-.mainsidebar-links div.link-green>a i.fa {
-	color: #86be2e;
-}
-
-.buttons-container {
-	width: 100wh;
-	background: #151515;
-	box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.5);
-	border-radius: 40px;
-	display: none;
-}
-
-.buttons-container ul {
-	list-style: none;
-	width: inherit;
-	height: inherit;
-	display: flex;
-	justify-content: center;
-}
-
-.buttons-container ul li {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 1px;
-	height: 50px;
-	width: 55px;
-	background: #202020;
-	border-top: 1px solid #353535;
-	box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
-	transition: all 0.5s;
-	box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
-}
-
-.buttons-container ul li:nth-of-type(1) {
-	border-top-left-radius: 40px;
-	border-bottom-left-radius: 40px;
-}
-
-.buttons-container ul li:last-of-type {
-	border-top-right-radius: 40px;
-	border-bottom-right-radius: 40px;
-}
-
-.buttons-container ul li:hover {
-	cursor: pointer;
-}
-
-.buttons-container ul li a {
-	display: inline-block;
-	color: gray;
-	text-decoration: none;
-	font-size: 35px;
-	transition: all 0.5s;
-}
-
-.buttons-container ul li a i:hover {
-	color: #ffb3b3;
-}
-
-.buttons-container ul li a:hover {
-	color: #ffb3b3;
-}
-
-.buttons-container .active {
-	background: #151515;
-	border-top: none;
-	border-bottom: 1px solid #252525;
-	box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.8);
-}
-
-.buttons-container .active-text {
-	color: crimson;
-	text-shadow: 0 0 15px rgba(220, 10, 10, 0.5);
-}
-
-.footer {
-	border-radius: 40px;
-}
-
-.stat-widget-one .stat-icon {
-	vertical-align: top;
-}
-
-.stat-widget-one .stat-icon i {
-	font-size: 30px;
-	border-width: 3px;
-	border-style: solid;
-	border-radius: 100px;
-	padding: 15px;
-	font-weight: 900;
-	display: inline-block;
-}
-
-.stat-widget-one .stat-content {
-	margin-left: 30px;
-	margin-top: 7px;
-}
-
-.stat-widget-one .stat-text {
-	font-size: 14px;
-/* 	color: #868e96; */
-}
-
-.stat-widget-one .stat-digit {
-	font-size: 24px;
-	color: #373757;
-}
-
-.dib {
-	display: inline-block;
-}
-
-.card {
-	background: #ffffff;
-	margin: 7.5px 0;
-	padding: 20px;
-	border: 1px solid #e7e7e7;
-	border-radius: 3px;
-	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-.themed-card {
-    background: var(--main-bg-color);
-/*     padding: 0; */
-    border: none;
-    border-radius: 40px;
-}
-
-.card-body {
-	padding: 0;
-}
-
-.card-subtitle {
-	font-size: 12px;
-	margin: 10px 0;
-}
-
-.card-title {
-	font-weight: 400;
-	font-size: 18px;
-	margin: 0;
-}
-
-.card-title h4 {
-	display: inline-block;
-	font-weight: 400;
-	font-size: 18px;
-}
-
-.card-title p {
-	font-family: 'Roboto', sans-serif;
-	margin-bottom: 12px;
-}
-
-.card-header-right-icon {
-	display: inline-block;
-	float: right;
-}
-
-.card-header-right-icon li {
-	float: right;
-	padding-left: 14px;
-	color: #868e96;
-	cursor: pointer;
-	vertical-align: middle;
-	transition: all 0.5s ease-in-out;
-	display: inline-block;
-}
-
-.card-header-right-icon li .ti-close {
-	font-size: 12px;
-}
-
-.card-option {
-	position: relative;
-}
-
-.card-option-dropdown {
-	display: none;
-	left: auto;
-	right: 0;
-}
-
-.card-option-dropdown li {
-	display: block;
-	float: left;
-	width: 100%;
-	padding: 0;
-}
-
-.card-option-dropdown li a {
-	line-height: 25px;
-	font-size: 12px;
-}
-
-.card-option-dropdown li a i {
-	margin-right: 10px;
-}
-
-.card .content .number {
-	font-size: 1.5em;
-	text-align: right;
-	font-weight: bolder;
-}
-
-.card .content .footer {
-	background-attachment: fixed;
-	position: relative;
-	padding: 0;
-	line-height: 30px;
-}
-
-.card .content .stats {
-	display: inline-block;
-	color: #a9a9a9;
-}
-
-.widget-tiles a {
-	text-decoration: none;
-	color: inherit;
-}
-
-.widget-tiles .widget {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	margin-bottom: 10px;
-	border: 2px solid #3FB449;
-	-webkit-box-shadow: 0 0 3px 0 #ccc;
-	box-shadow: 0 0 3px 0 #ccc;
-	border-radius: 10px;
-	/* 	background: #fff; */
-	background: var(--main-bg-color);
-	overflow: hidden;
-}
-
-.widget-tiles .widget:hover {
-	border: 2px solid #0d6efd;
-	cursor: pointer;
-}
-
-.widget-tiles .widget:hover .icon {
-	background: #86be2e;
-}
-
-.widget-tiles .widget .icon {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	padding: 10px;
-	min-width: 80px;
-	background: #dc3545;
-}
-
-.widget-tiles .widget .icon i {
-	color: #fff;
-	font-size: 40px;
-}
-
-.widget-tiles .widget .description {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-box-flex: 1;
-	-ms-flex-positive: 1;
-	flex-grow: 1;
-	padding: 10px;
-	text-align: left;
-	overflow: hidden;
-}
-
-.widget-tiles .widget .description h3 {
-	margin-bottom: 5px;
-	color: #43484D;
-	font-size: 18px;
-	font-weight: bold;
-}
-
-.widget-tiles .widget .description p {
-	margin-bottom: 0;
-	font-weight: normal;
-	font-size: 14px;
-	color: #666;
-}
-
-.widget-tiles .tile {
-	font-size: 14px;
-}
-
-.widget-tiles .tile a {
-	text-decoration: none;
-	color: inherit;
-}
-
-.widget-tiles .tile h3 {
-	font-size: 24px;
-	margin-top: 20px;
-	margin-bottom: 10px;
-	color: inherit;
-	font-weight: 500;
-}
-
-.widget-tiles .tile p {
-	color: #666;
-	font-weight: normal;
-}
-</style>
-
+<link href="assets/css/main5.css" rel="stylesheet">
 
 </head>
 <body class="d-flex flex-column h-100">
@@ -759,12 +47,12 @@ a, a:hover, a:focus {
 							</div>
 
 							<div class="link-red ddmenu">
-								<a href="#"><i class="fa fas fa-cog"></i>Favorites </a>
+								<a href="#"><i class="fa far fa-bookmark"></i> Favorites </a>
 								<ul class="sub-links">
-									<li><a href="#">Link 1</a></li>
-									<li><a href="#">Link 2</a></li>
-									<li><a href="#">Link 3</a></li>
-									<li><a href="#">Link 4</a></li>
+									<li><a href="#">Favorite 1</a></li>
+									<li><a href="#">Favorite 2</a></li>
+									<li><a href="#">Favorite 3</a></li>
+									<li><a href="#">Favorite 4</a></li>
 								</ul>
 							</div>
 
@@ -772,10 +60,10 @@ a, a:hover, a:focus {
 								<a href="#"> <i class="fa fas fa-tools"></i>Projects
 								</a>
 								<ul class="sub-links">
-									<li><a href="#">Link 1</a></li>
-									<li><a href="#">Link 2</a></li>
-									<li><a href="#">Link 3</a></li>
-									<li><a href="#">Link 4</a></li>
+									<li><a href="#">Project 1</a></li>
+									<li><a href="#">Project 2</a></li>
+									<li><a href="#">Project 3</a></li>
+									<li><a href="#">Project 4</a></li>
 								</ul>
 							</div>
 
@@ -785,106 +73,106 @@ a, a:hover, a:focus {
 								</a>
 
 								<ul class="sub-links">
-									<li><a href="#">Link 1</a></li>
-									<li><a href="#">Link 2</a></li>
-									<li><a href="#">Link 3</a></li>
-									<li><a href="#">Link 4</a></li>
+									<li><a href="#">Place 1</a></li>
+									<li><a href="#">Place 2</a></li>
+									<li><a href="#">Place 3</a></li>
+									<li><a href="#">Place 4</a></li>
 								</ul>
 
 							</div>
-							
+
 							<div class="link-blue ddmenu">
-								<a href="#"> <i class="fa far fa-image"></i>Photography
+								<a href="#"> <i class="fa far fa-image"></i>Databases
 								</a>
 								<ul class="sub-links">
-									<li><a href="#">Portraits</a></li>
-									<li><a href="#">Landscape</a></li>
-									<li><a href="#">Studio shots</a></li>
-									<li><a href="#">Macros</a></li>
+									<li><a href="#">Database 1</a></li>
+									<li><a href="#">Database 2</a></li>
+									<li><a href="#">Database 3</a></li>
+									<li><a href="#">Database 4</a></li>
 								</ul>
 							</div>
 
 							<div class="link-red ddmenu">
-								<a href="#"><i class="fa fas fa-cog"></i>Favorites </a>
+								<a href="#"><i class="fa fas fa-server"></i>Servers </a>
 								<ul class="sub-links">
-									<li><a href="#">Link 1</a></li>
-									<li><a href="#">Link 2</a></li>
-									<li><a href="#">Link 3</a></li>
-									<li><a href="#">Link 4</a></li>
+									<li><a href="#">Server 1</a></li>
+									<li><a href="#">Server 2</a></li>
+									<li><a href="#">Server 3</a></li>
+									<li><a href="#">Server 4</a></li>
 								</ul>
 							</div>
 
 							<div class="link-yellow ddmenu">
-								<a href="#"> <i class="fa fas fa-tools"></i>Projects
+								<a href="#"> <i class="fa fas fa-anchor"></i>Anchors
 								</a>
 								<ul class="sub-links">
-									<li><a href="#">Link 1</a></li>
-									<li><a href="#">Link 2</a></li>
-									<li><a href="#">Link 3</a></li>
-									<li><a href="#">Link 4</a></li>
+									<li><a href="#">Anchor 1</a></li>
+									<li><a href="#">Anchor 2</a></li>
+									<li><a href="#">Anchor 3</a></li>
+									<li><a href="#">Anchor 4</a></li>
 								</ul>
 							</div>
 
 							<div class="link-green ddmenu">
 
-								<a href="#"> <i class="fa fas fa-user-cog"></i>Places
+								<a href="#"> <i class="fa fas fa-list"></i>Lists
 								</a>
 
 								<ul class="sub-links">
-									<li><a href="#">Link 1</a></li>
-									<li><a href="#">Link 2</a></li>
-									<li><a href="#">Link 3</a></li>
-									<li><a href="#">Link 4</a></li>
+									<li><a href="#">List 1</a></li>
+									<li><a href="#">List 2</a></li>
+									<li><a href="#">List 3</a></li>
+									<li><a href="#">List 4</a></li>
 								</ul>
 
 							</div>
-							
+
 							<div class="link-blue ddmenu">
-								<a href="#"> <i class="fa far fa-image"></i>Photography
+								<a href="#"> <i class="fa fas fa-camera-retro"></i>Pictures
 								</a>
 								<ul class="sub-links">
-									<li><a href="#">Portraits</a></li>
-									<li><a href="#">Landscape</a></li>
-									<li><a href="#">Studio shots</a></li>
-									<li><a href="#">Macros</a></li>
+									<li><a href="#">Picture 1</a></li>
+									<li><a href="#">Picture 2</a></li>
+									<li><a href="#">Picture 3</a></li>
+									<li><a href="#">Picture 4</a></li>
 								</ul>
 							</div>
 
 							<div class="link-red ddmenu">
-								<a href="#"><i class="fa fas fa-cog"></i>Favorites </a>
+								<a href="#"><i class="fa fas fa-cog"></i>Settings </a>
 								<ul class="sub-links">
-									<li><a href="#">Link 1</a></li>
-									<li><a href="#">Link 2</a></li>
-									<li><a href="#">Link 3</a></li>
-									<li><a href="#">Link 4</a></li>
+									<li><a href="#">Setting 1</a></li>
+									<li><a href="#">Setting 2</a></li>
+									<li><a href="#">Setting 3</a></li>
+									<li><a href="#">Setting 4</a></li>
 								</ul>
 							</div>
 
 							<div class="link-yellow ddmenu">
-								<a href="#"> <i class="fa fas fa-tools"></i>Projects
+								<a href="#"> <i class="fa fas fa-filter"></i>Filters
 								</a>
 								<ul class="sub-links">
-									<li><a href="#">Link 1</a></li>
-									<li><a href="#">Link 2</a></li>
-									<li><a href="#">Link 3</a></li>
-									<li><a href="#">Link 4</a></li>
+									<li><a href="#">Filter 1</a></li>
+									<li><a href="#">Filter 2</a></li>
+									<li><a href="#">Filter 3</a></li>
+									<li><a href="#">Filter 4</a></li>
 								</ul>
 							</div>
 
 							<div class="link-green ddmenu">
 
-								<a href="#"> <i class="fa fas fa-user-cog"></i>Places
+								<a href="#"> <i class="fa fas fa-map-marker-alt"></i>Maps
 								</a>
 
 								<ul class="sub-links">
-									<li><a href="#">Link 1</a></li>
-									<li><a href="#">Link 2</a></li>
-									<li><a href="#">Link 3</a></li>
-									<li><a href="#">Link 4</a></li>
+									<li><a href="#">Map 1</a></li>
+									<li><a href="#">Map 2</a></li>
+									<li><a href="#">Map 3</a></li>
+									<li><a href="#">Map 4</a></li>
 								</ul>
 
 							</div>
-							
+
 							<div class="link-red ddmenu">
 								<a href="#"> <i class="fa fas fa-th-large"></i>SomeOther
 								</a>
@@ -1034,8 +322,7 @@ a, a:hover, a:focus {
 				<div class="container-fluid mt-2">
 					<div class="buttons-container" id="buttons-container">
 						<ul>
-							<li class="active"><a href="#" class="active-text"><i
-									class="fas fa-list"></i></a></li>
+							<li><a href="#"><i class="fas fa-list"></i></a></li>
 							<li><a href="#"><i class="fa fa-cog"></i></a></li>
 							<li><a href="#"><i class="fa fa-database"></i></a></li>
 							<li><a href="#"><i class="fa fa-server"></i></a></li>
@@ -1062,480 +349,637 @@ a, a:hover, a:focus {
 
 
 
-									<div class="row">
-										<div class="col-sm-6 col-md-6 col-lg-3">
-											<div class="card themed-card card-rounded">
-												<div class="content">
-													<div class="row">
-														<div class="col-sm-4">
-															<div class="text-center text-primary">
-																<i class="fas fa-cart-plus fa-3x"></i>
-															</div>
-														</div>
-														<div class="col-sm-8">
-															<div class="detail">
-																<p class="detail-subtitle">New Orders</p>
-																<span class="number">7,265</span>
-															</div>
-														</div>
+							<div class="row">
+								<div class="col-sm-6 col-md-6 col-lg-3">
+									<div class="card themed-card card-rounded">
+										<div class="content">
+											<div class="row">
+												<div class="col-sm-4">
+													<div class="text-center text-primary">
+														<i class="fas fa-cart-plus fa-3x"></i>
 													</div>
-													<div class="footer">
-														<hr />
-														<div class="d-flex justify-content-between box-font-small">
-															<div class="col-md-6 stats">
-																<i class="fas fa-calendar-day"></i> This Week
-															</div>
-															<div class="col-md-6">
-																<a class="text-primary float-end" href="#"><i
-																	class="fas fa-chevron-circle-right"></i>See Details</a>
-															</div>
-														</div>
+												</div>
+												<div class="col-sm-8">
+													<div class="detail">
+														<p class="detail-subtitle">New Orders</p>
+														<span class="number">7,265</span>
 													</div>
 												</div>
 											</div>
-										</div>
-										<div class="col-sm-6 col-md-6 col-lg-3">
-											<div class="card themed-card card-rounded">
-												<div class="content">
-													<div class="row">
-														<div class="col-sm-4">
-															<div class="text-center text-danger">
-																<i class="fas fa-dollar-sign fa-3x"></i>
-															</div>
-														</div>
-														<div class="col-sm-8">
-															<div class="detail">
-																<p class="detail-subtitle">Revenue</p>
-																<span class="number">$880,900</span>
-															</div>
-														</div>
+											<div class="footer">
+												<hr />
+												<div class="d-flex justify-content-between box-font-small">
+													<div class="col-md-6 stats">
+														<i class="fas fa-calendar-day"></i> This Week
 													</div>
-													<div class="footer">
-														<hr />
-														<div class="d-flex justify-content-between box-font-small">
-															<div class="col-md-6 stats">
-																<i class="fas fa-calendar-day"></i> This Week
-															</div>
-															<div class="col-md-6">
-																<a class="text-primary float-end" href="#"><i
-																	class="fas fa-chevron-circle-right"></i>See Details</a>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-6 col-md-6 col-lg-3">
-											<div class="card themed-card card-rounded">
-												<div class="content">
-													<div class="row">
-														<div class="col-sm-4">
-															<div class="text-center text-success">
-																<i class="far fa-eye fa-3x"></i>
-															</div>
-														</div>
-														<div class="col-sm-8">
-															<div class="detail">
-																<p class="detail-subtitle">Views</p>
-																<span class="number">28,210</span>
-															</div>
-														</div>
-													</div>
-													<div class="footer">
-														<hr />
-														<div class="d-flex justify-content-between box-font-small">
-															<div class="col-md-6 stats">
-																<i class="far fa-clock"></i>This month
-															</div>
-															<div class="col-md-6">
-																<a class="text-primary float-end" href="#"><i
-																	class="fas fa-chevron-circle-right"></i>See Details</a>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-
-
-
-										<div class="col-sm-6 col-md-6 col-lg-3">
-											<div class="card themed-card card-rounded">
-												<div class="content">
-													<div class="row">
-														<div class="col-sm-4">
-															<div class="text-center text-warning">
-																<i class="far fa-envelope fa-3x"></i>
-															</div>
-														</div>
-														<div class="col-sm-8">
-															<div class="detail">
-																<p class="detail-subtitle">Notifications</p>
-																<span class="number">1275</span>
-															</div>
-														</div>
-													</div>
-													<div class="footer">
-														<hr />
-														<div class="d-flex justify-content-between box-font-small">
-															<div class="col-md-6 stats">
-																<i class="far fa-envelope"></i> This month
-															</div>
-															<div class="col-md-6">
-																<a class="text-primary float-end" href="#"><i
-																	class="fas fa-chevron-circle-right"></i>See Details</a>
-															</div>
-														</div>
+													<div class="col-md-6">
+														<a class="text-primary float-end" href="#"><i
+															class="fas fa-chevron-circle-right"></i>See Details</a>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-
-
-									<div class="row">
-										<div class="col-lg-3">
-											<div class="card themed-card">
-												<div class="stat-widget-one">
-													<div class="stat-icon dib">
-														<i class="fa fa-database text-danger border-success"></i>
+								</div>
+								<div class="col-sm-6 col-md-6 col-lg-3">
+									<div class="card themed-card card-rounded">
+										<div class="content">
+											<div class="row">
+												<div class="col-sm-4">
+													<div class="text-center text-danger">
+														<i class="fas fa-dollar-sign fa-3x"></i>
 													</div>
-													<div class="stat-content dib">
-														<div class="stat-text">Total Profit</div>
-														<div class="stat-digit">1,012</div>
+												</div>
+												<div class="col-sm-8">
+													<div class="detail">
+														<p class="detail-subtitle">Revenue</p>
+														<span class="number">$880,900</span>
 													</div>
 												</div>
 											</div>
-										</div>
-										<div class="col-lg-3">
-											<div class="card themed-card">
-												<div class="stat-widget-one">
-													<div class="stat-icon dib">
-														<i class="fas fa-user text-danger border-primary"></i>
+											<div class="footer">
+												<hr />
+												<div class="d-flex justify-content-between box-font-small">
+													<div class="col-md-6 stats">
+														<i class="fas fa-calendar-day"></i> This Week
 													</div>
-													<div class="stat-content dib">
-														<div class="stat-text">New Customer</div>
-														<div class="stat-digit">961</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-lg-3">
-											<div class="card themed-card">
-												<div class="stat-widget-one">
-													<div class="stat-icon dib">
-														<i class="fas fa-filter text-danger border-warning"></i>
-													</div>
-													<div class="stat-content dib">
-														<div class="stat-text">Active Projects</div>
-														<div class="stat-digit">770</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-lg-3">
-											<div class="card themed-card">
-												<div class="stat-widget-one">
-													<div class="stat-icon dib">
-														<i class="fas fa-radiation text-danger border-danger"></i>
-													</div>
-													<div class="stat-content dib">
-														<div class="stat-text">Referral</div>
-														<div class="stat-digit">2,781</div>
+													<div class="col-md-6">
+														<a class="text-primary float-end" href="#"><i
+															class="fas fa-chevron-circle-right"></i>See Details</a>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-
-
-
-									<div class="row mt-2 mb-2">
-										<div class="widget-tiles">
-											<div class="row text-center">
-
-												<div class="col-sm-6 col-md-6 col-lg-3">
-													<a target="_blank" href="https://github.com/ajkr195/Avni">
-														<div class="widget themed-card">
-															<div class="icon">
-																<i class="fa fa-database"></i>
-															</div>
-															<div class="description">
-																<h3>Widget 1</h3>
-																<p>Some descriptive text. Try to zoom in-out the
-																	screen to see responsiveness.</p>
-															</div>
-														</div>
-													</a>
+								</div>
+								<div class="col-sm-6 col-md-6 col-lg-3">
+									<div class="card themed-card card-rounded">
+										<div class="content">
+											<div class="row">
+												<div class="col-sm-4">
+													<div class="text-center text-success">
+														<i class="far fa-eye fa-3x"></i>
+													</div>
 												</div>
-
-
-												<div class="col-sm-6 col-md-6 col-lg-3">
-													<a target="_blank" href="https://github.com/ajkr195/Avni">
-														<div class="widget themed-card">
-															<div class="icon">
-																<i class="fas fa-user"></i>
-															</div>
-															<div class="description">
-																<h3>Widget 2</h3>
-																<p>Some descriptive text. Try to zoom in-out the
-																	screen to see responsiveness.</p>
-															</div>
-														</div>
-													</a>
+												<div class="col-sm-8">
+													<div class="detail">
+														<p class="detail-subtitle">Views</p>
+														<span class="number">28,210</span>
+													</div>
 												</div>
-
-												<div class="col-sm-6 col-md-6 col-lg-3">
-													<a target="_blank" href="https://github.com/ajkr195/Avni">
-														<div class="widget themed-card">
-															<div class="icon">
-																<i class="fas fa-filter"></i>
-															</div>
-															<div class="description">
-																<h3>Widget 3</h3>
-																<p>Some descriptive text. Try to zoom in-out the
-																	screen to see responsiveness.</p>
-															</div>
-														</div>
-													</a>
-												</div>
-
-												<div class="col-sm-6 col-md-6 col-lg-3">
-													<a target="_blank" href="https://github.com/ajkr195/Avni">
-														<div class="widget themed-card">
-															<div class="icon">
-																<i class="fas fa-radiation"></i>
-															</div>
-															<div class="description">
-																<h3>Widget 4</h3>
-																<p>Some descriptive text. Try to zoom in-out the
-																	screen to see responsiveness.</p>
-															</div>
-														</div>
-													</a>
+											</div>
+											<div class="footer">
+												<hr />
+												<div class="d-flex justify-content-between box-font-small">
+													<div class="col-md-6 stats">
+														<i class="far fa-clock"></i>This month
+													</div>
+													<div class="col-md-6">
+														<a class="text-primary float-end" href="#"><i
+															class="fas fa-chevron-circle-right"></i>See Details</a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
+								</div>
 
 
-									<div class="row">
 
-										<div class="col-lg-3">
-											<div class="card themed-card">
-												<div class="stat-widget-one">
-													<div class="stat-icon dib">
-														<i class="fas fa-user text-danger border-primary"></i>
+								<div class="col-sm-6 col-md-6 col-lg-3">
+									<div class="card themed-card card-rounded">
+										<div class="content">
+											<div class="row">
+												<div class="col-sm-4">
+													<div class="text-center text-warning">
+														<i class="far fa-envelope fa-3x"></i>
 													</div>
-													<div class="stat-content dib">
-														<div class="stat-text">New Customer</div>
-														<div class="stat-digit">961</div>
+												</div>
+												<div class="col-sm-8">
+													<div class="detail">
+														<p class="detail-subtitle">Notifications</p>
+														<span class="number">1275</span>
 													</div>
 												</div>
 											</div>
-										</div>
-
-										<div class="col-lg-3">
-											<div class="card themed-card">
-												<div class="stat-widget-one">
-													<div class="stat-icon dib">
-														<i class="fa fa-database text-danger border-success"></i>
+											<div class="footer">
+												<hr />
+												<div class="d-flex justify-content-between box-font-small">
+													<div class="col-md-6 stats">
+														<i class="far fa-envelope"></i> This month
 													</div>
-													<div class="stat-content dib">
-														<div class="stat-text">Total Profit</div>
-														<div class="stat-digit">1,012</div>
+													<div class="col-md-6">
+														<a class="text-primary float-end" href="#"><i
+															class="fas fa-chevron-circle-right"></i>See Details</a>
 													</div>
 												</div>
 											</div>
-										</div>
-
-
-										<div class="col-lg-3">
-											<div class="card themed-card">
-												<div class="stat-widget-one">
-													<div class="stat-icon dib">
-														<i class="fas fa-radiation text-danger border-danger"></i>
-													</div>
-													<div class="stat-content dib">
-														<div class="stat-text">Referral</div>
-														<div class="stat-digit">2,781</div>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-3">
-											<div class="card themed-card">
-												<div class="stat-widget-one">
-													<div class="stat-icon dib">
-														<i class="fas fa-filter text-danger border-warning"></i>
-													</div>
-													<div class="stat-content dib">
-														<div class="stat-text">Active Projects</div>
-														<div class="stat-digit">770</div>
-													</div>
-												</div>
-											</div>
-										</div>
-
-									</div>
-
-
-									<div class="col-lg-12">
-										<div class="card themed-card">
-											<div class="stat-widget-one">
-												<div class="stat-icon dib">
-													<i class="fas fa-radiation text-danger border-danger"></i>
-												</div>
-												<div class="stat-content dib">
-													<div class="stat-text">Referral</div>
-													<div class="stat-digit">2,781</div>
-												</div>
-											</div>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing
-												elit, sed do eiusmod tempor incididunt ut labore et dolore
-												magna aliqua. Ut enim ad minim veniam, quis nostrud
-												exercitation ullamco laboris nisi ut aliquip ex ea commodo
-												consequat. Duis aute irure dolor in reprehenderit in
-												voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-												Excepteur sint occaecat cupidatat non proident, sunt in
-												culpa qui officia deserunt mollit anim id est laborum.</p>
 										</div>
 									</div>
-									
-									
-									<div class="row">
-									
-																			<div class="col-sm-6 col-md-6 col-lg-3">
-											<div class="card themed-card card-rounded">
-												<div class="content">
-													<div class="row">
-														<div class="col-sm-4">
-															<div class="text-center text-success">
-																<i class="far fa-eye fa-3x"></i>
-															</div>
-														</div>
-														<div class="col-sm-8">
-															<div class="detail">
-																<p class="detail-subtitle">Views</p>
-																<span class="number">28,210</span>
-															</div>
-														</div>
+								</div>
+							</div>
+
+
+
+
+
+							<div class="row mt-2 mb-2">
+								<div class="widget-tiles">
+									<div class="row text-center">
+
+										<div class="col-sm-6 col-md-6 col-lg-3">
+											<a target="_blank" href="https://github.com/ajkr195/Avni">
+												<div class="widget themed-card">
+													<div class="icon">
+														<i class="fa fa-database"></i>
 													</div>
-													<div class="footer">
-														<hr />
-														<div class="d-flex justify-content-between box-font-small">
-															<div class="col-md-6 stats">
-																<i class="far fa-clock"></i>This month
-															</div>
-															<div class="col-md-6">
-																<a class="text-primary float-end" href="#"><i
-																	class="fas fa-chevron-circle-right"></i>See Details</a>
-															</div>
-														</div>
+													<div class="description">
+														<h3>Widget 1</h3>
+														<p>Some descriptive text. Try to zoom in-out the
+															screen to see responsiveness.</p>
 													</div>
 												</div>
-											</div>
+											</a>
 										</div>
-
 
 
 										<div class="col-sm-6 col-md-6 col-lg-3">
-											<div class="card themed-card card-rounded">
-												<div class="content">
-													<div class="row">
-														<div class="col-sm-4">
-															<div class="text-center text-warning">
-																<i class="far fa-envelope fa-3x"></i>
-															</div>
-														</div>
-														<div class="col-sm-8">
-															<div class="detail">
-																<p class="detail-subtitle">Notifications</p>
-																<span class="number">1275</span>
-															</div>
-														</div>
+											<a target="_blank" href="https://github.com/ajkr195/Avni">
+												<div class="widget themed-card">
+													<div class="icon">
+														<i class="fas fa-user"></i>
 													</div>
-													<div class="footer">
-														<hr />
-														<div class="d-flex justify-content-between box-font-small">
-															<div class="col-md-6 stats">
-																<i class="far fa-envelope"></i> This month
-															</div>
-															<div class="col-md-6">
-																<a class="text-primary float-end" href="#"><i
-																	class="fas fa-chevron-circle-right"></i>See Details</a>
-															</div>
-														</div>
+													<div class="description">
+														<h3>Widget 2</h3>
+														<p>Some descriptive text. Try to zoom in-out the
+															screen to see responsiveness.</p>
 													</div>
 												</div>
-											</div>
-										</div>
-									
-										<div class="col-sm-6 col-md-6 col-lg-3">
-											<div class="card themed-card card-rounded">
-												<div class="content">
-													<div class="row">
-														<div class="col-sm-4">
-															<div class="text-center text-primary">
-																<i class="fas fa-cart-plus fa-3x"></i>
-															</div>
-														</div>
-														<div class="col-sm-8">
-															<div class="detail">
-																<p class="detail-subtitle">New Orders</p>
-																<span class="number">7,265</span>
-															</div>
-														</div>
-													</div>
-													<div class="footer">
-														<hr />
-														<div class="d-flex justify-content-between box-font-small">
-															<div class="col-md-6 stats">
-																<i class="fas fa-calendar-day"></i> This Week
-															</div>
-															<div class="col-md-6">
-																<a class="text-primary float-end" href="#"><i
-																	class="fas fa-chevron-circle-right"></i>See Details</a>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-6 col-md-6 col-lg-3">
-											<div class="card themed-card card-rounded">
-												<div class="content">
-													<div class="row">
-														<div class="col-sm-4">
-															<div class="text-center text-danger">
-																<i class="fas fa-dollar-sign fa-3x"></i>
-															</div>
-														</div>
-														<div class="col-sm-8">
-															<div class="detail">
-																<p class="detail-subtitle">Revenue</p>
-																<span class="number">$880,900</span>
-															</div>
-														</div>
-													</div>
-													<div class="footer">
-														<hr />
-														<div class="d-flex justify-content-between box-font-small">
-															<div class="col-md-6 stats">
-																<i class="fas fa-calendar-day"></i> This Week
-															</div>
-															<div class="col-md-6">
-																<a class="text-primary float-end" href="#"><i
-																	class="fas fa-chevron-circle-right"></i>See Details</a>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
+											</a>
 										</div>
 
+										<div class="col-sm-6 col-md-6 col-lg-3">
+											<a target="_blank" href="https://github.com/ajkr195/Avni">
+												<div class="widget themed-card">
+													<div class="icon">
+														<i class="fas fa-filter"></i>
+													</div>
+													<div class="description">
+														<h3>Widget 3</h3>
+														<p>Some descriptive text. Try to zoom in-out the
+															screen to see responsiveness.</p>
+													</div>
+												</div>
+											</a>
+										</div>
+
+										<div class="col-sm-6 col-md-6 col-lg-3">
+											<a target="_blank" href="https://github.com/ajkr195/Avni">
+												<div class="widget themed-card">
+													<div class="icon">
+														<i class="fas fa-radiation"></i>
+													</div>
+													<div class="description">
+														<h3>Widget 4</h3>
+														<p>Some descriptive text. Try to zoom in-out the
+															screen to see responsiveness.</p>
+													</div>
+												</div>
+											</a>
+										</div>
 									</div>
+								</div>
+							</div>
+
+
+
+
+							<div class="row">
+
+								<div class="col-sm-6 col-md-6 col-lg-3">
+									<div class="card themed-card card-rounded">
+										<div class="content">
+											<div class="row">
+												<div class="col-sm-4">
+													<div class="text-center text-success">
+														<i class="far fa-eye fa-3x"></i>
+													</div>
+												</div>
+												<div class="col-sm-8">
+													<div class="detail">
+														<p class="detail-subtitle">Views</p>
+														<span class="number">28,210</span>
+													</div>
+												</div>
+											</div>
+											<div class="footer">
+												<hr />
+												<div class="d-flex justify-content-between box-font-small">
+													<div class="col-md-6 stats">
+														<i class="far fa-clock"></i>This month
+													</div>
+													<div class="col-md-6">
+														<a class="text-primary float-end" href="#"><i
+															class="fas fa-chevron-circle-right"></i>See Details</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+								<div class="col-sm-6 col-md-6 col-lg-3">
+									<div class="card themed-card card-rounded">
+										<div class="content">
+											<div class="row">
+												<div class="col-sm-4">
+													<div class="text-center text-warning">
+														<i class="far fa-envelope fa-3x"></i>
+													</div>
+												</div>
+												<div class="col-sm-8">
+													<div class="detail">
+														<p class="detail-subtitle">Notifications</p>
+														<span class="number">1275</span>
+													</div>
+												</div>
+											</div>
+											<div class="footer">
+												<hr />
+												<div class="d-flex justify-content-between box-font-small">
+													<div class="col-md-6 stats">
+														<i class="far fa-envelope"></i> This month
+													</div>
+													<div class="col-md-6">
+														<a class="text-primary float-end" href="#"><i
+															class="fas fa-chevron-circle-right"></i>See Details</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-6 col-md-6 col-lg-3">
+									<div class="card themed-card card-rounded">
+										<div class="content">
+											<div class="row">
+												<div class="col-sm-4">
+													<div class="text-center text-primary">
+														<i class="fas fa-cart-plus fa-3x"></i>
+													</div>
+												</div>
+												<div class="col-sm-8">
+													<div class="detail">
+														<p class="detail-subtitle">New Orders</p>
+														<span class="number">7,265</span>
+													</div>
+												</div>
+											</div>
+											<div class="footer">
+												<hr />
+												<div class="d-flex justify-content-between box-font-small">
+													<div class="col-md-6 stats">
+														<i class="fas fa-calendar-day"></i> This Week
+													</div>
+													<div class="col-md-6">
+														<a class="text-primary float-end" href="#"><i
+															class="fas fa-chevron-circle-right"></i>See Details</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-6 col-lg-3">
+									<div class="card themed-card card-rounded">
+										<div class="content">
+											<div class="row">
+												<div class="col-sm-4">
+													<div class="text-center text-danger">
+														<i class="fas fa-dollar-sign fa-3x"></i>
+													</div>
+												</div>
+												<div class="col-sm-8">
+													<div class="detail">
+														<p class="detail-subtitle">Revenue</p>
+														<span class="number">$880,900</span>
+													</div>
+												</div>
+											</div>
+											<div class="footer">
+												<hr />
+												<div class="d-flex justify-content-between box-font-small">
+													<div class="col-md-6 stats">
+														<i class="fas fa-calendar-day"></i> This Week
+													</div>
+													<div class="col-md-6">
+														<a class="text-primary float-end" href="#"><i
+															class="fas fa-chevron-circle-right"></i>See Details</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+
+							<div class="row">
+								<div class="col-12 col-md-12 col-lg-12">
+									<div class="card themed-card">
+										<div class="card-header">
+											<h3 class=" float-start">Table</h3>
+
+
+
+											<ul class="navbar-nav float-end dropdown-menu-end">
+												<li class="nav-item dropdown"><a class="nav-link"
+													href="#" id="dropdown01" data-bs-toggle="dropdown"
+													aria-expanded="false"><i class="fas fa-ellipsis-v mt-2"></i></a>
+													<ul class="dropdown-menu dropdown-menu-end"
+														aria-labelledby="dropdown01">
+														<li><a href="profile.html" class="dropdown-item mt-2"><i
+																class="fas fa-cloud-download-alt mx-2"></i> Download as
+																CSV</a></li>
+														<li><a href="profile.html" class="dropdown-item mt-2"><i
+																class="fas fa-cloud-download-alt mx-2"></i> Download as
+																PDF</a></li>
+														<li><a href="profile.html" class="dropdown-item mt-2"><i
+																class="fas fa-cloud-download-alt mx-2"></i> Download as
+																Excel</a></li>
+													</ul></li>
+											</ul>
+
+										</div>
+										<div class="card-content">
+											<table class="table no-margin">
+												<thead class="success">
+													<tr>
+														<th>Name</th>
+														<th>Sales</th>
+														<th>Actual</th>
+														<th>Some</th>
+														<th>Thing</th>
+														<th>Variance</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><i class="fas fa-user text-primary"></i> Some
+															Name</td>
+														<td>
+															<div class="d-flex">
+																<span class="pr-2 d-flex align-items-center">85%</span>
+															</div>
+														</td>
+														<td>32,435</td>
+														<td>53,462</td>
+														<td>67,453</td>
+														<td><div class="progress-wrapper">
+																<p>
+																	More than 6 hours <span class="float-end">20%</span>
+																</p>
+																<div class="progress">
+																	<div class="bg-danger" style="width: 20%"></div>
+																</div>
+															</div></td>
+													</tr>
+													<tr>
+														<td><i class="fas fa-user text-success"></i> Cecelia
+															Bradley</td>
+														<td>
+															<div class="d-flex">
+																<span class="pr-2 d-flex align-items-center">55%</span>
+															</div>
+														</td>
+														<td>4,36780</td>
+														<td>32,435</td>
+														<td>32,435</td>
+														<td><div class="progress-wrapper">
+																<p>
+																	More than 3 hours <span class="float-end">40%</span>
+																</p>
+																<div class="progress">
+																	<div class="bg-warning" style="width: 40%"></div>
+																</div>
+															</div></td>
+													</tr>
+													<tr>
+														<td><i class="fas fa-user text-warning"></i> Leah
+															Sherman</td>
+														<td>
+															<div class="d-flex">
+																<span class="pr-2 d-flex align-items-center">23%</span>
+															</div>
+														</td>
+														<td>2,800</td>
+														<td>32,435</td>
+														<td>2,300</td>
+														<td><div class="progress-wrapper">
+																<p>
+																	1 - 3 hours <span class="float-end">60%</span>
+																</p>
+																<div class="progress">
+																	<div class="bg-primary" style="width: 60%"></div>
+																</div>
+															</div></td>
+													</tr>
+													<tr>
+														<td><i class="fas fa-user text-success"></i> Ina
+															Curry</td>
+														<td>
+															<div class="d-flex">
+																<span class="pr-2 d-flex align-items-center">44%</span>
+															</div>
+														</td>
+														<td>4,36,780</td>
+														<td>32,435</td>
+														<td>53462</td>
+														<td><div class="progress-wrapper">
+																<p>
+																	Less than 1 hour <span class="float-end">50%</span>
+																</p>
+																<div class="progress">
+																	<div class="bg-success" style="width: 50%"></div>
+																</div>
+															</div></td>
+													</tr>
+													<tr>
+														<td><i class="fas fa-user text-success"></i> Lida
+															Fitzgerald</td>
+														<td>
+															<div class="d-flex">
+																<span class="pr-2 d-flex align-items-center">65%</span>
+															</div>
+														</td>
+														<td>67,453</td>
+														<td>4,36,780</td>
+														<td>32,435</td>
+														<td><div class="progress-wrapper">
+																<p>
+																	More than 6 hours <span class="float-end">20%</span>
+																</p>
+																<div class="progress">
+																	<div class="bg-danger" style="width: 20%"></div>
+																</div>
+															</div></td>
+													</tr>
+													<tr>
+														<td><i class="fas fa-user text-danger"></i> Stella
+															Johnson</td>
+														<td>
+															<div class="d-flex">
+																<span class="pr-2 d-flex align-items-center">49%</span>
+															</div>
+														</td>
+														<td>43,662</td>
+														<td>67,453</td>
+														<td>4,36780</td>
+														<td><div class="progress-wrapper">
+																<p>
+																	1 - 3 hours <span class="float-end">60%</span>
+																</p>
+																<div class="progress">
+																	<div class="bg-primary" style="width: 60%"></div>
+																</div>
+															</div></td>
+													</tr>
+													<tr>
+														<td><i class="fas fa-user text-success"></i> Maria
+															Ortiz</td>
+														<td>
+															<div class="d-flex">
+																<span class="pr-2 d-flex align-items-center">65%</span>
+															</div>
+														</td>
+														<td>4,36780</td>
+														<td>32,435</td>
+														<td>53,462</td>
+														<td><div class="progress-wrapper">
+																<p>
+																	1 - 3 hours <span class="float-end">60%</span>
+																</p>
+																<div class="progress">
+																	<div class="bg-primary" style="width: 60%"></div>
+																</div>
+															</div></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+
+							<div class="row">
+								<div class="col-sm-6 col-md-6 col-lg-3">
+									<div class="card themed-card">
+										<div class="content">
+											<div class="row">
+												<div class="text-center">
+													<i class="far fa-thumbs-up fa-3x teal"></i>
+													<h4 class="mb-0">+21,900</h4>
+													<p class="text-muted">Social Likes</p>
+												</div>
+											</div>
+											<div class="footer">
+												<hr />
+												<div class="d-flex justify-content-between box-font-small">
+													<div class="col-md-6 stats">
+														<i class="fas fa-calendar-day"></i> This Week
+													</div>
+													<div class="col-md-6">
+														<a class="text-primary float-end" href="#"><i
+															class="fas fa-chevron-circle-right"></i>See Details</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-6 col-lg-3">
+									<div class="card themed-card">
+										<div class="content">
+											<div class="row">
+												<div class="text-center">
+													<i class="fas fa-share-alt fa-3x olive"></i>
+													<h4 class="mb-0">+22,566</h4>
+													<p class="text-muted">Followers</p>
+												</div>
+											</div>
+											<div class="footer">
+												<hr />
+												<div class="d-flex justify-content-between box-font-small">
+													<div class="col-md-6 stats">
+														<i class="fas fa-calendar-day"></i> This Week
+													</div>
+													<div class="col-md-6">
+														<a class="text-primary float-end" href="#"><i
+															class="fas fa-chevron-circle-right"></i>See Details</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-6 col-lg-3">
+									<div class="card themed-card">
+										<div class="content">
+											<div class="row">
+												<div class="text-center">
+													<i class="fas fa-users fa-3x orange"></i>
+													<h4 class="mb-0">+15,566</h4>
+													<p class="text-muted">Subscribers</p>
+												</div>
+											</div>
+											<div class="footer">
+												<hr />
+												<div class="d-flex justify-content-between box-font-small">
+													<div class="col-md-6 stats">
+														<i class="fas fa-calendar-day"></i> This Week
+													</div>
+													<div class="col-md-6">
+														<a class="text-primary float-end" href="#"><i
+															class="fas fa-chevron-circle-right"></i>See Details</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-6 col-lg-3">
+									<div class="card themed-card">
+										<div class="content">
+											<div class="row">
+												<div class="text-center">
+													<i class="fas fa-envelope fa-3x violet"></i>
+													<h4 class="mb-0">+98,601</h4>
+													<p class="text-muted">Sales</p>
+												</div>
+											</div>
+											<div class="footer">
+												<hr />
+												<div class="d-flex justify-content-between box-font-small">
+													<div class="col-md-6 stats">
+														<i class="fas fa-calendar-day"></i> This Week
+													</div>
+													<div class="col-md-6">
+														<a class="text-primary float-end" href="#"><i
+															class="fas fa-chevron-circle-right"></i>See Details</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
 
 
 						</div>
@@ -1557,97 +1001,5 @@ a, a:hover, a:focus {
 
 </body>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript">
-	document.getElementById("sidebarCollapse").addEventListener('click',
-			function() {
-				document.getElementById("sidebar").classList.toggle("active");
-				this.classList.toggle("active");
-			});
-</script>
-<script>
-	var mainparentelements = document.querySelectorAll('.ddmenu');
-	for (let i = 0; i < mainparentelements.length; i++) {
-		mainparentelements[i].onclick = function() {
-			var c = 0;
-			while (c < mainparentelements.length) {
-				mainparentelements[c++].classList.remove("selected");
-			}
-			mainparentelements[i].classList.add("selected");
-		};
-	}
-</script>
-<script>
-	const alllistitems = document.querySelectorAll(".buttons-container li");
-	const alllistlinks = document.querySelectorAll(".buttons-container li a");
-
-	for (let i = 0; i < alllistitems.length; i++) {
-		alllistitems[i].addEventListener("click", function() {
-			for (let i = 0; i < alllistitems.length; i++) {
-				alllistitems[i].classList.remove("active");
-				alllistlinks[i].classList.remove("active-text");
-			}
-			this.classList.add("active");
-			alllistlinks[i].classList.add("active-text");
-		});
-	}
-</script>
-<script>
-	function toggleBtnCntnr() {
-		var toggleBtnCntnr = document.getElementById("buttons-container");
-		if (toggleBtnCntnr.style.display === "block") {
-			toggleBtnCntnr.style.display = "none";
-		} else {
-			toggleBtnCntnr.style.display = "block";
-		}
-	}
-</script>
-<script>
-const themeCookieName = 'theme';
-const themeDark = 'dark';
-const themeLight = 'light';
-
-const body = document.getElementsByTagName('body')[0];
-
-function setCookie(cname, cvalue, exdays) {
-	var d = new Date();
-	d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-	var expires = "expires=" + d.toUTCString();
-	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/"
-}
-
-function getCookie(cname) {
-	var name = cname + "="
-	var ca = document.cookie.split(';');
-	for (var i = 0; i < ca.length; i++) {
-		var c = ca[i];
-		while (c.charAt(0) == ' ') {
-			c = c.substring(1);
-		}
-		if (c.indexOf(name) == 0) {
-			return c.substring(name.length, c.length);
-		}
-	}
-	return ""
-}
-
-loadTheme()
-
-function loadTheme() {
-	var theme = getCookie(themeCookieName);
-	body.classList.add(theme === "" ? themeLight : theme);
-}
-
-function switchTheme() {
-
-	if (body.classList.contains(themeLight)) {
-		body.classList.remove(themeLight);
-		body.classList.add(themeDark);
-		setCookie(themeCookieName, themeDark);
-	} else {
-		body.classList.remove(themeDark);
-		body.classList.add(themeLight);
-		setCookie(themeCookieName, themeLight);
-	}
-}
-</script>
+<script src="assets/js/script5.js"></script>
 </html>
