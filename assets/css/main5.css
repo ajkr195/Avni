@@ -9,7 +9,7 @@ body {
 	/* 	background: #F0F0F0; */
 	color: var(--main-text-color);
 	background: gray;
-	background-image: url("/home/ajay/git/Avni/assets/img/metal2.jpg");
+	background-image: url("../img/metal2.jpg");
 }
 
 main>.container-fluid {
