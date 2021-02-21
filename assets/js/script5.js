@@ -6,6 +6,21 @@ document.getElementById("sidebarCollapse").addEventListener('click',
 
 
 
+const container = document.querySelector('.mainsidebar');
+let lastSelectedIcon;
+container.addEventListener('click', (event) => {
+	if (lastSelectedIcon) {
+		lastSelectedIcon.classList.remove("down");
+	}
+	const icon = event.target.closest('.ddmenu')
+		.querySelector('.fa-chevron-right');
+	icon.classList.add('down');
+	lastSelectedIcon = icon;
+});
+
+
+
+
 var mainparentelements = document.querySelectorAll('.ddmenu');
 for (let i = 0; i < mainparentelements.length; i++) {
 	mainparentelements[i].onclick = function() {
@@ -21,7 +36,6 @@ for (let i = 0; i < mainparentelements.length; i++) {
 
 const alllistitems = document.querySelectorAll(".buttons-container li");
 const alllistlinks = document.querySelectorAll(".buttons-container li a");
-
 for (let i = 0; i < alllistitems.length; i++) {
 	alllistitems[i].addEventListener("click", function() {
 		for (let i = 0; i < alllistitems.length; i++) {
@@ -32,7 +46,6 @@ for (let i = 0; i < alllistitems.length; i++) {
 		alllistlinks[i].classList.add("active-text");
 	});
 }
-
 
 
 function toggleBtnCntnr() {
@@ -49,16 +62,13 @@ function toggleBtnCntnr() {
 const themeCookieName = 'theme';
 const themeDark = 'dark';
 const themeLight = 'light';
-
 const body = document.getElementsByTagName('body')[0];
-
 function setCookie(cname, cvalue, exdays) {
 	var d = new Date();
 	d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
 	var expires = "expires=" + d.toUTCString();
 	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/"
 }
-
 function getCookie(cname) {
 	var name = cname + "="
 	var ca = document.cookie.split(';');
@@ -73,14 +83,11 @@ function getCookie(cname) {
 	}
 	return ""
 }
-
-loadTheme()
-
+loadTheme();
 function loadTheme() {
 	var theme = getCookie(themeCookieName);
 	body.classList.add(theme === "" ? themeLight : theme);
 }
-
 function switchTheme() {
 
 	if (body.classList.contains(themeLight)) {
