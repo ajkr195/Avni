@@ -12,9 +12,18 @@
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 
 <style>
+:root { --light-background: #ffffff; --dark-background: #303030; }
+
+.light { --main-bg-color: var(--light-background); --main-text-color: #292c2f;}
+
+.dark { --main-bg-color: var(--dark-background); --main-text-color: gray;}
+
 body {
 	font-family: 'Poppins', sans-serif;
-	background: #F0F0F0;
+	/* 	background: #F0F0F0; */
+	color: var(--main-text-color);
+	background: gray;
+	background-image: url("/home/ajay/git/Avni/assets/img/metal2.jpg");
 }
 
 main>.container-fluid {
@@ -49,7 +58,7 @@ a, a:hover, a:focus {
 	background: #fff;
 	border: none;
 	border-radius: 40px;
-	/* 	margin-bottom: 20px; */
+	margin-bottom: 20px;
 	min-height: 30px;
 	margin-top: 0;
 	/* 	background-color: #2a2a72; */
@@ -124,6 +133,22 @@ a, a:hover, a:focus {
 	width: 100%;
 }
 
+.light .logo-dark, .light .light-icon {
+	display: none;
+}
+
+.dark .logo-light, .dark .dark-icon {
+	display: none;
+}
+
+.detail-subtitle {
+	font-size: 1.2rem;
+	/* 	text-transform: uppercase; */
+	text-transform: capitalize;
+	line-height: 1.6;
+	/* 	font-weight: 900; */
+}
+
 #sidebar {
 	min-width: 250px;
 	max-width: 250px;
@@ -151,6 +176,7 @@ a, a:hover, a:focus {
 	transition: all 0.3s;
 	margin-left: 5px;
 	margin-right: 5px;
+	margin-bottom: 10px;
 }
 
 #sidebarCollapse {
@@ -484,7 +510,7 @@ a, a:hover, a:focus {
 
 .stat-widget-one .stat-text {
 	font-size: 14px;
-	color: #868e96;
+/* 	color: #868e96; */
 }
 
 .stat-widget-one .stat-digit {
@@ -496,10 +522,6 @@ a, a:hover, a:focus {
 	display: inline-block;
 }
 
-.card-body {
-	padding: 0;
-}
-
 .card {
 	background: #ffffff;
 	margin: 7.5px 0;
@@ -507,6 +529,17 @@ a, a:hover, a:focus {
 	border: 1px solid #e7e7e7;
 	border-radius: 3px;
 	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.themed-card {
+    background: var(--main-bg-color);
+/*     padding: 0; */
+    border: none;
+    border-radius: 40px;
+}
+
+.card-body {
+	padding: 0;
 }
 
 .card-subtitle {
@@ -576,6 +609,24 @@ a, a:hover, a:focus {
 	margin-right: 10px;
 }
 
+.card .content .number {
+	font-size: 1.5em;
+	text-align: right;
+	font-weight: bolder;
+}
+
+.card .content .footer {
+	background-attachment: fixed;
+	position: relative;
+	padding: 0;
+	line-height: 30px;
+}
+
+.card .content .stats {
+	display: inline-block;
+	color: #a9a9a9;
+}
+
 .widget-tiles a {
 	text-decoration: none;
 	color: inherit;
@@ -590,7 +641,8 @@ a, a:hover, a:focus {
 	-webkit-box-shadow: 0 0 3px 0 #ccc;
 	box-shadow: 0 0 3px 0 #ccc;
 	border-radius: 10px;
-	background: #fff;
+	/* 	background: #fff; */
+	background: var(--main-bg-color);
 	overflow: hidden;
 }
 
@@ -600,10 +652,7 @@ a, a:hover, a:focus {
 }
 
 .widget-tiles .widget:hover .icon {
-	background: #0d6efd;
-	background: -webkit-gradient(linear, left top, left bottom, from(#43484D),
-		to(#27292B));
-	background: linear-gradient(to bottom, #43484D 0%, #27292B 100%);
+	background: #86be2e;
 }
 
 .widget-tiles .widget .icon {
@@ -618,10 +667,7 @@ a, a:hover, a:focus {
 	justify-content: center;
 	padding: 10px;
 	min-width: 80px;
-	background: #0dcaf0;
-	background: -webkit-gradient(linear, left top, left bottom, from(#0dcaf0),
-		to(#25682a));
-	background: linear-gradient(to bottom, #0dcaf0 0%, #25682a 100%);
+	background: #dc3545;
 }
 
 .widget-tiles .widget .icon i {
@@ -746,6 +792,99 @@ a, a:hover, a:focus {
 								</ul>
 
 							</div>
+							
+							<div class="link-blue ddmenu">
+								<a href="#"> <i class="fa far fa-image"></i>Photography
+								</a>
+								<ul class="sub-links">
+									<li><a href="#">Portraits</a></li>
+									<li><a href="#">Landscape</a></li>
+									<li><a href="#">Studio shots</a></li>
+									<li><a href="#">Macros</a></li>
+								</ul>
+							</div>
+
+							<div class="link-red ddmenu">
+								<a href="#"><i class="fa fas fa-cog"></i>Favorites </a>
+								<ul class="sub-links">
+									<li><a href="#">Link 1</a></li>
+									<li><a href="#">Link 2</a></li>
+									<li><a href="#">Link 3</a></li>
+									<li><a href="#">Link 4</a></li>
+								</ul>
+							</div>
+
+							<div class="link-yellow ddmenu">
+								<a href="#"> <i class="fa fas fa-tools"></i>Projects
+								</a>
+								<ul class="sub-links">
+									<li><a href="#">Link 1</a></li>
+									<li><a href="#">Link 2</a></li>
+									<li><a href="#">Link 3</a></li>
+									<li><a href="#">Link 4</a></li>
+								</ul>
+							</div>
+
+							<div class="link-green ddmenu">
+
+								<a href="#"> <i class="fa fas fa-user-cog"></i>Places
+								</a>
+
+								<ul class="sub-links">
+									<li><a href="#">Link 1</a></li>
+									<li><a href="#">Link 2</a></li>
+									<li><a href="#">Link 3</a></li>
+									<li><a href="#">Link 4</a></li>
+								</ul>
+
+							</div>
+							
+							<div class="link-blue ddmenu">
+								<a href="#"> <i class="fa far fa-image"></i>Photography
+								</a>
+								<ul class="sub-links">
+									<li><a href="#">Portraits</a></li>
+									<li><a href="#">Landscape</a></li>
+									<li><a href="#">Studio shots</a></li>
+									<li><a href="#">Macros</a></li>
+								</ul>
+							</div>
+
+							<div class="link-red ddmenu">
+								<a href="#"><i class="fa fas fa-cog"></i>Favorites </a>
+								<ul class="sub-links">
+									<li><a href="#">Link 1</a></li>
+									<li><a href="#">Link 2</a></li>
+									<li><a href="#">Link 3</a></li>
+									<li><a href="#">Link 4</a></li>
+								</ul>
+							</div>
+
+							<div class="link-yellow ddmenu">
+								<a href="#"> <i class="fa fas fa-tools"></i>Projects
+								</a>
+								<ul class="sub-links">
+									<li><a href="#">Link 1</a></li>
+									<li><a href="#">Link 2</a></li>
+									<li><a href="#">Link 3</a></li>
+									<li><a href="#">Link 4</a></li>
+								</ul>
+							</div>
+
+							<div class="link-green ddmenu">
+
+								<a href="#"> <i class="fa fas fa-user-cog"></i>Places
+								</a>
+
+								<ul class="sub-links">
+									<li><a href="#">Link 1</a></li>
+									<li><a href="#">Link 2</a></li>
+									<li><a href="#">Link 3</a></li>
+									<li><a href="#">Link 4</a></li>
+								</ul>
+
+							</div>
+							
 							<div class="link-red ddmenu">
 								<a href="#"> <i class="fa fas fa-th-large"></i>SomeOther
 								</a>
@@ -850,6 +989,11 @@ a, a:hover, a:focus {
 										aria-current="page" href="#" onClick="toggleBtnCntnr();"><i
 											class="fa fas fa-tools text-danger"></i> </a></li>
 
+									<li class="nav-item mode"><a class="nav-link" href="#"
+										onclick="switchTheme()"> <i class="fas fa-moon dark-icon"></i>
+											<i class="fas fa-sun light-icon text-warning"></i>
+									</a></li>
+
 
 								</ul>
 
@@ -915,16 +1059,146 @@ a, a:hover, a:focus {
 
 					<div class="row">
 						<div class="col-md-12 grid-margin">
-							<div class="card">
-								<div class="card-body">
+
+
+
+									<div class="row">
+										<div class="col-sm-6 col-md-6 col-lg-3">
+											<div class="card themed-card card-rounded">
+												<div class="content">
+													<div class="row">
+														<div class="col-sm-4">
+															<div class="text-center text-primary">
+																<i class="fas fa-cart-plus fa-3x"></i>
+															</div>
+														</div>
+														<div class="col-sm-8">
+															<div class="detail">
+																<p class="detail-subtitle">New Orders</p>
+																<span class="number">7,265</span>
+															</div>
+														</div>
+													</div>
+													<div class="footer">
+														<hr />
+														<div class="d-flex justify-content-between box-font-small">
+															<div class="col-md-6 stats">
+																<i class="fas fa-calendar-day"></i> This Week
+															</div>
+															<div class="col-md-6">
+																<a class="text-primary float-end" href="#"><i
+																	class="fas fa-chevron-circle-right"></i>See Details</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-6 col-lg-3">
+											<div class="card themed-card card-rounded">
+												<div class="content">
+													<div class="row">
+														<div class="col-sm-4">
+															<div class="text-center text-danger">
+																<i class="fas fa-dollar-sign fa-3x"></i>
+															</div>
+														</div>
+														<div class="col-sm-8">
+															<div class="detail">
+																<p class="detail-subtitle">Revenue</p>
+																<span class="number">$880,900</span>
+															</div>
+														</div>
+													</div>
+													<div class="footer">
+														<hr />
+														<div class="d-flex justify-content-between box-font-small">
+															<div class="col-md-6 stats">
+																<i class="fas fa-calendar-day"></i> This Week
+															</div>
+															<div class="col-md-6">
+																<a class="text-primary float-end" href="#"><i
+																	class="fas fa-chevron-circle-right"></i>See Details</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-6 col-lg-3">
+											<div class="card themed-card card-rounded">
+												<div class="content">
+													<div class="row">
+														<div class="col-sm-4">
+															<div class="text-center text-success">
+																<i class="far fa-eye fa-3x"></i>
+															</div>
+														</div>
+														<div class="col-sm-8">
+															<div class="detail">
+																<p class="detail-subtitle">Views</p>
+																<span class="number">28,210</span>
+															</div>
+														</div>
+													</div>
+													<div class="footer">
+														<hr />
+														<div class="d-flex justify-content-between box-font-small">
+															<div class="col-md-6 stats">
+																<i class="far fa-clock"></i>This month
+															</div>
+															<div class="col-md-6">
+																<a class="text-primary float-end" href="#"><i
+																	class="fas fa-chevron-circle-right"></i>See Details</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+										<div class="col-sm-6 col-md-6 col-lg-3">
+											<div class="card themed-card card-rounded">
+												<div class="content">
+													<div class="row">
+														<div class="col-sm-4">
+															<div class="text-center text-warning">
+																<i class="far fa-envelope fa-3x"></i>
+															</div>
+														</div>
+														<div class="col-sm-8">
+															<div class="detail">
+																<p class="detail-subtitle">Notifications</p>
+																<span class="number">1275</span>
+															</div>
+														</div>
+													</div>
+													<div class="footer">
+														<hr />
+														<div class="d-flex justify-content-between box-font-small">
+															<div class="col-md-6 stats">
+																<i class="far fa-envelope"></i> This month
+															</div>
+															<div class="col-md-6">
+																<a class="text-primary float-end" href="#"><i
+																	class="fas fa-chevron-circle-right"></i>See Details</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 
 
 									<div class="row">
 										<div class="col-lg-3">
-											<div class="card">
+											<div class="card themed-card">
 												<div class="stat-widget-one">
 													<div class="stat-icon dib">
-														<i class="fa fa-database border-success"></i>
+														<i class="fa fa-database text-danger border-success"></i>
 													</div>
 													<div class="stat-content dib">
 														<div class="stat-text">Total Profit</div>
@@ -934,10 +1208,10 @@ a, a:hover, a:focus {
 											</div>
 										</div>
 										<div class="col-lg-3">
-											<div class="card">
+											<div class="card themed-card">
 												<div class="stat-widget-one">
 													<div class="stat-icon dib">
-														<i class="fas fa-user border-primary"></i>
+														<i class="fas fa-user text-danger border-primary"></i>
 													</div>
 													<div class="stat-content dib">
 														<div class="stat-text">New Customer</div>
@@ -947,10 +1221,10 @@ a, a:hover, a:focus {
 											</div>
 										</div>
 										<div class="col-lg-3">
-											<div class="card">
+											<div class="card themed-card">
 												<div class="stat-widget-one">
 													<div class="stat-icon dib">
-														<i class="fas fa-filter border-warning"></i>
+														<i class="fas fa-filter text-danger border-warning"></i>
 													</div>
 													<div class="stat-content dib">
 														<div class="stat-text">Active Projects</div>
@@ -960,10 +1234,10 @@ a, a:hover, a:focus {
 											</div>
 										</div>
 										<div class="col-lg-3">
-											<div class="card">
+											<div class="card themed-card">
 												<div class="stat-widget-one">
 													<div class="stat-icon dib">
-														<i class="fas fa-radiation border-danger"></i>
+														<i class="fas fa-radiation text-danger border-danger"></i>
 													</div>
 													<div class="stat-content dib">
 														<div class="stat-text">Referral</div>
@@ -982,7 +1256,7 @@ a, a:hover, a:focus {
 
 												<div class="col-sm-6 col-md-6 col-lg-3">
 													<a target="_blank" href="https://github.com/ajkr195/Avni">
-														<div class="widget">
+														<div class="widget themed-card">
 															<div class="icon">
 																<i class="fa fa-database"></i>
 															</div>
@@ -998,7 +1272,7 @@ a, a:hover, a:focus {
 
 												<div class="col-sm-6 col-md-6 col-lg-3">
 													<a target="_blank" href="https://github.com/ajkr195/Avni">
-														<div class="widget">
+														<div class="widget themed-card">
 															<div class="icon">
 																<i class="fas fa-user"></i>
 															</div>
@@ -1013,7 +1287,7 @@ a, a:hover, a:focus {
 
 												<div class="col-sm-6 col-md-6 col-lg-3">
 													<a target="_blank" href="https://github.com/ajkr195/Avni">
-														<div class="widget">
+														<div class="widget themed-card">
 															<div class="icon">
 																<i class="fas fa-filter"></i>
 															</div>
@@ -1028,7 +1302,7 @@ a, a:hover, a:focus {
 
 												<div class="col-sm-6 col-md-6 col-lg-3">
 													<a target="_blank" href="https://github.com/ajkr195/Avni">
-														<div class="widget">
+														<div class="widget themed-card">
 															<div class="icon">
 																<i class="fas fa-radiation"></i>
 															</div>
@@ -1046,12 +1320,12 @@ a, a:hover, a:focus {
 
 
 									<div class="row">
-										
+
 										<div class="col-lg-3">
-											<div class="card">
+											<div class="card themed-card">
 												<div class="stat-widget-one">
 													<div class="stat-icon dib">
-														<i class="fas fa-user border-primary"></i>
+														<i class="fas fa-user text-danger border-primary"></i>
 													</div>
 													<div class="stat-content dib">
 														<div class="stat-text">New Customer</div>
@@ -1060,12 +1334,12 @@ a, a:hover, a:focus {
 												</div>
 											</div>
 										</div>
-										
+
 										<div class="col-lg-3">
-											<div class="card">
+											<div class="card themed-card">
 												<div class="stat-widget-one">
 													<div class="stat-icon dib">
-														<i class="fa fa-database border-success"></i>
+														<i class="fa fa-database text-danger border-success"></i>
 													</div>
 													<div class="stat-content dib">
 														<div class="stat-text">Total Profit</div>
@@ -1074,13 +1348,13 @@ a, a:hover, a:focus {
 												</div>
 											</div>
 										</div>
-										
-										
+
+
 										<div class="col-lg-3">
-											<div class="card">
+											<div class="card themed-card">
 												<div class="stat-widget-one">
 													<div class="stat-icon dib">
-														<i class="fas fa-radiation border-danger"></i>
+														<i class="fas fa-radiation text-danger border-danger"></i>
 													</div>
 													<div class="stat-content dib">
 														<div class="stat-text">Referral</div>
@@ -1089,12 +1363,12 @@ a, a:hover, a:focus {
 												</div>
 											</div>
 										</div>
-										
+
 										<div class="col-lg-3">
-											<div class="card">
+											<div class="card themed-card">
 												<div class="stat-widget-one">
 													<div class="stat-icon dib">
-														<i class="fas fa-filter border-warning"></i>
+														<i class="fas fa-filter text-danger border-warning"></i>
 													</div>
 													<div class="stat-content dib">
 														<div class="stat-text">Active Projects</div>
@@ -1103,15 +1377,15 @@ a, a:hover, a:focus {
 												</div>
 											</div>
 										</div>
-										
+
 									</div>
 
 
 									<div class="col-lg-12">
-										<div class="card">
+										<div class="card themed-card">
 											<div class="stat-widget-one">
 												<div class="stat-icon dib">
-													<i class="fas fa-radiation border-danger"></i>
+													<i class="fas fa-radiation text-danger border-danger"></i>
 												</div>
 												<div class="stat-content dib">
 													<div class="stat-text">Referral</div>
@@ -1128,10 +1402,142 @@ a, a:hover, a:focus {
 												culpa qui officia deserunt mollit anim id est laborum.</p>
 										</div>
 									</div>
+									
+									
+									<div class="row">
+									
+																			<div class="col-sm-6 col-md-6 col-lg-3">
+											<div class="card themed-card card-rounded">
+												<div class="content">
+													<div class="row">
+														<div class="col-sm-4">
+															<div class="text-center text-success">
+																<i class="far fa-eye fa-3x"></i>
+															</div>
+														</div>
+														<div class="col-sm-8">
+															<div class="detail">
+																<p class="detail-subtitle">Views</p>
+																<span class="number">28,210</span>
+															</div>
+														</div>
+													</div>
+													<div class="footer">
+														<hr />
+														<div class="d-flex justify-content-between box-font-small">
+															<div class="col-md-6 stats">
+																<i class="far fa-clock"></i>This month
+															</div>
+															<div class="col-md-6">
+																<a class="text-primary float-end" href="#"><i
+																	class="fas fa-chevron-circle-right"></i>See Details</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 
 
-								</div>
-							</div>
+
+										<div class="col-sm-6 col-md-6 col-lg-3">
+											<div class="card themed-card card-rounded">
+												<div class="content">
+													<div class="row">
+														<div class="col-sm-4">
+															<div class="text-center text-warning">
+																<i class="far fa-envelope fa-3x"></i>
+															</div>
+														</div>
+														<div class="col-sm-8">
+															<div class="detail">
+																<p class="detail-subtitle">Notifications</p>
+																<span class="number">1275</span>
+															</div>
+														</div>
+													</div>
+													<div class="footer">
+														<hr />
+														<div class="d-flex justify-content-between box-font-small">
+															<div class="col-md-6 stats">
+																<i class="far fa-envelope"></i> This month
+															</div>
+															<div class="col-md-6">
+																<a class="text-primary float-end" href="#"><i
+																	class="fas fa-chevron-circle-right"></i>See Details</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									
+										<div class="col-sm-6 col-md-6 col-lg-3">
+											<div class="card themed-card card-rounded">
+												<div class="content">
+													<div class="row">
+														<div class="col-sm-4">
+															<div class="text-center text-primary">
+																<i class="fas fa-cart-plus fa-3x"></i>
+															</div>
+														</div>
+														<div class="col-sm-8">
+															<div class="detail">
+																<p class="detail-subtitle">New Orders</p>
+																<span class="number">7,265</span>
+															</div>
+														</div>
+													</div>
+													<div class="footer">
+														<hr />
+														<div class="d-flex justify-content-between box-font-small">
+															<div class="col-md-6 stats">
+																<i class="fas fa-calendar-day"></i> This Week
+															</div>
+															<div class="col-md-6">
+																<a class="text-primary float-end" href="#"><i
+																	class="fas fa-chevron-circle-right"></i>See Details</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-6 col-lg-3">
+											<div class="card themed-card card-rounded">
+												<div class="content">
+													<div class="row">
+														<div class="col-sm-4">
+															<div class="text-center text-danger">
+																<i class="fas fa-dollar-sign fa-3x"></i>
+															</div>
+														</div>
+														<div class="col-sm-8">
+															<div class="detail">
+																<p class="detail-subtitle">Revenue</p>
+																<span class="number">$880,900</span>
+															</div>
+														</div>
+													</div>
+													<div class="footer">
+														<hr />
+														<div class="d-flex justify-content-between box-font-small">
+															<div class="col-md-6 stats">
+																<i class="fas fa-calendar-day"></i> This Week
+															</div>
+															<div class="col-md-6">
+																<a class="text-primary float-end" href="#"><i
+																	class="fas fa-chevron-circle-right"></i>See Details</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+
 						</div>
 					</div>
 				</div>
@@ -1141,9 +1547,9 @@ a, a:hover, a:focus {
 
 	<footer class="footer mt-auto py-2 bg-dark text-center">
 		<div class="container">
-			<span class="text-danger"><strong>AVNI - <a href="https://github.com/ajkr195/Avni" target="_blank">Open
-					Source Bootstrap 5 dashboard</a>. No
-				Copyright @ <script>
+			<span class="text-danger"><strong>AVNI - <a
+					href="https://github.com/ajkr195/Avni" target="_blank">Open
+						Source Bootstrap 5 dashboard</a>. No Copyright @ <script>
 					document.write(new Date().getFullYear())
 				</script></strong></span>
 		</div>
@@ -1194,5 +1600,54 @@ a, a:hover, a:focus {
 			toggleBtnCntnr.style.display = "block";
 		}
 	}
+</script>
+<script>
+const themeCookieName = 'theme';
+const themeDark = 'dark';
+const themeLight = 'light';
+
+const body = document.getElementsByTagName('body')[0];
+
+function setCookie(cname, cvalue, exdays) {
+	var d = new Date();
+	d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+	var expires = "expires=" + d.toUTCString();
+	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/"
+}
+
+function getCookie(cname) {
+	var name = cname + "="
+	var ca = document.cookie.split(';');
+	for (var i = 0; i < ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0) == ' ') {
+			c = c.substring(1);
+		}
+		if (c.indexOf(name) == 0) {
+			return c.substring(name.length, c.length);
+		}
+	}
+	return ""
+}
+
+loadTheme()
+
+function loadTheme() {
+	var theme = getCookie(themeCookieName);
+	body.classList.add(theme === "" ? themeLight : theme);
+}
+
+function switchTheme() {
+
+	if (body.classList.contains(themeLight)) {
+		body.classList.remove(themeLight);
+		body.classList.add(themeDark);
+		setCookie(themeCookieName, themeDark);
+	} else {
+		body.classList.remove(themeDark);
+		body.classList.add(themeLight);
+		setCookie(themeCookieName, themeLight);
+	}
+}
 </script>
 </html>
