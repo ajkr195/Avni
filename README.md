@@ -99,6 +99,11 @@ Added feature to disable (remove) sidebar and its toggle button. It can be done 
 
 ![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/team.gif)
 
+
+<h4> Landing Page </h4>
+
+![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/landing3.jpg)
+
 <h4> Landing Page 1 </h4>
 
 ![avni](https://github.com/ajkr195/Avni/blob/main/screenshots/landing.jpg)
