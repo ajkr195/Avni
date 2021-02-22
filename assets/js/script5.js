@@ -101,3 +101,10 @@ function switchTheme() {
 	}
 }
 
+function openOverlayNav() {
+	document.getElementById("sidebarOverlayNav").style.width = "100%";
+}
+
+function closeOverlayNav() {
+	document.getElementById("sidebarOverlayNav").style.width = "0%";
+}
