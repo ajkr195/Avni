@@ -1,0 +1,1 @@
+querystring={\"query\": {\"query\": \"(name:\\\"sample3.pdf*\\\" OR title:\\\"sample3.pdf*\\\") AND TYPE:\\\"cm:content\\\"\"},\"include\": [\"aspectNames\", \"properties\", \"isLink\"]}"
